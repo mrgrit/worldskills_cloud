@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2024 전국 제2과제 · 충남 1번 · Small Challenge</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details open><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html" class="on">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2024 전국 제2과제 · 충남 1번</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2024</span><span class="badge">제2과제</span><span class="badge time">⏱ 4시간</span><span class="badge kind-problem">문제</span></div>
+<h1>Small Challenge<small>Dynamic IAM Role Authorization Enforcement</small></h1>
+<p class="summary">직원 사용자가 EC2 역할에 권한을 추가하면 CloudTrail·CloudWatch로 감지하고 Lambda 함수가 3분 이내에 자동으로 삭제하도록 하여, 관리자만 EC2 역할에 권한을 추가할 수 있게 하는 클라우드 거버넌스 과제입니다.</p>
+<div class="tags"><span class="tag">IAM</span><span class="tag">CloudTrail</span><span class="tag">CloudWatch</span><span class="tag">Lambda</span><span class="tag">EC2</span></div><div class="actions"><a class="btn" href="2024-national-t2-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p><strong>Dynamic IAM Role Authorization Enforcement</strong> — Module: 8) Cloud governance</p>
+<figure><a href="images/2024-national-t2-chungnam1/img01.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-chungnam1/img01.png" alt="아키텍처 다이어그램: Admin/employee 사용자 → EC2 역할, CloudTrail → CloudWatch → Lambda, CloudWatch Alarm" loading="lazy"></a><figcaption>아키텍처 다이어그램: Admin/employee 사용자 → EC2 역할, CloudTrail → CloudWatch → Lambda, CloudWatch Alarm</figcaption></figure>
+<p>EC2 보안을 위해 관리자만 EC2 역할에 권한을 추가할 수 있어야 합니다.</p>
+<h2 id="사용-기술">사용 기술</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>분류</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS</td>
+<td>VPC, EC2, CloudWatch, Lambda, IAM</td>
+</tr>
+<tr>
+<td>Other S/W</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="선수-유의사항">선수 유의사항</h2>
+<ol>
+<li>선수의 계정에는 비용제한이 존재하며, 이보다 더 높게 과금될 시 계정사용이 불가능할 수 있습니다.</li>
+<li>문제에 제시된 괄호박스 는 변수를 뜻함으로 선수가 적절히 변경하여사용해야 합니다.</li>
+<li>EC2 인스턴스의 TCP 80/443 outbound 는 anyopen 하여 사용할 수 있도록합니다.</li>
+<li>과제 종료 시 진행 중인 테스트를 모두 종료하여 서버에 부하가 발생 하지않도록 합니다.</li>
+<li>별도 언급이 없는 경우, ap-southeast-1 리전에 리소스를 생성하도록 합니다.</li>
+</ol>
+<h2 id="요구사항">요구사항</h2>
+<ul>
+<li>두 개의 IAM 사용자를 생성합니다. AdministratorAccess 권한을 가진 관리자 사용자와 IAMFullAccess 권한을 가진 직원 사용자입니다.</li>
+<li>모든 IAM 활동은 CloudTrail을 통해 관찰되며 로그는 모두 CloudWatch로 전송되어야 합니다.</li>
+<li>기본적으로 EC2가 가지고 있는 역할의 권한은 AmazonSSMManagedInstanceCore 권한입니다.</li>
+<li>직원 사용자가 EC2 역할에 권한을 추가하면 Lambda 함수가 해당 권한을 3분 이내에 자동으로 삭제하고, CloudWatch에서 경고 알림이 발생해야 합니다.</li>
+<li>채점을 위해 기본 VPC를 이용하여 AdministratorAccess 권한을 가진 Bastion을 생성합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EC2 Role Name</td>
+<td><code>wsc2024-instance-role</code></td>
+</tr>
+<tr>
+<td>IAM User Name</td>
+<td><code>Admin</code>, <code>Employee</code></td>
+</tr>
+<tr>
+<td>CloudTrail Name</td>
+<td><code>wsc2024-CT</code></td>
+</tr>
+<tr>
+<td>CloudTrail LogGroup Name</td>
+<td><code>wsc2024-gvn-LG</code></td>
+</tr>
+<tr>
+<td>CloudWatch Alarm Name</td>
+<td><code>wsc2024-gvn-alarm</code></td>
+</tr>
+<tr>
+<td>Lambda Name</td>
+<td><code>wsc2024-gvn-Lambda</code></td>
+</tr>
+<tr>
+<td>Lambda runtime</td>
+<td><code>python:3.9</code></td>
+</tr>
+</tbody>
+</table></div>
+</article><nav class="pager"><a href="2024-national-t2-busan2.html">← 2024 전국 제2과제 · 부산 2번<span>Small Challenge</span></a><a class="next" href="2024-national-t2-daejeon3.html">2024 전국 제2과제 · 대전 3번 →<span>Small Challenge</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h2"><a href="#사용-기술">사용 기술</a></li><li class="toc-h2"><a href="#선수-유의사항">선수 유의사항</a></li><li class="toc-h2"><a href="#요구사항">요구사항</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

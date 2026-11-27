@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2023 전국 제2과제 · Automation</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details open><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html" class="on">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2023 전국 제2과제</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2023</span><span class="badge">제2과제</span><span class="badge time">⏱ 4시간</span><span class="badge kind-problem">문제</span></div>
+<h1>Automation<small>로그 수집·분석, 정적 콘텐츠 제공, 보안 대응 자동화</small></h1>
+<p class="summary">여러 리소스의 로그를 Kinesis로 수집·변환해 S3에 저장하고 Athena로 분석하며, CloudFront 기반 정적 콘텐츠 제공과 보안 사고 대응을 자동화하는 과제입니다.</p>
+<div class="tags"><span class="tag">VPC</span><span class="tag">EC2</span><span class="tag">CloudFront</span><span class="tag">S3</span><span class="tag">Kinesis</span><span class="tag">Athena</span><span class="tag">Lambda</span><span class="tag">Golang</span></div><div class="actions"><a class="btn" href="2023-national-t2-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p>여러 리소스에서 발생하는 로그를 수집하고 처리하여 클라우드 스토리지에 저장하고, 저장된 로그를 기반으로 쿼리를 수행하여 시스템 운영의 개선을 위한 근거로 사용하고자 합니다. 동시에 정적 콘텐츠를 저장하고 제공하며 콘텐츠 제어 작업을 자동화하고, 보안 사고에 대비하여 보안 사고 대응 프로세스를 자동화하고자 합니다. 세부 요구사항을 참조하여 로그 수집/처리/쿼리 작업, 정적 콘텐츠 제공 서비스 운영, 보안 사고 대응 자동화를 구성해야 합니다.</p>
+<figure><a href="images/2023-national-t2/img01.png" target="_blank" rel="noopener"><img src="images/2023-national-t2/img01.png" alt="아키텍처 다이어그램" loading="lazy"></a><figcaption>아키텍처 다이어그램</figcaption></figure>
+<h2 id="사용-기술">사용 기술</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>분류</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS</td>
+<td>VPC, EC2, CloudFront, S3, Kinesis Series, Athena, Lambda</td>
+</tr>
+<tr>
+<td>개발언어/프레임워크</td>
+<td>Golang / Gin</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="선수-유의사항">선수 유의사항</h2>
+<ol>
+<li>선수의 계정에는 비용의 제한이 존재하며, 이보다 더 높게 요금이 부과될 시 계정 사용이 불가능할 수 있습니다.</li>
+<li>문제에 제시된 괄호 박스 &lt;&gt;는 변수를 뜻함으로 선수가 적절히 변경하여 사용해야 합니다.</li>
+<li>EC2 인스턴스의 TCP 80/443 outbound는 anyopen하여 사용할 수 있도록 합니다.</li>
+<li>과제의 Bastion 서버에서 대부분의 채점이 이루어짐으로 인스턴스를 생성하지 않았거나 종료된 상태면 채점이 불가능하니 각별히 주의하도록 합니다.</li>
+<li>과제 종료 시 진행 중인 테스트를 모두 종료하여 서버에 부하가 발생하지 않도록 합니다.</li>
+<li>별도 언급이 없는 경우, ap-northeast-2 리전에 리소스를 생성하도록 합니다.</li>
+<li>1페이지의 다이어그램은 구성을 추상적으로 표현한 그림으로, 세부적인 구성은 아래의 요구사항을 만족시킬 수 있도록 합니다. (ex. 서브넷이 2개 이상 존재할 수 있습니다.)</li>
+<li>모든 리소스의 이름, 태그, 변수과 변수는 대소문자를 구분합니다.</li>
+<li>문제에서 주어지지 않는 값들은 AWS Well-Architected Framework 6 pillars를 기준으로 적절한 값을 설정해야 합니다.</li>
+<li>불필요한 리소스를 생성한 경우, 감점의 요인이 될 수 있습니다. (e.g. VPC 추가 생성)</li>
+<li>문제에서 요구하는 태그 정책을 따르지 않을 경우 감점의 요인이 될 수 있습니다.</li>
+<li>모든 리소스의 시간은 UTC+9 (KST) 타임존 기준으로 설정합니다.</li>
+</ol>
+<h2 id="3-네트워크-구성">3. 네트워크 구성</h2>
+<p>클라우드 인프라에 대해 네트워크 레벨의 격리 및 분리를 할 수 있도록 아래 요구사항을 참고하여 VPC를 구성합니다. 서브넷 이름 뒤의 알파벳은 Availability Zone을 의미합니다.</p>
+<h3 id="vpc-정보">VPC 정보</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VPC CIDR</td>
+<td><code>10.1.0.0/16</code></td>
+</tr>
+<tr>
+<td>VPC Tag</td>
+<td><code>Name=wsi-vpc</code></td>
+</tr>
+<tr>
+<td>Internet G/W Tag</td>
+<td><code>Name=wsi-igw</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="app-subnet-a-정보">App subnet A 정보</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CIDR</td>
+<td><code>10.1.0.0/24</code></td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>Name=wsi-app-a</code></td>
+</tr>
+<tr>
+<td>외부 통신</td>
+<td>NAT G/W를 구성하여 인터넷 접근이 가능하도록 구성</td>
+</tr>
+<tr>
+<td>Route table Tag</td>
+<td><code>Name=wsi-app-a-rt</code></td>
+</tr>
+<tr>
+<td>NAT G/W Tag</td>
+<td><code>Name=wsi-natgw-a</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="public-subnet-a-정보">Public subnet A 정보</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CIDR</td>
+<td><code>10.1.2.0/24</code></td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>Name=wsi-public-a</code></td>
+</tr>
+<tr>
+<td>외부 통신</td>
+<td>Internet G/W 를 구성하여 인터넷을 접근</td>
+</tr>
+<tr>
+<td>Route table Tag</td>
+<td><code>Name=wsi-public-rt</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-bastion-서버">4. Bastion 서버</h2>
+<ul>
+<li>EC2를 활용해 Bastion 서버를 구성합니다. bastion 서버의 접근을 위해서 TCP 4272(SSH)를 사용합니다. bastion 서버는 외부에서 SSH 프로토콜만을 허용하도록 Security Group을 구성합니다. SSH 프로토콜을 통해 접근할 경우 접근 로그에 대해서 cloudwatch logs에 저장하도록 합니다. 로그에는 사용자명, 접근IP(Client IP)가 포함되어 있어야 합니다. 접근 로그는 1분 이내에 cloudwatch logs에 저장 되도록 합니다.</li>
+<li>Bastion 서버에 user01, user02, user03 리눅스 계정을 생성하고 비밀번호는 pAss@@12로 설정합니다. 또한 해당 유저들이 Bastion 서버에 패스워드를 이용하여 SSH로 접근할 수 있어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instance type</td>
+<td><code>t3.small</code></td>
+</tr>
+<tr>
+<td>AMI</td>
+<td>Amazon Linux2</td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td>Public subnet A</td>
+</tr>
+<tr>
+<td>설치 패키지</td>
+<td>awscli, jq, curl, parquet-tools</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>Name=wsi-bastion</code></td>
+</tr>
+<tr>
+<td>Security group name</td>
+<td><code>wsi-bastion-sg</code> (*명시된 Security Group 하나만을 사용합니다.)</td>
+</tr>
+<tr>
+<td>EC2 IAM Role</td>
+<td>모든 리소스에 대해 full access를 가지는 role을 생성하여 붙입니다.  role 이름은 <code>wsi-bastion-role</code>로 설정합니다.</td>
+</tr>
+<tr>
+<td>cloudwatch logs group</td>
+<td><code>/wsi/security/bastion-ssh</code></td>
+</tr>
+<tr>
+<td>cloudwatch logs stream</td>
+<td><code>login</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-웹-애플리케이션">5. 웹 애플리케이션</h2>
+<p>foo/bar 애플리케이션을 배포합니다. 제공된 binary는 x86기반 EC2의 Amazon Linux2에서 빌드하고 동작을 확인하였습니다. go version은 go1.18.9 linux/amd64 입니다. 애플리케이션 실행 시 바인딩 되는 포트는 TCP/8080입니다. 애플리케이션은 access log를 log/app.log 파일(상대 경로)에 저장합니다. app.log 파일에 대해서 별도의 log rotation 설정은 하지 않습니다. 모든 API는 5초 이내에 응답해야 합니다.</p>
+<h3 id="foobar">foo/bar</h3>
+<p>접근 로그를 생성하기 위한 임시 API입니다. 단순한 스트링을 출력합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Method</th>
+<th>Request body</th>
+<th>Response body</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/v1/foo</code></td>
+<td>GET</td>
+<td>-</td>
+<td><code>{&quot;application&quot;: &quot;foo&quot;}</code></td>
+</tr>
+<tr>
+<td><code>/v1/bar</code></td>
+<td>GET</td>
+<td>-</td>
+<td><code>{&quot;application&quot;: &quot;bar&quot;}</code></td>
+</tr>
+<tr>
+<td><code>/healthcheck</code></td>
+<td>GET</td>
+<td>-</td>
+<td><code>{&quot;status&quot;: &quot;ok&quot;}</code></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>foo/bar 애플리케이션은 가용성/확장성을 고려할 필요가 없습니다. EC2 인스턴스를 생성하고 애플리케이션을 배포하여 데몬으로 실행합니다. 갑작스러운 오류에 대비하여 애플리케이션은 재부팅 시에도 재가동될 수 있어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instance type</td>
+<td><code>t3.small</code></td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td>App subnet A</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>Name=wsi-app</code></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>foo/bar 애플리케이션은 wsi-bastion 서버에서 직접적으로 접근하며 외부 사용자에게 노출되지 않습니다. 최소한의 권한만을 허용할 수 있도록 구성합니다.</li>
+</ul>
+<h2 id="6-s3">6. S3</h2>
+<ul>
+<li>2개의 S3 버킷을 생성하여 각기 용도에 맞게 버킷을 설정합니다.</li>
+<li>하나의 버킷은 정적 콘텐츠를 저장하고 제공합니다. S3에 저장되는 정적 콘텐츠는 사용자에게 직접적으로 노출되어서는 안 되며, CloudFront를 통해서만 접근 가능해야 합니다. 만약 S3 버킷내 기존 콘텐츠를 업데이트 한다면 CloudFront를 통해 접근하는 사용자는 1분 이내에 업데이트된 콘텐츠를 제공 받을 수 있어야 합니다. 정적 콘텐츠를 제공하는 버킷은 임의의 CMK로 서버측 암호화를 수행합니다. 채점시 정적 콘텐츠 저장용 버킷내 object를 모두 삭제 후 채점을 시작합니다. 또한, 정적 콘텐츠 S3 버킷에 접근하는 서버 로그를 로그 저장용 버킷의 s3-accesslog/ 경로에 저장해야 합니다. 경기 종료 전 S3 서버 접근기록(로그)이 2건 이상 s3-accesslog/ 아래에 경로에 존재해야 채점이 가능합니다.</li>
+<li>다른 하나의 버킷은 로그 데이터를 저장합니다. 해당 버킷은 모든 로그 데이터를 저장하는 용도로 사용됩니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>버킷이름(정적 콘텐츠)</td>
+<td><code>wsi-static-&lt;임의의 4자리 영문&gt;</code></td>
+</tr>
+<tr>
+<td>버킷이름(로그 저장)</td>
+<td><code>wsi-logs-&lt;임의의 4자리 영문&gt;</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="7-cloud-front">7. Cloud Front</h2>
+<ul>
+<li>CloudFront를 통하여 정적 콘텐츠에 접근이 가능하도록 합니다. S3에 업로드되는 정적 콘텐츠를 캐싱할 수 있도록 구성합니다.</li>
+<li>사용자가 CloudFront에 HTTP 접근 시에도 HTTPS로 리디렉션 되어 HTTPS로만 접근할 수 있도록 구성합니다.</li>
+<li>제공된 images 파일들은 사용자에게 제공되기 전 128x128 사이즈로 변경되어 사용자에게 제공되도록 구성합니다. 단, 기존 콘텐츠(이미지)가 변경되어서는 안 됩니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Origin</td>
+<td>S3 Bucket(정적 콘텐츠)</td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>한국뿐만 아니라 전 세계의 유저가 빠른 속도로 접근할 수 있도록 구성</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>Name=wsi-cdn</code></td>
+</tr>
+<tr>
+<td>기타</td>
+<td>채점 시 오동작 예방으로 IPv6는 비활성화하고, 하나의 CloudFront만 생성</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="8-kinesis">8. Kinesis</h2>
+<p>foo/bar 애플리케이션에서 발생하는 access log를 Kinesis를 통해 수집/처리한 뒤 로그 수집 버킷(S3)에 저장합니다. 애플리케이션에서 발생하는 access log의 패턴을 분석하여 분석에 용이하도록 다음과 같이 변환 작업을 수행합니다. 변환 작업 후‘6. S3’에서 생성한 로그 저장용 버킷의 accesslog/ 하위에 parquet 포맷으로 저장되도록 구성합니다. /healthcheck 경로에 대한 로그 데이터는 S3에 저장되지 않아야 합니다.</p>
+<h3 id="애플리케이션-로그-포맷">애플리케이션 로그 포맷</h3>
+<pre><code class="language-text">clientIP - [ Timestamp ] &quot;Method Path Protocol ResponseCode ProcessingTime &quot; UserAgent &quot;
+e.g. 8.8.8.8 - [2023-10-13T04:00:00Z] &quot;GET /v1/foo HTTP/1.1 200 40.1us &quot;curl/x.x.x&quot; &quot;
+</code></pre>
+<h3 id="데이터-변환-규칙">데이터 변환 규칙</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Transformed Data (columns)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clientip</td>
+<td>변환 없음</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>년,월,일,시간,분,초 로 변환<br>(year, month, day, hour, minute, second)<br>e.g 2023-10-13T04:02:42Z를 변환할 경우 다음과 같음<br>year: 2023, month: 10, day: 13,<br>hour: 04, minute: 02, second: 42</td>
+</tr>
+<tr>
+<td>method</td>
+<td>변환 없음</td>
+</tr>
+<tr>
+<td>path</td>
+<td>변환 없음</td>
+</tr>
+<tr>
+<td>protocol</td>
+<td>변환 없음</td>
+</tr>
+<tr>
+<td>responsecode</td>
+<td>변환 없음</td>
+</tr>
+<tr>
+<td>processingtime</td>
+<td>ms 기준으로 변환 (단위 없이 숫자로만 표현)</td>
+</tr>
+<tr>
+<td>useragent</td>
+<td>변환 없음</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>parquet 형식으로 변환 후 데이터컬럼 이름은 아래와 같음.</li>
+</ul>
+<pre><code class="language-text">clientip, year, month, day, hour, minute, second, method, path, protocol,
+responsecode, processingtime, useragent
+</code></pre>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kinesis Stream 이름</td>
+<td><code>wsi-log-stream</code></td>
+</tr>
+<tr>
+<td>Kinesis Firehose 이름</td>
+<td><code>wsi-log-firehose</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="9-athena">9. Athena</h2>
+<ul>
+<li>S3 버킷에 저장된 로그 데이터 분석을 위해 Athena를 사용합니다. S3 버킷에 저장된 애플리케이션 로그 데이터를 기반으로 트래픽 패턴을 분석합니다.</li>
+<li>대회 당일 발생한 로그 데이터의 1분 간격으로 집계합니다. 이때 path, status code를 조합한 기준으로 카운트 합니다. /v1/foo + 200과 /v1/foo + 201 은 다른 조합임으로 구분되어 집계되어야 합니다. /v1/foo + 200과 /v1/bar + 200도 다른 조합임으로 구분되어 집계되어야 합니다. path와 status code가 완전히 동일한 경우만 같은 조합으로 집계됩니다.</li>
+<li>쿼리 이름은 TrafficPatternQuery로 명명합니다. Athena Table의 이름은 accesslog로 지정합니다.</li>
+<li>테이블 생성시 효율적인 쿼리를 위하여 일자별 파티셔닝을 구성합니다.</li>
+<li>테이블 구성 채점시 Athena query로 describe query 를 사용해 테이블 구성을 채점합니다.</li>
+</ul>
+<p><strong>Query Name:</strong> <code>TrafficPatternQuery</code> — Description (example)</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>year</th>
+<th>month</th>
+<th>day</th>
+<th>hour</th>
+<th>minute</th>
+<th>path</th>
+<th>statuscode</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>10</td>
+<td>12</td>
+<td>16</td>
+<td>18</td>
+<td>/v1/foo</td>
+<td>200</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>10</td>
+<td>12</td>
+<td>16</td>
+<td>18</td>
+<td>/v1/foo</td>
+<td>201</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>10</td>
+<td>12</td>
+<td>16</td>
+<td>18</td>
+<td>/v1/bar</td>
+<td>200</td>
+<td>5</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="10-로그-백업">10. 로그 백업</h2>
+<ul>
+<li>wsi-app 인스턴스가 갑작스럽게 종료되는 것을 대비하여, 1분에 한 번씩 access log가 저장된 파일(app.log 파일)을 로그 저장용 s3 버킷에 백업합니다.
+<ul>
+<li>저장위치: <code>accesslog-backup/interval/&lt;year&gt;/&lt;month&gt;/&lt;day&gt;/&lt;hour&gt;/&lt;minute&gt;/app.log</code></li>
+</ul>
+</li>
+<li>인스턴스 종료 또는 재시작 시 access log 파일을 s3에 업로드하고 종료될 수 있도록 스크립트를 구성합니다.
+<ul>
+<li>저장위치: <code>accesslog-backup/shutdown/&lt;year&gt;/&lt;month&gt;/&lt;day&gt;/&lt;hour&gt;/&lt;minute&gt;/app.log</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="11-보안-대응-자동화">11. 보안 대응 자동화</h2>
+<h3 id="bastion-보안-구성">Bastion 보안 구성</h3>
+<ul>
+<li>Bastion으로의 SSH 접근(로그인)이 5분 이내에 10번 이상 발생하면, 비정상적인 접근으로 판단하여 Bastion을 격리하도록 합니다. (Bastion 서버의 모든 Security Group Ingress / Egress Rule을 Revoke 합니다.)</li>
+<li>Bastion에서 5분 이내에 로그인 시도 5회 실패 시, 비정상적인 로그인 시도로 판단하여 120초 동안 리눅스 사용자가 잠기도록 구성합니다.</li>
+</ul>
+<h3 id="console-login-보안-구성">Console login 보안 구성</h3>
+<ul>
+<li>consoleuser IAM 계정을 생성하고, 해당 계정이 5분 이내에 Console 로그인을 5회 이상 실패할 경우 cloudwatch Alarm의 Alert이 발생하도록 구성합니다. cloudwatch Alarm이름은 loginAlarm으로 설정합니다.</li>
+</ul>
+</article><nav class="pager"><a href="2023-national-t1.html">← 2023 전국 제1과제<span>Web Service Provisioning</span></a><a class="next" href="2023-national-t3.html">2023 전국 제3과제 →<span>Trouble-shooting</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h2"><a href="#사용-기술">사용 기술</a></li><li class="toc-h2"><a href="#선수-유의사항">선수 유의사항</a></li><li class="toc-h2"><a href="#3-네트워크-구성">3. 네트워크 구성</a></li><li class="toc-h3"><a href="#vpc-정보">VPC 정보</a></li><li class="toc-h3"><a href="#app-subnet-a-정보">App subnet A 정보</a></li><li class="toc-h3"><a href="#public-subnet-a-정보">Public subnet A 정보</a></li><li class="toc-h2"><a href="#4-bastion-서버">4. Bastion 서버</a></li><li class="toc-h2"><a href="#5-웹-애플리케이션">5. 웹 애플리케이션</a></li><li class="toc-h3"><a href="#foobar">foo/bar</a></li><li class="toc-h2"><a href="#6-s3">6. S3</a></li><li class="toc-h2"><a href="#7-cloud-front">7. Cloud Front</a></li><li class="toc-h2"><a href="#8-kinesis">8. Kinesis</a></li><li class="toc-h3"><a href="#애플리케이션-로그-포맷">애플리케이션 로그 포맷</a></li><li class="toc-h3"><a href="#데이터-변환-규칙">데이터 변환 규칙</a></li><li class="toc-h2"><a href="#9-athena">9. Athena</a></li><li class="toc-h2"><a href="#10-로그-백업">10. 로그 백업</a></li><li class="toc-h2"><a href="#11-보안-대응-자동화">11. 보안 대응 자동화</a></li><li class="toc-h3"><a href="#bastion-보안-구성">Bastion 보안 구성</a></li><li class="toc-h3"><a href="#console-login-보안-구성">Console login 보안 구성</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

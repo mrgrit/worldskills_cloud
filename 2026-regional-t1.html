@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 지방 제1과제 · Solution architecture</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details open><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html" class="on">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2026 지방 제1과제</div>
+<div class="badges"><span class="badge lv-regional">지방</span><span class="badge">2026</span><span class="badge">제1과제</span><span class="badge time">⏱ 4시간</span><span class="badge kind-problem">문제</span></div>
+<h1>Solution architecture</h1>
+<p class="summary">WorldPay의 유저 관리 시스템을 위해 VPC Peering으로 연결된 app/DB VPC, ALB·ASG 기반 Python 애플리케이션, KMS로 암호화한 Aurora MySQL과 Secrets Manager, CloudWatch 로그·대시보드를 고가용성·보안·확장성을 고려해 구축하는 과제입니다.</p>
+<div class="tags"><span class="tag">VPC</span><span class="tag">EC2</span><span class="tag">ALB</span><span class="tag">RDS</span><span class="tag">Secrets Manager</span><span class="tag">KMS</span><span class="tag">CloudWatch</span></div><div class="actions"><a class="btn" href="2026-regional-t1-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p>당신은 WorldPay의 유저 관리 시스템을 구축하는 업무를 수행해야 합니다. WorldPay는 전 세계 사람들의 결제를 쉽게 도와주는 서비스로, 중요한 정보의 유출을 막고 고가용성을 확보하도록 설계되었습니다. 주어진 요구사항에 따라 고가용성, 보안, 확장성 등을 고려한 인프라를 구축해야 합니다.</p>
+<figure><a href="images/2026-regional-t1/img01.png" target="_blank" rel="noopener"><img src="images/2026-regional-t1/img01.png" alt="아키텍처 다이어그램: User → ALB → EC2(app VPC) → RDS(DB VPC), Secrets Manager·KMS·CloudWatch" loading="lazy"></a><figcaption>아키텍처 다이어그램: User → ALB → EC2(app VPC) → RDS(DB VPC), Secrets Manager·KMS·CloudWatch</figcaption></figure>
+<h2 id="사용-기술">사용 기술</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>분류</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS</td>
+<td>VPC, EC2, ALB, RDS, Secrets Manager, KMS, CloudWatch</td>
+</tr>
+<tr>
+<td>Language / Framework</td>
+<td>Python, MySQL</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="선수-유의사항">선수 유의사항</h2>
+<p>※ 다음 유의사항을 고려하여 요구사항을 완성하시오.</p>
+<ol>
+<li>Bastion EC2는 채점 시 사용하기 때문에 연결 및 권한 문제가 발생하지 않도록 주의합니다. Bastion EC2에 접근 불가한 경우 채점에 불이익이 있을 수 있습니다.</li>
+<li>문제에 변수로 지정되는 부분은 적절히 변경하여 사용 하도록 합니다.</li>
+<li>문제의 효율을 위해 Security Group의 80/443 outbound는 anyopen 하여 사용 할 수 있도록 합니다.</li>
+<li>과제에 지급된 바이너리를 변경해서는 안됩니다. 바이너리를 변경하거나 다른 바이너리를 사용할 경우 0점 처리 될 수 있습니다.</li>
+<li>EC2의 OS image는 Amazon Linux 2023를 사용합니다.</li>
+<li>문제에서 제시한 Name tag에 유의하여 리소스를 생성해야 합니다. Name tag가 일치하지 않는 리소스를 생성한 경우 채점에 불이익이 있을 수 있습니다.</li>
+<li>문제에서 명시되지 않은 경우 ap-northeast-2(서울) 리전에 리소스를 생성합니다.</li>
+</ol>
+<h2 id="3-vpc">3. VPC</h2>
+<p>WorldPay는 유저의 정보를 DB에 안전하게 저장하기 위해 네트워크 수준의 접근 제어를 구현해야 합니다. 이를 위해 2개의 VPC를 생성하고, VPC Peering을 구성하여 서로 통신할 수 있게 구성합니다. Peering 된 VPC 간에는 DNS name resolution이 가능해야 합니다.</p>
+<p>Public subnet은 인터넷과 직접적인 통신이 가능하며, app subnet은 NAT gateway를 통해 인터넷에 접근할 수 있도록 합니다. DB subnet은 인터넷과 통신이 불가능하고, 오직 app subnet과의 통신만 허용하도록 합니다. DB subnet의 통신을 제어하기 위해 NACL을 생성하여 사용하고, 인터넷(0.0.0.0/0)과의 통신을 허용하지 않도록 설정합니다. VPC 내에서 SecretsManager 서비스에 접근하고자 하면 PrivateLink(VPC endpoint)를 통해 인터넷 외부를 거치지 않도록 합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VPC Name tag</td>
+<td><code>worldpay-app-vpc</code>, <code>world-db-vpc</code></td>
+</tr>
+<tr>
+<td>VPC CIDR</td>
+<td><code>10.0.0.0/16</code>, <code>10.100.0.0/16</code></td>
+</tr>
+<tr>
+<td>Availability Zone</td>
+<td><code>ap-northeast-2a</code>, <code>ap-northeast-2c</code></td>
+</tr>
+<tr>
+<td>VPC Peering Name tag</td>
+<td><code>worldpay-vpc-peering</code></td>
+</tr>
+<tr>
+<td>DB subnet NACL Name tag</td>
+<td><code>worldpay-db-nacl</code></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>두 VPC 모두 Flow log 활성화</li>
+<li>Subnet 정보</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Name tag</th>
+<th>CIDR</th>
+<th>Route table</th>
+<th>VPC Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>worldpay-pub-subnet-a</code></td>
+<td><code>10.0.0.0/24</code></td>
+<td><code>worldpay-pub-rt</code></td>
+<td>app-VPC</td>
+</tr>
+<tr>
+<td><code>worldpay-pub-subnet-c</code></td>
+<td><code>10.0.1.0/24</code></td>
+<td><code>worldpay-pub-rt</code></td>
+<td>app-VPC</td>
+</tr>
+<tr>
+<td><code>worldpay-app-subnet-a</code></td>
+<td><code>10.0.10.0/24</code></td>
+<td><code>worldpay-app-rt-a</code></td>
+<td>app-VPC</td>
+</tr>
+<tr>
+<td><code>worldpay-app-subnet-c</code></td>
+<td><code>10.0.11.0/24</code></td>
+<td><code>worldpay-app-rt-c</code></td>
+<td>app-VPC</td>
+</tr>
+<tr>
+<td><code>worldpay-db-subnet-a</code></td>
+<td><code>10.100.0.0/24</code></td>
+<td><code>worldpay-db-rt</code></td>
+<td>db-VPC</td>
+</tr>
+<tr>
+<td><code>worldpay-db-subnet-c</code></td>
+<td><code>10.100.1.0/24</code></td>
+<td><code>worldpay-db-rt</code></td>
+<td>db-VPC</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>* 각 route table에는 표에 명시된 대로 Name tag를 지정해야 합니다.</p>
+</blockquote>
+<h2 id="4-bastion">4. Bastion</h2>
+<p>Bastion 용도로 사용할 EC2 instance를 생성합니다. 채점 시 사용하므로 Administrator에 준하는 IAM 권한을 부여하여 권한 문제가 발생하지 않도록 하고, SSH나 Session Manager를 통한 접근에 문제가 생기지 않도록 합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instance type</td>
+<td><code>t3.micro</code></td>
+</tr>
+<tr>
+<td>Instance name tag</td>
+<td><code>worldpay-bastion</code></td>
+</tr>
+<tr>
+<td>Image</td>
+<td>Amazon Linux 2023</td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td><code>worldpay-pub-subnet-a</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-application">5. Application</h2>
+<p>WorldPay의 애플리케이션은 HTTP 요청을 처리할 수 있는 웹 애플리케이션입니다. Python/FastAPI로 개발되었으며, Amazon Linux 2023/x86 환경에서 빌드되고 테스트 되었습니다.</p>
+<p>애플리케이션이 API 요청을 처리하기 위해 MySQL과 통신을 할 수 있어야 합니다. 애플리케이션 구동 시 Secrets Manager에 저장된 'worldpay-secret' 을 참조하여 MySQL 서버와의 통신을 시도하게 됩니다. 만약 secret이 제대로 생성되지 않거나 MySQL과의 통신할 수 없는 경우 애플리케이션이 구동되지 않습니다.</p>
+<ul>
+<li>Listening port: <code>8080</code></li>
+<li>API</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>API</th>
+<th>Request params</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>POST /v1/users</code></td>
+<td><code>{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 26}</code></td>
+<td><code>{&quot;uid&quot;: 3}</code></td>
+</tr>
+<tr>
+<td><code>GET /v1/users</code></td>
+<td><code>?uid=3</code></td>
+<td><code>{&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 26}</code></td>
+</tr>
+<tr>
+<td><code>GET /health</code></td>
+<td>-</td>
+<td><code>{&quot;status&quot;: &quot;OK&quot;}</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="6-alb">6. ALB</h2>
+<p>WorldPay의 애플리케이션의 부하분산을 위해 ALB를 구성합니다. ALB는 public subnet에 구성합니다. 만약 애플리케이션에 구현되지 않은 API 요청을 받으면 애플리케이션으로 요청이 전달되어서는 안 되며, Fixed response 기능을 활용해 HTTP status code 403을 반환하도록 합니다.</p>
+<ul>
+<li>ALB Name tag: <code>worldpay-alb</code></li>
+<li>Subnet: <code>worldpay-pub-subnet-a</code>, <code>worldpay-pub-subnet-c</code></li>
+<li>비정상 요청 시 403 response 반환</li>
+<li>외부에서 HTTP 프로토콜, 80 port를 통해 접근</li>
+</ul>
+<h2 id="7-asg">7. ASG</h2>
+<p>애플리케이션은 EC2 환경에 배포하도록 합니다. 고가용성과 확장성을 위해 Auto scaling group을 생성해야 하며, 최소 2대 이상의 instance가 배포되어 있어야 합니다. 확장성을 위해 CPU 사용량이 70%를 넘으면 새 인스턴스를 생성하도록 정책이 설정되어야 합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto scaling group name</td>
+<td><code>worldpay-asg</code></td>
+</tr>
+<tr>
+<td>Instance Name tag</td>
+<td><code>worldpay-app</code></td>
+</tr>
+<tr>
+<td>Instance type</td>
+<td><code>t3.micro</code></td>
+</tr>
+<tr>
+<td>Min size</td>
+<td><code>2</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="8-rds">8. RDS</h2>
+<p>WorldPay의 유저 정보를 저장하기 위해 RDS를 생성합니다. 데이터베이스의 데이터를 안전하게 보관하기 위해 KMS로 암호화해야 합니다. 또한 Well-known port인 3306 대신 다른 번호를 사용하여 무차별 스캔 공격으로부터 보호하고자 합니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RDS cluster identifier</td>
+<td><code>worldpay-rds</code></td>
+</tr>
+<tr>
+<td>Engine</td>
+<td><code>aurora-mysql8.0</code></td>
+</tr>
+<tr>
+<td>Instance class</td>
+<td><code>db.t3.medium</code></td>
+</tr>
+<tr>
+<td>Port</td>
+<td><code>3307</code></td>
+</tr>
+<tr>
+<td>Public access</td>
+<td>비활성화</td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td><code>worldpay-db-subnet-a</code>, <code>worldpay-db-subnet-c</code></td>
+</tr>
+<tr>
+<td>KMS encryption</td>
+<td>활성화</td>
+</tr>
+</tbody>
+</table></div>
+<p>애플리케이션이 정상적으로 동작하기 위해서는 RDS에 적절하게 database와 table이 생성되어 있어야 합니다. 아래의 SQL 구문을 참고하여 table을 생성하도록 합니다.</p>
+<pre><code class="language-sql">CREATE TABLE `worldpay`.`users` (
+  uid INT AUTO_INCREMENT,
+  name VARCHAR(255),
+  age INT,
+  PRIMARY KEY (uid)
+);
+</code></pre>
+<h2 id="9-secrets-manager">9. Secrets Manager</h2>
+<p>애플리케이션이 데이터베이스에 접근하기 위해서는 username, password, host 등의 정보가 필요합니다. 이러한 정보들을 secret으로 생성하여 관리하고자 하며, 아무나 secret에 접근하는 것을 막기 위해 KMS CMK(Customer Managed Key)를 사용하여 암호화해야 합니다. 애플리케이션이 과도한 권한을 갖지 않도록 admin이 아닌 user를 사용하도록 합니다. (username이 “admin”이 되면 안 됨)</p>
+<ul>
+<li>Secret name: <code>worldpay-secret</code></li>
+<li>Encryption key: CMK</li>
+<li>Secret 예제(실제 secret 내용과 다를 수 있음):</li>
+</ul>
+<pre><code class="language-json">{&quot;username&quot;: &quot;app&quot;, &quot;password&quot;: &quot;1q2w3e4r&quot;, &quot;host&quot;: &quot;worldpay-rds.rds.amazonaws.com&quot;}
+</code></pre>
+<h2 id="10-cloudwatch-logs">10. CloudWatch Logs</h2>
+<p>애플리케이션에서 발생하는 로그를 수집해야 합니다. 로그가 발생하면 최대 5분 내로 지정된 Log group으로 전송되어 애플리케이션의 로그를 확인할 수 있어야 합니다. 또한 비용을 절감하기 위해 최대 30일 동안만 로그를 보관하도록 설정합니다.</p>
+<ul>
+<li>Log group name: <code>worldpay-log-group</code></li>
+</ul>
+<h2 id="11-cloudwatch">11. CloudWatch</h2>
+<p>서비스 중에 발생하는 이상 징후를 탐지하기 위해 대시보드를 생성해야 합니다. ALB에서 발생하는 Fixed response의 값의 개수(HTTP_Fixed_Response_Count)와 ASG의 인스턴스들의 CPU 사용량의 평균을 보여주는 대시보드를 생성합니다.</p>
+<ul>
+<li>Dashboard name: <code>worldpay-dashboard</code></li>
+</ul>
+</article><nav class="pager"><a href="2025-national-t3.html">← 2025 전국 제3과제<span>System Operation</span></a><a class="next" href="2026-regional-t2.html">2026 지방 제2과제 →<span>Small challenge</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h2"><a href="#사용-기술">사용 기술</a></li><li class="toc-h2"><a href="#선수-유의사항">선수 유의사항</a></li><li class="toc-h2"><a href="#3-vpc">3. VPC</a></li><li class="toc-h2"><a href="#4-bastion">4. Bastion</a></li><li class="toc-h2"><a href="#5-application">5. Application</a></li><li class="toc-h2"><a href="#6-alb">6. ALB</a></li><li class="toc-h2"><a href="#7-asg">7. ASG</a></li><li class="toc-h2"><a href="#8-rds">8. RDS</a></li><li class="toc-h2"><a href="#9-secrets-manager">9. Secrets Manager</a></li><li class="toc-h2"><a href="#10-cloudwatch-logs">10. CloudWatch Logs</a></li><li class="toc-h2"><a href="#11-cloudwatch">11. CloudWatch</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

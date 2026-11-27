@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WSC2024 · Day 1 · Test Project Cloud Computing — Day 1</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details open><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html" class="on">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › WSC2024 · Day 1</div>
+<div class="badges"><span class="badge lv-wsc">국제</span><span class="badge">2024</span><span class="badge kind-problem">문제</span></div>
+<h1>Test Project Cloud Computing — Day 1<small>Batch data processing for anomalous equipment codes</small></h1>
+<p class="summary">UnicornTech 장비가 보내는 비표준 영숫자 이상 코드를 API Gateway·Lambda·DynamoDB로 수집하고, 두 VPC의 바이너리 앱으로 RDS(PostgreSQL)를 거쳐 Parameter Store에 저장하는 클라우드 배치 처리 시스템을 구축하는 WSC2024 Day 1 과제입니다.</p>
+<div class="tags"><span class="tag">API Gateway</span><span class="tag">Lambda</span><span class="tag">DynamoDB</span><span class="tag">RDS</span><span class="tag">Parameter Store</span><span class="tag">VPC</span><span class="tag">ECS</span><span class="tag">CodeDeploy</span></div><div class="actions"><a class="btn" href="2024-wsc-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p>Independent Test Project Designers: Shawn Xu, Xiaowei Wang, Qiang Wang, Xu Chen<br>
+Independent Test Project Validator: Chit Boon Lee, SCM</p>
+<p>This Test Project consists of the following documentation/files:</p>
+<ol>
+<li>WSC2024_TP53_main_document_actual_en</li>
+<li>WSC2024_TP53_day1_actual_en</li>
+<li>WSC2024_TP53_day2_actual_en</li>
+<li>WSC2024_TP53_day3_actual_en</li>
+</ol>
+<h2 id="task-description">Task Description</h2>
+<p>UnicornTech has identified an anomaly in the data returned by devices deployed in customer environments. These devices are generating non-standard, alphanumeric information codes which cannot be processed by the existing system.</p>
+<p>To facilitate comprehensive data analysis and utilization, a cloud-based batch processing solution is required. This system must efficiently ingest, process, and categorize the anomalous data for subsequent analysis and troubleshooting.</p>
+<p>Effective resource management, AWS cost optimization, and cloud resource organization are essential. Secure integration with AWS services, robust network traffic monitoring, and performance optimization are critical. Additionally, stringent data security measures, including regulatory compliance, access controls, data loss prevention, and regular backups, must be implemented.</p>
+<p>Successful deployment of this system will enhance customer satisfaction and drive product improvement.</p>
+<h2 id="background">Background</h2>
+<p>UnicornTech, a leading provider of intelligent equipment, is dedicated to delivering high-quality, innovative solutions to its customers. The company’s advanced machinery and production lines are deployed across diverse customer environments, generating valuable operational data. In the highly competitive landscape of intelligent equipment, maintaining a competitive edge demands not only superior product offerings but also a profound understanding of customer feedback and equipment performance. By leveraging sophisticated data processing systems, UnicornTech aims to elevate service quality, optimize product performance, and solidify its market position.</p>
+<p>UnicornTech has encountered a challenge in processing abnormal data generated by its intelligent equipment. These data sets, composed of non-standard alphanumeric characters, are not effectively handled by the current system. Recognizing the potential insights embedded within these anomalous data, UnicornTech seeks to extract critical information to drive product enhancements and elevate customer satisfaction. To realize this potential, a robust data processing solution is imperative.</p>
+<p>The company’s strategic objective is to deploy a cloud-based batch data processing system. This system will be engineered to effectively handle the complexities of non-standard data, ensuring rapid and accurate data ingestion, processing, and categorization. By empowering data analysts with the necessary tools, UnicornTech will expedite issue identification and resolution, resulting in enhanced service quality and customer satisfaction.</p>
+<p>Aligned with UnicornTech’s commitment to continuous improvement and customer-centricity, the successful implementation of this batch data processing system signifies a pivotal advancement. This initiative will not only streamline the management of non-standard data but also bolster the company’s broader goals of product excellence and market leadership. By augmenting its data processing capabilities, UnicornTech is positioned to gain deeper customer insights, refine product offerings, and fortify its industry leadership.</p>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p><strong>CAUTION</strong> — Please use us-east-1 region.</p>
+</blockquote>
+<h3 id="initial-state">Initial state</h3>
+<p>A cloud-based batch processing system must be implemented to efficiently handle the anomalous equipment information codes, incorporating scheduling mechanisms to automate data collection and processing.</p>
+<p>An initial, yet incomplete, architectural blueprint has been developed in collaboration with engineering colleagues. The task involves configuring cloud services and establishing network connectivity to eliminate single points of failure and mitigate potential bandwidth constraints. Comprehensive network traffic monitoring and security measures are essential components of this infrastructure.</p>
+<p>This system architecture is fundamental to the efficient processing and secure storage of abnormal equipment information codes for subsequent analysis and utilization.</p>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>The architecture diagram is for reference only</p>
+</blockquote>
+<figure><a href="images/2024-wsc-day1/img05.png" target="_blank" rel="noopener"><img src="images/2024-wsc-day1/img05.png" alt="Architecture diagram: API Gateway, Data-Ingestion-VPC (Lambda), DynamoDB, Data-Processing-VPC (DataProcessingAPP, RDS PostgreSQL), Data-Extraction-VPC (DataExtractionAPP), Parameter Store" loading="lazy"></a><figcaption>Architecture diagram: API Gateway, Data-Ingestion-VPC (Lambda), DynamoDB, Data-Processing-VPC (DataProcessingAPP, RDS PostgreSQL), Data-Extraction-VPC (DataExtractionAPP), Parameter Store</figcaption></figure>
+<h2 id="three-stages">Three Stages</h2>
+<h3 id="stage-one-data-ingestion">Stage One: Data Ingestion</h3>
+<p>Implement a secure RESTful API to receive and store abnormal information codes. The API must incorporate robust security measures to protect against malicious attacks. Ingested data will be persisted in a DynamoDB table. Ensure the Lambda function handling the API is securely integrated within the Data-Ingestion-VPC.</p>
+<h3 id="stage-two-data-preprocessing">Stage Two: Data Preprocessing</h3>
+<p>Establish a data preprocessing service within the Data-Processing-VPC. Utilize the provided binary file (detailed specifications in subsequent documentation) to process abnormal information codes extracted from the DynamoDB table. Processed data will be stored in an RDS database.</p>
+<h3 id="stage-three-data-extraction-and-storage">Stage Three: Data Extraction and Storage</h3>
+<p>Configure a data extraction service within the Data-Extraction-VPC. Employ the provided binary file (detailed specifications in subsequent documentation) to process abnormal information codes from the RDS database. Final processed data will be stored in the Parameter Store.</p>
+<h3 id="tasks">Tasks</h3>
+<ol>
+<li>Access the Cloud Raiser platform and thoroughly review the competition guidelines.</li>
+<li>Integrate the Lambda function with the Data-Ingestion-VPC.</li>
+<li>Establish data preprocessing and extraction services within the Data-Processing-VPC and Data-Extraction-VPC respectively.</li>
+<li>Implement cost-effective strategies to minimize system operational expenses.</li>
+<li>Prioritize API security to prevent data breaches.</li>
+<li>Design the architecture to withstand potential Chaos attacks.</li>
+<li>Earn points based on system performance as outlined in Score Events and Scoreboard.</li>
+</ol>
+<h2 id="technical-details">Technical details</h2>
+<ol>
+<li>The server application is a precompiled binary that must remain unmodified. Using any altered or unofficial binary will result in disqualification.</li>
+<li>The server application is designed for x86 architecture and optimized for Amazon Linux 2 and specific Docker containers. Consider computing services that minimize infrastructure management.</li>
+<li>The system will send abnormal equipment information codes to your API every two minutes. Analyze traffic patterns to optimize performance.</li>
+<li>Successful processing and storage of message codes in the Parameter Store will earn points.</li>
+<li>Points will be awarded for the creation of expected cloud services.</li>
+<li>Strict adherence to VPC naming conventions, avoidance of new VPC creation, and prohibition of Internet Gateway modifications are enforced.</li>
+<li>Manual database or Parameter Store modifications will result in significant point deductions.</li>
+<li>The use of a single Lambda function bound to the Data-Ingestion-VPC is mandatory.</li>
+</ol>
+<h2 id="service-details">Service details</h2>
+<h3 id="iam-roles">IAM ROLES</h3>
+<p>Preconfigured IAM roles and instance profiles are available for your use.</p>
+<ul>
+<li><code>game-ec2-profile</code></li>
+<li><code>game-ec2-role</code></li>
+<li><code>game-cloudwatch-event-role</code></li>
+<li><code>game-lambda-role</code></li>
+<li><code>game-ecs-role</code></li>
+<li><code>game-ecs-execution-role</code></li>
+<li><code>game-scheduler-role</code></li>
+<li><code>game-codedeploy-role</code></li>
+<li><code>game-codepipeline-role</code></li>
+</ul>
+<h3 id="database">DataBase</h3>
+<ol>
+<li>
+<p>A highly available DynamoDB table named 'FeedbackTable' must be deployed to store abnormal information codes. The table schema is as follows:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>KEY NAME</th>
+<th>KEY TYPE</th>
+<th>DATA TYPE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>Partition Key</td>
+<td>String</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>Sort Key</td>
+<td>String</td>
+</tr>
+</tbody>
+</table></div>
+</li>
+<li>
+<p>A relational database, compatible with the PostgreSQL engine, must be deployed to store preprocessed abnormal messages. Given the anticipated data volume, bi-weekly backups are sufficient. Serverless databases are prohibited.</p>
+<p>The table name must be 'DataProcessingAPP'. Use the following SQL statement to create the table:</p>
+<pre><code class="language-sql">CREATE TABLE IF NOT EXISTS DataProcessingAPP (
+            id SERIAL PRIMARY KEY,
+            message VARCHAR(255)
+ );
+</code></pre>
+</li>
+</ol>
+<h3 id="applications">Applications</h3>
+<ul>
+<li><strong>Binary Files and Configuration:</strong> The development team has provided pre-compiled binary files, DataProcessingAPP and DataExtractionAPP, along with a configuration file, config.ini. Deploy DataProcessingAPP in the Data-Processing-VPC and DataExtractionAPP in the Data-Extraction-VPC.</li>
+<li><strong>Game Assets:</strong> Download necessary game assets from the S3 bucket <code>s3://tp53-day1-game-assets-2024</code>. Modify the config.ini file to run the binary files. Avoid modifying or deleting bucket contents. For redundancy, upload essential files to your competition account's S3 bucket, leveraging its versioning and cost-effective storage capabilities.</li>
+<li><strong>CI/CD Implementation:</strong> Implementing a CI/CD pipeline with a review process for the Lambda function in the Data-Ingestion-VPC is strongly recommended to streamline updates while ensuring system integrity and security. For efficient and reliable deployments, using CodeDeploy is also highly advised.</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<p>Reference Document</p>
+<ul>
+<li>https://docs.aws.amazon.com/</li>
+<li>https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html</li>
+<li>https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html</li>
+</ul>
+</article><nav class="pager"><a href="2024-wsc-main.html">← WSC2024 · Main Document<span>Test Project Cloud Computing</span></a><a class="next" href="2024-wsc-day2.html">WSC2024 · Day 2 →<span>Test Project Cloud Computing</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h2"><a href="#task-description">Task Description</a></li><li class="toc-h2"><a href="#background">Background</a></li><li class="toc-h3"><a href="#initial-state">Initial state</a></li><li class="toc-h2"><a href="#three-stages">Three Stages</a></li><li class="toc-h3"><a href="#stage-one-data-ingestion">Stage One: Data Ingestion</a></li><li class="toc-h3"><a href="#stage-two-data-preprocessing">Stage Two: Data Preprocessing</a></li><li class="toc-h3"><a href="#stage-three-data-extraction-and-storage">Stage Three: Data Extraction and Storage</a></li><li class="toc-h3"><a href="#tasks">Tasks</a></li><li class="toc-h2"><a href="#technical-details">Technical details</a></li><li class="toc-h2"><a href="#service-details">Service details</a></li><li class="toc-h3"><a href="#iam-roles">IAM ROLES</a></li><li class="toc-h3"><a href="#database">DataBase</a></li><li class="toc-h3"><a href="#applications">Applications</a></li><li class="toc-h2"><a href="#reference">Reference</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

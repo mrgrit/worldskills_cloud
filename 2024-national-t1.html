@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2024 전국 제1과제 · Solution Architecture</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details open><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html" class="on">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2024 전국 제1과제</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2024</span><span class="badge">제1과제</span><span class="badge time">⏱ 4시간</span><span class="badge kind-problem">문제</span></div>
+<h1>Solution Architecture<small>Transit Gateway·EKS 기반 3-VPC 인프라와 DNS/CDN/Kubernetes 보안</small></h1>
+<p class="summary">다이어그램과 요구사항에 따라 고가용성, 확장성, 비용, 보안을 고려하여 3개 VPC를 Transit Gateway로 연결하고 EKS·RDS·DynamoDB·CloudFront 기반 애플리케이션 인프라를 구축합니다. Route53 위임/분할 응답, CloudFront HTTPS, EKS 정책 제한 등 보안 과제도 포함합니다.</p>
+<div class="tags"><span class="tag">VPC</span><span class="tag">Transit Gateway</span><span class="tag">EC2</span><span class="tag">ELB</span><span class="tag">EKS</span><span class="tag">ECR</span><span class="tag">RDS</span><span class="tag">DynamoDB</span><span class="tag">CloudFront</span><span class="tag">S3</span><span class="tag">Route53</span><span class="tag">VPC Lattice</span><span class="tag">KMS</span></div><div class="actions"><a class="btn" href="2024-national-t1-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p>당신은 Wordskills에서 클라우드 솔루션을 활용하여 어플리케이션이 동작할 수 있는 IT 인프라를 구성하는 업무를 맡고 있습니다. 아래 다이어그램과 주어지 요구사항, 클라우드의 설계원칙인 고가용성, 확장성, 비용, 보안 등을 잘 고려하여 인프라를 구축하여야 합니다.</p>
+<h3 id="다이어그램">다이어그램</h3>
+<figure><a href="images/2024-national-t1/img01.png" target="_blank" rel="noopener"><img src="images/2024-national-t1/img01.png" alt="아키텍처 다이어그램" loading="lazy"></a><figcaption>아키텍처 다이어그램</figcaption></figure>
+<h2 id="사용-기술">사용 기술</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>분류</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS</td>
+<td>VPC, EC2, ELB, EKS, ECR, RDS, Dynamodb, CloudFront, CloudWatch, S3, IAM, KMS</td>
+</tr>
+<tr>
+<td>개발언어/프레임워크</td>
+<td>golang/gin, docker, html</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="선수-유의사항">선수 유의사항</h2>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>※ 다음 유의사항을 고려하여 요구사항을 완성하시오.</p>
+</blockquote>
+<ol>
+<li>문제에 제시된 괄호박스 &lt; &gt; 는 변수를 뜻함으로 선수가 적절히 변경하여 사용해야 합니다.</li>
+<li>문제 풀이와 채점의 효율을 위해 Security Group의 80/443 Outbound는 Anyopen하여 사용할 수 있도록 합니다.</li>
+<li>Bastion EC2는 채점 시 사용되기 때문에 종료되거나 연결 문제, 권한 문제 등으로 발생할 수 있는 불이익을 받지 않도록 주의하시기를 바랍니다.</li>
+<li>모든 리소스는 버지니아 북부(us-east-1) 리전에 구성합니다.</li>
+<li>제공자료는 수정 없이 사용합니다. 제공자료를 수정해서 사용하면 불이익을 받을 수 있습니다.</li>
+<li>문제에서 주어지지 않는 값들은 AWS Well-Architected Framework 6 pillars를 기준으로 적절한 값을 설정해야 합니다.</li>
+<li>불필요한 리소스를 생성한 경우, 감점의 요인이 될 수 있습니다. (e.g. VPC 추가 생성)</li>
+<li>모든 리소스의 이름, 태그, 변수과 변수는 대소문자를 구분합니다.</li>
+<li>1페이지의 다이어그램은 구성을 추상적으로 표현한 그림으로, 세부적인 구성은 아래의 요구사항을 만족시킬 수 있도록 합니다. (ex. 서브넷이 2개 이상 존재할 수 있습니다.)</li>
+</ol>
+<h2 id="3-network-configuration">3. Network Configuration</h2>
+<ul>
+<li>Cloud내에 가상 사설 Network를 구축할 수 있도록 아래의 설명과 Reference01의 표를 참고하여 VPC를 구성하도록 합니다.</li>
+<li>Application이 구동되는 Subnet에서는 Image Download 시 내부 Network만을 거쳐 내려 받을 수 있도록 구성합니다. (ecr.dkr , s3 Endpoint를 사용해야 합니다.)</li>
+<li><code>wsc2024-ma-vpc</code> 내에 발생하는 Network Traffic 데이터를 AWS CloudWatch에 Monitoring 하기 위한 작업을 해줍니다.</li>
+<li>Bastion Server에서는 ECR Image를 Download 할 수 없도록 설정합니다. (단, 5번에서 지정한 IAM 설정은 수정하거나 추가할 수 없습니다.)</li>
+</ul>
+<h2 id="4-transit-between-vpc">4. Transit Between VPC</h2>
+<ul>
+<li>해당 Architecture에서는 3개의 VPC로 Network가 분리되어 있습니다.</li>
+<li>각 VPC안에 구축된 Infra들을 서로 통신이 되어야지 해당 과제의 목적이 완성됩니다.</li>
+<li>각 VPC들을 통신시키기 위하여 Transit Gateway를 사용하도록 합니다.</li>
+<li>Transit Gateway Name은 <code>wsc2024-vpc-tgw</code>으로 지정합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ma-tgw-attachment Name Tag</td>
+<td><code>wsc2024-ma-tgw-attach</code></td>
+</tr>
+<tr>
+<td>prod-tgw-attachment Name Tag</td>
+<td><code>wsc2024-prod-tgw-attach</code></td>
+</tr>
+<tr>
+<td>storage-tgw-attachment Name Tag</td>
+<td><code>wsc2024-storage-tgw-attach</code></td>
+</tr>
+<tr>
+<td>ma-tgw-rt Name Tag</td>
+<td><code>wsc2024-ma-tgw-rt</code></td>
+</tr>
+<tr>
+<td>prod-tgw-rt Name Tag</td>
+<td><code>wsc2024-prod-tgw-rt</code></td>
+</tr>
+<tr>
+<td>storage-tgw-rt Name Tag</td>
+<td><code>wsc2024-storage-tgw-rt</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-bastion-server">5. Bastion Server</h2>
+<ul>
+<li>채점을 위해 AWS EC2를 사용하여 Bastion Server를 생성합니다.</li>
+<li>채점 중 ip가 갑작스럽게 변경되는 상황이 없게끔 재시작시에도 ip는 변경되지 않게 구성하여야 합니다.</li>
+<li>SSH 접근 시 Security을 고려하여 Port Number를 28282로 변경하여야 합니다.</li>
+<li><code>wsc2024-ma-mgmt-sn-a</code> Subnet에서 실행되어야 합니다.</li>
+<li>채점 시 Root user에서 진행하므로 패키지 관련 오류는 없어야 하며, IAM Role은AdministratorAccess Policy만을 사용하여 구성합니다.</li>
+<li>Bastion Server는 채점을 위해서 사용됩니다.</li>
+</ul>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>잘 못 구성하였을 경우 특정 채점 항목에서 불이익을 받을 수 있으니 주의합니다.</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instance Name Tag</td>
+<td><code>wsc2024-bastion-ec2</code></td>
+</tr>
+<tr>
+<td>Machine Image</td>
+<td>Amazon Linux 2023</td>
+</tr>
+<tr>
+<td>Instance Type</td>
+<td><code>t3.small</code></td>
+</tr>
+<tr>
+<td>Security Group Name Tag</td>
+<td><code>wsc2024-bastion-sg</code></td>
+</tr>
+<tr>
+<td>IAM Role Name Tag</td>
+<td><code>wsc2024-bastion-role</code></td>
+</tr>
+<tr>
+<td>Required Package</td>
+<td>awscliv2 , curl , eksctl , kubectl , jq</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="6-application">6. Application</h2>
+<ul>
+<li>Customer, Product , Order 총 3개의 Application이 존재합니다.</li>
+<li>제공된 binary는 golang/gin을 사용하여 개발되었으며, x86 시스템에서 빌드하였습니다.</li>
+<li>Application 실행 시 바인딩되는 Port Number는 TCP/8080입니다.</li>
+<li>또한 3개의 application 전부 <code>/healthcheck</code>를 통하여 Appliation 상태를 확인합니다. (Application 세부 사항은 Reference02 참고)</li>
+</ul>
+<h2 id="7-application-access-control">7. Application Access Control</h2>
+<ul>
+<li>보안과 밀접한 관련이 있는 접근들은 외부로부터 격리를 시켜야 합니다.</li>
+<li>모든 Application에서는 <code>/healthcheck</code>를 통하여 Server의 health를 판단합니다.</li>
+<li>외부에서 무분별하게 Healthcheck를 사용할 경우 Server에 무리가 갈 수 있습니다.</li>
+<li>Customer Application에서는 해당 부분을 보완하기 위하여 외부에서의 <code>/healthcheck</code>의 접근은 차단시키고, VPC Lattice을 사용하여 Bastion Server에서만 확인할 수 있게끔 구축하여야 합니다.</li>
+<li>Service Network Name : <code>wsc2024-lattice-svc-net</code></li>
+</ul>
+<h2 id="8-rdbms">8. RDBMS</h2>
+<ul>
+<li>Customer, product Application 데이터를 안정적이고 효율적으로 저장하기 위해서 RDMBS를 구성합니다.</li>
+<li>AWS에서 관리하는 MySQL 호환 엔진을 사용하고, default for major version 8.0으로 Database를 구축하도록 합니다.</li>
+<li>DB관리에 편의를 위하여 Logging과 Monitoring이 활성화 되어있어야 하며, 해당 DB는 4시간 전으로 RollBack 할 수 있어야 합니다.</li>
+<li>Bastion Server에서 해당 RDBMS에 접근할 수 있어야 합니다. (RDBMS 세부 사항은 Reference03 참고)</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DB Cluster Name</td>
+<td><code>wsc2024-db-cluster</code></td>
+</tr>
+<tr>
+<td>Master username</td>
+<td><code>admin</code></td>
+</tr>
+<tr>
+<td>Master password</td>
+<td><code>Skill53##</code></td>
+</tr>
+<tr>
+<td>DB instance class</td>
+<td><code>db.t3.medium</code></td>
+</tr>
+<tr>
+<td>DB Name</td>
+<td><code>wsc2024_db</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="9-nosql-database">9. NoSQL Database</h2>
+<ul>
+<li>order Application의 Database로 AWS에서 제공하는 완전 관리형 No SQL Database Service인 Dynamodb를 사용합니다. (NoSQL Database 세부 사항은 Reference03 참고)</li>
+</ul>
+<h2 id="10-container-registry">10. Container Registry</h2>
+<ul>
+<li>제공된 application들을 Image화 시킨 후 AWS ECR Repository에 저장하려고 합니다.</li>
+<li>ECR에 Upload 된 Image들은 <code>latest</code>라는 Tag를 가지고 있어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customer image repository Name</td>
+<td><code>customer-repo</code></td>
+</tr>
+<tr>
+<td>Product image repository Name</td>
+<td><code>product-repo</code></td>
+</tr>
+<tr>
+<td>Order image repository Name</td>
+<td><code>order-repo</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="11-container-orchestartion">11. Container Orchestartion</h2>
+<ul>
+<li>제공된 Application을 Container 환경에 배포하기 위해 AWS EKS를 사용합니다.</li>
+<li>EKS Cluster Control Plane에서 발생하는 모든 로그들을 CloudWatch Logs에서 확인할 수 있어야 하며, Secret Resource들은 반드시 KMS Encryption 되어 있어야 합니다.</li>
+<li>관리의 편리를 위하여 모든 NodeGroup은 ManagedNodeGroup으로 생성하며, 고가용성을 고려하여야 하고, Private 환경에서 NodeGroup이 실행되어야 합니다.</li>
+<li>주어진 application들은 <code>wsc2024</code>라는 Namespace를 사용하여 EKS Cluster 내에서의 논리적인 분리시켜야 합니다.</li>
+<li>새로운 Version의 EKS Pod가 배포될 수 있기에 무중단 배포를 고려하여 구성하여야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EKS Cluster Name</td>
+<td><code>wsc2024-eks-cluster</code></td>
+</tr>
+<tr>
+<td>EKS Cluster Version</td>
+<td>1.29</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="db-application-managednodegroup">DB Application ManagedNodegroup</h3>
+<ul>
+<li>Database에 데이터를 저장하는 Application들은 반드시 DB Application NodeGroup에서 운용되어야 합니다.</li>
+<li>이 외의 다른 Resource들이 존재해서는 안 되며, 고가용성을 고려하여야 합니다.</li>
+<li>또한 해당 NodeGroup의 Node는 <code>{app:db}</code> 라는 Label을 가지고 있어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NodeGroup Name</td>
+<td><code>wsc2024-db-application-ng</code></td>
+</tr>
+<tr>
+<td>Node Instance Name Tag</td>
+<td><code>wsc2024-db-application-node</code></td>
+</tr>
+<tr>
+<td>Node Instance Type</td>
+<td><code>t3.medium</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="other-managednodegroup">Other ManagedNodegroup</h3>
+<ul>
+<li>제공된 Application들을 제외한 나머지 모든 Resource들은 반드시 Other Nodegroup에서 구동되어야 합니다.</li>
+<li>Application Resource들이 존재해서는 안 되며, 고가용성을 고려하여야 합니다.</li>
+<li>또한 해당 NodeGroup의 Node는 <code>{app:other}</code> 라는 Label을 가지고 있어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NodeGroup Name</td>
+<td><code>wsc2024-other-ng</code></td>
+</tr>
+<tr>
+<td>Node Instance Name Tag</td>
+<td><code>wsc2024-other-node</code></td>
+</tr>
+<tr>
+<td>Node Instance Type</td>
+<td><code>t3.medium</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="eks-delpoyments">EKS Delpoyments</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>customer Application Deployment Name</td>
+<td><code>customer-deploy</code></td>
+</tr>
+<tr>
+<td>product Application Deployment Name</td>
+<td><code>product-deploy</code></td>
+</tr>
+<tr>
+<td>order Application Deployment Name</td>
+<td><code>order-deploy</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="12-load-balancer">12. Load Balancer</h2>
+<ul>
+<li>외부에서 application으로 접근할 수 있도록 하면서, 부하를 분산할 수 있도록 Load Balancer를 사용하도록 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Load Balancer Name</td>
+<td><code>wsc2024-alb</code></td>
+</tr>
+<tr>
+<td>Load Balancer Scheme</td>
+<td>internet-facing</td>
+</tr>
+<tr>
+<td>Load Balancer Type</td>
+<td>Application Load Balancer</td>
+</tr>
+<tr>
+<td>Load Balancer Listen</td>
+<td>HTTP 80</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="13-static-pge">13. Static Pge</h2>
+<ul>
+<li>배포된 <code>index.html</code>을 S3를 통하여 정적 콘텐츠를 저장하고 제공합니다.</li>
+<li>사용자가 정상적인 접근을 하였다면 <code>index.html</code>을 보여줘야 하고 Bucket 최상위 경로에 저장되어야 합니다.</li>
+<li>Bucket Name은 <code>wsc2024-s3-static-&lt;4자리 영문&gt;</code>으로 지정합니다.</li>
+<li>S3 Bucket에 존재하는 Objects들은 외부에서 직접적으로 접근 하는 것을 막고, CloudFront를 통해서만 접근히 가능하도록 해야 합니다.</li>
+</ul>
+<h2 id="14-cdn">14. CDN</h2>
+<ul>
+<li>사용자들에게 조금 더 빠른 Service를 제공하기 위하여 AWS Cloudfront를 사용합니다.</li>
+<li>ALB와 S3를 CloudFront를 통하여 하나의 Domain으로 묶어줍니다.</li>
+<li>사용자가 도메인으로 접근 시 기본으로 S3에 <code>index.html</code> 파일을 보여줘야 하고, <code>/v1/*</code> 경로로 접근 시 ALB로 Routing 되어야 합니다. (자세한 경로 설명은 Reference02를 참고)</li>
+<li>S3에 관한 작업의 경우 정적 콘텐츠이기에 Caching 되어야 합니다.</li>
+<li>사용자가 HTTP로 접근하여도 HTTPS로 Redirect 되게 설정하도록 합니다.</li>
+<li>채점 시 오독장을 예방하기 위하여 IPv6는 비활성화 합니다.</li>
+<li>한국뿐만 아니라 전 세계의 유저가 빠른 속도로 접근할 수 있어야 하며, 하나의 CloudFront만 구성해야 합니다.</li>
+</ul>
+<h2 id="15-dns-security">15. DNS Security</h2>
+<h3 id="dns-위임작업">DNS 위임작업</h3>
+<ul>
+<li>인증받은 DNS를 사용하기 위하여 상위 계정에 존재하는 DNS의 하위 도메인을 위임 받아 사용 하기로 하였습니다.</li>
+<li>아래 본인에게 해당하는 도메인을 확인하여 Route53 Public Hosted Zone을 생성하고 해당 Hostzone의 NS 레코드 정보를 Github에 Issue로 등록합니다.</li>
+<li>경기 시작 30분 후 Issue에 등록된 순서대로 위임 작업이 진행됩니다.</li>
+<li>캐쉬 설정과 잘못된 NS 정보를 전달하지 않도록 주의합니다.</li>
+<li>위임이 완료되면 테스트를 위하여 <code>my.&lt;hostzone&gt;</code> 레코드를 하나 생성하고 <code>211.0.0.10</code>이 반환 되도록 구성 합니다.</li>
+</ul>
+<p>도메인 형태는 <code>p{비번호}.cloudhrdk{0-2}.com</code> 입니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>비번호</th>
+<th>도메인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101-109</td>
+<td><code>cloudhrdk0.com</code></td>
+</tr>
+<tr>
+<td>110-119</td>
+<td><code>cloudhrdk1.com</code></td>
+</tr>
+<tr>
+<td>120-129</td>
+<td><code>cloudhrdk2.com</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>선수의 hostzone 이름 예)</p>
+<pre><code class="language-text">101선수 → p101.cloudhrdk0.com
+112선수 → p112.cloudhrdk1.com
+123선수 → p123.cloudhrdk2.com
+</code></pre>
+<p>테스트용 쿼리 레코드 예)</p>
+<pre><code class="language-bash">$ nslookup my.p101.cloudhrdk0.com
+...
+
+211.0.0.10
+</code></pre>
+<h3 id="dns를-이용한-라우팅">DNS를 이용한 라우팅</h3>
+<ul>
+<li>VPC 내부의 서버는 특정 DNS 주소에 대해서 외부 네트워크를 거치지 않고 내부로 안전하게 라우팅을 하고자 합니다.</li>
+<li>이를 구현하기 위해 Route53 기능을 활용 하고자합니다.</li>
+<li>과제에 명시된 VPC 내부에서 <code>q1.&lt;hostzone&gt;</code> 주소 쿼리 시 <code>172.16.0.10</code> 가 반환 되어야 합니다.</li>
+<li>하지만 외부에 있는 컴퓨터에서 동일한 레코드 쿼리 시 <code>54.0.0.10</code>을 반환 하도록 합니다.</li>
+<li>Route53 기능 외에 host파일 변조, Private Hostzone 생성을 통한 변경, EC2의 네임서버 변경 등 편법을 이용해 해결 하는 경우 정답으로 인정되지 않습니다.</li>
+<li>반드시 본인이 가지고 있는 cloudhrdk Hostzone에 있는 q1 레코드에 할당된 IP 주소가 반환 되어야 합니다.</li>
+</ul>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>Private Hosted Zone은 하나라도 생성 시 DNS 관련 항목은 모두 득점 처리 되지 않습니다.</p>
+</blockquote>
+<p>VPC 내부 DNS 쿼리 예)</p>
+<pre><code class="language-bash">$ nslookup q1.p101.cloudhrdk0.com
+...
+
+Address: 172.16.0.10
+</code></pre>
+<p>외부 DNS 쿼리 예)</p>
+<pre><code class="language-bash">$ nslookup q1.p101.cloudhrdk0.com
+...
+
+Address: 54.0.0.10
+</code></pre>
+<h2 id="16-cdn-security">16. CDN Security</h2>
+<h3 id="cdn-및-dns-구성">CDN 및 DNS 구성</h3>
+<ul>
+<li>CloudFront Distribution을 하나를 추가로 생성하고 외부에서 <code>cf.&lt;hostzone&gt;</code> 질의 시 연결된 CloudFront의 주소가 나오도록 CNAME 레코드를 생성합니다.</li>
+<li>그리고 웹호스팅을 위해 레코드의 <code>index.html</code> 접근 시 &quot;Cloud Skills &lt;비번호&gt;&quot; 문구가 출력 되도록 합니다.</li>
+<li>CloudFront에 연결되는 Origin은 본인 AWS 계정에 있는 리소스라면 무엇이든 상관 없습니다.</li>
+<li>최종적으로 curl 등을 통해 접근 시 아래의 예제와 같이 출력 되어야 합니다.</li>
+</ul>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>출력되는 비번호가 다르면 득점으로 인정되지 않습니다.</p>
+</blockquote>
+<p>DNS 쿼리 예)</p>
+<pre><code class="language-bash">$ nslookup cf.p129.cloudhrdk2.com
+...
+
+Name:   xxx096kci2yyy.cloudfront.net
+Address: 54.19.15.141
+</code></pre>
+<p>웹 접근 예)</p>
+<pre><code class="language-bash">$ curl https://cf.p129.cloudhrdk2.com/index.html
+
+
+
+Cloud Skills 129
+</code></pre>
+<h3 id="cdn-암호화-연결">CDN 암호화 연결</h3>
+<ul>
+<li>CDN 연결 시 보안을 위해 HTTPS 프로토콜을 사용합니다.</li>
+<li>ACM을 통해 아마존 인증서를 발급하고 생성한 CloudFront Distribution에 연결하도록 합니다.</li>
+<li>외부에서 HTTPS 프로토콜로 <code>cf.&lt;hostzone&gt;</code>에 접근하면 아마존 인증서를 통해 암호화 된 연결을 사용할 수 있어야 합니다.</li>
+</ul>
+<h2 id="17-kubernetes-security">17. Kubernetes Security</h2>
+<h3 id="운영-환경-클러스터-구축">운영 환경 클러스터 구축</h3>
+<ul>
+<li>운영 환경을 위한 EKS 클러스터를 생성합니다.</li>
+<li><code>prod-&lt;비번호&gt;</code> 이름의 가지는 1.30 버전의 클러스터를 생성하고, Managed Node Group을 활용해 <code>t3.medium</code> 타입 Worker Node 2대가 클러스터에 연결되도록 구성 합니다.</li>
+<li>노드 구성이 완료되면 &quot;prod&quot; 네임스페이스와 &quot;beta&quot; 네임스페이스를 생성합니다.</li>
+<li>EKS 버전과 이름, 노드타입, 네임스페이스 외의 값은 임의로 설정합니다.</li>
+<li>최종적으로 Pod가 정상적으로 구동될 수 있도록 해야합니다.</li>
+</ul>
+<h3 id="이미지-다운로드-제한">이미지 다운로드 제한</h3>
+<ul>
+<li>&quot;prod&quot; 네임스페이스에서는 Pod의 이미지 태그에 &quot;latest&quot;가 붙어 있으면 생성이 불가능 하도록 합니다.</li>
+<li>하지만 &quot;beta&quot; 네임스페이스에서는 &quot;latest&quot; 태그가 붙어 있어도 Pod 생성이 가능해야 합니다.</li>
+<li>채점시 kubectl을 사용하여 Pod 생성 테스트를 진행합니다.</li>
+</ul>
+<h3 id="label-제한">Label 제한</h3>
+<ul>
+<li>&quot;prod&quot; 네임스페이스에서는 &quot;cloudhrdk.com/env: prod&quot; 라는 label이 없으면 Pod 생성이 불가능 해야합니다.</li>
+<li>&quot;beta&quot; 네임스페이스 또한 cloudhrdk.com/env: beta 라는 label이 없으면 Pod 생성이 불가능 해야합니다.</li>
+<li>채점시 kubectl을 사용하여 Pod 생성 테스트를 진행합니다.</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<h3 id="reference01">Reference01</h3>
+<h4 id="vpc">VPC</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cidr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wsc2024-ma-vpc</code></td>
+<td><code>10.0.0.0/16</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-prod-vpc</code></td>
+<td><code>172.16.0.0/16</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-storage-vpc</code></td>
+<td><code>192.168.0.0/16</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="subnet">Subnet</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cidr</th>
+<th>VPC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wsc2024-ma-mgmt-sn-a</code></td>
+<td><code>10.0.0.0/24</code></td>
+<td><code>wsc2024-ma-vpc</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-ma-mgmt-sn-b</code></td>
+<td><code>10.0.1.0/24</code></td>
+<td><code>wsc2024-ma-vpc</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-prod-load-sn-a</code></td>
+<td><code>172.16.0.0/24</code></td>
+<td><code>wsc2024-prod-vpc</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-prod-load-sn-b</code></td>
+<td><code>172.16.1.0/24</code></td>
+<td><code>wsc2024-prod-vpc</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-prod-app-sn-a</code></td>
+<td><code>172.16.2.0/24</code></td>
+<td><code>wsc2024-prod-vpc</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-prod-app-sn-b</code></td>
+<td><code>172.16.3.0/24</code></td>
+<td><code>wsc2024-prod-vpc</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-storage-db-sn-a</code></td>
+<td><code>192.168.0.0/24</code></td>
+<td><code>wsc2024-storage-vpc</code></td>
+</tr>
+<tr>
+<td><code>wsc2024-storage-db-sn-b</code></td>
+<td><code>192.168.1.0/24</code></td>
+<td><code>wsc2024-storage-vpc</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="routing-table">Routing Table</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Subnet</th>
+<th>Gateway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wsc2024-ma-mgmt-rt</code></td>
+<td><code>wsc2024-ma-mgmt-sn-a</code><br><code>wsc2024-ma-mgmt-sn-b</code></td>
+<td>Internet Gateway<br>(<code>wsc2024-ma-igw</code>)</td>
+</tr>
+<tr>
+<td><code>wsc2024-prod-load-rt</code></td>
+<td><code>wsc2024-prod-load-sn-a</code><br><code>wsc2024-prod-load-sn-b</code></td>
+<td>Internet Gateway<br>(<code>wsc2024-prod-igw</code>)</td>
+</tr>
+<tr>
+<td><code>wsc2024-prod-app-rt-a</code></td>
+<td><code>wsc2024-prod-app-sn-a</code></td>
+<td>Nat Gateway<br>(<code>wsc2024-prod-natgw-a</code>)</td>
+</tr>
+<tr>
+<td><code>wsc2024-prod-app-rt-b</code></td>
+<td><code>wsc2024-prod-app-sn-b</code></td>
+<td>Nat Gateway<br>(<code>wsc2024-prod-natgw-b</code>)</td>
+</tr>
+<tr>
+<td><code>wsc2024-storage-db-rt-a</code></td>
+<td><code>wsc2024-storage-db-sn-a</code></td>
+<td>X</td>
+</tr>
+<tr>
+<td><code>wsc2024-storage-db-rt-b</code></td>
+<td><code>wsc2024-storage-db-sn-b</code></td>
+<td>X</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="reference02">Reference02</h3>
+<h4 id="customer">Customer</h4>
+<p><strong>API Spec</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Method</th>
+<th>Request Format</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/v1/customer</code></td>
+<td>GET</td>
+<td>Query String</td>
+<td><code>?id=xxxxxxx</code></td>
+</tr>
+<tr>
+<td><code>/v1/customer</code></td>
+<td>POST</td>
+<td>Request Body</td>
+<td><code>'{&quot;id&quot;:&quot;xxxxxx&quot;,&quot;name&quot;:&quot;xxxxxxx&quot;,&quot;gender&quot;:&quot;xxxxxx&quot;}'</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>OS Environment</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Environment Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MYSQL_USER</code></td>
+<td>RDBMS연결에 사용할 사용자명</td>
+</tr>
+<tr>
+<td><code>MYSQL_PASSWORD</code></td>
+<td>RDBMS연결에 사용할 사용자 암호</td>
+</tr>
+<tr>
+<td><code>MYSQL_HOST</code></td>
+<td>RDBMS연결에 사용할 호스트 이름</td>
+</tr>
+<tr>
+<td><code>MYSQL_PORT</code></td>
+<td>RDBMS연결에 사용할 포트번호</td>
+</tr>
+<tr>
+<td><code>MYSQL_DBNAME</code></td>
+<td>RDBMS연결에 사용할 데이터베이스 이름</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="product">product</h4>
+<p><strong>API Spec</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Method</th>
+<th>Request Format</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/v1/product</code></td>
+<td>GET</td>
+<td>Query String</td>
+<td><code>?id=xxxxxxx</code></td>
+</tr>
+<tr>
+<td><code>/v1/product</code></td>
+<td>POST</td>
+<td>Request Body</td>
+<td><code>'{&quot;id&quot;:&quot;xxxxxx&quot;,&quot;name&quot;:&quot;xxxxxxx&quot;,&quot;category&quot;:&quot;xxxxxx&quot;}'</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>OS Environment</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Environment Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MYSQL_USER</code></td>
+<td>RDBMS연결에 사용할 사용자명</td>
+</tr>
+<tr>
+<td><code>MYSQL_PASSWORD</code></td>
+<td>RDBMS연결에 사용할 사용자 암호</td>
+</tr>
+<tr>
+<td><code>MYSQL_HOST</code></td>
+<td>RDBMS연결에 사용할 호스트 이름</td>
+</tr>
+<tr>
+<td><code>MYSQL_PORT</code></td>
+<td>RDBMS연결에 사용할 포트번호</td>
+</tr>
+<tr>
+<td><code>MYSQL_DBNAME</code></td>
+<td>RDBMS연결에 사용할 데이터베이스 이름</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="order">order</h4>
+<p><strong>API Spec</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Method</th>
+<th>Request Format</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/v1/order</code></td>
+<td>GET</td>
+<td>Query String</td>
+<td><code>?id=xxxxxxx</code></td>
+</tr>
+<tr>
+<td><code>/v1/order</code></td>
+<td>POST</td>
+<td>Request Body</td>
+<td><code>'{&quot;id&quot;:&quot;xxxxxx&quot;,&quot;customerid&quot;:&quot;xxxxxxx&quot;,&quot;productid&quot;:&quot;xxxxxx&quot;}'</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>OS Environment</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Environment Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AWS_REGION</code></td>
+<td>DynamoDB 연결에 사용할 리전 코드 (e.g. ap-northeast-2)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="reference03">Reference03</h3>
+<h4 id="rdbms-table-name-customer">RDBMS Table Name : customer</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Column Name</th>
+<th>Data Type</th>
+<th>ETC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>VARCHAR(255)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>VARCHAR(255)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td>VARCHAR(255)</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="rdbms-table-name-product">RDBMS Table Name : product</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Column Name</th>
+<th>Data Type</th>
+<th>ETC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>VARCHAR(255)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>VARCHAR(255)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>VARCHAR(255)</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="dynamodb-table-name-order">DynamoDB Table Name : order</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Key Name</th>
+<th>Data Type</th>
+<th>ETC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>String</td>
+<td>PK</td>
+</tr>
+<tr>
+<td><code>customerid</code></td>
+<td>String</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>productid</code></td>
+<td>String</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+</article><nav class="pager"><a href="2024-regional-t2.html">← 2024 지방 제2과제<span>Automation</span></a><a class="next" href="2024-national-t2-busan2.html">2024 전국 제2과제 · 부산 2번 →<span>Small Challenge</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h3"><a href="#다이어그램">다이어그램</a></li><li class="toc-h2"><a href="#사용-기술">사용 기술</a></li><li class="toc-h2"><a href="#선수-유의사항">선수 유의사항</a></li><li class="toc-h2"><a href="#3-network-configuration">3. Network Configuration</a></li><li class="toc-h2"><a href="#4-transit-between-vpc">4. Transit Between VPC</a></li><li class="toc-h2"><a href="#5-bastion-server">5. Bastion Server</a></li><li class="toc-h2"><a href="#6-application">6. Application</a></li><li class="toc-h2"><a href="#7-application-access-control">7. Application Access Control</a></li><li class="toc-h2"><a href="#8-rdbms">8. RDBMS</a></li><li class="toc-h2"><a href="#9-nosql-database">9. NoSQL Database</a></li><li class="toc-h2"><a href="#10-container-registry">10. Container Registry</a></li><li class="toc-h2"><a href="#11-container-orchestartion">11. Container Orchestartion</a></li><li class="toc-h3"><a href="#db-application-managednodegroup">DB Application ManagedNodegroup</a></li><li class="toc-h3"><a href="#other-managednodegroup">Other ManagedNodegroup</a></li><li class="toc-h3"><a href="#eks-delpoyments">EKS Delpoyments</a></li><li class="toc-h2"><a href="#12-load-balancer">12. Load Balancer</a></li><li class="toc-h2"><a href="#13-static-pge">13. Static Pge</a></li><li class="toc-h2"><a href="#14-cdn">14. CDN</a></li><li class="toc-h2"><a href="#15-dns-security">15. DNS Security</a></li><li class="toc-h3"><a href="#dns-위임작업">DNS 위임작업</a></li><li class="toc-h3"><a href="#dns를-이용한-라우팅">DNS를 이용한 라우팅</a></li><li class="toc-h2"><a href="#16-cdn-security">16. CDN Security</a></li><li class="toc-h3"><a href="#cdn-및-dns-구성">CDN 및 DNS 구성</a></li><li class="toc-h3"><a href="#cdn-암호화-연결">CDN 암호화 연결</a></li><li class="toc-h2"><a href="#17-kubernetes-security">17. Kubernetes Security</a></li><li class="toc-h3"><a href="#운영-환경-클러스터-구축">운영 환경 클러스터 구축</a></li><li class="toc-h3"><a href="#이미지-다운로드-제한">이미지 다운로드 제한</a></li><li class="toc-h3"><a href="#label-제한">Label 제한</a></li><li class="toc-h2"><a href="#reference">Reference</a></li><li class="toc-h3"><a href="#reference01">Reference01</a></li><li class="toc-h3"><a href="#reference02">Reference02</a></li><li class="toc-h3"><a href="#reference03">Reference03</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

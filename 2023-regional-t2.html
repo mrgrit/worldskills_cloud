@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2023 지방 제2과제 · Automation</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details open><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html" class="on">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2023 지방 제2과제</div>
+<div class="badges"><span class="badge lv-regional">지방</span><span class="badge">2023</span><span class="badge">제2과제</span><span class="badge time">⏱ 4시간</span><span class="badge kind-problem">문제</span></div>
+<h1>Automation<small>Kinesis·Glue 기반 ETL 파이프라인</small></h1>
+<p class="summary">API Gateway로 로그를 받아 Kinesis를 통해 S3에 저장하고, Glue로 로그를 변환하는 ETL 파이프라인을 AWS 서비스로 구성합니다.</p>
+<div class="tags"><span class="tag">API Gateway</span><span class="tag">Kinesis Data Streams</span><span class="tag">Kinesis Data Firehose</span><span class="tag">S3</span><span class="tag">Glue</span></div><div class="actions"><a class="btn" href="2023-regional-t2-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p>개발 효율을 위하여 ETL 파이프라인을 구성하고자 합니다. AWS 환경에서 개발하고 있기 때문에 모두 AWS solution을 활용하여 파이프라인을 구성할 예정입니다. API Gateway를 통해 로그를 받고 Kinesis를 통해 S3에 저장합니다. Glue를 이용하여 로그를 변환할 수 있어야 합니다.</p>
+<h3 id="다이어그램">다이어그램</h3>
+<figure><a href="images/2023-regional-t2/img01.jpeg" target="_blank" rel="noopener"><img src="images/2023-regional-t2/img01.jpeg" alt="아키텍처 다이어그램 (EC2 → API Gateway → Kinesis Data Streams → Kinesis Data Firehose → S3 ↔ AWS Glue)" loading="lazy"></a><figcaption>아키텍처 다이어그램 (EC2 → API Gateway → Kinesis Data Streams → Kinesis Data Firehose → S3 ↔ AWS Glue)</figcaption></figure>
+<h2 id="사용-기술">사용 기술</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>분류</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS</td>
+<td>VPC, EC2, Kinesis Data Streams, Kinesis Data Firehose, S3, Glue</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="선수-유의사항">선수 유의사항</h2>
+<ol>
+<li>선수의 계정에는 비용제한이 존재하며, 이보다 더 높게 과금될 시 계정 사용이 불가능할 수 있습니다.</li>
+<li>문제에 제시된 괄호박스 &lt;&gt;는 변수를 뜻함으로 선수가 적절히 변경하여 사용해야 합니다.</li>
+<li>문제의 효율을 위해 Security Group의 80/443 outbound는 anyopen하여 사용할 수 있도록 합니다.</li>
+<li>Bastion EC2는 채점시 사용되기 때문에 종료되어 불이익을 받지 않도록 주의해 주시기 바랍니다.</li>
+<li>모든 리소스는 서울(ap-northeast-2) 리전에 구성합니다.</li>
+</ol>
+<h2 id="3-bastion-서버">3. Bastion 서버</h2>
+<ul>
+<li>EC2를 활용해 Bastion 서버를 구성합니다.</li>
+<li>해당 서버는 public 존에 위치하고 stop 후 재시작 하더라도 public ip가 변경돼서는 안 됩니다.</li>
+<li>외부에서 Bastion 서버에 SSH로 접속할 수 있도록 구성합니다.</li>
+<li>채점 시에도 사용함으로 인스턴스가 종료되어 불이익을 받지 않도록 합니다.</li>
+<li>Bastion 서버 내 어떤 사용자에서 awscli 명령어를 호출하여도 PowerUserAccess policy 권한을 갖도록 설정해야 합니다.</li>
+<li>아래 요구사항에 따라 Bastion 서버를 구성합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EC2 type</td>
+<td><code>t3.small</code></td>
+</tr>
+<tr>
+<td>이미지</td>
+<td>Amazon Linux2</td>
+</tr>
+<tr>
+<td>VPC</td>
+<td>기본 VPC</td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td>Public Subnet</td>
+</tr>
+<tr>
+<td>권한</td>
+<td>AWS PowerUser policy</td>
+</tr>
+<tr>
+<td>설치 패키지</td>
+<td>awscli, curl, jq</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>Name=wsi-bastion-ec2</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-s3">4. S3</h2>
+<ul>
+<li>아래 요구사항에 따라 S3 버킷을 생성합니다.</li>
+<li>지급받은 <code>titles.json</code> 파일을 버킷 생성 후 <code>&lt;S3버킷&gt;/data/ref/titles.json</code>에 업로드합니다.</li>
+<li>지급받은 <code>samplelog.json</code> 파일을 <code>&lt;S3버킷&gt;/data/raw/2022/01/01/samplelog.json</code>에 업로드합니다.</li>
+<li>아래 모든 서비스에서 해당 버킷만을 사용하도록 합니다.</li>
+<li>버킷 이름 : <code>wsi-&lt;비번호&gt;-&lt;4자리 임의 영문&gt;-etl</code></li>
+</ul>
+<h2 id="5-api-gateway">5. API Gateway</h2>
+<ul>
+<li>&quot;Content-Type: application/json&quot; 헤더, JSON 형식의 데이터(Body)가 포함된 POST 요청을 받은 경우 Body의 단일 데이터 레코드를 Kinesis Data Streams에 씁니다.</li>
+<li>데이터가 온전히 전달되도록 합니다.</li>
+<li>아래 요구사항에 따라 API Gateway를 구성하고 배포합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API 이름(유형)</td>
+<td><code>wsi-api</code>(REST API)</td>
+</tr>
+<tr>
+<td>리소스</td>
+<td><code>/api</code></td>
+</tr>
+<tr>
+<td>배포 스테이지 이름</td>
+<td><code>prod</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>예) 아래와 같이 JSON 포맷의 데이터가 포함된 바디를 요청하면 Kinesis Data Streams에 전달되어야 합니다.</p>
+<pre><code class="language-json">{&quot;uuid&quot;:&quot;1234&quot;, &quot;device_ts&quot;:&quot;2022-01-01 09:10:25&quot;}
+</code></pre>
+<h2 id="6-kinesis-data-streams">6. Kinesis Data Streams</h2>
+<ul>
+<li>API Gateway로 부터 받은 데이터를 수집하여 Kinesis Data Firehose에 정보를 전송합니다.</li>
+<li>아래 요구사항에 따라 Data Stream을 구성합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Stream 이름</td>
+<td><code>wsi-data-stream</code></td>
+</tr>
+<tr>
+<td>용량 모드</td>
+<td>프로비저닝</td>
+</tr>
+<tr>
+<td>프로비저닝 된 샤드</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="7-kinesis-data-firehose">7. Kinesis Data Firehose</h2>
+<ul>
+<li>Kinesis Data Stream을 데이터 원본으로 사용하여 4번에서 생성한 S3에 저장합니다.</li>
+<li>동적 파티셔닝은 비활성화하며 압축 또는 암호화를 사용하지 않습니다.</li>
+<li>아래 요구사항에 따라 Delivery Stream을 구성합니다.
+<ul>
+<li>Delivery Stream 이름 : <code>wsi-delivery-stream</code></li>
+<li>저장 위치 : <code>&lt;4번에서 생성한 S3 버킷&gt;/data/raw/&lt;YYYY&gt;/&lt;MM&gt;/&lt;dd&gt;/&lt;HH&gt;/</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="8-glue-크롤러">8. Glue 크롤러</h2>
+<ul>
+<li><code>&lt;4번에서 생성한 S3 버킷&gt;/data</code> 폴더 하위의 모든 폴더 및 파일을 크롤링하는 크롤러를 하나 생성합니다.</li>
+<li>한 번 이상 크롤러를 실행하여 데이터 카탈로그 테이블이 구성되도록 합니다.</li>
+<li>아래 요구사항에 따라 크롤러 및 데이터 카탈로그를 구성합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>크롤러 이름</td>
+<td><code>wsi-glue-crawler</code></td>
+</tr>
+<tr>
+<td>데이터베이스 이름</td>
+<td><code>wsi-glue-database</code></td>
+</tr>
+<tr>
+<td>테이블 이름</td>
+<td>data 폴더 하위 폴더 이름(<code>ref</code>, <code>raw</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="8-glue-studio-작업">8. Glue Studio 작업</h2>
+<ul>
+<li>크롤러로 생성한 데이터 카탈로그 테이블을 소스로 사용하여 아래와 같이 데이터가 변환되도록 구성합니다.</li>
+<li><code>samplelog.json</code>파일과 <code>titles.json</code> 파일을 참고합니다.</li>
+<li>변환된 데이터는 <code>&lt;4번에서 생성한 S3 버킷&gt;/result/</code> 폴더에 JSON 포맷으로 저장되고 아래에 명시된 데이터 카탈로그 테이블에 업데이트되어야 합니다.</li>
+<li>작업 이름은 <code>wsi-glue-job</code>으로 설정합니다.</li>
+</ul>
+<p>변환된 데이터 :</p>
+<pre><code class="language-json">{&quot;title_id&quot;:66,&quot;title&quot;:&quot;Start-Up&quot;,&quot;uuid&quot;:&quot;00003c25-40bc-43c5-a8a7-b64e40f25b32&quot;,&quot;device_ts&quot;:&quot;2022-06-11 09:10:25.013&quot;,&quot;device_id&quot;:4,&quot;device_type&quot;:&quot;IPhone&quot;}
+</code></pre>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>데이터베이스 이름</td>
+<td><code>wsi-glue-database</code></td>
+</tr>
+<tr>
+<td>테이블 이름</td>
+<td><code>result</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="9-glue-studio-워크플로">9. Glue Studio 워크플로</h2>
+<ul>
+<li>크롤링 후 작업을 실행시키는 워크플로를 구성합니다.</li>
+<li>워크플로 실행 시 <code>wsi-glue-crawler</code>를 실행시키고 크롤링이 성공하면 <code>wsi-glue-job</code>이 실행되어야 합니다.</li>
+<li>워크플로 이름 : <code>wsi-glue-workflow</code></li>
+</ul>
+</article><nav class="pager"><a href="2023-regional-t1.html">← 2023 지방 제1과제<span>Web Service Provisioning</span></a><a class="next" href="2023-national-t1.html">2023 전국 제1과제 →<span>Web Service Provisioning</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h3"><a href="#다이어그램">다이어그램</a></li><li class="toc-h2"><a href="#사용-기술">사용 기술</a></li><li class="toc-h2"><a href="#선수-유의사항">선수 유의사항</a></li><li class="toc-h2"><a href="#3-bastion-서버">3. Bastion 서버</a></li><li class="toc-h2"><a href="#4-s3">4. S3</a></li><li class="toc-h2"><a href="#5-api-gateway">5. API Gateway</a></li><li class="toc-h2"><a href="#6-kinesis-data-streams">6. Kinesis Data Streams</a></li><li class="toc-h2"><a href="#7-kinesis-data-firehose">7. Kinesis Data Firehose</a></li><li class="toc-h2"><a href="#8-glue-크롤러">8. Glue 크롤러</a></li><li class="toc-h2"><a href="#8-glue-studio-작업">8. Glue Studio 작업</a></li><li class="toc-h2"><a href="#9-glue-studio-워크플로">9. Glue Studio 워크플로</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

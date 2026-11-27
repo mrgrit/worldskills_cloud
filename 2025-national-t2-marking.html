@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025 전국 제2과제 · 채점기준</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details open><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html" class="on">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2025 전국 제2과제</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2025</span><span class="badge">제2과제</span><span class="badge kind-marking">채점기준</span></div>
+<h1>채점기준<small>Small Challenge</small></h1>
+<p class="summary">클라우드컴퓨팅 제2과제 채점기준. 5개 주요항목(CI/CD, Storage data protect, WAF, Secure networking, Serverless Inventory) 각 6점, 세부항목 37개, 합계 30점이며 모두 독립 채점·경기 종료후 채점입니다.</p>
+<div class="tags"></div><div class="actions"><a class="btn" href="2025-national-t2.html">📄 문제 보기</a></div></div>
+<article class="doc"><h2 id="채점-유의사항">채점 유의사항</h2>
+<p>※ 다음 사항을 유의하여 채점하시오.</p>
+<ol>
+<li>채점하는 서버가 선수의 서버가 맞는지 확인합니다.</li>
+<li>채점시 명령어 입력은 아래 사진과 같이 CloudShell을 이용할 수 있습니다.</li>
+</ol>
+<figure><a href="images/2025-national-t2-marking/img01.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img01.png" alt="CloudShell 실행 화면" loading="lazy"></a><figcaption>CloudShell 실행 화면</figcaption></figure>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>※ 채점기준 양식은 반드시, 양식에 맞추어 작성해야 합니다.(채점사이트 입력에 필요)</p>
+</blockquote>
+<h2 id="배점-요약">배점 요약</h2>
+<h3 id="주요항목별-배점">주요항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>주요항목</th>
+<th>배점</th>
+<th>채점방법</th>
+<th>채점시기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>CI/CD</td>
+<td>6</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Storage data protect</td>
+<td>6</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>3</td>
+<td>WAF</td>
+<td>6</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Secure networking</td>
+<td>6</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Serverless Inventory</td>
+<td>6</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>합계</strong></td>
+<td><strong>30</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="세부항목별-배점">세부항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>항목</th>
+<th>배점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-1</td>
+<td>CI/CD · ECR Configure</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-2</td>
+<td>CI/CD · ECR Image Tag</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-3</td>
+<td>CI/CD · EKS Cluster Configure</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-4</td>
+<td>CI/CD · EKS Node Configure</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-5</td>
+<td>CI/CD · Pod Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-6</td>
+<td>CI/CD · ELB Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-7</td>
+<td>CI/CD · ELB Endpoint Check</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-8</td>
+<td>CI/CD · Github Repository Configure</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-9</td>
+<td>CI/CD · Github Action Cofigure</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-10</td>
+<td>CI/CD · ArgoCD Deploy Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>1-11</td>
+<td>CI/CD · ArgoCD SSOT</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-1</td>
+<td>Storage data protect · S3 Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-2</td>
+<td>Storage data protect · Macie Job Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-3</td>
+<td>Storage data protect · Lambda Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-4</td>
+<td>Storage data protect · Lambda Trigger</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>2-5</td>
+<td>Storage data protect · File masking check</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>2-6</td>
+<td>Storage data protect · Macie Sensor Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>2-7</td>
+<td>Storage data protect · Masking Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>3-1</td>
+<td>WAF · App Server Configure</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>3-2</td>
+<td>WAF · ELB Configure</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>3-3</td>
+<td>WAF · WAF Configure</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>WAF · login API Attach</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-5</td>
+<td>WAF · lookup API Attach</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-1</td>
+<td>Secure networking · VPC Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>4-2</td>
+<td>Secure networking · Subnet Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>4-3</td>
+<td>Secure networking · Bastion Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>4-4</td>
+<td>Secure networking · Network Firewall Configure</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>Secure networking · Network Firewall Stateless rule</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-6</td>
+<td>Secure networking · Network Firewall Stateful rule</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-7</td>
+<td>Secure networking · Bastion Ping Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-8</td>
+<td>Secure networking · Bastion DNS Query Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>5-1</td>
+<td>Serverless Inventory · Resource Create</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>5-2</td>
+<td>Serverless Inventory · No Computing Service</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5-3</td>
+<td>Serverless Inventory · Step Functions 1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5-4</td>
+<td>Serverless Inventory · Step Functions 2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5-5</td>
+<td>Serverless Inventory · API Gateway GET</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>Serverless Inventory · API Gateway GET Deny</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>합계</strong></td>
+<td><strong>30</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="채점-항목">채점 항목</h2>
+<h3 id="1-0-사전준비-cicd">1-0. 사전준비 (CI/CD)</h3>
+<ol>
+<li>웹브라우저로 선수의 AWS 계정에 로그인 후 ap-southeast-1 Region으로 접속합니다.</li>
+</ol>
+<h3 id="1-1-ecr-configure-05점">1-1. ECR Configure · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력 합니다.</p>
+<pre><code class="language-bash">$ aws ecr describe-repositories --repository-names app-repo --query 'repositories[0].repositoryName' --output text
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>출력되는 결과가 &quot;app-repo&quot; 인지 확인 합니다.</li>
+</ol>
+<h3 id="1-2-ecr-image-tag-05점">1-2. ECR Image Tag · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력 합니다.</p>
+<pre><code class="language-bash">$ aws ecr list-images --repository-name app-repo --query 'imageIds[?imageTag!=`null`].imageTag' --output text
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>출력되는 결과가 &quot;vX.X.X&quot; 인지 확인 합니다. (ex. v1.0.0)</li>
+</ol>
+<h3 id="1-3-eks-cluster-configure-05점">1-3. EKS Cluster Configure · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력 합니다.</p>
+<pre><code class="language-bash">$ aws eks describe-cluster --name wsc2025-cluster --query 'cluster.[name, version]' --output text
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>출력되는 결과가 &quot;wsc2025-cluster 1.32&quot; 인지 확인 합니다.</li>
+</ol>
+<h3 id="1-4-eks-node-configure-05점">1-4. EKS Node Configure · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력 합니다.</p>
+<pre><code class="language-bash">$ aws eks describe-nodegroup --cluster-name wsc2025-cluster --nodegroup-name wsc2025-app-ng \
+  --query 'nodegroup.[nodegroupName, instanceTypes]' --output text
+$ aws ec2 describe-instances \
+  --filters &quot;Name=tag:eks:cluster-name,Values=wsc2025-cluster&quot; \
+  --query 'Reservations[*].Instances[*].[InstanceId,InstanceType,Tags[?Key==`eks:wsc2025-app-ng`].Value | [0]]' \
+  --output text
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>출력되는 결과가 &quot;wsc2025-app-ng&quot;, &quot;t3.medium&quot;인지 확인합니다.</li>
+</ol>
+<h3 id="1-5-pod-create-05점">1-5. Pod Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력 합니다.</p>
+<pre><code class="language-bash">$ kubectl get deploy -n wsc2025
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>출력되는 결과가 출력되고, READY 상태인지 확인합니다.</li>
+</ol>
+<h3 id="1-6-elb-create-05점">1-6. ELB Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력 합니다.</p>
+<pre><code class="language-bash">$ aws elbv2 describe-load-balancers \
+  --query &quot;LoadBalancers[?LoadBalancerName=='wsc2025-cicd-alb'].LoadBalancerName&quot; \
+  --output text
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>출력되는 결과가 &quot;wsc2025-cicd-alb&quot;인지 확인합니다.</li>
+</ol>
+<h3 id="1-7-elb-endpoint-check-05점">1-7. ELB Endpoint Check · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력 합니다.</p>
+<pre><code class="language-bash">$ ENDPOINT=$(aws elbv2 describe-load-balancers \
+  --query &quot;LoadBalancers[?LoadBalancerName=='wsc2025-cicd-alb'].DNSName&quot; \
+  --output text)
+$ curl http://$ENDPOINT/
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>출력되는 결과에 “Version: v1”이 포함되어 있는지 확인합니다.</li>
+</ol>
+<h3 id="1-8-github-repository-configure-05점">1-8. Github Repository Configure · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>선수의 Github에 접근하여 wsc2025-argocd-repo라는 Repository가 생성되어 있고, Public 형태인지 확인합니다.</p>
+<figure><a href="images/2025-national-t2-marking/img02.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img02.png" alt="wsc2025-argocd-repo Public 리포지토리 확인 화면" loading="lazy"></a><figcaption>wsc2025-argocd-repo Public 리포지토리 확인 화면</figcaption></figure>
+</li>
+<li>
+<p>아래 그림처럼 최상위 폴더에 index.html과 version 파일이 존재하는지 확인하며, manifest 폴더가 존재하는지 확인합니다.</p>
+<figure><a href="images/2025-national-t2-marking/img03.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img03.png" alt="리포지토리 최상위 폴더 구성 (index.html, version, manifest)" loading="lazy"></a><figcaption>리포지토리 최상위 폴더 구성 (index.html, version, manifest)</figcaption></figure>
+</li>
+</ol>
+<h3 id="1-9-github-action-cofigure-05점">1-9. Github Action Cofigure · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>Github Repository에 접근합니다.</p>
+</li>
+<li>
+<p>Github Repository에 존재하는 version에 내용을 v1.0.1로 변경합니다.</p>
+<figure><a href="images/2025-national-t2-marking/img04.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img04.png" alt="version 파일을 v1.0.1로 변경하는 화면" loading="lazy"></a><figcaption>version 파일을 v1.0.1로 변경하는 화면</figcaption></figure>
+</li>
+<li>
+<p>index.html의 v1 부분을 전부 v2로 변경합니다.</p>
+<figure><a href="images/2025-national-t2-marking/img05.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img05.png" alt="index.html의 v1을 v2로 변경하는 화면" loading="lazy"></a><figcaption>index.html의 v1을 v2로 변경하는 화면</figcaption></figure>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="4">
+<li>
+<p>Github Action에서 workflow가 동작하는 것을 확인하고, 하나의 workflow만 존재하는지 확인</p>
+<figure><a href="images/2025-national-t2-marking/img06.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img06.png" alt="Github Action workflow 실행 화면" loading="lazy"></a><figcaption>Github Action workflow 실행 화면</figcaption></figure>
+</li>
+</ol>
+<h3 id="1-10-argocd-deploy-test-10점">1-10. ArgoCD Deploy Test · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>1-9 항목 채점이 끝나고, 5분 뒤에 wsc2025-cicd-alb라는 이름을 가진 LoadBalancer에 접근하여, Version: v2로 변경되었는지 확인</p>
+<figure><a href="images/2025-national-t2-marking/img07.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img07.png" alt="LoadBalancer 접속 결과 Version: v2 화면" loading="lazy"></a><figcaption>LoadBalancer 접속 결과 Version: v2 화면</figcaption></figure>
+</li>
+</ol>
+<h3 id="1-11-argocd-ssot-05점">1-11. ArgoCD SSOT · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력합니다.</p>
+<pre><code class="language-bash">$ kubectl set image deployment/nginx-deploy nginx=nginx -n wsc2025
+$ kubectl get deployment nginx-deploy -o jsonpath='{.spec.template.spec.containers[0].image}' -n wsc2025
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>app-repo ECR에 존재하는 Image가 출력 되는지 확인합니다.</li>
+</ol>
+<h3 id="2-0-사전준비-storage-data-protect">2-0. 사전준비 (Storage data protect)</h3>
+<ol>
+<li>웹브라우저로 선수의 AWS 계정에 로그인 후 ap-northeast-2 Region으로 접속합니다.</li>
+</ol>
+<h3 id="2-1-s3-create-05점">2-1. S3 Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력합니다.</p>
+<pre><code class="language-bash">$ aws s3api list-buckets --query &quot;Buckets[?starts_with(Name, 'wsc2025-sensitive-')].Name&quot; --output text
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>wsc2025-sensitive-&lt;임의의 4자리 영문&gt;가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="2-2-macie-job-create-05점">2-2. Macie Job Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력합니다.</p>
+<pre><code class="language-bash">$ aws macie2 list-classification-jobs \
+--query &quot;items[?name=='wsc2025-sensor-job'].name&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>wsc2025-sensor-job가 출력 되는지 확인합니다.</li>
+</ol>
+<h3 id="2-3-lambda-create-05점">2-3. Lambda Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력합니다.</p>
+<pre><code class="language-bash">$ aws lambda list-functions \
+--query &quot;Functions[?FunctionName=='wsc2025-masking-start'].FunctionName&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>wsc2025-masking-start가 출력 되는지 확인합니다</li>
+</ol>
+<h3 id="2-4-lambda-trigger-10점">2-4. Lambda Trigger · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 S3에 접속합니다.</p>
+</li>
+<li>
+<p>선수가 생성한 wsc2025-sensitive-&lt;임의의 4개의 영문&gt;를 접근합니다.</p>
+</li>
+<li>
+<p>incoming prefix에 배포파일을 재업로드합니다.</p>
+<figure><a href="images/2025-national-t2-marking/img08.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img08.png" alt="incoming prefix에 배포파일 업로드 화면" loading="lazy"></a><figcaption>incoming prefix에 배포파일 업로드 화면</figcaption></figure>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="4">
+<li>
+<p>최대 1분 정도 기다릴 수 있으며, masked prefix에 incoming prefix에 업로드한 파일들이 똑같이 생성되었는지 확인</p>
+<figure><a href="images/2025-national-t2-marking/img09.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img09.png" alt="masked prefix에 생성된 파일 확인 화면" loading="lazy"></a><figcaption>masked prefix에 생성된 파일 확인 화면</figcaption></figure>
+</li>
+</ol>
+<h3 id="2-5-file-masking-check-15점">2-5. File masking check · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력합니다.</p>
+<pre><code class="language-bash">$ aws s3 cp s3://wsc2025-sensitive-&lt;임의의 4자리 영문&gt;/masked/ ./masked/ --recursive
+$ cd masked/
+</code></pre>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>
+<p>아래 명령어를 입력하여 파일들이 마스킹이 되었는지 확인합니다.</p>
+<pre><code class="language-bash">$ for f in *; do
+    echo &quot;===== $f =====&quot;
+    head -n 5 &quot;$f&quot;
+    echo
+  done
+</code></pre>
+<p>예)</p>
+<figure><a href="images/2025-national-t2-marking/img10.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img10.png" alt="마스킹된 파일 내용 출력 예시" loading="lazy"></a><figcaption>마스킹된 파일 내용 출력 예시</figcaption></figure>
+</li>
+</ol>
+<h3 id="2-6-macie-sensor-test-10점">2-6. Macie Sensor Test · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 AWS Macie Service에 접근합니다.</p>
+<figure><a href="images/2025-national-t2-marking/img11.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img11.png" alt="AWS Macie 콘솔 화면" loading="lazy"></a><figcaption>AWS Macie 콘솔 화면</figcaption></figure>
+</li>
+<li>
+<p>wsc2025-sensor-job을 복사 후 scope의 additional settings의 모든 것을 제거한 후 다시 생성합니다. (job의 name은 선수 임의로 생성합니다.)</p>
+<figure><a href="images/2025-national-t2-marking/img12.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img12.png" alt="Job 복사 후 scope의 additional settings 제거 화면" loading="lazy"></a><figcaption>Job 복사 후 scope의 additional settings 제거 화면</figcaption></figure>
+<figure><a href="images/2025-national-t2-marking/img13.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img13.png" alt="복사한 Job 생성 화면" loading="lazy"></a><figcaption>복사한 Job 생성 화면</figcaption></figure>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>
+<p>Finding에서 아래와 같이 6개의 파일들이 전부 위험 상태로 존재하는지 확인</p>
+<figure><a href="images/2025-national-t2-marking/img14.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img14.png" alt="Findings에서 6개 파일이 위험 상태로 표시된 화면" loading="lazy"></a><figcaption>Findings에서 6개 파일이 위험 상태로 표시된 화면</figcaption></figure>
+</li>
+</ol>
+<h3 id="2-7-masking-test-10점">2-7. Masking Test · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 AWS Macie Service에 접근합니다.</p>
+<figure><a href="images/2025-national-t2-marking/img15.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img15.png" alt="AWS Macie 콘솔 화면" loading="lazy"></a><figcaption>AWS Macie 콘솔 화면</figcaption></figure>
+</li>
+<li>
+<p>wsc2025-sensor-job을 복사 후 변경사항 없이 Next 클릭하여 생성합니다. (job의 name은 선수 임의로 생성합니다.)</p>
+<figure><a href="images/2025-national-t2-marking/img16.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img16.png" alt="Job 복사 후 변경 없이 생성하는 화면" loading="lazy"></a><figcaption>Job 복사 후 변경 없이 생성하는 화면</figcaption></figure>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="3">
+<li>
+<p>복사한 Job의 status가 Complete 상태인지 확인 후 Finding에서 감지되지 않았는지 확인합니다. (Findings의 개수가 늘어나지 않아야 합니다.)</p>
+<figure><a href="images/2025-national-t2-marking/img17.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img17.png" alt="복사한 Job의 Complete 상태 화면" loading="lazy"></a><figcaption>복사한 Job의 Complete 상태 화면</figcaption></figure>
+<figure><a href="images/2025-national-t2-marking/img18.png" target="_blank" rel="noopener"><img src="images/2025-national-t2-marking/img18.png" alt="Findings 개수 확인 화면" loading="lazy"></a><figcaption>Findings 개수 확인 화면</figcaption></figure>
+</li>
+</ol>
+<h3 id="3-0-사전준비-waf">3-0. 사전준비 (WAF)</h3>
+<ol>
+<li>웹브라우저로 선수의 AWS 계정에 로그인 후 us-east-1 Region으로 접속합니다.</li>
+</ol>
+<h3 id="3-1-app-server-configure-10점">3-1. App Server Configure · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>Default VPC에 배포된 Bastion의 shell에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력해 “wsc2025-app-server”이 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws ec2 describe-instances \
+--filters &quot;Name=tag:Name,Values=wsc2025-app-server&quot; \
+--query &quot;Reservations[*].Instances[*].Tags[?Key=='Name'].Value[]&quot; \
+--output text
+</code></pre>
+</li>
+<li>
+<p>아래 명령어를 입력해 403 Error 코드가 뜨지 않는지 확인합니다.</p>
+<pre><code class="language-bash">$ IP=$(aws ec2 describe-instances \
+--filters &quot;Name=tag:Name,Values=wsc2025-app-server&quot; \
+--query &quot;Reservations[*].Instances[*].PublicIpAddress&quot; \
+--output text)
+$ curl &quot;http://$IP:5000&quot;
+$ curl &quot;http://$IP:5000/login?name=admin'--&amp;secret=anything&quot;
+$ curl &quot;http://$IP:5000/lookup?id=id%3D1+OR+1%3D1&quot;
+</code></pre>
+</li>
+</ol>
+<h3 id="3-2-elb-configure-10점">3-2. ELB Configure · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>Default VPC에 배포된 Bastion의 shell에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력해 wsc2025-waf-alb, application, internet-facing가 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws elbv2 describe-load-balancers \
+--names wsc2025-waf-alb \
+--query &quot;LoadBalancers[*].[LoadBalancerName, Type, Scheme]&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<h3 id="3-3-waf-configure-10점">3-3. WAF Configure · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>Default VPC에 배포된 Bastion의 shell에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력해 wsc2025-waf가 출력되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws wafv2 list-web-acls \
+--scope REGIONAL \
+--query &quot;WebACLs[?Name=='wsc2025-waf'].Name&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<h3 id="3-4-login-api-attach-15점">3-4. login API Attach · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>Default VPC에 배포된 Bastion의 shell에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력했을 때 403 Error 코드가 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ export ALB_ENDPOINT=$(aws elbv2 describe-load-balancers \
+--names wsc2025-waf-alb \
+--query &quot;LoadBalancers[*].DNSName&quot; \
+--output text)
+$ curl &quot;http://$ALB_ENDPOINT/login?name=admin'--&amp;secret=anything&quot;
+</code></pre>
+</li>
+</ol>
+<h3 id="3-5-lookup-api-attach-15점">3-5. lookup API Attach · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>Default VPC에 배포된 Bastion의 shell에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력했을 때 403 Error 코드가 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ export ALB_ENDPOINT=$(aws elbv2 describe-load-balancers \
+--names wsc2025-waf-alb \
+--query &quot;LoadBalancers[*].DNSName&quot; \
+--output text)
+$ curl &quot;http://$ALB_ENDPOINT/lookup?id=id%3D1+OR+1%3D1&quot;
+</code></pre>
+</li>
+</ol>
+<h3 id="4-0-사전준비-secure-networking">4-0. 사전준비 (Secure networking)</h3>
+<ol>
+<li>웹브라우저로 선수의 AWS 계정에 로그인 후 eu-west-1 Region으로 접속합니다.</li>
+</ol>
+<h3 id="4-1-vpc-create-05점">4-1. VPC Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>App VPC에 배포된 Bastion의 System Manager에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력해 172.16.0.0/16와 10.0.0.0/16가 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws ec2 describe-vpcs \
+--filters &quot;Name=tag:Name,Values=wsc2025-egress-vpc,wsc2025-app-vpc&quot; \
+--query &quot;Vpcs[*].CidrBlock&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<h3 id="4-2-subnet-create-05점">4-2. Subnet Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>App VPC에 배포된 Bastion의 System Manager에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력해 순서 상관없이 10.0.4.0/24, 172.16.1.0/24, 172.16.0.0/24, 10.0.0.0/24, 10.0.1.0/24, 10.0.3.0/24, 10.0.2.0/24, 10.0.5.0/24가 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws ec2 describe-subnets \
+--filters &quot;Name=tag:Name,Values=wsc2025-egress-public-sn-a,wsc2025-egress-public-sn-b,wsc2025-egress-peering-sn-a,wsc2025-egress-peering-sn-b,wsc2025-egress-firewall-sn-a,wsc2025-egress-firewall-sn-b,wsc2025-app-private-sn-a,wsc2025-app-private-sn-b&quot; \
+--query &quot;Subnets[*].CidrBlock&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<h3 id="4-3-bastion-create-05점">4-3. Bastion Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>App VPC에 배포된 Bastion의 System Manager에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력해 app-bastion이 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws ec2 describe-instances \
+--filters &quot;Name=tag:Name,Values=app-bastion&quot; \
+--query &quot;Reservations[*].Instances[*].Tags[?Key=='Name'].Value|[0]&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<h3 id="4-4-network-firewall-configure-05점">4-4. Network Firewall Configure · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>App VPC에 배포된 Bastion의 System Manager에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력해 “wsc2025-firewall”와 두 개의 subnet이 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws network-firewall describe-firewall \
+--firewall-name wsc2025-firewall \
+--query &quot;[Firewall.FirewallName, Firewall.SubnetMappings[*].SubnetId]&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<h3 id="4-5-network-firewall-stateless-rule-10점">4-5. Network Firewall Stateless rule · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>App VPC에 배포된 Bastion의 System Manager에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력했을 때 하나 이상의 출력값이 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws network-firewall list-rule-groups \
+--type STATEFUL \
+--query &quot;RuleGroups[*].Arn&quot; \
+--output text
+$ aws network-firewall list-rule-groups \
+--type STATELESS \
+--query &quot;RuleGroups[*].Arn&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<h3 id="4-6-network-firewall-stateful-rule-10점">4-6. Network Firewall Stateful rule · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>App VPC에 배포된 Bastion의 System Manager에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력했을 때 하나 이상의 출력값이 출력 되는지 확인합니다.</p>
+<pre><code class="language-bash">$ aws network-firewall list-rule-groups \
+--type STATEFUL \
+--query &quot;RuleGroups[*].Arn&quot; \
+--output text
+$ aws network-firewall list-rule-groups \
+--type STATELESS \
+--query &quot;RuleGroups[*].Arn&quot; \
+--output text
+</code></pre>
+</li>
+</ol>
+<h3 id="4-7-bastion-ping-test-10점">4-7. Bastion Ping Test · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>App VPC에 배포된 Bastion의 System Manager에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력했을 때 Ping이 정상적으로 가지 않은지 확인합니다.</p>
+<pre><code class="language-bash">$ ping 1.1.1.1
+</code></pre>
+</li>
+</ol>
+<h3 id="4-8-bastion-dns-query-test-10점">4-8. Bastion DNS Query Test · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>App VPC에 배포된 Bastion의 System Manager에 접근합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력해 ;; communications error to 8.8.8.8#53: timed out가 출력되는지 확인합니다.</p>
+<pre><code class="language-bash">$ nslookup google.com 8.8.8.8
+</code></pre>
+</li>
+</ol>
+<h3 id="5-0-사전준비-serverless-inventory">5-0. 사전준비 (Serverless Inventory)</h3>
+<ol>
+<li>웹브라우저로 선수의 AWS 계정에 로그인 후 us-west-1 Region으로 접속합니다.</li>
+</ol>
+<h3 id="5-1-resource-create-05점">5-1. Resource Create · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력하여 inventory, inventory-state-machine, inventory-rest-api가 차례대로 출력되는지 확인합니다.</p>
+<pre><code class="language-bash">aws dynamodb list-tables --query TableNames --output text
+aws stepfunctions list-state-machines --query stateMachines[].name --output text
+aws apigateway get-rest-apis --query items[].name --output text
+</code></pre>
+</li>
+</ol>
+<h3 id="5-2-no-computing-service-1점">5-2. No Computing Service · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력하여 []가 출력되는지 확인합니다.</p>
+<pre><code class="language-bash">aws lambda list-functions --query Functions
+</code></pre>
+</li>
+</ol>
+<h3 id="5-3-step-functions-1-1점">5-3. Step Functions 1 · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력하여 1200, 30이 출력되는지 확인합니다.</p>
+<pre><code class="language-bash">ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+aws dynamodb put-item --table-name inventory --item '{&quot;name&quot;: {&quot;S&quot;: &quot;balance&quot;}, &quot;value&quot;: {&quot;N&quot;: &quot;1000&quot;}}'
+aws dynamodb put-item --table-name inventory --item '{&quot;name&quot;: {&quot;S&quot;: &quot;stock&quot;}, &quot;value&quot;: {&quot;N&quot;: &quot;50&quot;}}'
+
+aws stepfunctions start-execution --state-machine-arn arn:aws:states:us-west-1:$ACCOUNT_ID:stateMachine:inventory-state-machine --input '{&quot;sales&quot;: 20}'
+sleep 5
+aws dynamodb get-item --table-name inventory --key '{&quot;name&quot;: {&quot;S&quot;: &quot;balance&quot;}}' --query Item.value.N --output text
+aws dynamodb get-item --table-name inventory --key '{&quot;name&quot;: {&quot;S&quot;: &quot;stock&quot;}}' --query Item.value.N --output text
+</code></pre>
+</li>
+</ol>
+<h3 id="5-4-step-functions-2-1점">5-4. Step Functions 2 · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력하여 1200, 100이 출력되는지 확인합니다.</p>
+<pre><code class="language-bash">ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+aws dynamodb put-item --table-name inventory --item '{&quot;name&quot;: {&quot;S&quot;: &quot;balance&quot;}, &quot;value&quot;: {&quot;N&quot;: &quot;1200&quot;}}'
+aws dynamodb put-item --table-name inventory --item '{&quot;name&quot;: {&quot;S&quot;: &quot;stock&quot;}, &quot;value&quot;: {&quot;N&quot;: &quot;30&quot;}}'
+
+aws stepfunctions start-execution --state-machine-arn arn:aws:states:us-west-1:$ACCOUNT_ID:stateMachine:inventory-state-machine --input '{&quot;sales&quot;: 30}'
+sleep 5
+aws dynamodb get-item --table-name inventory --key '{&quot;name&quot;: {&quot;S&quot;: &quot;balance&quot;}}' --query Item.value.N --output text
+aws dynamodb get-item --table-name inventory --key '{&quot;name&quot;: {&quot;S&quot;: &quot;stock&quot;}}' --query Item.value.N --output text
+</code></pre>
+</li>
+</ol>
+<h3 id="5-5-api-gateway-get-15점">5-5. API Gateway GET · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>
+<p>웹브라우저로 선수의 AWS 계정에 로그인 후 CloudShell을 실행합니다.</p>
+</li>
+<li>
+<p>아래 명령어를 입력하여 DynamoDB의 값을 재설정 합니다.</p>
+<pre><code class="language-bash">aws dynamodb put-item --table-name inventory --item '{&quot;name&quot;: {&quot;S&quot;: &quot;balance&quot;}, &quot;value&quot;: {&quot;N&quot;: &quot;1200&quot;}}'
+aws dynamodb put-item --table-name inventory --item '{&quot;name&quot;: {&quot;S&quot;: &quot;stock&quot;}, &quot;value&quot;: {&quot;N&quot;: &quot;100&quot;}}'
+</code></pre>
+</li>
+<li>
+<p>API Gateway 콘솔에 접속하여 inventory-rest-api의 도메인 주소를 기록합니다.</p>
+</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="4">
+<li>https://&lt;선수 도메인&gt;/v1/inventory?item=balance에 접속하여 1200 (큰 따옴표 없음)이 출력되는지 확인합니다.</li>
+<li>https://&lt;선수 도메인&gt;/v1/inventory?item=stock에 접속하여 100 (큰 따옴표 없음)이 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="5-6-api-gateway-get-deny-1점">5-6. API Gateway GET Deny · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>API Gateway 콘솔에 접속하여 inventory-rest-api의 도메인 주소를 기록합니다.</li>
+</ol>
+<p><strong>기대 결과</strong></p>
+<ol start="2">
+<li>https://&lt;선수 도메인&gt;/v1/inventory?item=mysecrets에 접속하여 403 Forbidden이 출력되는지 확인합니다. 코드와 바디 모두 403에 해당 하는지 확인합니다.</li>
+</ol>
+</article></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#채점-유의사항">채점 유의사항</a></li><li class="toc-h2"><a href="#배점-요약">배점 요약</a></li><li class="toc-h3"><a href="#주요항목별-배점">주요항목별 배점</a></li><li class="toc-h3"><a href="#세부항목별-배점">세부항목별 배점</a></li><li class="toc-h2"><a href="#채점-항목">채점 항목</a></li><li class="toc-h3"><a href="#1-0-사전준비-cicd">1-0. 사전준비 (CI/CD)</a></li><li class="toc-h3"><a href="#1-1-ecr-configure-05점">1-1. ECR Configure · 0.5점</a></li><li class="toc-h3"><a href="#1-2-ecr-image-tag-05점">1-2. ECR Image Tag · 0.5점</a></li><li class="toc-h3"><a href="#1-3-eks-cluster-configure-05점">1-3. EKS Cluster Configure · 0.5점</a></li><li class="toc-h3"><a href="#1-4-eks-node-configure-05점">1-4. EKS Node Configure · 0.5점</a></li><li class="toc-h3"><a href="#1-5-pod-create-05점">1-5. Pod Create · 0.5점</a></li><li class="toc-h3"><a href="#1-6-elb-create-05점">1-6. ELB Create · 0.5점</a></li><li class="toc-h3"><a href="#1-7-elb-endpoint-check-05점">1-7. ELB Endpoint Check · 0.5점</a></li><li class="toc-h3"><a href="#1-8-github-repository-configure-05점">1-8. Github Repository Configure · 0.5점</a></li><li class="toc-h3"><a href="#1-9-github-action-cofigure-05점">1-9. Github Action Cofigure · 0.5점</a></li><li class="toc-h3"><a href="#1-10-argocd-deploy-test-10점">1-10. ArgoCD Deploy Test · 1.0점</a></li><li class="toc-h3"><a href="#1-11-argocd-ssot-05점">1-11. ArgoCD SSOT · 0.5점</a></li><li class="toc-h3"><a href="#2-0-사전준비-storage-data-protect">2-0. 사전준비 (Storage data protect)</a></li><li class="toc-h3"><a href="#2-1-s3-create-05점">2-1. S3 Create · 0.5점</a></li><li class="toc-h3"><a href="#2-2-macie-job-create-05점">2-2. Macie Job Create · 0.5점</a></li><li class="toc-h3"><a href="#2-3-lambda-create-05점">2-3. Lambda Create · 0.5점</a></li><li class="toc-h3"><a href="#2-4-lambda-trigger-10점">2-4. Lambda Trigger · 1.0점</a></li><li class="toc-h3"><a href="#2-5-file-masking-check-15점">2-5. File masking check · 1.5점</a></li><li class="toc-h3"><a href="#2-6-macie-sensor-test-10점">2-6. Macie Sensor Test · 1.0점</a></li><li class="toc-h3"><a href="#2-7-masking-test-10점">2-7. Masking Test · 1.0점</a></li><li class="toc-h3"><a href="#3-0-사전준비-waf">3-0. 사전준비 (WAF)</a></li><li class="toc-h3"><a href="#3-1-app-server-configure-10점">3-1. App Server Configure · 1.0점</a></li><li class="toc-h3"><a href="#3-2-elb-configure-10점">3-2. ELB Configure · 1.0점</a></li><li class="toc-h3"><a href="#3-3-waf-configure-10점">3-3. WAF Configure · 1.0점</a></li><li class="toc-h3"><a href="#3-4-login-api-attach-15점">3-4. login API Attach · 1.5점</a></li><li class="toc-h3"><a href="#3-5-lookup-api-attach-15점">3-5. lookup API Attach · 1.5점</a></li><li class="toc-h3"><a href="#4-0-사전준비-secure-networking">4-0. 사전준비 (Secure networking)</a></li><li class="toc-h3"><a href="#4-1-vpc-create-05점">4-1. VPC Create · 0.5점</a></li><li class="toc-h3"><a href="#4-2-subnet-create-05점">4-2. Subnet Create · 0.5점</a></li><li class="toc-h3"><a href="#4-3-bastion-create-05점">4-3. Bastion Create · 0.5점</a></li><li class="toc-h3"><a href="#4-4-network-firewall-configure-05점">4-4. Network Firewall Configure · 0.5점</a></li><li class="toc-h3"><a href="#4-5-network-firewall-stateless-rule-10점">4-5. Network Firewall Stateless rule · 1.0점</a></li><li class="toc-h3"><a href="#4-6-network-firewall-stateful-rule-10점">4-6. Network Firewall Stateful rule · 1.0점</a></li><li class="toc-h3"><a href="#4-7-bastion-ping-test-10점">4-7. Bastion Ping Test · 1.0점</a></li><li class="toc-h3"><a href="#4-8-bastion-dns-query-test-10점">4-8. Bastion DNS Query Test · 1.0점</a></li><li class="toc-h3"><a href="#5-0-사전준비-serverless-inventory">5-0. 사전준비 (Serverless Inventory)</a></li><li class="toc-h3"><a href="#5-1-resource-create-05점">5-1. Resource Create · 0.5점</a></li><li class="toc-h3"><a href="#5-2-no-computing-service-1점">5-2. No Computing Service · 1점</a></li><li class="toc-h3"><a href="#5-3-step-functions-1-1점">5-3. Step Functions 1 · 1점</a></li><li class="toc-h3"><a href="#5-4-step-functions-2-1점">5-4. Step Functions 2 · 1점</a></li><li class="toc-h3"><a href="#5-5-api-gateway-get-15점">5-5. API Gateway GET · 1.5점</a></li><li class="toc-h3"><a href="#5-6-api-gateway-get-deny-1점">5-6. API Gateway GET Deny · 1점</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

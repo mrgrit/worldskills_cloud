@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2024 전국 제2과제 · 부산 2번 · Small Challenge</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details open><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html" class="on">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2024 전국 제2과제 · 부산 2번</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2024</span><span class="badge">제2과제</span><span class="badge time">⏱ 4 시간</span><span class="badge kind-problem">문제</span></div>
+<h1>Small Challenge<small>IAM 로그인 기록 수집 (CloudTrail·Lambda·CloudWatch)</small></h1>
+<p class="summary">IAM 사용자로 로그인하면 CloudTrail과 Lambda를 통해 로그인 기록이 CloudWatch 로그 스트림에 저장되는 간편한 인프라를 구성합니다.</p>
+<div class="tags"><span class="tag">CloudTrail</span><span class="tag">CloudWatch</span><span class="tag">Lambda</span><span class="tag">EC2</span><span class="tag">VPC</span><span class="tag">IAM</span></div><div class="actions"><a class="btn" href="2024-national-t2-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p>IAM 사용자로 로그인 하면 로그인 기록이 저장되는 간편한 인프라를 구성합니다.</p>
+<h3 id="다이어그램">다이어그램</h3>
+<figure><a href="images/2024-national-t2-busan2/img01.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-busan2/img01.png" alt="다이어그램 (계정 로그인 → CloudTrail → Lambda → CloudWatch, EC2)" loading="lazy"></a><figcaption>다이어그램 (계정 로그인 → CloudTrail → Lambda → CloudWatch, EC2)</figcaption></figure>
+<h2 id="사용-기술">사용 기술</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>분류</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS</td>
+<td>CloudTrail, CloudWatch, Lambda, EC2, VPC, IAM</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="선수-유의사항">선수 유의사항</h2>
+<ol>
+<li>선수의 계정에는 비용의 제한이 존재하며, 이보다 더 높게 요금이 부과될 시 계정 사용이 불가능할 수 있습니다.</li>
+<li>문제에 제시된 괄호 박스 &lt;&gt;는 변수를 뜻함으로 선수가 적절히 변경하여 사용해야 합니다.</li>
+<li>EC2 인스턴스의 TCP 80/443 outbound는 anyopen하여 사용할 수 있도록 합니다.</li>
+<li>과제의 Bastion 서버에서 대부분의 채점이 이루어짐으로 인스턴스를 생성하지 않았거나 종료된 상태면 채점이 불가능하니 각별히 주의하도록 합니다.</li>
+<li>과제 종료 시 진행 중인 테스트를 모두 종료하여 서버에 부하가 발생하지 않도록 합니다.</li>
+<li>별도 언급이 없는 경우, eu-central-1 리전에 리소스를 생성하도록 합니다.</li>
+<li>1페이지의 다이어그램은 구성을 추상적으로 표현한 그림으로, 세부적인 구성은 아래의 요구사항을 만족시킬 수 있도록 합니다. (ex. 서브넷이 2개 이상 존재할 수 있습니다.)</li>
+<li>모든 리소스의 이름, 태그, 변수과 변수는 대소문자를 구분합니다.</li>
+<li>문제에서 주어지지 않는 값들은 AWS Well-Architected Framework 6 pillars를 기준으로 적절한 값을 설정해야 합니다.</li>
+<li>불필요한 리소스를 생성한 경우, 감점의 요인이 될 수 있습니다. (e.g. VPC 추가 생성)</li>
+<li>Bastion 서버로 ssh 접속시 22번 포트 외에 다른 포트를 사용하세요.</li>
+<li>Bastion은 비밀번호 설정 시 비밀번호를 <code>Skills2024**</code>로 설정합니다.</li>
+</ol>
+<h2 id="3-ec2">3. EC2</h2>
+<ul>
+<li>EC2를 활용해 Bastion 서버를 구성합니다.</li>
+<li>Bastion 서버의 접근을 위해서 TCP 2220를 사용합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instance 이름</td>
+<td><code>wsi-bastion-ec2</code></td>
+</tr>
+<tr>
+<td>Subnet</td>
+<td>Public subnet</td>
+</tr>
+<tr>
+<td>설치 패키지</td>
+<td>AWS CLI v2, jq, curl</td>
+</tr>
+<tr>
+<td>Instance Type</td>
+<td><code>t3.small</code></td>
+</tr>
+<tr>
+<td>EC2 IAM Role</td>
+<td>모든 리소스에 대해 full access를 가지는 role을 생성하여 붙입니다.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-iam">4. IAM</h2>
+<ul>
+<li>IAM 사용자를 생성 후 계정에 로그인시 자동으로 CloudWatch로 로그인 로그를 저장 할 수 있게 구성합니다.</li>
+<li>IAM 사용자는 모든 서비스를 사용할 수 있게 관리자 권한을 연동 시킵니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IAM 사용자 이름</td>
+<td><code>wsi-project-user</code></td>
+</tr>
+<tr>
+<td>IAM 권한</td>
+<td>AdministratorAccess Policy</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>AWS Management Console 접속 허용</li>
+</ul>
+<h2 id="5-cloudtrail">5. CloudTrail</h2>
+<ul>
+<li>IAM 사용자가 콘솔로 로그인시 CloudWatch로 로그인 로그를 저장 할 수 있게 위해 계정 활동을 모니터링을 힐 수 있는 서비스인 CloudTrail를 생성합니다.</li>
+<li>Tag: <code>Name=wsi-project-trail</code></li>
+</ul>
+<h2 id="6-cloudwatch">6. CloudWatch</h2>
+<ul>
+<li>CloudWatch는 아래에 있는 요구사항을 참고하여 로그 그룹을 생성합니다.</li>
+<li>CloudWatch 로그 스트림에는 로그인 로그를 제외한 다른 로그들은 존재해서는 안됩니다.</li>
+<li>로그인 로그는 로그인 한 시간에서 4분내로 로그 스트림에 저장되어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tag</td>
+<td><code>Name=wsi-project-login</code></td>
+</tr>
+<tr>
+<td>로그 스트림 이름</td>
+<td><code>wsi-project-login-stream</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>로그 포맷:</p>
+<pre><code class="language-text">{ USER: “&lt;로그인한 IAM 사용자 이름&gt; has logged in!” }
+</code></pre>
+<p>예시):</p>
+<pre><code class="language-text">{ USER: “wsi-project-user has logged in!” }
+</code></pre>
+<h2 id="7-lambda">7. Lambda</h2>
+<ul>
+<li>람다를 이용해서 Cloudtrail에 로그인 트리거가 발생되면 자동으로 cloudwatch로 로그 저장할 수 있게 구성합니다.</li>
+<li>Tag: <code>Name=wsi-project-log-function</code></li>
+</ul>
+</article><nav class="pager"><a href="2024-national-t1.html">← 2024 전국 제1과제<span>Solution Architecture</span></a><a class="next" href="2024-national-t2-chungnam1.html">2024 전국 제2과제 · 충남 1번 →<span>Small Challenge</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h3"><a href="#다이어그램">다이어그램</a></li><li class="toc-h2"><a href="#사용-기술">사용 기술</a></li><li class="toc-h2"><a href="#선수-유의사항">선수 유의사항</a></li><li class="toc-h2"><a href="#3-ec2">3. EC2</a></li><li class="toc-h2"><a href="#4-iam">4. IAM</a></li><li class="toc-h2"><a href="#5-cloudtrail">5. CloudTrail</a></li><li class="toc-h2"><a href="#6-cloudwatch">6. CloudWatch</a></li><li class="toc-h2"><a href="#7-lambda">7. Lambda</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

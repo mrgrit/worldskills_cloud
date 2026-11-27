@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WSC2024 · Day 2 · Test Project Cloud Computing</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details open><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html" class="on">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › WSC2024 · Day 2</div>
+<div class="badges"><span class="badge lv-wsc">국제</span><span class="badge">2024</span><span class="badge kind-problem">문제</span></div>
+<h1>Test Project Cloud Computing<small>Day 2 — Real-time Healthcare &amp; Enterprise Data Analytics Platform</small></h1>
+<p class="summary">POST로 들어오는 혈압 모니터링 데이터와 기업 운영 데이터를 Kinesis·DynamoDB·Redshift·Aurora로 수집·분석하고, 웹 서비스와 API로 결과를 제공하는 클라우드 분석 플랫폼을 구축하는 과제입니다.</p>
+<div class="tags"><span class="tag">Kinesis</span><span class="tag">Kinesis Data Analytics</span><span class="tag">DynamoDB</span><span class="tag">Redshift</span><span class="tag">Aurora</span><span class="tag">ECS</span><span class="tag">API Gateway</span><span class="tag">Lambda</span><span class="tag">CodePipeline</span></div><div class="actions"><a class="btn" href="2024-wsc-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<ul>
+<li>Independent Test Project Designers: Shawn Xu, Xiaowei Wang, Qiang Wang, Xu Chen</li>
+<li>Independent Test Project Validator: Chit Boon Lee, SCM</li>
+<li>Document: WSC2024_TP53_day2_actual_en</li>
+</ul>
+<h3 id="contents">Contents</h3>
+<p>This Test Project consists of the following documentation/files:</p>
+<ol>
+<li>WSC2024_TP53_main_document_actual_en</li>
+<li>WSC2024_TP53_day1_actual_en</li>
+<li>WSC2024_TP53_day2_actual_en</li>
+<li>WSC2024_TP53_day3_actual_en</li>
+</ol>
+<h2 id="description-of-project-and-tasks">Description of project and tasks</h2>
+<p>In today's rapidly evolving digital age, data has become one of the most valuable assets for businesses. This is especially true in the healthcare sector, where advancements in telemedicine and personal health monitoring technology have made real-time collection and analysis of health data particularly important. Your company, as a leading unicorn in the fields of artificial intelligence and big data analytics, is dedicated to developing innovative solutions to help businesses and individuals better understand and utilize this data.</p>
+<p>The core objective of the project is to develop a cloud-based intelligent analytics platform capable of processing and analyzing two key types of data sent via POST requests: blood pressure monitoring data and enterprise operation data. Real-time analysis of these two types of data is of immense value to healthcare service providers and business decision-makers.</p>
+<p><strong>Blood Pressure Monitoring Data:</strong> With the proliferation of wearable devices, blood pressure monitoring has become an essential part of personal health management. These devices can collect blood pressure data in real-time, including key indicators such as systolic and diastolic pressure. Real-time monitoring of blood pressure is crucial for preventing cardiovascular diseases, adjusting treatment plans, and improving patients' quality of life.</p>
+<p><strong>Enterprise Operation Data:</strong> The second type of data involves daily business operations, such as sales transactions, customer interaction records, and inventory changes. This data is critical for businesses to understand market dynamics, optimize inventory management, enhance customer service quality, and formulate sales strategies. Through in-depth analysis of this data, businesses can identify potential growth opportunities, streamline operational processes, and enhance competitiveness.</p>
+<p>As a solutions architect, you are responsible for:</p>
+<ul>
+<li><strong>Resource Management:</strong> Effectively control resource access, track AWS costs, and optimize resource allocation for cost-efficiency.</li>
+<li><strong>Network Architecture:</strong> Establish secure and reliable connections to AWS services while minimizing public internet exposure. Implement robust network monitoring for visibility and security.</li>
+<li><strong>Data Security and Compliance:</strong> Protect sensitive data through encryption, access controls, and regular backups. Ensure compliance with relevant regulations and maintain records of suspicious activities.</li>
+</ul>
+<h2 id="background">Background</h2>
+<p>The company intends to build a centralized, secure analytics platform capable of processing and analyzing high-volume, real-time data. This platform will provide intuitive visualizations to support data-driven decision-making. By delivering robust data analytics solutions for healthcare and business operations, the company aims to accelerate digital transformation and create societal value. This project will solidify the company's leadership in AI and big data services, positioning it as a pioneer in data-driven insights and intelligent decision-making.</p>
+<h2 id="initial-state">Initial state</h2>
+<p>Your primary responsibility is to design a scalable system capable of handling high volumes of real-time blood pressure and enterprise operation data delivered via POST requests. Successful data ingestion will initiate point accumulation.</p>
+<figure><a href="images/2024-wsc-day2/img05.png" target="_blank" rel="noopener"><img src="images/2024-wsc-day2/img05.png" alt="단순화된 아키텍처 다이어그램 (API Gateway, Lambda, VPC 내 RDS Aurora, API, Web Service, Kinesis, DynamoDB, RedShift)" loading="lazy"></a><figcaption>단순화된 아키텍처 다이어그램 (API Gateway, Lambda, VPC 내 RDS Aurora, API, Web Service, Kinesis, DynamoDB, RedShift)</figcaption></figure>
+<p>The above image is a simplified architecture diagram for reference only.</p>
+<h2 id="three-stages">Three Stages</h2>
+<h3 id="stage-1-data-reception">Stage 1: Data Reception</h3>
+<p>Design and implement a data reception system capable of simultaneously handling two types of POST request data: real-time blood pressure monitoring data and enterprise operation data.</p>
+<h4 id="blood-pressure-monitoring-data">Blood Pressure Monitoring Data</h4>
+<ul>
+<li>Utilize Amazon Kinesis for real-time ingestion and processing of blood pressure data.</li>
+<li>Employ Kinesis Data Analytics to analyze data streams and identify anomalies.</li>
+<li>Persist real-time anomaly data in Amazon DynamoDB for immediate access.</li>
+<li>Conduct in-depth analysis on historical anomaly data by storing it in Amazon Redshift.</li>
+</ul>
+<h4 id="enterprise-operation-data">Enterprise Operation Data</h4>
+<ul>
+<li>Store enterprise operation data in an Amazon RDS (Aurora) database for reliable and efficient access. Bi-weekly backups are sufficient for the anticipated data volume. Serverless databases are not permitted.</li>
+</ul>
+<h3 id="stage-2-data-query-and-service-development">Stage 2: Data Query and Service Development</h3>
+<h4 id="blood-pressure-monitoring-data-1">Blood Pressure Monitoring Data</h4>
+<ul>
+<li>Utilize the provided binary file (stub1.zip) located in the S3 bucket s3://tp53-day2-game-assets-2024 to establish a web service.</li>
+<li>This web service will retrieve and present real-time blood pressure analysis results from DynamoDB in a user-friendly JSON format.</li>
+<li>Provide the web service URL for low-latency access to blood pressure insights.</li>
+<li>Data Access Monitoring: We strongly recommend capturing detailed request logs including timestamps, client IP addresses, latencies, request paths, and server responses for your web service. This data will be valuable for future analysis and optimization.</li>
+<li>Backup and Versioning: Upload the provided binary file to your competition account's S3 storage bucket. This bucket should ideally support efficient storage of multiple file versions for cost-effective lifecycle management.</li>
+</ul>
+<h4 id="enterprise-operation-data-1">Enterprise Operation Data</h4>
+<ul>
+<li>Develop an API to facilitate user queries against the enterprise operation data stored in Amazon RDS (Aurora). This API will allow users to retrieve specific data points.</li>
+<li>Provide a secure and reliable API URL, protected against malicious attacks, for user access</li>
+</ul>
+<h3 id="stage-3-architecture-optimization-and-continuous-improvement">Stage 3: Architecture Optimization and Continuous Improvement</h3>
+<ul>
+<li><strong>Architecture Optimization:</strong> Align the system architecture with AWS Well-Architected Framework best practices to achieve optimal performance, cost-efficiency, security, reliability, scalability, and operational excellence.</li>
+<li><strong>Performance Monitoring:</strong> Implement robust monitoring, alerting, and evaluation processes to identify improvement areas and make necessary adjustments.</li>
+</ul>
+<h2 id="tasks">Tasks</h2>
+<ol>
+<li>Carefully review the task description document.</li>
+<li>Use the us-east-1 region for your architecture setup.</li>
+<li>Log in to the CloudRaiser platform and set up your name. Ensure to set the correct name.</li>
+<li>Collect data through Kinesis and use Kinesis Data Analytics to store real-time analysis results in a DynamoDB database, ensuring it is cost-efficient and suitable for low-throughput applications.</li>
+<li>Use Amazon Redshift to store the analyzed anomaly data, supporting in-depth analysis and historical data queries. Please DO NOT use serverless Redshift.</li>
+<li>Store enterprise operation data in Amazon RDS (Aurora) database to ensure persistent storage and fast access.</li>
+<li>Use the provided bin file to set up a web service that delivers the analysis results from DynamoDB in JSON format to end users.</li>
+<li>Develop an API that offers query functionality for the enterprise operation data stored in Amazon RDS (Aurora), allowing users to retrieve the necessary data.</li>
+<li>Monitor the performance of the web server to ensure service stability and response speed.</li>
+<li>For detailed information on points, please refer to ScoreEvents.</li>
+<li>Monitor costs to avoid unnecessary infrastructure expansion and minimize cost deductions.</li>
+<li>Optimize and enhance the architecture to meet the six pillars of the AWS Well-Architected Framework and engineering practices, improving system performance efficiency, cost optimization, security, reliability, scalability, and operational excellence.</li>
+<li>It is highly recommended to use ECS to build the web service. Consider enhanced flexibility, scalability, high availability, and fault tolerance for containerized applications, along with simplified infrastructure management and provides deep visibility into the configrations, performance and resource utilization of Amazon ECS containers.</li>
+<li>It is highly recommended to create a CodePipeline to automate the deployment process of ECS applications, including a review step to maintain control during frequent upgrades. For efficient and reliable deployments, using CodeDeploy is strongly advised.</li>
+</ol>
+<h2 id="technical-details">Technical Details</h2>
+<ol>
+<li><strong>Server Application:</strong> The provided server application is a pre-compiled binary. Any modifications or use of unofficial binaries will result in disqualification.</li>
+<li><strong>EKS Restriction:</strong> EKS is prohibited for this competition.</li>
+<li><strong>Instance Management:</strong> Utilize SSM for instance management instead of SSH. The server application is optimized for x86 architecture and Amazon Linux 2.</li>
+</ol>
+<h2 id="service-details">Service Details</h2>
+<h3 id="post-data---blood-pressure-monitoring-data">POST Data - Blood Pressure Monitoring Data</h3>
+<p>The request will use POST method, request path is post_data:</p>
+<p>Blood pressure mornitoring data includes the following key information: no, systolic, diastolic, etc.</p>
+<h3 id="database---blood-pressure-monitoring-data">DataBase - Blood Pressure Monitoring Data</h3>
+<p>You need to deploy a highly available DynamoDB service to store analysis results. The table should be named &quot;cloudraiser-iot&quot; and have the following structure:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>KEY NAME</th>
+<th>DATA TYPE</th>
+<th>COMMENT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No</td>
+<td>String</td>
+<td>Partition Key</td>
+</tr>
+<tr>
+<td>Systolic</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>Diastolic</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>Score</td>
+<td>String</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="web-service---blood-pressure-monitoring-data">Web Service - Blood Pressure Monitoring Data</h3>
+<ul>
+<li>The development team has built a program for you to host the web service, which will provide the data stored in DynamoDB to customers. You need to consider how to build a highly available and scalable web service for customers at a lower cost.</li>
+<li>Any data in DynamoDB that is older than 48 hours is not required and should be deleted.</li>
+</ul>
+<h3 id="post-data---enterprise-operation-data">POST Data - Enterprise Operation Data</h3>
+<p>The request will use POST method, request path is post_data:</p>
+<p>Enterprise Operation Data includes the following key information: id，column，value, etc.</p>
+<p>e.g.</p>
+<pre><code class="language-text">{
+     “id”:”01”
+     “column”:”val1”
+     ”value”:”456”
+}
+</code></pre>
+<h3 id="database---enterprise-operation-data">DataBase  - Enterprise Operation Data</h3>
+<p>The database table structure is as follows: (The data type is &quot;string&quot;)</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>id</th>
+<th>val1</th>
+<th>val2</th>
+<th>val3</th>
+<th>val4</th>
+<th>val5</th>
+<th>val6</th>
+<th>val7</th>
+<th>val8</th>
+<th>val9</th>
+<th>val10</th>
+</tr>
+</thead>
+</table></div>
+<h3 id="web-service---enterprise-operation-data">Web Service - Enterprise Operation Data</h3>
+<p>Please construct an API that returns a specific row of data based on the URL parameters of the REQUEST.</p>
+<p>The request will use the GET method, and the REQUEST format is as follows:</p>
+<pre><code class="language-text">http(s)://xxx/get_value?id=xxx
+</code></pre>
+<p>The returned data structure is as follows: Format: JSON</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;xxx&quot;,
+  &quot;val1&quot;: &quot;xxx&quot;,
+  &quot;val2&quot;: &quot;xxx&quot;,
+  &quot;val3&quot;: &quot;xxx&quot;,
+  &quot;val4&quot;: &quot;xxx&quot;,
+  &quot;val5&quot;: &quot;xxx&quot;,
+  &quot;val6&quot;: &quot;xxx&quot;,
+  &quot;val7&quot;: &quot;xxx&quot;,
+  &quot;val8&quot;: &quot;xxx&quot;,
+  &quot;val9&quot;: &quot;xxx&quot;,
+  &quot;val10&quot;: &quot;xxx&quot;
+}
+</code></pre>
+<p>xxx are just examples.</p>
+<h2 id="gentle-reminder">Gentle reminder</h2>
+<ol>
+<li>Post data will occur from the beginning of the match.</li>
+<li>After approximately 2 hours, your system will be evaluated on its ability to process both blood pressure monitoring data and enterprise operation data, as well as its ability to deliver accurate results through the web service and API.</li>
+<li>Points are awarded for successful achievements in the following areas:
+<ul>
+<li>(a) Receiving blood pressure monitoring data.</li>
+<li>(b) Receiving enterprise operation data.</li>
+<li>(c) Web service availability with correct result delivery.</li>
+<li>(d) Web service responsiveness to user queries.</li>
+<li>(e) Creation of resources conforming to architectural requirements.</li>
+<li>(f) Architecture aligned with the six pillars of Well-Architected Frameworks.</li>
+</ul>
+</li>
+<li>Higher point totals are earned by correctly configuring more elements.</li>
+<li>It is recommended to use Random Cut Forest for real-time analysis in Amazon Kinesis Data Analytics. Reference link: https://aws.amazon.com/cn/blogs/big-data/real-time-anomaly-detection-via-random-cut-forest-in-amazon-kinesis-data-analytics/</li>
+</ol>
+<h2 id="reference">Reference</h2>
+<p>Reference Document:</p>
+<ul>
+<li>https://docs.aws.amazon.com/</li>
+<li>https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html</li>
+<li>https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html</li>
+</ul>
+</article><nav class="pager"><a href="2024-wsc-day1.html">← WSC2024 · Day 1<span>Test Project Cloud Computing — Day 1</span></a><a class="next" href="2024-wsc-day3.html">WSC2024 · Day 3 →<span>Test Project Cloud Computing</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h3"><a href="#contents">Contents</a></li><li class="toc-h2"><a href="#description-of-project-and-tasks">Description of project and tasks</a></li><li class="toc-h2"><a href="#background">Background</a></li><li class="toc-h2"><a href="#initial-state">Initial state</a></li><li class="toc-h2"><a href="#three-stages">Three Stages</a></li><li class="toc-h3"><a href="#stage-1-data-reception">Stage 1: Data Reception</a></li><li class="toc-h3"><a href="#stage-2-data-query-and-service-development">Stage 2: Data Query and Service Development</a></li><li class="toc-h3"><a href="#stage-3-architecture-optimization-and-continuous-improvement">Stage 3: Architecture Optimization and Continuous Improvement</a></li><li class="toc-h2"><a href="#tasks">Tasks</a></li><li class="toc-h2"><a href="#technical-details">Technical Details</a></li><li class="toc-h2"><a href="#service-details">Service Details</a></li><li class="toc-h3"><a href="#post-data---blood-pressure-monitoring-data">POST Data - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#database---blood-pressure-monitoring-data">DataBase - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#web-service---blood-pressure-monitoring-data">Web Service - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#post-data---enterprise-operation-data">POST Data - Enterprise Operation Data</a></li><li class="toc-h3"><a href="#database---enterprise-operation-data">DataBase  - Enterprise Operation Data</a></li><li class="toc-h3"><a href="#web-service---enterprise-operation-data">Web Service - Enterprise Operation Data</a></li><li class="toc-h2"><a href="#gentle-reminder">Gentle reminder</a></li><li class="toc-h2"><a href="#reference">Reference</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

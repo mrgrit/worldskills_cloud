@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025 전국 제3과제 · 채점기준</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details open><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html" class="on">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2025 전국 제3과제</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2025</span><span class="badge">제3과제</span><span class="badge kind-marking">채점기준</span></div>
+<h1>채점기준<small>System Operation</small></h1>
+<p class="summary">주요항목 4개(비정상 요청 처리 4점, 고가용성 및 안정성 12점, 성능 효율성 12점, 비용 최적화 12점), 세부항목 68개, 총점 40점. 모든 항목은 로드를 주입한 채점용 인스턴스의 results_&lt;비번호&gt;.log 결과로 채점한다.</p>
+<div class="tags"></div><div class="actions"><a class="btn" href="2025-national-t3.html">📄 문제 보기</a></div></div>
+<article class="doc"><h2 id="채점-유의사항">채점 유의사항</h2>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>다음 사항을 유의하여 채점하시오.</p>
+</blockquote>
+<ol>
+<li>AWS의 지역은 ap-northeast-2을 사용합니다.</li>
+<li>웹페이지 접근은 크롬이나 파이어폭스를 이용합니다.</li>
+<li>웹페이지에서 언어에 따라 문구가 다르게 보일 수 있습니다.</li>
+<li>shell에서의 명령어의 출력은 버전에 따라 조금 다를 수 있습니다.</li>
+<li>문제지와 채점지에 있는 &lt;&gt; 는 변수입니다. 해당 부분을 변경해 입력합니다.</li>
+<li>채점은 문항 순서대로 진행해야 합니다.</li>
+<li>삭제된 채점자료는 되돌릴 수 없음으로 유의하여 진행하며, 이의신청까지 완료 이후 선수가 생성한 클라우드 리소스를 삭제합니다.</li>
+<li>부분 점수가 있는 문항은 채점 항목에 부분 점수가 적혀져 있습니다.</li>
+<li>부분 점수가 따로 없는 문항은 모두 맞아야 점수로 인정됩니다.</li>
+<li>리소스의 정보를 읽어오는 채점항목은 기본적으로 스크립트 결과를 통해 채점을 진행하며, 만약 선수가 이의가 있다면 명령어를 직접 입력하여 확인해볼 수 있습니다.</li>
+<li>[ ] 기호는 채점에 영향을 주지 않습니다.</li>
+<li>채점 내용의 $ 기호는 명령어에 포함되는 것이 아니라 쉘을 의미합니다.</li>
+</ol>
+<h2 id="배점-요약">배점 요약</h2>
+<h3 id="주요항목별-배점">주요항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>과제번호</th>
+<th>일련번호</th>
+<th>주요항목</th>
+<th>배점</th>
+<th>채점방법</th>
+<th>채점시기</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>제3과제</td>
+<td>1</td>
+<td>비정상 요청 처리</td>
+<td>4</td>
+<td>합의</td>
+<td>경기 종료후</td>
+<td></td>
+</tr>
+<tr>
+<td>제3과제</td>
+<td>2</td>
+<td>고가용성 및 안정성</td>
+<td>12</td>
+<td>합의</td>
+<td>경기 종료후</td>
+<td></td>
+</tr>
+<tr>
+<td>제3과제</td>
+<td>3</td>
+<td>성능 효율성</td>
+<td>12</td>
+<td>합의</td>
+<td>경기 종료후</td>
+<td></td>
+</tr>
+<tr>
+<td>제3과제</td>
+<td>4</td>
+<td>비용 최적화</td>
+<td>12</td>
+<td>합의</td>
+<td>경기 종료후</td>
+<td></td>
+</tr>
+<tr>
+<td>합계</td>
+<td></td>
+<td></td>
+<td>40</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="세부항목별-배점">세부항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>주요항목</th>
+<th>세부항목(채점방법)</th>
+<th>배점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-1</td>
+<td>비정상 요청 처리</td>
+<td>Email Request Validation &gt;= 90%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-2</td>
+<td>비정상 요청 처리</td>
+<td>Email Request Validation &gt;= 85%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-3</td>
+<td>비정상 요청 처리</td>
+<td>Email Request Validation &gt;= 80%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-4</td>
+<td>비정상 요청 처리</td>
+<td>Email Request Validation &gt;= 50%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-5</td>
+<td>비정상 요청 처리</td>
+<td>비정상 요청 처리율 &gt;= 90%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-6</td>
+<td>비정상 요청 처리</td>
+<td>비정상 요청 처리율 &gt;= 85%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-7</td>
+<td>비정상 요청 처리</td>
+<td>비정상 요청 처리율 &gt;= 80%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-8</td>
+<td>비정상 요청 처리</td>
+<td>비정상 요청 처리율 &gt;= 50%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-1</td>
+<td>고가용성 및 안정성</td>
+<td>user API 로드 처리 &gt;= 90.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-2</td>
+<td>고가용성 및 안정성</td>
+<td>user API 로드 처리 &gt;= 87.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-3</td>
+<td>고가용성 및 안정성</td>
+<td>user API 로드 처리 &gt;= 85.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-4</td>
+<td>고가용성 및 안정성</td>
+<td>user API 로드 처리 &gt;= 82.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-5</td>
+<td>고가용성 및 안정성</td>
+<td>user API 로드 처리 &gt;= 80.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-6</td>
+<td>고가용성 및 안정성</td>
+<td>user API 로드 처리 &gt;= 70.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-7</td>
+<td>고가용성 및 안정성</td>
+<td>user API 로드 처리 &gt;= 50.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-8</td>
+<td>고가용성 및 안정성</td>
+<td>user API 로드 처리 &gt;= 30.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-9</td>
+<td>고가용성 및 안정성</td>
+<td>product API 로드 처리 &gt;= 90.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-10</td>
+<td>고가용성 및 안정성</td>
+<td>product API 로드 처리 &gt;= 87.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-11</td>
+<td>고가용성 및 안정성</td>
+<td>product API 로드 처리 &gt;= 85.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-12</td>
+<td>고가용성 및 안정성</td>
+<td>product API 로드 처리 &gt;= 82.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-13</td>
+<td>고가용성 및 안정성</td>
+<td>product API 로드 처리 &gt;= 80.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-14</td>
+<td>고가용성 및 안정성</td>
+<td>product API 로드 처리 &gt;= 70.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-15</td>
+<td>고가용성 및 안정성</td>
+<td>product API 로드 처리 &gt;= 50.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-16</td>
+<td>고가용성 및 안정성</td>
+<td>product API 로드 처리 &gt;= 30.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-17</td>
+<td>고가용성 및 안정성</td>
+<td>stress API 로드 처리 &gt;= 90.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-18</td>
+<td>고가용성 및 안정성</td>
+<td>stress API 로드 처리 &gt;= 87.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-19</td>
+<td>고가용성 및 안정성</td>
+<td>stress API 로드 처리 &gt;= 85.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-20</td>
+<td>고가용성 및 안정성</td>
+<td>stress API 로드 처리 &gt;= 82.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-21</td>
+<td>고가용성 및 안정성</td>
+<td>stress API 로드 처리 &gt;= 80.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-22</td>
+<td>고가용성 및 안정성</td>
+<td>stress API 로드 처리 &gt;= 70.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-23</td>
+<td>고가용성 및 안정성</td>
+<td>stress API 로드 처리 &gt;= 50.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-24</td>
+<td>고가용성 및 안정성</td>
+<td>stress API 로드 처리 &gt;= 30.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-1</td>
+<td>성능 효율성</td>
+<td>(user API 로드 처리 &lt;= 0.2 sec) &gt;= 90.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-2</td>
+<td>성능 효율성</td>
+<td>(user API 로드 처리 &lt;= 0.2 sec) &gt;= 87.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-3</td>
+<td>성능 효율성</td>
+<td>(user API 로드 처리 &lt;= 0.2 sec) &gt;= 85.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>성능 효율성</td>
+<td>(user API 로드 처리 &lt;= 0.2 sec) &gt;= 82.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-5</td>
+<td>성능 효율성</td>
+<td>(user API 로드 처리 &lt;= 0.2 sec) &gt;= 80.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-6</td>
+<td>성능 효율성</td>
+<td>(user API 로드 처리 &lt;= 0.2 sec) &gt;= 70.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-7</td>
+<td>성능 효율성</td>
+<td>(user API 로드 처리 &lt;= 0.2 sec) &gt;= 50.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-8</td>
+<td>성능 효율성</td>
+<td>(user API 로드 처리 &lt;= 0.2 sec) &gt;= 30.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-9</td>
+<td>성능 효율성</td>
+<td>(product API 로드 처리 &lt;= 0.2 sec) &gt;= 90.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-10</td>
+<td>성능 효율성</td>
+<td>(product API 로드 처리 &lt;= 0.2 sec) &gt;= 87.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-11</td>
+<td>성능 효율성</td>
+<td>(product API 로드 처리 &lt;= 0.2 sec) &gt;= 85.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-12</td>
+<td>성능 효율성</td>
+<td>(product API 로드 처리 &lt;= 0.2 sec) &gt;= 82.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-13</td>
+<td>성능 효율성</td>
+<td>(product API 로드 처리 &lt;= 0.2 sec) &gt;= 80.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-14</td>
+<td>성능 효율성</td>
+<td>(product API 로드 처리 &lt;= 0.2 sec) &gt;= 70.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-15</td>
+<td>성능 효율성</td>
+<td>(product API 로드 처리 &lt;= 0.2 sec) &gt;= 50.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-16</td>
+<td>성능 효율성</td>
+<td>(product API 로드 처리 &lt;= 0.2 sec) &gt;= 30.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-17</td>
+<td>성능 효율성</td>
+<td>(stress API 로드 처리 &lt;= 1.0 sec) &gt;= 90.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-18</td>
+<td>성능 효율성</td>
+<td>(stress API 로드 처리 &lt;= 1.0 sec) &gt;= 87.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-19</td>
+<td>성능 효율성</td>
+<td>(stress API 로드 처리 &lt;= 1.0 sec) &gt;= 85.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-20</td>
+<td>성능 효율성</td>
+<td>(stress API 로드 처리 &lt;= 1.0 sec) &gt;= 82.5%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-21</td>
+<td>성능 효율성</td>
+<td>(stress API 로드 처리 &lt;= 1.0 sec) &gt;= 80.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-22</td>
+<td>성능 효율성</td>
+<td>(stress API 로드 처리 &lt;= 1.0 sec) &gt;= 70.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-23</td>
+<td>성능 효율성</td>
+<td>(stress API 로드 처리 &lt;= 1.0 sec) &gt;= 50.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-24</td>
+<td>성능 효율성</td>
+<td>(stress API 로드 처리 &lt;= 1.0 sec) &gt;= 30.0%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>4-1</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.00</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-2</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.25</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-3</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.50</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-4</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.75</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.00</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-6</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.25</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-7</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.50</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-8</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.75</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-9</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.00</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-10</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.25</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-11</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.50</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-12</td>
+<td>비용 최적화</td>
+<td>0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.75</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>총점</td>
+<td></td>
+<td></td>
+<td>40</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="채점-항목">채점 항목</h2>
+<h3 id="0-사전준비">0. 사전준비</h3>
+<ol>
+<li>선수가 제출한 엔드포인트가 선수의 시스템이 맞는지 확인하고 틀리다면 모든 항목 0점 처리 합니다.</li>
+<li>제공된 바이너리 변경이나 제공된 바이너리에서 응답값을 만드는것이 아닌 프록시 등을 통한 응답값 조작 등 발견 시 모든 항목 0점 처리합니다.</li>
+<li>아래의 허용되지 않은 리소스를 생성하면 첫 적발 시 비용 관련 점수 최대 1점 감점에, 두 번째 적발 시 비용 관련 점수 0점 처리됩니다. 감점은 0점까지 가능하며, 비용 점수가 마이너스가 될 수는 없습니다.
+<ul>
+<li>지역 상관없이 Lambda 리소스를 만드는 경우. 서울 지역에 만드는 경우도 감점 대상.</li>
+<li>db.t3.micro가 아닌 다른 RDS(Aurora) 타입을 사용하는 경우.</li>
+<li>RDS(Aurora)를 두 대 이상 쓰는 경우.</li>
+<li>서울 지역 외 다른 지역에 EC2 등 컴퓨팅 관련 리소스, RDS(Aurora)를 만드는 경우.<br>(EC2, ECS, EKS, Fargate, Lambda, RDS, Elastic Beanstalk, Lightsail, Batch 등)</li>
+</ul>
+</li>
+</ol>
+<h3 id="1-1-email-request-validation-90-05점">1-1. Email Request Validation &gt;= 90% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 email request validation 값이 90.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="1-2-email-request-validation-85-05점">1-2. Email Request Validation &gt;= 85% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 email request validation 값이 85.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="1-3-email-request-validation-80-05점">1-3. Email Request Validation &gt;= 80% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 email request validation 값이 80.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="1-4-email-request-validation-50-05점">1-4. Email Request Validation &gt;= 50% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 email request validation 값이 50.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="1-5-비정상-요청-처리율-90-05점">1-5. 비정상 요청 처리율 &gt;= 90% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 Exception Handling 값이 90.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="1-6-비정상-요청-처리율-85-05점">1-6. 비정상 요청 처리율 &gt;= 85% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 Exception Handling 값이 85.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="1-7-비정상-요청-처리율-80-05점">1-7. 비정상 요청 처리율 &gt;= 80% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 Exception Handling 값이 80.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="1-8-비정상-요청-처리율-50-05점">1-8. 비정상 요청 처리율 &gt;= 50% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 Exception Handling 값이 50.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-1-user-api-로드-처리-900-05점">2-1. user API 로드 처리 &gt;= 90.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) availability 값이 90.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-2-user-api-로드-처리-875-05점">2-2. user API 로드 처리 &gt;= 87.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) availability 값이 87.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-3-user-api-로드-처리-850-05점">2-3. user API 로드 처리 &gt;= 85.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) availability 값이 85.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-4-user-api-로드-처리-825-05점">2-4. user API 로드 처리 &gt;= 82.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) availability 값이 82.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-5-user-api-로드-처리-800-05점">2-5. user API 로드 처리 &gt;= 80.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) availability 값이 80.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-6-user-api-로드-처리-700-05점">2-6. user API 로드 처리 &gt;= 70.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) availability 값이 70.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-7-user-api-로드-처리-500-05점">2-7. user API 로드 처리 &gt;= 50.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) availability 값이 50.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-8-user-api-로드-처리-300-05점">2-8. user API 로드 처리 &gt;= 30.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) availability 값이 30.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-9-product-api-로드-처리-900-05점">2-9. product API 로드 처리 &gt;= 90.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) availability 값이 90.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-10-product-api-로드-처리-875-05점">2-10. product API 로드 처리 &gt;= 87.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) availability 값이 87.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-11-product-api-로드-처리-850-05점">2-11. product API 로드 처리 &gt;= 85.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) availability 값이 85.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-12-product-api-로드-처리-825-05점">2-12. product API 로드 처리 &gt;= 82.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) availability 값이 82.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-13-product-api-로드-처리-800-05점">2-13. product API 로드 처리 &gt;= 80.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) availability 값이 80.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-14-product-api-로드-처리-700-05점">2-14. product API 로드 처리 &gt;= 70.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) availability 값이 70.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-15-product-api-로드-처리-500-05점">2-15. product API 로드 처리 &gt;= 50.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) availability 값이 50.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-16-product-api-로드-처리-300-05점">2-16. product API 로드 처리 &gt;= 30.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) availability 값이 30.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-17-stress-api-로드-처리-900-05점">2-17. stress API 로드 처리 &gt;= 90.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) availability 값이 90.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-18-stress-api-로드-처리-875-05점">2-18. stress API 로드 처리 &gt;= 87.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) availability 값이 87.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-19-stress-api-로드-처리-850-05점">2-19. stress API 로드 처리 &gt;= 85.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) availability 값이 85.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-20-stress-api-로드-처리-825-05점">2-20. stress API 로드 처리 &gt;= 82.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) availability 값이 82.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-21-stress-api-로드-처리-800-05점">2-21. stress API 로드 처리 &gt;= 80.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) availability 값이 80.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-22-stress-api-로드-처리-700-05점">2-22. stress API 로드 처리 &gt;= 70.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) availability 값이 70.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-23-stress-api-로드-처리-500-05점">2-23. stress API 로드 처리 &gt;= 50.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) availability 값이 50.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="2-24-stress-api-로드-처리-300-05점">2-24. stress API 로드 처리 &gt;= 30.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) availability 값이 30.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-1-user-api-로드-처리-02-sec-900-05점">3-1. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 90.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 90.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-2-user-api-로드-처리-02-sec-875-05점">3-2. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 87.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 87.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-3-user-api-로드-처리-02-sec-850-05점">3-3. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 85.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 85.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-4-user-api-로드-처리-02-sec-825-05점">3-4. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 82.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 82.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-5-user-api-로드-처리-02-sec-800-05점">3-5. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 80.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 80.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-6-user-api-로드-처리-02-sec-700-05점">3-6. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 70.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 70.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-7-user-api-로드-처리-02-sec-500-05점">3-7. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 50.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 50.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-8-user-api-로드-처리-02-sec-300-05점">3-8. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 30.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-9-product-api-로드-처리-02-sec-900-05점">3-9. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 90.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 90.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-10-product-api-로드-처리-02-sec-875-05점">3-10. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 87.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 87.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-11-product-api-로드-처리-02-sec-850-05점">3-11. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 85.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 85.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-12-product-api-로드-처리-02-sec-825-05점">3-12. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 82.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 82.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-13-product-api-로드-처리-02-sec-800-05점">3-13. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 80.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 80.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-14-product-api-로드-처리-02-sec-700-05점">3-14. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 70.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 70.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-15-product-api-로드-처리-02-sec-500-05점">3-15. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 50.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 50.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-16-product-api-로드-처리-02-sec-300-05점">3-16. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 30.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-17-stress-api-로드-처리-10-sec-900-05점">3-17. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 90.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 90.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-18-stress-api-로드-처리-10-sec-875-05점">3-18. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 87.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 87.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-19-stress-api-로드-처리-10-sec-850-05점">3-19. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 85.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 85.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-20-stress-api-로드-처리-10-sec-825-05점">3-20. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 82.5% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 82.5% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-21-stress-api-로드-처리-10-sec-800-05점">3-21. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 80.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 80.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-22-stress-api-로드-처리-10-sec-700-05점">3-22. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 70.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 70.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-23-stress-api-로드-처리-10-sec-500-05점">3-23. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 50.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 50.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="3-24-stress-api-로드-처리-10-sec-300-05점">3-24. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 30.0% · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30.0% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-1-05-인스턴스-비용-ratio-100-10점">4-1. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.00 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 1.00 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-2-05-인스턴스-비용-ratio-125-10점">4-2. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.25 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 1.25 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-3-05-인스턴스-비용-ratio-150-10점">4-3. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.50 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 1.50 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-4-05-인스턴스-비용-ratio-175-10점">4-4. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.75 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 1.75 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-5-05-인스턴스-비용-ratio-200-10점">4-5. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.00 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 2.00 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-6-05-인스턴스-비용-ratio-225-10점">4-6. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.25 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 2.25 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-7-05-인스턴스-비용-ratio-250-10점">4-7. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.50 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 2.50 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-8-05-인스턴스-비용-ratio-275-10점">4-8. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.75 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 2.75 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-9-05-인스턴스-비용-ratio-300-10점">4-9. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.00 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 3.00 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-10-05-인스턴스-비용-ratio-325-10점">4-10. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.25 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 3.25 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-11-05-인스턴스-비용-ratio-350-10점">4-11. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.50 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 3.50 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+<h3 id="4-12-05-인스턴스-비용-ratio-375-10점">4-12. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.75 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 채점용 인스턴스에 접근합니다. (로드를 주입한 인스턴스)</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 cost ratio 값이 0.50 이상, 3.75 이하인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (user) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (product) performance 값이 30% 이상인지 확인합니다.</li>
+<li><code>results_&lt;비번호&gt;.log</code> 파일을 확인하여 (stress) performance 값이 30% 이상인지 확인합니다.</li>
+</ol>
+</article></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#채점-유의사항">채점 유의사항</a></li><li class="toc-h2"><a href="#배점-요약">배점 요약</a></li><li class="toc-h3"><a href="#주요항목별-배점">주요항목별 배점</a></li><li class="toc-h3"><a href="#세부항목별-배점">세부항목별 배점</a></li><li class="toc-h2"><a href="#채점-항목">채점 항목</a></li><li class="toc-h3"><a href="#0-사전준비">0. 사전준비</a></li><li class="toc-h3"><a href="#1-1-email-request-validation-90-05점">1-1. Email Request Validation &gt;= 90% · 0.5점</a></li><li class="toc-h3"><a href="#1-2-email-request-validation-85-05점">1-2. Email Request Validation &gt;= 85% · 0.5점</a></li><li class="toc-h3"><a href="#1-3-email-request-validation-80-05점">1-3. Email Request Validation &gt;= 80% · 0.5점</a></li><li class="toc-h3"><a href="#1-4-email-request-validation-50-05점">1-4. Email Request Validation &gt;= 50% · 0.5점</a></li><li class="toc-h3"><a href="#1-5-비정상-요청-처리율-90-05점">1-5. 비정상 요청 처리율 &gt;= 90% · 0.5점</a></li><li class="toc-h3"><a href="#1-6-비정상-요청-처리율-85-05점">1-6. 비정상 요청 처리율 &gt;= 85% · 0.5점</a></li><li class="toc-h3"><a href="#1-7-비정상-요청-처리율-80-05점">1-7. 비정상 요청 처리율 &gt;= 80% · 0.5점</a></li><li class="toc-h3"><a href="#1-8-비정상-요청-처리율-50-05점">1-8. 비정상 요청 처리율 &gt;= 50% · 0.5점</a></li><li class="toc-h3"><a href="#2-1-user-api-로드-처리-900-05점">2-1. user API 로드 처리 &gt;= 90.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-2-user-api-로드-처리-875-05점">2-2. user API 로드 처리 &gt;= 87.5% · 0.5점</a></li><li class="toc-h3"><a href="#2-3-user-api-로드-처리-850-05점">2-3. user API 로드 처리 &gt;= 85.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-4-user-api-로드-처리-825-05점">2-4. user API 로드 처리 &gt;= 82.5% · 0.5점</a></li><li class="toc-h3"><a href="#2-5-user-api-로드-처리-800-05점">2-5. user API 로드 처리 &gt;= 80.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-6-user-api-로드-처리-700-05점">2-6. user API 로드 처리 &gt;= 70.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-7-user-api-로드-처리-500-05점">2-7. user API 로드 처리 &gt;= 50.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-8-user-api-로드-처리-300-05점">2-8. user API 로드 처리 &gt;= 30.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-9-product-api-로드-처리-900-05점">2-9. product API 로드 처리 &gt;= 90.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-10-product-api-로드-처리-875-05점">2-10. product API 로드 처리 &gt;= 87.5% · 0.5점</a></li><li class="toc-h3"><a href="#2-11-product-api-로드-처리-850-05점">2-11. product API 로드 처리 &gt;= 85.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-12-product-api-로드-처리-825-05점">2-12. product API 로드 처리 &gt;= 82.5% · 0.5점</a></li><li class="toc-h3"><a href="#2-13-product-api-로드-처리-800-05점">2-13. product API 로드 처리 &gt;= 80.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-14-product-api-로드-처리-700-05점">2-14. product API 로드 처리 &gt;= 70.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-15-product-api-로드-처리-500-05점">2-15. product API 로드 처리 &gt;= 50.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-16-product-api-로드-처리-300-05점">2-16. product API 로드 처리 &gt;= 30.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-17-stress-api-로드-처리-900-05점">2-17. stress API 로드 처리 &gt;= 90.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-18-stress-api-로드-처리-875-05점">2-18. stress API 로드 처리 &gt;= 87.5% · 0.5점</a></li><li class="toc-h3"><a href="#2-19-stress-api-로드-처리-850-05점">2-19. stress API 로드 처리 &gt;= 85.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-20-stress-api-로드-처리-825-05점">2-20. stress API 로드 처리 &gt;= 82.5% · 0.5점</a></li><li class="toc-h3"><a href="#2-21-stress-api-로드-처리-800-05점">2-21. stress API 로드 처리 &gt;= 80.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-22-stress-api-로드-처리-700-05점">2-22. stress API 로드 처리 &gt;= 70.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-23-stress-api-로드-처리-500-05점">2-23. stress API 로드 처리 &gt;= 50.0% · 0.5점</a></li><li class="toc-h3"><a href="#2-24-stress-api-로드-처리-300-05점">2-24. stress API 로드 처리 &gt;= 30.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-1-user-api-로드-처리-02-sec-900-05점">3-1. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 90.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-2-user-api-로드-처리-02-sec-875-05점">3-2. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 87.5% · 0.5점</a></li><li class="toc-h3"><a href="#3-3-user-api-로드-처리-02-sec-850-05점">3-3. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 85.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-4-user-api-로드-처리-02-sec-825-05점">3-4. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 82.5% · 0.5점</a></li><li class="toc-h3"><a href="#3-5-user-api-로드-처리-02-sec-800-05점">3-5. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 80.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-6-user-api-로드-처리-02-sec-700-05점">3-6. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 70.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-7-user-api-로드-처리-02-sec-500-05점">3-7. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 50.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-8-user-api-로드-처리-02-sec-300-05점">3-8. (user API 로드 처리 &lt;= 0.2 sec) &gt;= 30.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-9-product-api-로드-처리-02-sec-900-05점">3-9. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 90.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-10-product-api-로드-처리-02-sec-875-05점">3-10. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 87.5% · 0.5점</a></li><li class="toc-h3"><a href="#3-11-product-api-로드-처리-02-sec-850-05점">3-11. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 85.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-12-product-api-로드-처리-02-sec-825-05점">3-12. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 82.5% · 0.5점</a></li><li class="toc-h3"><a href="#3-13-product-api-로드-처리-02-sec-800-05점">3-13. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 80.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-14-product-api-로드-처리-02-sec-700-05점">3-14. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 70.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-15-product-api-로드-처리-02-sec-500-05점">3-15. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 50.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-16-product-api-로드-처리-02-sec-300-05점">3-16. (product API 로드 처리 &lt;= 0.2 sec) &gt;= 30.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-17-stress-api-로드-처리-10-sec-900-05점">3-17. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 90.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-18-stress-api-로드-처리-10-sec-875-05점">3-18. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 87.5% · 0.5점</a></li><li class="toc-h3"><a href="#3-19-stress-api-로드-처리-10-sec-850-05점">3-19. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 85.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-20-stress-api-로드-처리-10-sec-825-05점">3-20. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 82.5% · 0.5점</a></li><li class="toc-h3"><a href="#3-21-stress-api-로드-처리-10-sec-800-05점">3-21. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 80.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-22-stress-api-로드-처리-10-sec-700-05점">3-22. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 70.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-23-stress-api-로드-처리-10-sec-500-05점">3-23. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 50.0% · 0.5점</a></li><li class="toc-h3"><a href="#3-24-stress-api-로드-처리-10-sec-300-05점">3-24. (stress API 로드 처리 &lt;= 1.0 sec) &gt;= 30.0% · 0.5점</a></li><li class="toc-h3"><a href="#4-1-05-인스턴스-비용-ratio-100-10점">4-1. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.00 · 1.0점</a></li><li class="toc-h3"><a href="#4-2-05-인스턴스-비용-ratio-125-10점">4-2. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.25 · 1.0점</a></li><li class="toc-h3"><a href="#4-3-05-인스턴스-비용-ratio-150-10점">4-3. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.50 · 1.0점</a></li><li class="toc-h3"><a href="#4-4-05-인스턴스-비용-ratio-175-10점">4-4. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 1.75 · 1.0점</a></li><li class="toc-h3"><a href="#4-5-05-인스턴스-비용-ratio-200-10점">4-5. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.00 · 1.0점</a></li><li class="toc-h3"><a href="#4-6-05-인스턴스-비용-ratio-225-10점">4-6. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.25 · 1.0점</a></li><li class="toc-h3"><a href="#4-7-05-인스턴스-비용-ratio-250-10점">4-7. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.50 · 1.0점</a></li><li class="toc-h3"><a href="#4-8-05-인스턴스-비용-ratio-275-10점">4-8. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 2.75 · 1.0점</a></li><li class="toc-h3"><a href="#4-9-05-인스턴스-비용-ratio-300-10점">4-9. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.00 · 1.0점</a></li><li class="toc-h3"><a href="#4-10-05-인스턴스-비용-ratio-325-10점">4-10. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.25 · 1.0점</a></li><li class="toc-h3"><a href="#4-11-05-인스턴스-비용-ratio-350-10점">4-11. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.50 · 1.0점</a></li><li class="toc-h3"><a href="#4-12-05-인스턴스-비용-ratio-375-10점">4-12. 0.5 &lt;= 인스턴스 비용 ratio &lt;= 3.75 · 1.0점</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

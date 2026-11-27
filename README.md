@@ -1,106 +1,37 @@
-# 클라우드컴퓨팅(37) 기능경기대회 문제 모음 2023–2026
+# 클라우드컴퓨팅 기능경기대회 문제집 (2023–2026)
 
-- `index.html` — 전체 목록(문제/채점기준/원본 링크)
-- `전체_문제모음.html` — 모든 문제 원문을 한 페이지에 (그림 포함)
-- `전체_채점기준모음.html` — 모든 채점기준을 한 페이지에
+웹으로 보기: https://mrgrit.github.io/worldskills_cloud/
 
-
-## 2023 지방
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| 제1과제 |  |  |  | 채점기준 | [열기](<2023_지방/제1과제_채점기준.html>) | 2023지방대회_클라우드컴퓨팅 제1과제 채점기준(답지).pdf |
-| 제1과제 |  | Web Service Provisioning | 4시간 | 문제 | [열기](<2023_지방/제1과제_문제.html>) | 37클라우드컴퓨팅 제1과제 문제.pdf |
-| 제2과제 |  |  |  | 채점기준 | [열기](<2023_지방/제2과제_채점기준.html>) | 2023지방대회_클라우드컴퓨팅 제2과제 채점기준(답지).pdf |
-| 제2과제 |  | Automation | 4시간 | 문제 | [열기](<2023_지방/제2과제_문제.html>) | 클라우드컴퓨팅 제2과제 문제.pdf |
-
-## 2023 전국
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| 제1과제 |  | Web Service Provisioning | 4시간 | 문제 | [열기](<2023_전국/제1과제_문제.html>) | 클라우드컴퓨팅_제1과제.hwp |
-| 제1과제 |  |  |  | 채점기준 | [열기](<2023_전국/제1과제_채점기준.html>) | 클라우드컴퓨팅_제1과제_채점기준.hwp |
-| 제2과제 |  | Automation | 4시간 | 문제 | [열기](<2023_전국/제2과제_문제.html>) | 클라우드컴퓨팅_제2과제.hwp |
-| 제2과제 |  |  |  | 채점기준 | [열기](<2023_전국/제2과제_채점기준.html>) | 클라우드컴퓨팅_제2과제_채점기준.hwp |
-| 제3과제 |  | Trouble-shooting | 2시간 | 문제 | [열기](<2023_전국/제3과제_문제.html>) | 클라우드컴퓨팅_제3과제.hwp |
-| 제3과제 |  |  |  | 채점기준 | [열기](<2023_전국/제3과제_채점기준.html>) | 클라우드컴퓨팅_제3과제_채점기준.hwp |
-
-## 2024 지방
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| 제1과제 |  | Web Service Provisioning | 4시간 | 문제 | [열기](<2024_지방/제1과제_문제.html>) | 제1과제 문제지.hwp |
-| 제1과제 |  |  |  | 채점기준 | [열기](<2024_지방/제1과제_채점기준.html>) | 제1과제 채점기준표.hwp |
-| 제2과제 |  | Automation | 4시간 | 문제 | [열기](<2024_지방/제2과제_문제.html>) | 제2과제 문제지.hwp |
-| 제2과제 |  |  |  | 채점기준 | [열기](<2024_지방/제2과제_채점기준.html>) | 제2과제 채점기준표.hwp |
-
-## 2024 전국
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| 제1과제 |  | Solution Architecture | 4시간 | 문제 | [열기](<2024_전국/제1과제_문제.html>) | 클라우드컴퓨팅1과제_최종.hwpx |
-| 제1과제 |  |  |  | 채점기준 | [열기](<2024_전국/제1과제_채점기준.html>) | 클라우드컴퓨팅1과제채점기준표_최종.hwpx |
-| 제2과제 |  |  |  | 채점기준 | [열기](<2024_전국/제2과제_채점기준.html>) | 2과제_채점기준표_통합_최종.hwpx |
-| 제2과제 | 2과제(추가)1번 (VPN) | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_2과제(추가)1번 (VPN).html>) | 클라우드컴퓨팅 2과제-VPN.hwp |
-| 제2과제 | 2과제(추가)2번 (Keycloak) | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_2과제(추가)2번 (Keycloak).html>) | 클라우드컴퓨팅 2과제-Keycloak.hwp |
-| 제2과제 | 경북2과제3번 | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_경북2과제3번.html>) | 클라우드컴퓨팅2과제(3)_과제지.hwp |
-| 제2과제 | 광주2과제3번 | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_광주2과제3번.html>) | 3번(문제).hwp |
-| 제2과제 | 대전2과제3번 | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_대전2과제3번.html>) | 24년 전국 대전 2과제 과제지.hwp |
-| 제2과제 | 부산2과제2번 (Governance) | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_부산2과제2번 (Governance).html>) | 제2과제(Governance)_과제지.hwp |
-| 제2과제 | 서울2과제1번 | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_서울2과제1번.html>) | 클라우드컴퓨팅 2과제_과제.hwp |
-| 제2과제 | 서울2과제3번 | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_서울2과제3번.html>) | 클라우드컴퓨팅 2과제_과제.hwp |
-| 제2과제 | 제주2과제3번 | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_제주2과제3번.html>) | 제주_2과제_과제지(3).hwp |
-| 제2과제 | 충남2과제1번 | Small Challenge | 4시간 | 문제 | [열기](<2024_전국/제2과제_문제_충남2과제1번.html>) | 클라우드컴퓨팅2과제지(1).hwp |
-| 제3과제 |  | System operation | 3시간 | 문제 | [열기](<2024_전국/제3과제_문제.html>) | 2024년_전국대회_3과제_과제_최종.hwp |
-| 제3과제 |  |  |  | 채점기준 | [열기](<2024_전국/제3과제_채점기준.html>) | 2024년_전국대회_3과제_채점지_최종.hwp |
-
-## 2024 국제
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| Main Document |  | Main Document (공통) |  | 문제 | [열기](<2024_국제(WSC2024_Lyon)/Main_Document.html>) | WSC2024_TP53_main_document_actual_en.pdf |
-| Day1 |  | Day 1 |  | 문제 | [열기](<2024_국제(WSC2024_Lyon)/Day1.html>) | WSC2024_TP53_day1_actual_en.pdf |
-| Day2 |  | Day 2 |  | 문제 | [열기](<2024_국제(WSC2024_Lyon)/Day2.html>) | WSC2024_TP53_day2_actual_en.pdf |
-| Day3 |  | Day 3 |  | 문제 | [열기](<2024_국제(WSC2024_Lyon)/Day3.html>) | WSC2024_TP53_day3_actual_en.pdf |
-| TP Validation Statement |  | TP Validation Statement |  | 기타 | [열기](<2024_국제(WSC2024_Lyon)/TP_Validation_Statement.html>) | WSC2024_statement_TP_validation_53_Lee.pdf |
-| Marking Scheme |  | Marking Scheme |  | 채점기준 | [열기](<2024_국제(WSC2024_Lyon)/Marking_Scheme.html>) | WSC2024_53_Cloud_Computing_marking_scheme.xlsx |
-
-## 2025 지방
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| 제1과제 |  | Solution Architecture | 4시간 | 문제 | [열기](<2025_지방/제1과제_문제.html>) | 클라우드컴퓨팅 제1과제 문제지.hwp |
-| 제1과제 |  |  |  | 채점기준 | [열기](<2025_지방/제1과제_채점기준.html>) | 클라우드컴퓨팅 제1과제 채점기준.hwp |
-| 제2과제 |  | Small Challenge | 4시간 | 문제 | [열기](<2025_지방/제2과제_문제.html>) | 클라우드컴퓨팅 제2과제 문제지.hwp |
-| 제2과제 |  |  |  | 채점기준 | [열기](<2025_지방/제2과제_채점기준.html>) | 클라우드컴퓨팅 제2과제 채점기준.hwp.hwp |
-
-## 2025 전국
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| 제1과제 |  | Solution Architecture | 4시간 | 문제 | [열기](<2025_전국/제1과제_문제.html>) | 1과제_문제.hwpx |
-| 제1과제 |  |  |  | 채점기준 | [열기](<2025_전국/제1과제_채점기준.html>) | 1과제_채점기준.hwpx |
-| 제2과제 |  | Small Challenge | 4시간 | 문제 | [열기](<2025_전국/제2과제_문제.html>) | 2과제_문제.hwp |
-| 제2과제 |  |  |  | 채점기준 | [열기](<2025_전국/제2과제_채점기준.html>) | 2과제_채점기준.hwp |
-| 제3과제 |  | System Operation | 3시간 | 문제 | [열기](<2025_전국/제3과제_문제.html>) | 3과제_문제.hwp |
-| 제3과제 |  |  |  | 채점기준 | [열기](<2025_전국/제3과제_채점기준.html>) | 3과제_채점기준.hwp |
-
-## 2026 지방
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| 제1과제 |  | Solution architecture | 4시간 | 문제 | [열기](<2026_지방/제1과제_문제.html>) | 클라우드컴퓨팅 1과제.hwp |
-| 제1과제 |  |  |  | 채점기준 | [열기](<2026_지방/제1과제_채점기준.html>) | 클라우드컴퓨팅 1과제 채점기준.hwp |
-| 제2과제 |  | Small challenge | 4시간 | 문제 | [열기](<2026_지방/제2과제_문제.html>) | 클라우드컴퓨팅 2과제.hwp |
-| 제2과제 |  |  |  | 채점기준 | [열기](<2026_지방/제2과제_채점기준.html>) | 클라우드컴퓨팅 2과제 채점기준.hwp |
-
-## 2026 전국
-
-| 과제 | 세부 | 과제명 | 시간 | 구분 | 페이지 | 원본파일 |
-|---|---|---|---|---|---|---|
-| 제1과제 |  | Solution Architecture | 4시간 | 문제 | [열기](<2026_전국/제1과제_문제.html>) | 1과제_과제지.hwp |
-| 제1과제 |  |  |  | 채점기준 | [열기](<2026_전국/제1과제_채점기준.html>) | 1과제_채점지.hwp |
-| 제2과제 |  | Small Challenge | 4시간 | 문제 | [열기](<2026_전국/제2과제_문제.html>) | 2과제_과제지.hwp |
-| 제2과제 |  |  |  | 채점기준 | [열기](<2026_전국/제2과제_채점기준.html>) | 2과제_채점지.hwp |
-| 제3과제 |  | System operation | 3시간 | 문제 | [열기](<2026_전국/제3과제_문제.html>) | 3과제_과제지.hwp |
-| 제3과제 |  |  |  | 채점기준 | [열기](<2026_전국/제3과제_채점기준.html>) | 3과제_채점지.hwp |
+- [2023 지방 제1과제 — Web Service Provisioning](2023-regional-t1.html) · [채점기준](2023-regional-t1-marking.html)
+- [2023 지방 제2과제 — Automation / Kinesis·Glue 기반 ETL 파이프라인](2023-regional-t2.html) · [채점기준](2023-regional-t2-marking.html)
+- [2023 전국 제1과제 — Web Service Provisioning / ECS Fargate 기반 MSA 웹 서비스](2023-national-t1.html) · [채점기준](2023-national-t1-marking.html)
+- [2023 전국 제2과제 — Automation / 로그 수집·분석, 정적 콘텐츠 제공, 보안 대응 자동화](2023-national-t2.html) · [채점기준](2023-national-t2-marking.html)
+- [2023 전국 제3과제 — Trouble-shooting / 컨테이너 이미지·S3 객체·IAM 권한·IaC 문제 해결](2023-national-t3.html) · [채점기준](2023-national-t3-marking.html)
+- [2024 지방 제1과제 — Web Service Provisioning](2024-regional-t1.html) · [채점기준](2024-regional-t1-marking.html)
+- [2024 지방 제2과제 — Automation](2024-regional-t2.html) · [채점기준](2024-regional-t2-marking.html)
+- [2024 전국 제1과제 — Solution Architecture / Transit Gateway·EKS 기반 3-VPC 인프라와 DNS/CDN/Kubernetes 보안](2024-national-t1.html) · [채점기준](2024-national-t1-marking.html)
+- [2024 전국 제2과제 · 부산 2번 — Small Challenge / IAM 로그인 기록 수집 (CloudTrail·Lambda·CloudWatch)](2024-national-t2-busan2.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 충남 1번 — Small Challenge / Dynamic IAM Role Authorization Enforcement](2024-national-t2-chungnam1.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 대전 3번 — Small Challenge / EKS Observability with FluentBit](2024-national-t2-daejeon3.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 추가 1번 — Small Challenge / AWS Client VPN](2024-national-t2-extra1.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 추가 2번 — Small Challenge / AWS saml SSO with Keycloak](2024-national-t2-extra2.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 광주 3번 — Small Challenge / EKS Observability](2024-national-t2-gwangju3.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 경북 3번 — Small Challenge / Elastic stack](2024-national-t2-gyeongbuk3.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 제주 3번 — Small Challenge / Secure networking](2024-national-t2-jeju3.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 서울 1번 — Small Challenge / Image resizing on Edge location](2024-national-t2-seoul1.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제2과제 · 서울 3번 — Small Challenge / IAM security maintenance system](2024-national-t2-seoul3.html) · [채점기준](2024-national-t2-marking.html)
+- [2024 전국 제3과제 — System operation / Token·Employee API 운영 및 모니터링](2024-national-t3.html) · [채점기준](2024-national-t3-marking.html)
+- [WSC2024 · Main Document — Test Project Cloud Computing / Main document](2024-wsc-main.html)
+- [WSC2024 · Day 1 — Test Project Cloud Computing — Day 1 / Batch data processing for anomalous equipment codes](2024-wsc-day1.html) · [채점기준](2024-wsc-marking.html)
+- [WSC2024 · Day 2 — Test Project Cloud Computing / Day 2 — Real-time Healthcare & Enterprise Data Analytics Platform](2024-wsc-day2.html) · [채점기준](2024-wsc-marking.html)
+- [WSC2024 · Day 3 — Test Project Cloud Computing / Day 3 — Troubleshooting & Quest (Security Chaos)](2024-wsc-day3.html) · [채점기준](2024-wsc-marking.html)
+- [2025 지방 제1과제 — Solution Architecture](2025-regional-t1.html) · [채점기준](2025-regional-t1-marking.html)
+- [2025 지방 제2과제 — Small Challenge / VPN · Event-driven Autoscaling · IaC · EC2 Automation](2025-regional-t2.html) · [채점기준](2025-regional-t2-marking.html)
+- [2025 전국 제1과제 — Solution Architecture](2025-national-t1.html) · [채점기준](2025-national-t1-marking.html)
+- [2025 전국 제2과제 — Small Challenge / CI/CD · Storage data protect · WAF · Secure networking · Serverless Inventory](2025-national-t2.html) · [채점기준](2025-national-t2-marking.html)
+- [2025 전국 제3과제 — System Operation](2025-national-t3.html) · [채점기준](2025-national-t3-marking.html)
+- [2026 지방 제1과제 — Solution architecture](2026-regional-t1.html) · [채점기준](2026-regional-t1-marking.html)
+- [2026 지방 제2과제 — Small challenge / Shared network storage · Query from S3 · Fine-grained IAM policy · MySQL with Lambda](2026-regional-t2.html) · [채점기준](2026-regional-t2-marking.html)
+- [2026 전국 제1과제 — Solution Architecture / Unicorn Tickets 콘서트 예약 플랫폼 (EKS)](2026-national-t1.html) · [채점기준](2026-national-t1-marking.html)
+- [2026 전국 제2과제 — Small Challenge / Workflow · Real-time data analytics · MSK · CDN · Legacy System](2026-national-t2.html) · [채점기준](2026-national-t2-marking.html)
+- [2026 전국 제3과제 — System operation / user·product·stress API 운영 및 모니터링 (EKS)](2026-national-t3.html) · [채점기준](2026-national-t3-marking.html)

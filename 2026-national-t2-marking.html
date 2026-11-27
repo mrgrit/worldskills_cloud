@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 전국 제2과제 · 채점기준</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details open><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html" class="on">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2026 전국 제2과제</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2026</span><span class="badge">제2과제</span><span class="badge kind-marking">채점기준</span></div>
+<h1>채점기준<small>Small Challenge</small></h1>
+<p class="summary">5개 주요항목(Workflow, Real-time Data Analytics, MSK, CDN Service Setup, Legacy System Operation), 27개 세부항목으로 구성되며 총점은 30점입니다.</p>
+<div class="tags"></div><div class="actions"><a class="btn" href="2026-national-t2.html">📄 문제 보기</a></div></div>
+<article class="doc"><h2 id="채점-유의사항">채점 유의사항</h2>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>※ 다음 사항을 유의하여 채점하시오.</p>
+</blockquote>
+<ol>
+<li>채점하는 서버가 선수의 서버가 맞는지 확인합니다.</li>
+<li>채점시 명령어 입력은 아래 사진과 같이 CloudShell을 이용할 수 있습니다.</li>
+</ol>
+<figure><a href="images/2026-national-t2-marking/img01.png" target="_blank" rel="noopener"><img src="images/2026-national-t2-marking/img01.png" alt="AWS 콘솔 상단의 CloudShell 아이콘 위치(빨간 원)" loading="lazy"></a><figcaption>AWS 콘솔 상단의 CloudShell 아이콘 위치(빨간 원)</figcaption></figure>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>※ 채점기준 양식은 반드시, 양식에 맞추어 작성해야 합니다.(채점사이트 입력에 필요)</p>
+</blockquote>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>※ 기존 3번 Cloud Event Handling 문제의 경우 과제에 존재하는 핵심 풀이에 대해 채점지에서 검사하지 않고, 존재하지 않은 많은 리소스를 검사하는 등 오류가 많아 삭제 하였습니다. 4번 MSK가 3번 채점항목이 되었습니다.</p>
+</blockquote>
+<h2 id="배점-요약">배점 요약</h2>
+<h3 id="주요항목별-배점">주요항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>주요항목</th>
+<th>배점</th>
+<th>채점방법</th>
+<th>채점시기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Workflow</td>
+<td>7</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Real-time Data Analytics</td>
+<td>7</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>3</td>
+<td>MSK</td>
+<td>7</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>4</td>
+<td>CDN Service Setup</td>
+<td>3</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Legacy System Operation</td>
+<td>6</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>합계</strong></td>
+<td><strong>30</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="세부항목별-배점">세부항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>항목</th>
+<th>배점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-1</td>
+<td>Workflow · S3 Bucket + Folder Structure</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1-2</td>
+<td>Workflow · DynamoDB Table + Key Schema</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1-3</td>
+<td>Workflow · Lambda Function + Runtime + Env</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1-4</td>
+<td>Workflow · Step Functions State Machine</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1-5</td>
+<td>Workflow · Workflow Result (Normal)</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>1-6</td>
+<td>Workflow · Workflow Result (Error)</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>2-1</td>
+<td>Real-time Data Analytics · EC2 Instance</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>2-2</td>
+<td>Real-time Data Analytics · ALB Resoureces</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2-3</td>
+<td>Real-time Data Analytics · Kinesis Stream</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2-4</td>
+<td>Real-time Data Analytics · Kinesis Data</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2-5</td>
+<td>Real-time Data Analytics · Flink Application</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2-6</td>
+<td>Real-time Data Analytics · Application Health</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2-7</td>
+<td>Real-time Data Analytics · Systemd Service</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-1</td>
+<td>MSK · Resources</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>3-2</td>
+<td>MSK · Lambda Functions</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-3</td>
+<td>MSK · MSK Cluster Configuration</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>MSK · MSK Trigger Mapping</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-5</td>
+<td>MSK · Data Processing Result</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3-6</td>
+<td>MSK · Producer Running</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4-1</td>
+<td>CDN Service Setup · CloudFront OAI</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4-2</td>
+<td>CDN Service Setup · Cache Invalidation</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4-3</td>
+<td>CDN Service Setup · API Security</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5-1</td>
+<td>Legacy System Operation · Service Provisioning</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5-2</td>
+<td>Legacy System Operation · Data Ingestion</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5-3</td>
+<td>Legacy System Operation · Success Rate</td>
+<td>1</td>
+</tr>
+<tr>
+<td>5-4</td>
+<td>Legacy System Operation · Performance Tuning</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>5-5</td>
+<td>Legacy System Operation · Serverless Computing</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>총점</strong></td>
+<td><strong>30</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="채점-항목">채점 항목</h2>
+<h3 id="1번-사전-준비">1번 사전 준비</h3>
+<ol>
+<li>웹브라우저로 선수의 AWS 계정에 로그인 후 ap-southeast-1 Region으로 접속합니다.</li>
+<li>CloudShell에 접속해 아래 명령어를 입력하고 사용자의 AWS ID와 일치하는지 확인합니다.<pre><code class="language-bash">$ aws sts get-caller-identity --query Account --output text
+</code></pre>
+</li>
+<li>아래 명령어를 실행해 채점환경을 준비합니다. (스크립트 사용 시 스킵)<pre><code class="language-bash">$ BUCKET_NAME=&quot;wsc2026-student-score-bucket-&lt;선수 등번호&gt;“
+</code></pre>
+</li>
+</ol>
+<p>채점 전 S3 버킷과 DynamoDB의 데이터 클렌징이 완료된지 확인하며, 클렌징이 안되었다면 1-1과 1-5, 1-6은 틀린 것으로 간주합니다. 이후 S3 버킷에 input/test.csv 파일을 업로드 하며 60초 이후에 아래 명령어 들을 수행하여 워크플로가 정상 동작 하였는지 확인합니다.</p>
+<pre><code class="language-bash">check_data_cleansing () {
+  [ $(aws s3 ls s3://$BUCKET_NAME/input/ | wc -l) = 1 ] &amp;&amp; [ $(aws s3 ls s3://$BUCKET_NAME/processed/ | wc -l) = 1 ] &amp;&amp; \
+  [ $(aws s3 ls s3://$BUCKET_NAME/error/ | wc -l) = 1 ] &amp;&amp; [ $(aws dynamodb scan --table-name wsc2026-student-score --query Count --output text) = 0 ]
+}
+
+check_data_cleansing &amp;&amp; echo &quot;OK&quot; &amp;&amp; {
+  wget –O test.csv https://notice-pg-qw7w2t3wk-asdf83xc4hc3-x28a3b8v1q91sr.s3.ap-northeast-2.amazonaws.com/2_s233asi43x/mod1/test.csv
+  aws s3 cp test.csv s3://$BUCKET_NAME/input/
+  aws stepfunctions start-execution --state-machine-arn $STATE_MACHINE --name $(date +%s)
+  sleep 60
+} || echo &quot;Data not cleansed&quot;
+</code></pre>
+<h3 id="1-1-s3-bucket-folder-structure-1점">1-1. S3 Bucket + Folder Structure · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 실행합니다.<pre><code class="language-bash">aws s3api head-bucket --bucket $BUCKET_NAME 2&gt;&amp;1 &gt; /dev/null &amp;&amp; aws s3 ls s3://$BUCKET_NAME/
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">PRE error/
+PRE processed/
+PRE input/
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>error와 processed만 있으면 정답. input 유무와 상관 없음.</li>
+</ul>
+<h3 id="1-2-dynamodb-table-key-schema-1점">1-2. DynamoDB Table + Key Schema · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws dynamodb describe-table --table-name wsc2026-student-score —query &quot;Table.[TableName,KeySchema]&quot; --output json
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-json">[
+  &quot;wsc2026-student-score&quot;,
+  [
+    {
+      &quot;AttributeName&quot;: &quot;studentId&quot;,
+      &quot;KeyType&quot;: &quot;HASH&quot;
+    },
+    {
+      &quot;AttributeName&quot;: &quot;examDate&quot;,
+      &quot;KeyType&quot;: &quot;RANGE&quot;
+    }
+  ]
+]
+</code></pre>
+</li>
+</ol>
+<h3 id="1-3-lambda-function-runtime-env-1점">1-3. Lambda Function + Runtime + Env · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws lambda get-function-configuration --function-name wsc2026-student-score-function --query &quot;[FunctionName,Runtime,Environment.Variables]&quot; --output json
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-json">[
+    &quot;wsc2026-student-score-function&quot;,
+    &quot;python3.12&quot;,
+    {
+        &quot;S3_BUCKET&quot;: &quot;wsc2026-student-score-bucket-&lt;등번호&gt;&quot;,
+        &quot;DDB_TABLE&quot;: &quot;wsc2026-student-score&quot;
+    }
+]
+</code></pre>
+</li>
+</ol>
+<h3 id="1-4-step-functions-state-machine-1점">1-4. Step Functions State Machine · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">SM_ARN=$(aws stepfunctions list-state-machines --query &quot;stateMachines[?name=='wsc2026-student-score-workflow'].stateMachineArn&quot; --output text)
+aws stepfunctions describe-state-machine --state-machine-arn $SM_ARN --query &quot;[name,type]&quot; --output text
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">wsc2026-student-score-workflow  STANDARD
+</code></pre>
+</li>
+</ol>
+<h3 id="1-5-workflow-result-normal-15점">1-5. Workflow Result (Normal) · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws dynamodb get-item --table-name wsc2026-student-score --key '{&quot;studentId&quot;:{&quot;S&quot;:&quot;STU1020&quot;},&quot;examDate&quot;:{&quot;S&quot;:&quot;2026-05-30&quot;}}' --query &quot;Item.[studentId.S,average.N,grade.S]&quot; --output text; aws s3 ls s3://$BUCKET_NAME/processed/
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다. (강조된 부분만 확인. 아래 값 이외의 값이 출력될 경우 오답.)<pre><code class="language-text">STU1020 96.6  A
+2026-05-31 22:58:16        497 test.csv
+</code></pre>
+</li>
+</ol>
+<h3 id="1-6-workflow-result-error-15점">1-6. Workflow Result (Error) · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws s3 ls s3://$BUCKET_NAME/error/
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다. (강조된 부분만 확인. 아래 4개의 값 이외의 값이 출력될 경우 오답.)<pre><code class="language-text">2026-05-31 13:58:16        267 error_(timestamp)_STU2001.json
+2026-05-31 13:58:15        274 error_(timestamp)_STU2002.json
+2026-05-31 13:58:15        260 error_(timestamp)_STU2004.json
+2026-05-31 13:58:16        262 error_(timestamp)_unknown.json
+</code></pre>
+</li>
+</ol>
+<h3 id="2번-사전-준비">2번 사전 준비</h3>
+<ol>
+<li>웹브라우저로 선수의 AWS 계정에 로그인 후 ap-northeast-2 Region으로 접속합니다.</li>
+<li>CloudShell에 접속해 아래 명령어를 입력하고 사용자의 AWS ID와 일치하는지 확인합니다.<pre><code class="language-bash">$ aws sts get-caller-identity --query Account --output text
+</code></pre>
+</li>
+<li>아래 명령어를 실행해 채점환경을 준비합니다. (스크립트 사용 시 스킵)<pre><code class="language-bash">$ ALB_DNS=$(aws elbv2 describe-load-balancers --names wsc2026-analytics-alb --query &quot;LoadBalancers[0].DNSName&quot; --output text); EC2_ID=$(aws ec2 describe-instances --filters &quot;Name=tag:Name,Values=wsc2026-analytics-ec2&quot; &quot;Name=instance-state-name,Values=running&quot; --query &quot;Reservations[0].Instances[0].InstanceId&quot; --output text)
+</code></pre>
+</li>
+</ol>
+<h3 id="2-1-ec2-instance-05점">2-1. EC2 Instance · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-instances --instance-ids $EC2_ID --query &quot;Reservations[0].Instances[0].{Type:InstanceType,Subnet:SubnetId}&quot; --output text | xargs -I{} aws ec2 describe-subnets --subnet-ids {} --query &quot;Subnets[0].Tags[?Key=='Name'].Value|[0]&quot; --output text 2&gt;/dev/null || aws ec2 describe-subnets --subnet-ids $(aws ec2 describe-instances --instance-ids $EC2_ID --query &quot;Reservations[0].Instances[0].SubnetId&quot; --output text) --query &quot;Subnets[0].Tags[?Key=='Name'].Value|[0]&quot; --output text
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">analytics-priv-a
+</code></pre>
+</li>
+</ol>
+<h3 id="2-2-alb-resoureces-1점">2-2. ALB Resoureces · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elbv2 describe-listeners --load-balancer-arn $(aws elbv2 describe-load-balancers --names wsc2026-analytics-alb --query &quot;LoadBalancers[0].LoadBalancerArn&quot; --output text) --query &quot;Listeners[].[Port,Protocol]&quot; --output text; aws elbv2 describe-target-groups --names wsc2026-analytics-tg --query &quot;TargetGroups[].[TargetGroupName,Port]&quot; --output text
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">80      HTTP
+wsc2026-analytics-tg    5000
+</code></pre>
+</li>
+</ol>
+<h3 id="2-3-kinesis-stream-1점">2-3. Kinesis Stream · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws kinesis describe-stream-summary --stream-name wsc2026-order-stream --query &quot;StreamDescriptionSummary.[StreamName,StreamStatus,StreamModeDetails.StreamMode]&quot; --output text
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">wsc2026-order-stream    ACTIVE  ON_DEMAND
+</code></pre>
+</li>
+</ol>
+<h3 id="2-4-kinesis-data-1점">2-4. Kinesis Data · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">curl -s -X POST http://$ALB_DNS/order | jq .
+</code></pre>
+</li>
+<li>출력값이 아래와 같은 JSON 형식인지 확인합니다. (모든 필드의 값이 채워져있어야 합니다.)<pre><code class="language-text">{
+  &quot;event_time&quot;: &quot;&lt;timestamp&gt;&quot;,
+  &quot;order_id&quot;: &quot;&lt;uuid&gt;&quot;,
+  &quot;price&quot;: &lt;number&gt;,
+  &quot;product_name&quot;: &quot;&lt;product_name&gt;&quot;,
+  &quot;quantity&quot;: &lt;number&gt;
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="2-5-flink-application-1점">2-5. Flink Application · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws kinesisanalyticsv2 describe-application --application-name wsc2026-analytics-flink --query &quot;ApplicationDetail.[ApplicationName,ApplicationStatus,RuntimeEnvironment]&quot; --output text
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">wsc2026-analytics-flink &lt;READY 혹은 RUNNING&gt;   ZEPPELIN-FLINK-3_0
+</code></pre>
+</li>
+</ol>
+<h3 id="2-6-application-health-1점">2-6. Application Health · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">curl -s http://$ALB_DNS/health
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-json">{&quot;status&quot;:&quot;healthy&quot;}
+</code></pre>
+</li>
+</ol>
+<h3 id="2-7-systemd-service-15점">2-7. Systemd Service · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">CMD_ID=$(aws ssm send-command --instance-ids $EC2_ID --document-name &quot;AWS-RunShellScript&quot; --parameters '{&quot;commands&quot;:[&quot;systemctl is-active app &amp;&amp; systemctl is-enabled app&quot;]}' --query &quot;Command.CommandId&quot; --output text); sleep 3; aws ssm get-command-invocation --command-id $CMD_ID --instance-id $EC2_ID --query &quot;StandardOutputContent&quot; --output text
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">active
+enabled
+</code></pre>
+</li>
+</ol>
+<h3 id="3번-사전-준비">3번 사전 준비</h3>
+<ol>
+<li>웹브라우저로 선수의 AWS 계정에 로그인 후 ap-northeast-1 Region으로 접속합니다.</li>
+<li>CloudShell에 접속해 아래 명령어를 입력하고 사용자의 AWS ID와 일치하는지 확인합니다.<pre><code class="language-bash">$ aws sts get-caller-identity --query Account --output text
+</code></pre>
+</li>
+<li>아래 명령어를 실행해 채점환경을 준비합니다. (스크립트 사용 시 스킵)<pre><code class="language-bash">$ ACCOUNT_ID=$(aws sts get-caller-identity --query Account —output text); CLUSTER_ARN=$(aws kafka list-clusters --cluster-name-filter wsc2026-msk-cluster --query &quot;ClusterInfoList[0].ClusterArn&quot; --output text)
+$ BUCKET_NAME=&quot;wsc2026-student-score-bucket-(선수 등번호)&quot;
+</code></pre>
+</li>
+</ol>
+<h3 id="3-1-resources-05점">3-1. Resources · 0.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws dynamodb describe-table --table-name wsc2026-sensor-data --query &quot;Table.[TableName,KeySchema[*].AttributeName]&quot; --output text &amp;&amp; aws s3api head-bucket --bucket $BUCKET_NAME 2&gt;&amp;1
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">wsc2026-sensor-data
+sensorId        timestamp
+{
+    &quot;BucketArn&quot;: &quot;arn:aws:s3:::wsc2026-sensor-alert-bucket-&lt;등번호&gt;&quot;,
+    &quot;BucketRegion&quot;: &quot;ap-northeast-1&quot;,
+    &quot;AccessPointAlias&quot;: false
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="3-2-lambda-functions-15점">3-2. Lambda Functions · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">for fn in wsc2026-sensor-consumer wsc2026-sensor-alert-consumer; do aws lambda get-function --function-name $fn --query &quot;Configuration.[FunctionName,Runtime]&quot; --output text; done
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">wsc2026-sensor-consumer python3.14
+wsc2026-sensor-alert-consumer   python3.14
+</code></pre>
+</li>
+</ol>
+<h3 id="3-3-msk-cluster-configuration-15점">3-3. MSK Cluster Configuration · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws kafka describe-cluster --cluster-arn $CLUSTER_ARN --query &quot;ClusterInfo.[ClusterName,State,CurrentBrokerSoftwareInfo.KafkaVersion,BrokerNodeGroupInfo.InstanceType,ClientAuthentication.Sasl.Iam.Enabled]&quot; --output text
+aws kafka list-topics --output json --cluster-arn $CLUSTER_ARN —query &quot;Topics[].[TopicName,ReplicationFactor,PartitionCount]&quot; | grep –A2 wsc2026
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">wsc2026-msk-cluster     ACTIVE  3.6.0   kafka.t3.small  True
+
+&quot;wsc2026-sensor-alert&quot;,
+2,
+1
+&quot;wsc2026-sensor-raw&quot;,
+2,
+3
+</code></pre>
+</li>
+</ol>
+<h3 id="3-4-msk-trigger-mapping-15점">3-4. MSK Trigger Mapping · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">for fn in wsc2026-sensor-consumer wsc2026-sensor-alert-consumer; do aws lambda list-event-source-mappings --function-name $fn --query &quot;EventSourceMappings[0].[State]&quot; --output text; done
+</code></pre>
+</li>
+<li>출력값이 아래와 일치하는지 확인합니다.<pre><code class="language-text">Enabled
+Enabled
+</code></pre>
+</li>
+</ol>
+<h3 id="3-5-data-processing-result-1점">3-5. Data Processing Result · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws dynamodb scan --table-name wsc2026-sensor-data --max-items 1 --query &quot;Items[0].{sensorId:sensorId.S,temperature:temperature.S,status:status.S}&quot; --output json
+</code></pre>
+</li>
+<li>출력값이 아래와 같은 형식으로 출력되는지 확인합니다.<pre><code class="language-json">{
+    &quot;sensorId&quot;: &quot;SENSOR-002&quot;,
+    &quot;temperature&quot;: &quot;64.6&quot;,
+    &quot;status&quot;: &quot;NORMAL&quot;
+}
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>Value 값은 다를 수 있으나 표기되는 Key는 모두 같아야 합니다.</li>
+</ul>
+<h3 id="3-6-producer-running-1점">3-6. Producer Running · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws dynamodb scan --table-name wsc2026-sensor-data --max-items 3 --query &quot;Items[*].{sensorId:sensorId.S,timestamp:timestamp.S}&quot; --output json
+</code></pre>
+</li>
+<li>출력 결과가 JSON 형식으로 표시되고, <code>sensorId</code>와 <code>timestamp</code> 항목만 포함되어 있는지 확인합니다. timestamp 값은 ISO 8601 KST 형식 (YYYY-MM-DDTHH:mm:ss±HH:mm)으로 출력될 경우 정답으로 인정합니다.<pre><code class="language-json">{
+    &quot;sensorId&quot;: &quot;SENSOR-002&quot;,
+    &quot;timestamp&quot;: &quot;2026-06-01T18:28:24+09:00&quot;
+}
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>Value 값은 다를 수 있으나 표기되는 Key는 모두 같아야 합니다. 단, timestamp의 경우 시간 자체는 다를 수 있으나, YYYY-MM-DDTHH:mm:ss±HH:mm 형식과 +09:00 형식으로 표기가 되어야 합니다.</li>
+</ul>
+<h3 id="4-1-cloudfront-oai-1점">4-1. CloudFront OAI · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다<pre><code class="language-bash">export distribution_id=$(aws cloudfront list-distributions --query &quot;DistributionList.Items[?Comment=='wsk2026-cf'].Id&quot; --output text )
+export origin_id=$(aws cloudfront get-distribution --id $distribution_id --query &quot;Distribution.DistributionConfig.CacheBehaviors.Items[?PathPattern=='/static/*'].TargetOriginId&quot; --output text)
+export bucket=$(aws s3 ls | grep wsk2026-encrypted-data | cut -d' ' -f3)
+export domain_name=$(aws cloudfront get-distribution --id $distribution_id --query Distribution.DomainName --output text)
+export CT=$(date +&quot;%M%S&quot;)
+
+aws s3api get-bucket-encryption --bucket $bucket --query ServerSideEncryptionConfiguration.Rules[].ApplyServerSideEncryptionByDefault[].SSEAlgorithm --output text
+aws cloudfront get-distribution-config --id $distribution_id --query &quot;DistributionConfig.Origins.Items[?Id=='$origin_id'][].S3OriginConfig.OriginAccessIdentity&quot; --output text
+
+cat &lt;&lt; EOF &gt; index${CT}.html
+&lt;h1&gt;Hello&lt;/h1&gt;
+EOF
+aws s3 cp index${CT}.html s3://$bucket/static/index${CT}.html &gt; /dev/null 2&gt;&amp;1
+curl https://$domain_name/static/index${CT}.html
+curl https://$domain_name/static/index${CT}.html
+</code></pre>
+</li>
+<li>출력 결과가 아래와 일치하는지 확인 합니다.<pre><code class="language-text">aws:kms
+origin-access-identity/cloudfront/&lt;Random ID&gt;
+&lt;h1&gt;Hello&lt;/h1&gt;
+&lt;h1&gt;Hello&lt;/h1&gt;
+</code></pre>
+</li>
+</ol>
+<h3 id="4-2-cache-invalidation-1점">4-2. Cache Invalidation · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">export optimized='658327ea-f89d-4fab-a63d-7e88639e58f6'
+export cache_policy=$(aws cloudfront get-distribution --id $distribution_id --query &quot;Distribution.DistributionConfig.CacheBehaviors.Items[?PathPattern=='/static/*'].CachePolicyId&quot; --output text)
+
+[[ $optimized == $cache_policy ]] &amp;&amp; echo &quot;CachingOptimized&quot; || echo &quot;Invalid cache policy&quot;
+
+cat &lt;&lt; EOF &gt; index${CT}.html
+&lt;h1&gt;Hello World!!!&lt;/h1&gt;
+EOF
+aws s3 cp index${CT}.html s3://$bucket/static/index${CT}.html &gt; /dev/null 2&gt;&amp;1
+
+sleep 180
+
+curl https://$domain_name/static/index${CT}.html
+curl https://$domain_name/static/index${CT}.html
+</code></pre>
+</li>
+<li>결과값이 아래와 같이 순서까지 일치 하는지 확인합니다.<pre><code class="language-text">CachingOptimized
+&lt;h1&gt;Hello World!!!&lt;/h1&gt;
+&lt;h1&gt;Hello World!!!&lt;/h1&gt;
+</code></pre>
+</li>
+</ol>
+<h3 id="4-3-api-security-1점">4-3. API Security · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>채점 플랫폼 시스템 접속<pre><code class="language-text">https://d2lvw397wb43zq.cloudfront.net
+</code></pre>
+</li>
+<li><code>https://&lt;선수의 CDN 주소&gt;/now</code> 복사 후 채점 페이지에 입력하여 API 호출</li>
+<li>현재 시각이 KST 기준으로 정상적으로 표시되는지 확인 (여러번 수행하여 실시간인지 확인)</li>
+</ol>
+<h3 id="5-0-사전-준비">5-0. 사전 준비</h3>
+<p>아래와 같이 명령 실행에 필요한 환경 변수를 받습니다.</p>
+<pre><code class="language-bash">export REGION=eu-central-1
+export ALB=$(aws elbv2 describe-load-balancers --region $REGION --names shgold-alb \
+      --query 'LoadBalancers[0].DNSName' --output text)
+</code></pre>
+<h3 id="5-1-service-provisioning-1점">5-1. Service Provisioning · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>실제 앱이 구동중인지 확인합니다. (확인 방법 재공지 예정)</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">curl -s -w '\nHTTP %{http_code}  %{time_total}s\n' -X GET http://$ALB/healthz
+</code></pre>
+</li>
+<li>결과가 아래와 같은지 확인합니다. 파란색 응답시간의 경우 1초 미만 이어야 합니다.<pre><code class="language-text">{&quot;service&quot;:&quot;root&quot;,&quot;status&quot;:&quot;ok&quot;,&quot;version&quot;:&quot;1.0.0&quot;}
+
+HTTP 200  0.014484s
+</code></pre>
+</li>
+</ol>
+<h3 id="5-2-data-ingestion-1점">5-2. Data Ingestion · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">CT=$(date +%H%M%S)
+RES=$(curl -s -w '\n%{time_total}' -X POST -H 'Content-Type: application/json' \
+      -d '{&quot;device_id&quot;:&quot;line-01-equip-'$CT'&quot;,&quot;metric&quot;:&quot;temperature_c&quot;,&quot;value&quot;:82.4}' \
+      http://$ALB/ingest)
+BODY=$(echo &quot;$RES&quot; | head -1)
+TIME=$(echo &quot;$RES&quot; | tail -1)
+ID=$(echo &quot;$BODY&quot; | jq -r .id)
+
+echo &quot;POST ${TIME}s  $(awk -v t=$TIME 'BEGIN{print (t&lt;=2)?&quot;OK (2초 이내)&quot;:&quot;FAIL (2초 초과)&quot;}')&quot;
+echo &quot;ID = $ID&quot;
+
+RES=$(curl -s -m 5 -w '\n%{http_code} %{time_total}' -X GET http://$ALB/v1/readings/$ID)
+BODY=$(echo &quot;$RES&quot; | head -1)
+CODE=$(echo &quot;$RES&quot; | tail -1 | cut -d' ' -f1)
+TIME=$(echo &quot;$RES&quot; | tail -1 | cut -d' ' -f2)
+
+if [ &quot;$CODE&quot; = &quot;200&quot; ]; then
+    echo &quot;GET ${TIME}s  OK (5초 이내)&quot;
+    echo &quot;$BODY&quot;
+else
+    echo &quot;GET  FAIL (HTTP $CODE)&quot;
+fi
+</code></pre>
+</li>
+<li>출력에 아래 POST와 GET이 모두 OK로 성공한 이력이 포함되어 있는지 확인합니다.<pre><code class="language-text">POST 0.049125s  OK (2초 이내)
+GET 1.007621s  OK (5초 이내)
+</code></pre>
+</li>
+<li>GET에서 반환된 데이터를 조합하여 유효성 검사를 합니다.</li>
+</ol>
+<h3 id="5-3-success-rate-1점">5-3. Success Rate · 1점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 실행합니다.<pre><code class="language-bash">CT=$(date +%H%M%S)
+BODY=$(curl -s -X POST -H 'Content-Type: application/json' \
+       -d '{&quot;device_id&quot;:&quot;line-01-equip-'$CT'&quot;,&quot;metric&quot;:&quot;temperature_c&quot;,&quot;value&quot;:82.4}' \
+       http://$ALB/ingest)
+ID=$(echo &quot;$BODY&quot; | jq -r .id)
+echo &quot;ID = $ID&quot;
+
+for i in 1 2 3; do
+    RES=$(curl -s -m 5 -w '\n%{http_code}' -X GET http://$ALB/v1/readings/$ID)
+    BODY=$(echo &quot;$RES&quot; | head -1)
+    CODE=$(echo &quot;$RES&quot; | tail -1)
+    if [ &quot;$CODE&quot; = &quot;200&quot; ]; then
+        echo &quot;#$i  $BODY&quot;
+    else
+        echo &quot;#$i  FAIL&quot;
+    fi
+done
+</code></pre>
+</li>
+<li>GET API 세번 요청에 대해 모두 성공하여 아래와 같은 필드를 가지고 있는지 확인합니다.<pre><code class="language-json">{&quot;id&quot;:&quot;0114a944-8d7e-4d61-b953-d69f7fe6c024&quot;,&quot;device_id&quot;:&quot;line-01-equip-042715&quot;,&quot;metric&quot;:&quot;temperature_c&quot;,&quot;value&quot;:82.4,&quot;recorded_at&quot;:&quot;2026-08-24T04:27:15Z&quot;,&quot;created_at&quot;:&quot;2026-08-24T04:27:15Z&quot;,&quot;mode&quot;:&quot;d&quot;,&quot;auth_token&quot;:&quot;NmMwMjQ=&quot;}
+</code></pre>
+</li>
+<li>API 유효성 검사를 실시합니다.</li>
+</ol>
+<h3 id="5-4-performance-tuning-15점">5-4. Performance Tuning · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">CT=$(date +%H%M%S)
+BODY=$(curl -s -X POST -H 'Content-Type: application/json' \
+       -d '{&quot;device_id&quot;:&quot;line-01-equip-'$CT'&quot;,&quot;metric&quot;:&quot;temperature_c&quot;,&quot;value&quot;:82.4}' \
+       http://$ALB/ingest)
+ID=$(echo &quot;$BODY&quot; | jq -r .id)
+echo &quot;ID = $ID&quot;
+
+for i in $(seq 1 10); do
+    RES=$(curl -s -w '\n%{time_total}' -X GET http://$ALB/v1/readings/$ID)
+    BODY=$(echo &quot;$RES&quot; | head -1)
+    TIME=$(echo &quot;$RES&quot; | tail -1)
+    echo &quot;#$i  ${TIME}s  $BODY&quot;
+done
+</code></pre>
+</li>
+<li>#6 ~ #10 까지 모두 1초 미만으로 나오는지 확인합니다.</li>
+<li>#6 ~ #10 까지 mode가 모두 c 인지 확인합니다. d이면 오답입니다.</li>
+</ol>
+<h3 id="5-5-serverless-computing-15점">5-5. Serverless Computing · 1.5점</h3>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>* 5-3이 성공한 경우만 득점이 인정됩니다.</p>
+</blockquote>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>아래 명령어를 입력하여 EC2와 ECS Fargate 개수를 확인합니다.<pre><code class="language-bash">EC2=$(aws ec2 describe-instances --region $REGION \
+      --filters Name=instance-state-name,Values=running \
+      --query 'length(Reservations[].Instances[])' --output text)
+
+# shgold-cluster 의 Running 중인 Fargate 컨테이너 갯수
+TASKS=$(aws ecs list-tasks --cluster shgold-cluster --desired-status RUNNING --region $REGION \
+        --query 'taskArns[]' --output text)
+
+if [ -z &quot;$TASKS&quot; ]; then
+    FARGATE=0
+else
+    FARGATE=$(aws ecs describe-tasks --cluster shgold-cluster --tasks $TASKS --region $REGION | \
+              jq '[.tasks[].containers[] | select(.lastStatus==&quot;RUNNING&quot;)] | length')
+fi
+
+echo &quot;Running EC2 인스턴스     : $EC2&quot;
+echo &quot;Running Fargate 컨테이너 : $FARGATE&quot;
+</code></pre>
+</li>
+<li>EC2 개수가 0이고, Running 상태인 Fargate 개수가 1개 이상이면 득점으로 인정합니다.<pre><code class="language-text">Running EC2 인스턴스     : 0
+Running Fargate 컨테이너 : 2
+</code></pre>
+</li>
+</ol>
+</article></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#채점-유의사항">채점 유의사항</a></li><li class="toc-h2"><a href="#배점-요약">배점 요약</a></li><li class="toc-h3"><a href="#주요항목별-배점">주요항목별 배점</a></li><li class="toc-h3"><a href="#세부항목별-배점">세부항목별 배점</a></li><li class="toc-h2"><a href="#채점-항목">채점 항목</a></li><li class="toc-h3"><a href="#1번-사전-준비">1번 사전 준비</a></li><li class="toc-h3"><a href="#1-1-s3-bucket-folder-structure-1점">1-1. S3 Bucket + Folder Structure · 1점</a></li><li class="toc-h3"><a href="#1-2-dynamodb-table-key-schema-1점">1-2. DynamoDB Table + Key Schema · 1점</a></li><li class="toc-h3"><a href="#1-3-lambda-function-runtime-env-1점">1-3. Lambda Function + Runtime + Env · 1점</a></li><li class="toc-h3"><a href="#1-4-step-functions-state-machine-1점">1-4. Step Functions State Machine · 1점</a></li><li class="toc-h3"><a href="#1-5-workflow-result-normal-15점">1-5. Workflow Result (Normal) · 1.5점</a></li><li class="toc-h3"><a href="#1-6-workflow-result-error-15점">1-6. Workflow Result (Error) · 1.5점</a></li><li class="toc-h3"><a href="#2번-사전-준비">2번 사전 준비</a></li><li class="toc-h3"><a href="#2-1-ec2-instance-05점">2-1. EC2 Instance · 0.5점</a></li><li class="toc-h3"><a href="#2-2-alb-resoureces-1점">2-2. ALB Resoureces · 1점</a></li><li class="toc-h3"><a href="#2-3-kinesis-stream-1점">2-3. Kinesis Stream · 1점</a></li><li class="toc-h3"><a href="#2-4-kinesis-data-1점">2-4. Kinesis Data · 1점</a></li><li class="toc-h3"><a href="#2-5-flink-application-1점">2-5. Flink Application · 1점</a></li><li class="toc-h3"><a href="#2-6-application-health-1점">2-6. Application Health · 1점</a></li><li class="toc-h3"><a href="#2-7-systemd-service-15점">2-7. Systemd Service · 1.5점</a></li><li class="toc-h3"><a href="#3번-사전-준비">3번 사전 준비</a></li><li class="toc-h3"><a href="#3-1-resources-05점">3-1. Resources · 0.5점</a></li><li class="toc-h3"><a href="#3-2-lambda-functions-15점">3-2. Lambda Functions · 1.5점</a></li><li class="toc-h3"><a href="#3-3-msk-cluster-configuration-15점">3-3. MSK Cluster Configuration · 1.5점</a></li><li class="toc-h3"><a href="#3-4-msk-trigger-mapping-15점">3-4. MSK Trigger Mapping · 1.5점</a></li><li class="toc-h3"><a href="#3-5-data-processing-result-1점">3-5. Data Processing Result · 1점</a></li><li class="toc-h3"><a href="#3-6-producer-running-1점">3-6. Producer Running · 1점</a></li><li class="toc-h3"><a href="#4-1-cloudfront-oai-1점">4-1. CloudFront OAI · 1점</a></li><li class="toc-h3"><a href="#4-2-cache-invalidation-1점">4-2. Cache Invalidation · 1점</a></li><li class="toc-h3"><a href="#4-3-api-security-1점">4-3. API Security · 1점</a></li><li class="toc-h3"><a href="#5-0-사전-준비">5-0. 사전 준비</a></li><li class="toc-h3"><a href="#5-1-service-provisioning-1점">5-1. Service Provisioning · 1점</a></li><li class="toc-h3"><a href="#5-2-data-ingestion-1점">5-2. Data Ingestion · 1점</a></li><li class="toc-h3"><a href="#5-3-success-rate-1점">5-3. Success Rate · 1점</a></li><li class="toc-h3"><a href="#5-4-performance-tuning-15점">5-4. Performance Tuning · 1.5점</a></li><li class="toc-h3"><a href="#5-5-serverless-computing-15점">5-5. Serverless Computing · 1.5점</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

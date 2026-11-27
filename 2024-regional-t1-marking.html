@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2024 지방 제1과제 · 채점기준</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details open><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html" class="on">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2024 지방 제1과제</div>
+<div class="badges"><span class="badge lv-regional">지방</span><span class="badge">2024</span><span class="badge">제1과제</span><span class="badge kind-marking">채점기준</span></div>
+<h1>채점기준<small>Web Service Provisioning</small></h1>
+<p class="summary">10개 주요항목, 41개 세부항목으로 구성되며 총점은 60점입니다.</p>
+<div class="tags"></div><div class="actions"><a class="btn" href="2024-regional-t1.html">📄 문제 보기</a></div></div>
+<article class="doc"><h2 id="채점-유의사항">채점 유의사항</h2>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>※ 다음 사항을 유의하여 채점하시오.</p>
+</blockquote>
+<ol>
+<li>AWS의 리전은 ap-northeast-2을 사용합니다.</li>
+<li>웹페이지 접근은 크롬이나 파이어폭스를 이용합니다.</li>
+<li>웹페이지에서 언어에 따라 문구가 다르게 보일 수 있습니다.</li>
+<li>Shell에서의 명령어의 출력은 버전에 따라 조금 다를 수 있습니다.</li>
+<li>문제지와 채점지에 있는 &lt;&gt; 는 변수입니다. 해당 부분을 변경해 입력합니다.</li>
+<li>채점은 문항 순서대로 진행해야 합니다.</li>
+<li>삭제 채점은 되돌릴 수 없으므로 유의하여 진행합니다.</li>
+<li>이의신청까지 완료 이후 선수가 생성한 클라우드 리소스를 삭제합니다.</li>
+<li>부분 점수가 있는 문항은 채점 항목에 부분 점수가 적혀져 있습니다.</li>
+<li>부분 점수가 따로 없는 문항은 전체 다 맞아야 점수로 인정됩니다.</li>
+<li>채점 진행 전 환경 셋업을 위해 다음 사항을 확인해야 합니다.
+<ul>
+<li>Bastion에 SSH로 접근할 수 있는지 확인합니다.</li>
+<li>Bastion에서 AWS CLI v2, cURL, jq, kubectl이 설치되어 있는지 확인합니다.</li>
+<li>Bastion에서 IAM Role이 매핑되어 AWS CLI로 AWS의 모든 리소스에 접근 가능한지 확인합니다.</li>
+<li>aws sts get-caller-identity 명령을 통해 선수의 계정이 아닌 다른 계정에 접근하고 있는지 확인합니다. 만약, 다른 계정이라면 부정행위를 의심할 수 있습니다.</li>
+</ul>
+</li>
+<li>채점 전 채점환경 구성을 위해 ~/.aws/config에 아래 내용이 추가되도록 합니다.<pre><code class="language-ini">[default]
+region = ap-northeast-2
+output = json
+</code></pre>
+</li>
+<li>채점 시에는 별도로 제공한 채점 스크립트(mark.sh)를 실행하여 채점할 수 있습니다. 다만, 선수가 직접 입력을 원할 경우 채점기준표에 명시된 명령어 그대로 입력하여 채점할 수 있습니다.</li>
+</ol>
+<h2 id="배점-요약">배점 요약</h2>
+<h3 id="주요항목별-배점">주요항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>주요항목</th>
+<th>배점</th>
+<th>채점방법</th>
+<th>채점시기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Networking</td>
+<td>4.5</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bastion Server</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>3</td>
+<td>NoSQL Database</td>
+<td>12.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>4</td>
+<td>In-Memory Database</td>
+<td>13.5</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Image Repository</td>
+<td>6.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Container Orchestration</td>
+<td>6.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Load Balancing</td>
+<td>1.5</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Application</td>
+<td>4.5</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Logging</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Auto Scaling</td>
+<td>6.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>합계</strong></td>
+<td><strong>60</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="세부항목별-배점">세부항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>항목</th>
+<th>배점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-1</td>
+<td>Networking · VPC 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>1-2</td>
+<td>Networking · Subnets 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>1-3</td>
+<td>Networking · Route Tables 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>2-1</td>
+<td>Bastion Server · 인스턴스 타입 확인</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>2-2</td>
+<td>Bastion Server · Public IP 확인</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>2-3</td>
+<td>Bastion Server · OS 확인</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>3-1</td>
+<td>NoSQL Database · DocumentDB Subnets 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-2</td>
+<td>NoSQL Database · DocumentDB 고가용성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-3</td>
+<td>NoSQL Database · DocumentDB 암호화 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>NoSQL Database · DocumentDB 로깅 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-5</td>
+<td>NoSQL Database · DocumentDB 백업 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-6</td>
+<td>NoSQL Database · DocumentDB 포트 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-7</td>
+<td>NoSQL Database · DocumentDB 버전 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>3-8</td>
+<td>NoSQL Database · DocumentDB 인스턴스 타입 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-1</td>
+<td>In-Memory Database · ElalstiCache Subnets 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-2</td>
+<td>In-Memory Database · ElalstiCache Redis Cluster 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-3</td>
+<td>In-Memory Database · ElastiCache 고가용성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-4</td>
+<td>In-Memory Database · ElastiCache 암호화 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>In-Memory Database · ElastiCache 로깅 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-6</td>
+<td>In-Memory Database · ElastiCache 백업 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-7</td>
+<td>In-Memory Database · ElastiCache 포트 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-8</td>
+<td>In-Memory Database · ElastiCache 버전 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>4-9</td>
+<td>In-Memory Database · ElastiCache 인스턴스 타입 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>5-1</td>
+<td>Image Repository · ECR Repository 생성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>5-2</td>
+<td>Image Repository · ECR Repository 암호화 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>5-3</td>
+<td>Image Repository · ECR Repository Scanning 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>5-4</td>
+<td>Image Repository · ECR Repository Immutable 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>6-1</td>
+<td>Container Orchestration · EKS Cluster 구성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>6-2</td>
+<td>Container Orchestration · EKS Addon Nodegroup 구성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>6-3</td>
+<td>Container Orchestration · EKS App Nodegroup 구성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>6-4</td>
+<td>Container Orchestration · EKS App Fargate Profile 구성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>7-1</td>
+<td>Load Balancing · ALB 구성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>8-1</td>
+<td>Application · user Pod 구성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>8-2</td>
+<td>Application · token Pod 구성 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>8-3</td>
+<td>Application · Application 동작 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>9-1</td>
+<td>Logging · user 애플리케이션 로깅 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>9-2</td>
+<td>Logging · token 애플리케이션 로깅 확인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>10-1</td>
+<td>Auto Scaling · user Scaling Out</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>10-2</td>
+<td>Auto Scaling · user Scaling In</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>10-3</td>
+<td>Auto Scaling · token Scaling Out</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>10-4</td>
+<td>Auto Scaling · token Scaling In</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>총점</strong></td>
+<td><strong>60</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="채점-항목">채점 항목</h2>
+<h3 id="1-1-vpc-확인-15점">1-1. VPC 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-vpcs --filter Name=tag:Name,Values=skills-vpc \
+     --query &quot;Vpcs[].CidrBlock&quot;
+</code></pre>
+</li>
+<li>10.100.0.0/16이 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="1-2-subnets-확인-15점">1-2. Subnets 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-subnets --filter Name=tag:Name,Values=skills-public-subnet-a \
+     --query &quot;Subnets[].[AvailabilityZone, CidrBlock][]&quot;
+</code></pre>
+</li>
+<li>ap-northeast-2a와 10.100.1.0/24가 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-subnets --filter Name=tag:Name,Values=skills-public-subnet-b \
+     --query &quot;Subnets[].[AvailabilityZone, CidrBlock][]&quot;
+</code></pre>
+</li>
+<li>ap-northeast-2b와 10.100.2.0/24가 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-subnets --filter Name=tag:Name,Values=skills-private-subnet-a \
+     --query &quot;Subnets[].[AvailabilityZone, CidrBlock][]&quot;
+</code></pre>
+</li>
+<li>ap-northeast-2a와 10.100.11.0/24가 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-subnets --filter Name=tag:Name,Values=skills-private-subnet-b \
+     --query &quot;Subnets[].[AvailabilityZone, CidrBlock][]&quot;
+</code></pre>
+</li>
+<li>ap-northeast-2b와 10.100.12.0/24가 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-subnets --filter Name=tag:Name,Values=skills-protected-subnet-a \
+     --query &quot;Subnets[].[AvailabilityZone, CidrBlock][]&quot;
+</code></pre>
+</li>
+<li>ap-northeast-2a와 10.100.21.0/24가 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-subnets --filter Name=tag:Name,Values=skills-protected-subnet-b \
+     --query &quot;Subnets[].[AvailabilityZone, CidrBlock][]&quot;
+</code></pre>
+</li>
+<li>ap-northeast-2b와 10.100.22.0/24가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="1-3-route-tables-확인-15점">1-3. Route Tables 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-route-tables --filter Name=tag:Name,Values=skills-public-rtb \
+     --query &quot;RouteTables[].Routes[].GatewayId&quot;
+</code></pre>
+</li>
+<li>igw- 로 시작하는 문구가 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-internet-gateways --filter Name=tag:Name,Values=skills-igw \
+     --query &quot;InternetGateways[].InternetGatewayId&quot;
+</code></pre>
+</li>
+<li>igw- 로 시작하는 문구가 2)에서 출력된 문구와 동일한지 확인합니다. 0.5점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-route-tables --filter Name=tag:Name,Values=skills-private-rtb-a \
+     --query &quot;RouteTables[].Routes[].NatGatewayId&quot;
+</code></pre>
+</li>
+<li>nat- 로 시작하는 문구가 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-nat-gateways --filter Name=tag:Name,Values=skills-nat-a \
+     --query &quot;NatGateways[].NatGatewayId&quot;
+</code></pre>
+</li>
+<li>nat- 로 시작하는 문구가 6)에서 출력된 문구와 동일한지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-route-tables --filter Name=tag:Name,Values=skills-private-rtb-b \
+     --query &quot;RouteTables[].Routes[].NatGatewayId&quot;
+</code></pre>
+</li>
+<li>nat- 로 시작하는 문구가 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-nat-gateways --filter Name=tag:Name,Values=skills-nat-b \
+     --query &quot;NatGateways[].NatGatewayId&quot;
+</code></pre>
+</li>
+<li>nat- 로 시작하는 문구가 10)에서 출력된 문구와 동일한지 확인합니다. 0.5점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-route-tables --filter Name=tag:Name,Values=skills-protected-rtb \
+     --query &quot;RouteTables[0].Routes[*].DestinationCidrBlock&quot;
+</code></pre>
+</li>
+<li>10.100.0.0/16만 출력되는지 확인합니다. 0.5점.</li>
+</ol>
+<h3 id="2-1-인스턴스-타입-확인-10점">2-1. 인스턴스 타입 확인 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-instances --filter Name=tag:Name,Values=skills-bastion-ec2 \
+     --query &quot;Reservations[].Instances[].InstanceType&quot;
+</code></pre>
+</li>
+<li>t4g.small이 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="2-2-public-ip-확인-10점">2-2. Public IP 확인 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-instances --filter Name=tag:Name,Values=skills-bastion-ec2 \
+     --query &quot;Reservations[].Instances[].PublicIpAddress&quot;
+</code></pre>
+</li>
+<li>2)에서 출력된 IP를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-addresses --query &quot;Addresses[].PublicIp&quot;
+</code></pre>
+</li>
+<li>출력되는 IP 리스트 중에 3)에서 기록한 IP가 존재하는지 확인합니다.</li>
+</ol>
+<h3 id="2-3-os-확인-10점">2-3. OS 확인 · 1.0점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-instances --filter Name=tag:Name,Values=skills-bastion-ec2 \
+     --query &quot;Reservations[].Instances[].ImageId&quot;
+</code></pre>
+</li>
+<li>ami-로 시작하는 AMI ID를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-images --image-ids &lt;2)에서 기록한 AMI ID&gt; --query &quot;Images[].Description&quot;
+</code></pre>
+</li>
+<li>Amazon Linux 2023이 포함된 문구가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="3-1-documentdb-subnets-확인-15점">3-1. DocumentDB Subnets 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-clusters --db-cluster-identifier skills-mongodb-cluster \
+     --query &quot;DBClusters[].DBSubnetGroup&quot;
+</code></pre>
+</li>
+<li>명령어를 실행했을 때 출력되는 문구를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-subnet-groups --db-subnet-group-name &lt;3)에서 기록한 문구&gt; \
+     --query &quot;DBSubnetGroups[].Subnets[].SubnetIdentifier&quot;
+</code></pre>
+</li>
+<li>subnet-으로 시작하는 문구가 2개만 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-subnets \
+     --subnet-ids &lt;3에서 출력된 문구의 첫번째&gt; &lt;3에서 출력된 문구의 두번째&gt; \
+     --query &quot;Subnets[].CidrBlock&quot;
+</code></pre>
+</li>
+<li>10.100.21.0과 10.100.22.0 2개만 출력되는지 확인합니다. 하나라도 다르면 오답입니다.</li>
+</ol>
+<h3 id="3-2-documentdb-고가용성-확인-15점">3-2. DocumentDB 고가용성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-clusters --db-cluster-identifier skills-mongodb-cluster \
+     --query &quot;DBClusters[].MultiAZ&quot;
+</code></pre>
+</li>
+<li>true가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="3-3-documentdb-암호화-확인-15점">3-3. DocumentDB 암호화 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-clusters --db-cluster-identifier skills-mongodb-cluster \
+     --query &quot;DBClusters[].StorageEncrypted&quot;
+</code></pre>
+</li>
+<li>true가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="3-4-documentdb-로깅-확인-15점">3-4. DocumentDB 로깅 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-clusters --db-cluster-identifier skills-mongodb-cluster \
+     --query &quot;DBClusters[].EnabledCloudwatchLogsExports&quot;
+</code></pre>
+</li>
+<li>audit과 profiler 2개가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="3-5-documentdb-백업-확인-15점">3-5. DocumentDB 백업 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-clusters --db-cluster-identifier skills-mongodb-cluster \
+     --query &quot;DBClusters[].BackupRetentionPeriod&quot;
+</code></pre>
+</li>
+<li>0이 출력되지 않는지(1 이상인지) 확인합니다.</li>
+</ol>
+<h3 id="3-6-documentdb-포트-확인-15점">3-6. DocumentDB 포트 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-clusters --db-cluster-identifier skills-mongodb-cluster \
+     --query &quot;DBClusters[].Port&quot;
+</code></pre>
+</li>
+<li>27015가 아닌 다른 포트가 출력되는지 확인합니다. 0.3점.</li>
+</ol>
+<h3 id="3-7-documentdb-버전-확인-15점">3-7. DocumentDB 버전 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-clusters --db-cluster-identifier skills-mongodb-cluster \
+     --query &quot;DBClusters[].EngineVersion&quot;
+</code></pre>
+</li>
+<li>5.0.0이 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="3-8-documentdb-인스턴스-타입-확인-15점">3-8. DocumentDB 인스턴스 타입 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-clusters --db-cluster-identifier skills-mongodb-cluster \
+     --query &quot;DBClusters[].DBClusterMembers[0].DBInstanceIdentifier&quot;
+</code></pre>
+</li>
+<li>skills-mongodb-cluster로 시작하는 문구를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws docdb describe-db-instances --db-instance-identifier &lt;3에서 기록한 문구&gt; \
+     --query &quot;DBInstances[].DBInstanceClass&quot;
+</code></pre>
+</li>
+<li>db.t4g.medium이 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="4-1-elalsticache-subnets-확인-15점">4-1. ElalstiCache Subnets 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].NodeGroups[0].NodeGroupMembers[0].CacheClusterId&quot;
+</code></pre>
+</li>
+<li>명령어를 실행했을 때 출력되는 문구를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-cache-clusters --cache-cluster-id &lt;2)에서 기록한 문구&gt; \
+     --query &quot;CacheClusters[].CacheSubnetGroupName&quot;
+</code></pre>
+</li>
+<li>명령어를 실행했을 때 출력되는 문구를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-cache-subnet-groups --cache-subnet-group-name &lt;3)에서 기록한 문구&gt; \
+     --query &quot;CacheSubnetGroups[].Subnets[].SubnetIdentifier&quot;
+</code></pre>
+</li>
+<li>subnet-으로 시작하는 문구가 2개만 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ec2 describe-subnets \
+     --subnet-ids &lt;3에서 출력된 문구의 첫번째&gt; &lt;3에서 출력된 문구의 두번째&gt; \
+     --query &quot;Subnets[].CidrBlock&quot;
+</code></pre>
+</li>
+<li>10.100.21.0과 10.100.22.0 2개만 출력되는지 확인합니다. 하나라도 다르면 오답입니다.</li>
+</ol>
+<h3 id="4-2-elalsticache-redis-cluster-확인-15점">4-2. ElalstiCache Redis Cluster 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].ClusterEnabled&quot;
+</code></pre>
+</li>
+<li>true가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="4-3-elasticache-고가용성-확인-15점">4-3. ElastiCache 고가용성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].AutomaticFailover&quot;
+</code></pre>
+</li>
+<li>enabled가 출력되는지 확인합니다. 0.7점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].MultiAZ&quot;
+</code></pre>
+</li>
+<li>enabled가 출력되는지 확인합니다. 0.8점.</li>
+</ol>
+<h3 id="4-4-elasticache-암호화-확인-15점">4-4. ElastiCache 암호화 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].AtRestEncryptionEnabled&quot;
+</code></pre>
+</li>
+<li>true가 출력되는지 확인합니다. 0.8점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].TransitEncryptionEnabled&quot;
+</code></pre>
+</li>
+<li>true가 출력되는지 확인합니다. 0.7점.</li>
+</ol>
+<h3 id="4-5-elasticache-로깅-확인-15점">4-5. ElastiCache 로깅 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].LogDeliveryConfigurations[].Status&quot;
+</code></pre>
+</li>
+<li>active가 2개가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="4-6-elasticache-백업-확인-15점">4-6. ElastiCache 백업 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].SnapshotRetentionLimit&quot;
+</code></pre>
+</li>
+<li>0이 출력되지 않는지(1 이상인지) 확인합니다.</li>
+</ol>
+<h3 id="4-7-elasticache-포트-확인-15점">4-7. ElastiCache 포트 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].ConfigurationEndpoint.Port&quot;
+</code></pre>
+</li>
+<li>6379가 아닌 다른 포트가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="4-8-elasticache-버전-확인-15점">4-8. ElastiCache 버전 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].NodeGroups[0].NodeGroupMembers[0].CacheClusterId&quot;
+</code></pre>
+</li>
+<li>skills-redis-cluster-로 시작하는 문구를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-cache-clusters --cache-cluster-id &lt;3)에서 기록한 문구&gt; \
+     --query &quot;CacheClusters[].EngineVersion&quot;
+</code></pre>
+</li>
+<li>7.0으로 시작하는 문구가 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="4-9-elasticache-인스턴스-타입-확인-15점">4-9. ElastiCache 인스턴스 타입 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elasticache describe-replication-groups --replication-group-id skills-redis-cluster \
+     --query &quot;ReplicationGroups[].CacheNodeType&quot;
+</code></pre>
+</li>
+<li>cache.t4g.small이 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="5-1-ecr-repository-생성-확인-15점">5-1. ECR Repository 생성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ecr describe-repositories --repository-names user token \
+     --query &quot;repositories[].repositoryName&quot;
+</code></pre>
+</li>
+<li>user와 token이 출력되는지 확인합니다. 각각 0.75점.</li>
+</ol>
+<h3 id="5-2-ecr-repository-암호화-확인-15점">5-2. ECR Repository 암호화 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ecr describe-repositories --repository-names user token \
+     --query &quot;repositories[].encryptionConfiguration[].encryptionType&quot;
+</code></pre>
+</li>
+<li>KMS가 출력되는지 확인합니다. 1개당 0.75점.</li>
+</ol>
+<h3 id="5-3-ecr-repository-scanning-확인-15점">5-3. ECR Repository Scanning 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ecr describe-repositories --repository-names user token \
+     --query &quot;repositories[].imageScanningConfiguration.scanOnPush&quot;
+</code></pre>
+</li>
+<li>true가 출력되는지 확인합니다. 1개당 0.75점.</li>
+</ol>
+<h3 id="5-4-ecr-repository-immutable-확인-15점">5-4. ECR Repository Immutable 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws ecr describe-repositories --repository-names user token \
+     --query &quot;repositories[].imageTagMutability&quot;
+</code></pre>
+</li>
+<li>IMMUTABLE이 출력되는지 확인합니다. 1개당 0.75점.</li>
+</ol>
+<h3 id="6-1-eks-cluster-구성-확인-15점">6-1. EKS Cluster 구성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws eks describe-cluster --name skills-eks-cluster --query &quot;cluster.logging.clusterLogging&quot;
+</code></pre>
+</li>
+<li>api, audit, authenticator, controllerManager, scheduler이 출력되는지 확인합니다. 각각 0.1점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws eks describe-cluster --name skills-eks-cluster \
+     --query &quot;cluster.encryptionConfig[].provider.keyArn&quot;
+</code></pre>
+</li>
+<li>arn:aws:kms로 시작하는 문구가 출력되는지 확인합니다. 0.5점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws eks describe-cluster --name skills-eks-cluster \
+     --query &quot;cluster.resourcesVpcConfig.[endpointPublicAccess, endpointPrivateAccess]&quot;
+</code></pre>
+</li>
+<li>false, true가 순서대로 출력되는지 확인합니다. 0.5점.</li>
+</ol>
+<h3 id="6-2-eks-addon-nodegroup-구성-확인-15점">6-2. EKS Addon Nodegroup 구성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws eks describe-nodegroup --cluster-name skills-eks-cluster \
+     --nodegroup-name skills-eks-addon-nodegroup --query &quot;nodegroup.nodegroupName&quot;
+</code></pre>
+</li>
+<li>skills-eks-addon-nodegroup이 출력되는지 확인합니다. 0.5점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get no -l &quot;eks.amazonaws.com/nodegroup=skills-eks-addon-nodegroup&quot; --output json \
+     | jq &quot;.items[].metadata.labels | .\&quot;eks.amazonaws.com/nodegroup\&quot; + \&quot; \&quot; + .\&quot;topology.kubernetes.io/zone\&quot;&quot;
+</code></pre>
+</li>
+<li>skills-eks-addon-nodegroup ap-northeast-2a와 skills-eks-addon-nodegroup ap-northeast-2b가 각각 1개 이상 출력되는지 확인합니다. 0.5점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get no -l &quot;eks.amazonaws.com/nodegroup=skills-eks-addon-nodegroup&quot; --output json \
+     | jq &quot;.items[].metadata.labels.\&quot;node.kubernetes.io/instance-type\&quot;&quot;
+</code></pre>
+</li>
+<li>t4g.large가 2개 이상 출력되는지 확인합니다. 0.5점.</li>
+</ol>
+<h3 id="6-3-eks-app-nodegroup-구성-확인-15점">6-3. EKS App Nodegroup 구성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws eks describe-nodegroup --cluster-name skills-eks-cluster \
+     --nodegroup-name skills-eks-app-nodegroup --query &quot;nodegroup.nodegroupName&quot;
+</code></pre>
+</li>
+<li>skills-eks-addon-nodegroup이 출력되는지 확인합니다. 0.5점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get no -l &quot;eks.amazonaws.com/nodegroup=skills-eks-app-nodegroup&quot; --output json \
+     | jq &quot;.items[].metadata.labels | .\&quot;eks.amazonaws.com/nodegroup\&quot; + \&quot; \&quot; + .\&quot;topology.kubernetes.io/zone\&quot;&quot;
+</code></pre>
+</li>
+<li>skills-eks-app-nodegroup ap-northeast-2a와 skills-eks-app-nodegroup ap-northeast-2b가 각각 1개 이상 출력되는지 확인합니다. 0.5점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get no -l &quot;eks.amazonaws.com/nodegroup=skills-eks-app-nodegroup&quot; --output json \
+     | jq &quot;.items[].metadata.labels.\&quot;node.kubernetes.io/instance-type\&quot;&quot;
+</code></pre>
+</li>
+<li>m6g.large가 2개 이상 출력되는지 확인합니다. 0.5점.</li>
+</ol>
+<h3 id="6-4-eks-app-fargate-profile-구성-확인-15점">6-4. EKS App Fargate Profile 구성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws eks describe-fargate-profile --cluster-name skills-eks-cluster \
+     --fargate-profile-name skills-eks-app-profile \
+     --query &quot;fargateProfile.fargateProfileName&quot;
+</code></pre>
+</li>
+<li>skills-eks-app-profile이 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="7-1-alb-구성-확인-15점">7-1. ALB 구성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elbv2 describe-load-balancers --names skills-user-alb \
+     --query &quot;LoadBalancers[].Scheme&quot;
+</code></pre>
+</li>
+<li>internet-facing이 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="8-1-user-pod-구성-확인-15점">8-1. user Pod 구성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills | grep user
+</code></pre>
+<img src="images/2024-regional-t1-marking/img01.png" alt="채점 화면 예시: user Pod 2개가 1/1 Running 상태" /></li>
+<li>user Pod가 2개 이상 출력되고, 모두 (숫자1)/(숫자2) Running 상태인지 확인합니다. (숫자1)과 (숫자2)는 0이 아니면서 서로 동일해야 합니다. 위의 그림을 참고합니다. 0.7점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills -o json | jq '.items[]' \
+     | jq 'select(.metadata.name | startswith(&quot;user&quot;))' \
+     | jq -r '.spec.nodeName' | head -n 1
+</code></pre>
+</li>
+<li>ip-로 시작하는 문구를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get node &lt;5)에서 기록한 node id&gt; -o json \
+     | jq -r '.metadata.labels.&quot;eks.amazonaws.com/nodegroup&quot;'
+</code></pre>
+</li>
+<li>skills-eks-app-nodegroup가 출력되는지 확인합니다. 0.8점</li>
+</ol>
+<h3 id="8-2-token-pod-구성-확인-15점">8-2. token Pod 구성 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills | grep token
+</code></pre>
+<img src="images/2024-regional-t1-marking/img02.png" alt="채점 화면 예시: token Pod 2개가 1/1 Running 상태" /></li>
+<li>token Pod가 2개 이상 출력되고, 모두 (숫자1)/(숫자2) Running 상태인지 확인합니다. (숫자1)과 (숫자2)는 0이 아니면서 서로 동일해야 합니다. 위의 그림을 참고합니다. 0.7점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills -o json | jq '.items[]' \
+     | jq 'select(.metadata.name | startswith(&quot;token&quot;))' \
+     | jq -r '.spec.nodeName' | head -n 1
+</code></pre>
+</li>
+<li>fargate-ip-로 시작하는 문구를 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills -o json \
+     | jq '.items[]' | jq 'select(.metadata.name | startswith(&quot;token&quot;))' \
+     | jq -r '.metadata.annotations.CapacityProvisioned' | head -n 1
+</code></pre>
+</li>
+<li>0.5vCPU 1GB가 출력되는지 확인합니다. 0.8점</li>
+</ol>
+<h3 id="8-3-application-동작-확인-15점">8-3. Application 동작 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws elbv2 describe-load-balancers --names skills-user-alb \
+     --query &quot;LoadBalancers[].DNSName&quot;
+</code></pre>
+</li>
+<li>skills-user-alb-로 시작하는 도메인을 기록합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">curl http://&lt;3)에서 기록한 도메인)&gt;/api/v1/user \
+     -X POST -H 'Content-Type: application/json' \
+     -d '{&quot;id&quot;: &quot;test9999&quot;, &quot;name&quot;: &quot;test9999&quot;, &quot;password&quot;: &quot;test9999&quot;}'
+</code></pre>
+</li>
+<li>token값이 출력되는지 확인합니다. 해당 token값을 기록합니다. 0.7점.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">curl http://&lt;3)에서 기록한 도메인)&gt;/api/v1/user?token=&lt;5)에서 기록한 token값&gt;
+</code></pre>
+</li>
+<li>token is valid라는 문구가 출력되는지 확인합니다. 0.8점.</li>
+</ol>
+<h3 id="9-1-user-애플리케이션-로깅-확인-15점">9-1. user 애플리케이션 로깅 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws logs tail /aws/app/user | tail -n 1
+</code></pre>
+</li>
+<li>로깅 시간이 현재 시간과 유사한지 확인합니다. 오차는 1분 이내까지 허용합니다. 시간대가 UTC이므로 +9를 더해서 계산해야 합니다.</li>
+</ol>
+<h3 id="9-2-token-애플리케이션-로깅-확인-15점">9-2. token 애플리케이션 로깅 확인 · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">aws logs tail /aws/app/token | tail -n 1
+</code></pre>
+</li>
+<li>로깅 시간이 현재 시간과 유사한지 확인합니다. 오차는 1분 이내까지 허용합니다. 시간대가 UTC이므로 +9를 더해서 계산해야 합니다.</li>
+</ol>
+<h3 id="10-1-user-scaling-out-15점">10-1. user Scaling Out · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다. (Bastion 서버에 채점 스크립트를 저장한 후 실행합니다.)<pre><code class="language-bash">chmod 755./load-token.sh
+./load-user.sh
+</code></pre>
+</li>
+<li>위 스크립트를 5분간 실행한 후, 종료합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills | grep user
+</code></pre>
+</li>
+<li>user Pod가 최소 3개 이상 출력되는지 확인합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get node -o json | jq '.items[].metadata.labels' \
+     | jq -c 'select(.&quot;eks.amazonaws.com/nodegroup&quot; == &quot;skills-eks-app-nodegroup&quot;)' | wc -l
+</code></pre>
+</li>
+<li>3 이상 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="10-2-user-scaling-in-15점">10-2. user Scaling In · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills | grep user
+</code></pre>
+</li>
+<li>user Pod가 2개만 출력되는지 확인합니다. 최대 20분까지 기다릴 수 있습니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get node -o json | jq '.items[].metadata.labels' \
+     | jq -c 'select(.&quot;eks.amazonaws.com/nodegroup&quot; == &quot;skills-eks-app-nodegroup&quot;)' | wc -l
+</code></pre>
+</li>
+<li>2가 출력되는지 확인합니다. 최대 20분까지 기다릴 수 있습니다.</li>
+</ol>
+<h3 id="10-3-token-scaling-out-15점">10-3. token Scaling Out · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다. (Bastion 서버에 채점 스크립트를 저장한 후 실행합니다.)<pre><code class="language-bash">chmod 755./load-token.sh
+./load-token.sh
+</code></pre>
+</li>
+<li>위 스크립트를 5분간 실행한 후, 종료합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills | grep token
+</code></pre>
+</li>
+<li>token Pod가 최소 3개 이상 출력되는지 확인합니다.</li>
+</ol>
+<h3 id="10-4-token-scaling-in-15점">10-4. token Scaling In · 1.5점</h3>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 Bastion 서버에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.<pre><code class="language-bash">kubectl get pod -n skills | grep token
+</code></pre>
+</li>
+<li>token Pod가 2개만 출력되는지 확인합니다. 최대 20분까지 기다릴 수 있습니다.</li>
+</ol>
+</article></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#채점-유의사항">채점 유의사항</a></li><li class="toc-h2"><a href="#배점-요약">배점 요약</a></li><li class="toc-h3"><a href="#주요항목별-배점">주요항목별 배점</a></li><li class="toc-h3"><a href="#세부항목별-배점">세부항목별 배점</a></li><li class="toc-h2"><a href="#채점-항목">채점 항목</a></li><li class="toc-h3"><a href="#1-1-vpc-확인-15점">1-1. VPC 확인 · 1.5점</a></li><li class="toc-h3"><a href="#1-2-subnets-확인-15점">1-2. Subnets 확인 · 1.5점</a></li><li class="toc-h3"><a href="#1-3-route-tables-확인-15점">1-3. Route Tables 확인 · 1.5점</a></li><li class="toc-h3"><a href="#2-1-인스턴스-타입-확인-10점">2-1. 인스턴스 타입 확인 · 1.0점</a></li><li class="toc-h3"><a href="#2-2-public-ip-확인-10점">2-2. Public IP 확인 · 1.0점</a></li><li class="toc-h3"><a href="#2-3-os-확인-10점">2-3. OS 확인 · 1.0점</a></li><li class="toc-h3"><a href="#3-1-documentdb-subnets-확인-15점">3-1. DocumentDB Subnets 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-2-documentdb-고가용성-확인-15점">3-2. DocumentDB 고가용성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-3-documentdb-암호화-확인-15점">3-3. DocumentDB 암호화 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-4-documentdb-로깅-확인-15점">3-4. DocumentDB 로깅 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-5-documentdb-백업-확인-15점">3-5. DocumentDB 백업 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-6-documentdb-포트-확인-15점">3-6. DocumentDB 포트 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-7-documentdb-버전-확인-15점">3-7. DocumentDB 버전 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-8-documentdb-인스턴스-타입-확인-15점">3-8. DocumentDB 인스턴스 타입 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-1-elalsticache-subnets-확인-15점">4-1. ElalstiCache Subnets 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-2-elalsticache-redis-cluster-확인-15점">4-2. ElalstiCache Redis Cluster 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-3-elasticache-고가용성-확인-15점">4-3. ElastiCache 고가용성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-4-elasticache-암호화-확인-15점">4-4. ElastiCache 암호화 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-5-elasticache-로깅-확인-15점">4-5. ElastiCache 로깅 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-6-elasticache-백업-확인-15점">4-6. ElastiCache 백업 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-7-elasticache-포트-확인-15점">4-7. ElastiCache 포트 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-8-elasticache-버전-확인-15점">4-8. ElastiCache 버전 확인 · 1.5점</a></li><li class="toc-h3"><a href="#4-9-elasticache-인스턴스-타입-확인-15점">4-9. ElastiCache 인스턴스 타입 확인 · 1.5점</a></li><li class="toc-h3"><a href="#5-1-ecr-repository-생성-확인-15점">5-1. ECR Repository 생성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#5-2-ecr-repository-암호화-확인-15점">5-2. ECR Repository 암호화 확인 · 1.5점</a></li><li class="toc-h3"><a href="#5-3-ecr-repository-scanning-확인-15점">5-3. ECR Repository Scanning 확인 · 1.5점</a></li><li class="toc-h3"><a href="#5-4-ecr-repository-immutable-확인-15점">5-4. ECR Repository Immutable 확인 · 1.5점</a></li><li class="toc-h3"><a href="#6-1-eks-cluster-구성-확인-15점">6-1. EKS Cluster 구성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#6-2-eks-addon-nodegroup-구성-확인-15점">6-2. EKS Addon Nodegroup 구성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#6-3-eks-app-nodegroup-구성-확인-15점">6-3. EKS App Nodegroup 구성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#6-4-eks-app-fargate-profile-구성-확인-15점">6-4. EKS App Fargate Profile 구성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#7-1-alb-구성-확인-15점">7-1. ALB 구성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#8-1-user-pod-구성-확인-15점">8-1. user Pod 구성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#8-2-token-pod-구성-확인-15점">8-2. token Pod 구성 확인 · 1.5점</a></li><li class="toc-h3"><a href="#8-3-application-동작-확인-15점">8-3. Application 동작 확인 · 1.5점</a></li><li class="toc-h3"><a href="#9-1-user-애플리케이션-로깅-확인-15점">9-1. user 애플리케이션 로깅 확인 · 1.5점</a></li><li class="toc-h3"><a href="#9-2-token-애플리케이션-로깅-확인-15점">9-2. token 애플리케이션 로깅 확인 · 1.5점</a></li><li class="toc-h3"><a href="#10-1-user-scaling-out-15점">10-1. user Scaling Out · 1.5점</a></li><li class="toc-h3"><a href="#10-2-user-scaling-in-15점">10-2. user Scaling In · 1.5점</a></li><li class="toc-h3"><a href="#10-3-token-scaling-out-15점">10-3. token Scaling Out · 1.5점</a></li><li class="toc-h3"><a href="#10-4-token-scaling-in-15점">10-4. token Scaling In · 1.5점</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

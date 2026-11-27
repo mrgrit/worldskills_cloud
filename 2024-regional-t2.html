@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2024 지방 제2과제 · Automation</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details open><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html" class="on">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2024 지방 제2과제</div>
+<div class="badges"><span class="badge lv-regional">지방</span><span class="badge">2024</span><span class="badge">제2과제</span><span class="badge time">⏱ 4시간</span><span class="badge kind-problem">문제</span></div>
+<h1>Automation</h1>
+<p class="summary">WorldSkills의 Front-End/Back-End 애플리케이션에 대한 DevOps 업무로, CloudFront·S3 정적 호스팅과 ECS Fargate·ALB 기반 백엔드를 구성하고 CodeCommit·CodeBuild·CodeDeploy·CodePipeline으로 CI/CD를 자동화하는 과제입니다.</p>
+<div class="tags"><span class="tag">VPC</span><span class="tag">ECS</span><span class="tag">Fargate</span><span class="tag">ELB</span><span class="tag">CloudFront</span><span class="tag">S3</span><span class="tag">CodeCommit</span><span class="tag">CodeBuild</span><span class="tag">CodeDeploy</span><span class="tag">CodePipeline</span></div><div class="actions"><a class="btn" href="2024-regional-t2-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p>당신은 WorldSkills의 Front-End Application과 Back-End Application에 대한 DevOps 업무를 맡았습니다. 주어진 요구사항과 클라우드의 설계원칙인 고가용성, 확장성, 비용, 보안 등을 고려하여 인프라를 구축합니다.</p>
+<figure><a href="images/2024-regional-t2/img01.png" target="_blank" rel="noopener"><img src="images/2024-regional-t2/img01.png" alt="아키텍처 다이어그램 (CloudFront·S3·ALB·ECS와 CodePipeline 흐름)" loading="lazy"></a><figcaption>아키텍처 다이어그램 (CloudFront·S3·ALB·ECS와 CodePipeline 흐름)</figcaption></figure>
+<h2 id="사용-기술">사용 기술</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>분류</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS</td>
+<td>VPC, ECS, ELB, Fargate, CodeCommit, CodeBuild, CodeDeploy, CodePipeline, S3</td>
+</tr>
+<tr>
+<td>개발언어/프레임워크</td>
+<td>HTML, Java/Gradle/Spring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="선수-유의사항">선수 유의사항</h2>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>※ 다음 유의사항을 고려하여 요구사항을 완성하시오.</p>
+</blockquote>
+<ol>
+<li>문제에 제시된 괄호박스 &lt; &gt; 는 변수를 뜻함으로 선수가 적절히 변경하여 사용해야 합니다.</li>
+<li>문제 풀이와 채점의 효율을 위해 Security Group의 80/443 Outbound는 Anyopen하여 사용할 수 있도록 합니다.</li>
+<li>Bastion EC2는 채점 시 사용되기 때문에 종료되거나 연결 문제, 권한 문제 등으로 발생할 수 있는 불이익을 받지 않도록 주의하시기를 바랍니다.</li>
+<li>모든 리소스는 서울(ap-northeast-2) 리전에 구성합니다.</li>
+<li>제공자료를 수정해도 무관하나, 채점 전에는 반드시 처음 제공받은 제공자료로 설정해야 합니다.</li>
+</ol>
+<h2 id="3-networking">3. Networking</h2>
+<ul>
+<li>클라우드 인프라 구성을 위하여 기본적인 네트워크 구성을 시행합니다. 부록 1의 정보를 참고하여 AWS VPC를 생성합니다.</li>
+</ul>
+<h2 id="4-bastion-server">4. Bastion Server</h2>
+<ul>
+<li>EC2를 사용하여 Bastion 서버를 생성합니다.</li>
+<li>Bastion 서버의 IP는 재부팅 후에도 변경되어서는 안되며, 종료하지 않도록 각별히 주의합니다.</li>
+<li>또한 SSH를 사용해 서버에 접속하므로 SSH로 접근이 가능해야 합니다.</li>
+<li>해당 인스턴스의 root 계정에서 AWS CLI를 사용하면 AWS의 모든 권한을 사용할 수 있어야 하며, 패키지들은 반드시 버전과 권한 등의 문제가 없어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instance Type</td>
+<td><code>t3a.small</code></td>
+</tr>
+<tr>
+<td>OS Image</td>
+<td>Amazon Linux 2023</td>
+</tr>
+<tr>
+<td>Name Tag</td>
+<td><code>skills-bastion-ec2</code></td>
+</tr>
+<tr>
+<td>Packages</td>
+<td>AWS CLI v2, cURL, jq</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-application">5. Application</h2>
+<ul>
+<li>제공자료로 주어진 애플리케이션은 2개입니다.</li>
+<li>Front-End 애플리케이션은 HTML로 개발된 Single Page Application입니다.</li>
+<li>Back-End 애플리케이션은 Java 17과 Gradle, Springboot로 개발된 RESTFul API입니다.</li>
+<li>Front-End 애플리케이션은 HTML 파일을 배포해야 하며, Back-End 애플리케이션은 빌드를 한 후, 그 결과물을 배포해야 합니다.</li>
+<li>Back-End 애플리케이션은 TCP 8080으로 접속할 수 있으며, /api/, /api/time, /api/health 총 3개의 API가 존재합니다.</li>
+</ul>
+<h2 id="6-static-web-hosting">6. Static Web Hosting</h2>
+<ul>
+<li>Front-End 애플리케이션을 S3에 업로드합니다.</li>
+<li>CloudFront를 사용해 정적 웹 호스팅을 실시하고, 외부에서 해당 애플리케이션을 문제없이 접속할 수 있도록 구성해야 합니다.</li>
+<li>캐싱을 활용해 사용자들에게 쾌적한 환경을 제공하는가 반면, 배포 등으로 Front-End가 업데이트되면 반드시 최신 화면을 보여줘야 합니다.</li>
+<li>한편, Back-End 애플리케이션도 /api/*에 대한 요청을 CloudFront를 통해 제공해야 하며, 캐싱을 실시해서는 안됩니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S3 Bucket Name</td>
+<td><code>skills-frontend-&lt;랜덤 문자 4자리&gt;</code></td>
+</tr>
+<tr>
+<td>CloudFront Protocol</td>
+<td>HTTPS를 통하여 접근할 시 문제가 없도록 구성</td>
+</tr>
+<tr>
+<td>CloudFront Origin</td>
+<td>S3 Bucket, ELB</td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>한국뿐만 아니라 전 세계의 유저가 빠른 속도로 접근이 가능하도록 구성</td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>Name=skills-frontend-cdn</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="7-container-orchestration">7. Container Orchestration</h2>
+<ul>
+<li>Back-End 애플리케이션은 ECS 기반의 Fargate에서 운용합니다.</li>
+<li>Fargate는 Private Subnets에서 운용해야 합니다.</li>
+<li>Auto Scaling이나 Logging은 별도로 구성하지 않습니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECS Cluster Name</td>
+<td><code>skills-ecs-cluster</code></td>
+</tr>
+<tr>
+<td>ECS Fargate Resource</td>
+<td>0.5vCPU, 1GB Memory</td>
+</tr>
+<tr>
+<td>ECS Service Name</td>
+<td><code>backend</code></td>
+</tr>
+<tr>
+<td>ECS Task</td>
+<td>2개</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="8-load-balancing">8. Load Balancing</h2>
+<ul>
+<li>ECS에서 운용중인 Back-End 애플리케이션을 외부에서 접근할 수 있도록 ALB를 구성합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Load Balancer Type</td>
+<td>Application Load Balancer</td>
+</tr>
+<tr>
+<td>Load Balancer Name</td>
+<td><code>skills-backend-alb</code></td>
+</tr>
+<tr>
+<td>Load Balancer Scheme</td>
+<td><code>internet-facing</code></td>
+</tr>
+<tr>
+<td>Load Balancer Protocol</td>
+<td>HTTP</td>
+</tr>
+<tr>
+<td>Load Balancer Port</td>
+<td><code>80</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="9-version-control">9. Version Control</h2>
+<ul>
+<li>CodeCommit을 사용해 버전관리와 CI/CD에 사용합니다.</li>
+<li>Front-End와 Back-End를 위해 각각 1개씩 총 2개를 생성하며, 제공자료를 압축 해제한 후, 각 Repository의 Root(/)에 업로드합니다.</li>
+<li>Repository에는 제공자료 이외 다른 파일이 있어도 무관합니다. 다만, 채점 전 반드시 제공자료로 제공받은 내용이 그대로 존재해야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front-End Repository Name</td>
+<td><code>skills-frontend-code</code></td>
+</tr>
+<tr>
+<td>Back-End Repository Name</td>
+<td><code>skills-backend-code</code></td>
+</tr>
+<tr>
+<td>Default Branch</td>
+<td><code>main</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="10-continuous-integration">10. Continuous Integration</h2>
+<ul>
+<li>CodeBuild를 사용해 CI에 사용합니다.</li>
+<li>SpringBoot 기반의 Back-End 애플리케이션을 빌드합니다.</li>
+<li>로깅을 반드시 활성화해야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Back-End Project Name</td>
+<td><code>skills-backend-build</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="11-continuous-delivery">11. Continuous Delivery</h2>
+<ul>
+<li>Front-End 애플리케이션은 CodeCommit에 업로드된 HTML 파일을 S3에 업로드해 CloudFront를 통해 접근할 수 있어야 하며, Back-End 애플리케이션은 CodeDeploy를 사용해 ECS Service에 배포해야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Back-End Application Name</td>
+<td><code>skills-backend-app</code></td>
+</tr>
+<tr>
+<td>Back-End Deployment Group Name</td>
+<td><code>skills-backend-dg</code></td>
+</tr>
+<tr>
+<td>Deployment Type</td>
+<td>Blue/Green</td>
+</tr>
+<tr>
+<td>Deployment Target</td>
+<td>ECS의 <code>backend</code> Service</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="12-cicd-pipeline">12. CI/CD Pipeline</h2>
+<ul>
+<li>CodeCommit의 main Branch에 변경사항이 발생하면 자동으로 CodePipeline이 동작할 수 있도록 구성해야 합니다.</li>
+<li>Front-End는 Source, Deploy 이외에 다른 Stage가 있어도 무방하며, Back-End는 Source, Build, Deploy 이외의 Stage가 있어서는 안됩니다.</li>
+<li>CodeCommit에 변경사항이 발생한 이후 최대 15분 이내에 애플리케이션 배포가 모두 완료되어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front-End Pipeline Name</td>
+<td><code>skills-frontend-pipeline</code></td>
+</tr>
+<tr>
+<td>Front-End Source Stage</td>
+<td>CodeCommit(<code>skills-frontend-code</code>)의 <code>main</code> Branch</td>
+</tr>
+<tr>
+<td>Front-End Deploy Stage</td>
+<td>S3(<code>skills-frontend-&lt;랜덤 문자 4자리&gt;</code>)</td>
+</tr>
+<tr>
+<td>Back-End Pipeline Name</td>
+<td><code>skills-backend-pipeline</code></td>
+</tr>
+<tr>
+<td>Back-End Source Stage</td>
+<td>CodeCommit(<code>skills-backend-code</code>)의 <code>main</code> Branch</td>
+</tr>
+<tr>
+<td>Back-End Build Stage</td>
+<td>Codebuild(<code>skills-backend-build</code>)</td>
+</tr>
+<tr>
+<td>Back-End Deploy Stage</td>
+<td>CodeDeploy(<code>skills-backend-app/skills-backend-dg</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="reference">Reference</h2>
+<h3 id="부록-1">부록 1</h3>
+<h4 id="vpc-정보">VPC 정보</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Name Tag</th>
+<th>CIDR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>skills-vpc</code></td>
+<td><code>172.16.0.0/16</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="subnets-정보">Subnets 정보</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Name Tag</th>
+<th>CIDR</th>
+<th>Availability Zone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>skills-public-subnet-a</code></td>
+<td><code>172.16.1.0/24</code></td>
+<td><code>ap-northeast-2a</code></td>
+</tr>
+<tr>
+<td><code>skills-public-subnet-b</code></td>
+<td><code>172.16.2.0/24</code></td>
+<td><code>ap-northeast-2b</code></td>
+</tr>
+<tr>
+<td><code>skills-private-subnet-a</code></td>
+<td><code>172.16.11.0/24</code></td>
+<td><code>ap-northeast-2a</code></td>
+</tr>
+<tr>
+<td><code>skills-private-subnet-b</code></td>
+<td><code>172.16.12.0/24</code></td>
+<td><code>ap-northeast-2b</code></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="route-tables-정보">Route Tables 정보</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Name Tag</th>
+<th>Subnet</th>
+<th>Gateway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>skills-public-rtb</code></td>
+<td><code>skills-public-subnet-a</code><br><code>skills-public-subnet-b</code></td>
+<td>Internet Gateway<br>(Name Tag : <code>skills-igw</code>)</td>
+</tr>
+<tr>
+<td><code>skills-private-rtb-a</code></td>
+<td><code>skills-private-subnet-a</code></td>
+<td>NAT Gateway<br>(Name Tag : <code>skills-nat-a</code>)</td>
+</tr>
+<tr>
+<td><code>skills-private-rtb-b</code></td>
+<td><code>skills-private-subnet-b</code></td>
+<td>NAT Gateway<br>(Name Tag : <code>skills-nat-b</code>)</td>
+</tr>
+</tbody>
+</table></div>
+</article><nav class="pager"><a href="2024-regional-t1.html">← 2024 지방 제1과제<span>Web Service Provisioning</span></a><a class="next" href="2024-national-t1.html">2024 전국 제1과제 →<span>Solution Architecture</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h2"><a href="#사용-기술">사용 기술</a></li><li class="toc-h2"><a href="#선수-유의사항">선수 유의사항</a></li><li class="toc-h2"><a href="#3-networking">3. Networking</a></li><li class="toc-h2"><a href="#4-bastion-server">4. Bastion Server</a></li><li class="toc-h2"><a href="#5-application">5. Application</a></li><li class="toc-h2"><a href="#6-static-web-hosting">6. Static Web Hosting</a></li><li class="toc-h2"><a href="#7-container-orchestration">7. Container Orchestration</a></li><li class="toc-h2"><a href="#8-load-balancing">8. Load Balancing</a></li><li class="toc-h2"><a href="#9-version-control">9. Version Control</a></li><li class="toc-h2"><a href="#10-continuous-integration">10. Continuous Integration</a></li><li class="toc-h2"><a href="#11-continuous-delivery">11. Continuous Delivery</a></li><li class="toc-h2"><a href="#12-cicd-pipeline">12. CI/CD Pipeline</a></li><li class="toc-h2"><a href="#reference">Reference</a></li><li class="toc-h3"><a href="#부록-1">부록 1</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

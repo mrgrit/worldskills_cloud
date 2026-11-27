@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 전국 제1과제 · 채점기준</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details open><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html" class="on">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2026 전국 제1과제</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2026</span><span class="badge">제1과제</span><span class="badge kind-marking">채점기준</span></div>
+<h1>채점기준<small>Solution Architecture</small></h1>
+<p class="summary">14개 주요항목, 30개 세부항목으로 구성되며 총점은 30점입니다.</p>
+<div class="tags"></div><div class="actions"><a class="btn" href="2026-national-t1.html">📄 문제 보기</a></div></div>
+<article class="doc"><h2 id="채점-유의사항">채점 유의사항</h2>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>다음 사항을 유의하여 채점하시오.</p>
+</blockquote>
+<ol>
+<li>AWS의 리전은 ap-northeast-2를 사용합니다.</li>
+<li>웹페이지 접근은 크롬이나 파이어폭스를 이용합니다.</li>
+<li>웹페이지에서 언어에 따라 문구가 다르게 보일 수 있습니다.</li>
+<li>shell에서의 명령어의 출력은 버전에 따라 조금 다를 수 있습니다.</li>
+<li>문제지와 채점지에 있는 &lt;&gt; 는 변수입니다. 해당 부분을 변경해 입력합니다.</li>
+<li>채점은 문항 순서대로 진행해야 합니다.</li>
+<li>삭제된 채점자료는 되돌릴 수 없음으로 유의하여 진행하며, 이의신청까지 완료 이후 선수가 생성한 클라우드 리소스를 삭제합니다.</li>
+<li>부분 점수가 있는 문항은 채점 항목에 부분 점수가 적혀져 있습니다.</li>
+<li>부분 점수가 따로 없는 문항은 모두 맞아야 점수로 인정됩니다.</li>
+<li>리소스의 정보를 읽어오는 채점항목은 기본적으로 스크립트 결과를 통해 채점을 진행하며, 만약 선수가 이의가 있다면 명령어를 직접 입력하여 확인해볼 수 있습니다.</li>
+<li>(예상 출력)은 바로 이전 (명령어 입력)의 예상 출력을 의미합니다.</li>
+<li>채점 시에는 별도로 제공한 채점 스크립트(mark.sh)를 실행하여 채점할 수 있습니다. 다만, 선수가 직접 입력을 원할 경우 채점기준표에 명시된 명령어 그대로 입력하여 채점할 수 있습니다.</li>
+<li>제공된 채점 스크립트는 /home/cloudshell-user 경로에 위치하도록 합니다.</li>
+<li>모든 채점은 서울 리전의 CloudShell VPC Environment unicorn-mark에서 진행합니다.</li>
+<li>채점지에서 페이지 간 줄바꿈되어 일부 잘린 항목이 있을 수 있음에 유의합니다.</li>
+<li>별도 명시가 없는 경우, 빨간색으로 표시된 부분은 정확히 일치하는지 확인하고, 파란색으로 표시된 부분은 무시할 수 있습니다.</li>
+<li>스크립트 출력 값이 예상 출력 값에서 줄바꿈되어 나타나는 등은 무시합니다.</li>
+<li>Timestamp의 TZ가 UTC 기준이나, 채점 시 KST 기준으로 확인하도록 합니다.</li>
+<li>source kubectl-connect 명령어를 실행할 때 오류가 발생할 경우, 선수가 원한다면 1회에 한해 rm -rf .kube/ 명령어를 통해 cache 등을 초기화할 수 있도록 합니다. 초기화 후 정상 작동한다면 채점을 진행할 수 있습니다.</li>
+</ol>
+<h2 id="배점-요약">배점 요약</h2>
+<h3 id="주요항목별-배점">주요항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>주요항목</th>
+<th>배점</th>
+<th>채점방법</th>
+<th>채점시기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Networking</td>
+<td>2.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>2</td>
+<td>KMS</td>
+<td>1.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>3</td>
+<td>S3</td>
+<td>1.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Database</td>
+<td>1.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ECR</td>
+<td>1.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>6</td>
+<td>EKS</td>
+<td>3.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Lambda</td>
+<td>1.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Service Endpoint</td>
+<td>5.5</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Security</td>
+<td>1.5</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Application</td>
+<td>1.5</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Observability</td>
+<td>2.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Runtime Test</td>
+<td>2.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Grafana</td>
+<td>1.5</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>14</td>
+<td>DynamoDB Stream</td>
+<td>6.0</td>
+<td>독립</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>합계</strong></td>
+<td><strong>30</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="세부항목별-배점">세부항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>주요항목</th>
+<th>세부항목(채점방법)</th>
+<th>배점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-1</td>
+<td>Networking</td>
+<td>VPC &amp; Subnet CIDR Configuration</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-2</td>
+<td>Networking</td>
+<td>Routing Configuration</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1-3</td>
+<td>Networking</td>
+<td>VPC Endpoint &amp; Flow Log</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>2-1</td>
+<td>KMS</td>
+<td>Keys &amp; Rotation Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>3-1</td>
+<td>S3</td>
+<td>S3 bucket Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>4-1</td>
+<td>Database</td>
+<td>DynamoDB Table Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>5-1</td>
+<td>ECR</td>
+<td>ECR Repository Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>6-1</td>
+<td>EKS</td>
+<td>EKS Cluster Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>6-2</td>
+<td>EKS</td>
+<td>EKS NodeGroup Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>6-3</td>
+<td>EKS</td>
+<td>Workload Check</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>7-1</td>
+<td>Lambda</td>
+<td>Lambda Function Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>8-1</td>
+<td>Service Endpoint</td>
+<td>ALB Routing Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>8-2</td>
+<td>Service Endpoint</td>
+<td>CloudFront CDN Configuration</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>8-3</td>
+<td>Service Endpoint</td>
+<td>Book app POST Request Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>8-4</td>
+<td>Service Endpoint</td>
+<td>Book app GET Request Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>8-5</td>
+<td>Service Endpoint</td>
+<td>ALB Direct Request deny Test</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>8-6</td>
+<td>Service Endpoint</td>
+<td>WAF Managed Rule Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>9-1</td>
+<td>Security</td>
+<td>Audit Role Configuration</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>9-2</td>
+<td>Security</td>
+<td>Audit Role Assume and Permission Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>10-1</td>
+<td>Application</td>
+<td>Application Health and env, etc</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>11-1</td>
+<td>Observability</td>
+<td>Log type &amp; Health log exclusion</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>11-2</td>
+<td>Observability</td>
+<td>Prometheus Metrics</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>12-1</td>
+<td>Runtime Test</td>
+<td>Log Pipeline Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>12-2</td>
+<td>Runtime Test</td>
+<td>WAF Rate limit block Test</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>13-1</td>
+<td>Grafana</td>
+<td>Grafana Dashboard Panel Configuration</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>14-1</td>
+<td>DynamoDB Stream</td>
+<td>Destination DB 생성</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>14-2</td>
+<td>DynamoDB Stream</td>
+<td>Lambda Container Provisioning</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>14-3</td>
+<td>DynamoDB Stream</td>
+<td>DynamoDB TTL</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>14-4</td>
+<td>DynamoDB Stream</td>
+<td>Data Processing</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>14-5</td>
+<td>DynamoDB Stream</td>
+<td>DynamoDB Stream 구성</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="채점-항목">채점 항목</h2>
+<h3 id="0-사전준비">0. 사전준비</h3>
+<ol start="0">
+<li>
+<p>채점 전, 채점 유의사항을 정독합니다. 유의사항 16번을 확인 후 진행합니다.</p>
+</li>
+<li>
+<p>unicorn-mark CloudShell VPC Environment에 접근합니다.</p>
+</li>
+<li>
+<p>rm –rf ~/.aws를 진행합니다.</p>
+</li>
+<li>
+<p>aws configure를 입력하고 default.region을 ap-northeast-2으로 설정합니다.</p>
+</li>
+<li>
+<p>채점 명령어에 사용될 환경 변수를 설정합니다.</p>
+<pre><code class="language-bash">$ export number=&lt;선수등번호&gt;
+</code></pre>
+</li>
+<li>
+<p>이후, 아래 명령어나 AWS CLI update-kubeconfig 등 통해 Kubectl context 등을 통해 접근 가능한 상태를 만듭니다. 단, 네트워크 변경 등 인프라작업은 불가능합니다.</p>
+<pre><code class="language-bash">$ source kubectl-connect unicorn-eks-cluster
+</code></pre>
+</li>
+</ol>
+<h3 id="1-1-vpc-subnet-cidr-configuration-05점">1-1. VPC &amp; Subnet CIDR Configuration · 0.5점</h3>
+<p><strong>채점 방법</strong> (1-1-A 명령어 입력)</p>
+<pre><code class="language-bash">aws ec2 describe-vpcs --filters Name=tag:Name,Values=unicorn-vpc --query &quot;Vpcs[].CidrBlock&quot; --output json | jq -r &quot;.[]&quot;
+aws ec2 describe-subnets --filters Name=tag:Name,Values=unicorn-subnet-pub-a,unicorn-subnet-pub-b,unicorn-subnet-pub-c,unicorn-subnet-priv-a,unicorn-subnet-priv-b,unicorn-subnet-priv-c --query &quot;Subnets[].CidrBlock&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (1-1-A 예상 출력 · 순서 무관)</p>
+<pre><code class="language-text">10.97.0.0/16
+10.97.10.0/24   10.97.0.0/24    10.97.2.0/24    10.97.12.0/24   10.97.11.0/24   10.97.1.0/24
+</code></pre>
+<h3 id="1-2-routing-configuration-05점">1-2. Routing Configuration · 0.5점</h3>
+<p><strong>채점 방법</strong> (1-2-A 명령어 입력)</p>
+<pre><code class="language-bash">aws ec2 describe-route-tables --filters &quot;Name=tag:Name,Values=unicorn-rt-*&quot; --query &quot;RouteTables[].[Tags[?Key=='Name']|[0].Value, Routes[?DestinationCidrBlock=='0.0.0.0/0']|[0].GatewayId, Routes[?DestinationCidrBlock=='0.0.0.0/0']|[0].NatGatewayId, length(Associations[?SubnetId!=null])]&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (1-2-A 예상 출력 · 부분 일치 · 순서 무관)</p>
+<pre><code class="language-text">unicorn-rt-priv-b None nat-&lt;random&gt; 1
+unicorn-rt-pub igw-&lt;random&gt; None  3
+unicorn-rt-priv-a None nat-&lt;random&gt; 1
+unicorn-rt-priv-c None nat-&lt;random&gt; 1
+</code></pre>
+<h3 id="1-3-vpc-endpoint-flow-log-10점">1-3. VPC Endpoint &amp; Flow Log · 1.0점</h3>
+<p><strong>채점 방법</strong> (1-3-A 명령어 입력)</p>
+<pre><code class="language-bash">VPC_ID=$(aws ec2 describe-vpcs --filters Name=tag:Name,Values=unicorn-vpc --query &quot;Vpcs[0].VpcId&quot; --output text)
+aws ec2 describe-vpc-endpoints --filters Name=vpc-id,Values=$VPC_ID --query &quot;VpcEndpoints[].ServiceName&quot; --output json | jq -r &quot;.[]&quot;
+aws ec2 describe-flow-logs --filter Name=resource-id,Values=$VPC_ID --query &quot;length(FlowLogs)&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (1-3-A 예상 출력)</p>
+<pre><code class="language-text">com.amazonaws.ap-northeast-2.s3
+com.amazonaws.ap-northeast-2.ecr.api
+com.amazonaws.ap-northeast-2.ecr.dkr
+1
+</code></pre>
+<ul>
+<li>* 출력값에 s3, ecr.api, ecr.dkr가 포함되어 있고, 1 이상이면 득점.</li>
+</ul>
+<h3 id="2-1-keys-rotation-configuration-10점">2-1. Keys &amp; Rotation Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (2-1-A 명령어 입력)</p>
+<pre><code class="language-bash">for a in app data platform; do
+  aws kms get-key-rotation-status --key-id $(aws kms describe-key --key-id alias/unicorn-kms-$a --query &quot;KeyMetadata.KeyId&quot; --output text) --query &quot;[KeyRotationEnabled, RotationPeriodInDays]&quot; --output text; done
+</code></pre>
+<p><strong>기대 결과</strong> (2-1-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">True    90
+True    90
+True    90
+</code></pre>
+<h3 id="3-1-s3-bucket-configuration-10점">3-1. S3 bucket Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (3-1-A 명령어 입력)</p>
+<pre><code class="language-bash">ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+BUCKET=unicorn-web-$ACCOUNT_ID
+aws s3api list-buckets --query &quot;Buckets[?contains(Name, 'unicorn-web-')].Name&quot; | jq -r '.[]'
+aws s3api get-public-access-block --bucket $BUCKET --query &quot;PublicAccessBlockConfiguration&quot; --output json | jq -r 'to_entries | map(.value) | @tsv'
+aws s3api get-bucket-versioning --bucket $BUCKET --query &quot;Status&quot; --output text
+aws s3api get-bucket-encryption --bucket $BUCKET --query &quot;ServerSideEncryptionConfiguration.Rules[0].ApplyServerSideEncryptionByDefault.[SSEAlgorithm, KMSMasterKeyID]&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (3-1-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">unicorn-web-&lt;선수계정 ID&gt;
+true    true    true    true
+Enabled
+aws:kms arn:aws:kms:ap-northeast-2:&lt;선수계정ID&gt;:key/&lt;random&gt;
+</code></pre>
+<h3 id="4-1-dynamodb-table-configuration-10점">4-1. DynamoDB Table Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (4-1-A 명령어 입력)</p>
+<pre><code class="language-bash">aws dynamodb describe-table --table-name unicorn-concert-db --query &quot;Table.{Billing:BillingModeSummary.BillingMode, PK:KeySchema[?KeyType=='HASH'].AttributeName|[0], GSIName:GlobalSecondaryIndexes[0].IndexName, GSI_PK:GlobalSecondaryIndexes[0].KeySchema[?KeyType=='HASH'].AttributeName|[0], GSI_SK:GlobalSecondaryIndexes[0].KeySchema[?KeyType=='RANGE'].AttributeName|[0], GSIProj:GlobalSecondaryIndexes[0].Projection.ProjectionType, SSEType:SSEDescription.SSEType, SSEKms:SSEDescription.KMSMasterKeyArn, Delete:DeletionProtectionEnabled}&quot; --output json
+aws dynamodb describe-continuous-backups --table-name unicorn-concert-db --query &quot;ContinuousBackupsDescription.PointInTimeRecoveryDescription.PointInTimeRecoveryStatus&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (4-1-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">{    &quot;Billing&quot;: &quot;PAY_PER_REQUEST&quot;,
+    &quot;PK&quot;: &quot;booking_id&quot;,
+    &quot;GSIName&quot;: &quot;client-id-created-at-index&quot;,
+    &quot;GSI_PK&quot;: &quot;client_id&quot;,
+    &quot;GSI_SK&quot;: &quot;created_at&quot;,
+    &quot;GSIProj&quot;: &quot;ALL&quot;,
+    &quot;SSEType&quot;: &quot;KMS&quot;,
+    &quot;SSEKms&quot;: &quot;arn:aws:kms:ap-northeast-2:계정ID:key/&lt;random&gt;&quot;,
+    &quot;Delete&quot;: true }
+ENABLED
+</code></pre>
+<h3 id="5-1-ecr-repository-configuration-10점">5-1. ECR Repository Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (5-1-A 명령어 입력)</p>
+<pre><code class="language-bash">aws ecr describe-repositories --repository-names unicorn-concert-app --query &quot;repositories[0].{Scan:imageScanningConfiguration.scanOnPush, Mutability:imageTagMutability, Enc:encryptionConfiguration.encryptionType}&quot; --output json | jq -r &quot;.[]&quot;
+aws ecr describe-images --repository-name unicorn-concert-app --query &quot;sort(imageDetails[].imageTags[])&quot; --output json | jq -r '@tsv'
+aws ecr describe-image-scan-findings --repository-name unicorn-concert-app --image-id imageTag=v1.0.0 --query &quot;imageScanFindings.findingSeverityCounts&quot; --output json | jq .
+</code></pre>
+<p><strong>기대 결과</strong> (5-1-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">true
+IMMUTABLE_WITH_EXCLUSION
+KMS
+latest  v1.0.0
+</code></pre>
+<ul>
+<li>* 버전이 더 존재하는 것은 무시합니다.</li>
+<li>* 버전 태그 아래 취약점 개수가 출력되지 않아야 합니다.</li>
+<li>스캔된 이력이 존재해야 하며 LOW도 출력 되어선 안됩니다.</li>
+</ul>
+<h3 id="6-1-eks-cluster-configuration-10점">6-1. EKS Cluster Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (6-1-A 명령어 입력)</p>
+<pre><code class="language-bash">aws eks describe-cluster --name unicorn-eks-cluster --query &quot;cluster.version&quot; --output text
+aws eks describe-cluster --name unicorn-eks-cluster --query &quot;cluster.resourcesVpcConfig.[endpointPublicAccess, endpointPrivateAccess]&quot; --output json | jq -r '@tsv'
+aws eks describe-cluster --name unicorn-eks-cluster --query &quot;cluster.logging.clusterLogging[?enabled==\`true\`].types[]&quot; --output json | jq -r '@tsv'
+aws eks describe-cluster --name unicorn-eks-cluster --query &quot;cluster.encryptionConfig[].provider.keyArn&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (6-1-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">1.35
+false    true
+api     audit   authenticator   controllerManager       scheduler
+arn:aws:kms:ap-northeast-2:&lt;선수ID&gt;:key/&lt;random&gt;
+</code></pre>
+<h3 id="6-2-eks-nodegroup-configuration-10점">6-2. EKS NodeGroup Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (6-2-A 명령어 입력)</p>
+<pre><code class="language-bash">kubectl get nodes -l unicorn=app -o jsonpath='{range .items[*]}{.metadata.labels.topology\.kubernetes\.io/zone}{&quot;\n&quot;}{end}'
+kubectl get nodes -l unicorn=addon --no-headers | wc -l
+aws ec2 describe-instances --filters Name=tag:Name,Values=unicorn-k8snode-app-node Name=instance-state-name,Values=running --query &quot;length(Reservations[].Instances[])&quot; --output text
+aws ec2 describe-instances --filters Name=tag:Name,Values=unicorn-k8snode-addon-node Name=instance-state-name,Values=running --query &quot;length(Reservations[].Instances[])&quot; --output text
+aws ec2 describe-instances --filters Name=tag:Name,Values=unicorn-k8snode-app-node Name=instance-state-name,Values=running --query &quot;Reservations[].Instances[].PublicIpAddress&quot; --output json
+</code></pre>
+<p><strong>기대 결과</strong> (6-2-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">ap-northeast-2a &lt;- 해당 부분의 2개 이상 AZ 출력되면 정답
+ap-northeast-2b
+1 (이상)
+2 (이상)
+1 (이상)
+[]
+</code></pre>
+<ul>
+<li>* 빨간색 부분의 경우 1 이상, 파란색 부분의 경우 2 이상이면 정답</li>
+</ul>
+<h3 id="6-3-workload-check-10점">6-3. Workload Check · 1.0점</h3>
+<p><strong>채점 방법</strong> (6-3-A 명령어 입력)</p>
+<pre><code class="language-bash">kubectl get deploy unicorn-book-app-deploy -n unicorn -o custom-columns='NAME:.metadata.name,READY:.status.readyReplicas,AVAILABLE:.status.availableReplicas' --no-headers
+kubectl get svc unicorn-book-app-svc -n unicorn -o custom-columns='NAME:.metadata.name,TYPE:.spec.type' --no-headers
+kubectl get deploy unicorn-book-app-deploy -n unicorn -o jsonpath='liveness={.spec.template.spec.containers[0].livenessProbe.httpGet.path} readiness={.spec.template.spec.containers[0].readinessProbe.httpGet.path}{&quot;\n&quot;}graceful={.spec.template.spec.terminationGracePeriodSeconds} preStop={.spec.template.spec.containers[0].lifecycle.preStop}{&quot;\n&quot;}'
+kubectl get pods -n unicorn -l app -o jsonpath='{range .items[*]}{.spec.nodeSelector.unicorn}{&quot;\n&quot;}{end}' | sort -u
+aws eks list-pod-identity-associations --cluster-name unicorn-eks-cluster --namespace unicorn --query &quot;associations[].serviceAccount&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (6-3-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">unicorn-book-app-deploy   2     2 &lt;- 두 값 모두 2 이상이면 정답
+unicorn-book-app-svc &lt;Random&gt;
+liveness=/health readiness=/health
+graceful=45 preStop={&quot;exec&quot;:{&quot;command&quot;:[&quot;/bin/sh&quot;,&quot;-c&quot;,&quot;sleep 15&quot;]}}
+app &lt;- 숫자와 exec 상관없이, graceful과 preStop이 보인다면 정답.
+unicorn-book-app-sa &lt;- 출력되는 값이 있다면 정답
+</code></pre>
+<h3 id="7-1-lambda-function-configuration-10점">7-1. Lambda Function Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (7-1-A 명령어 입력)</p>
+<pre><code class="language-bash">aws lambda get-function-configuration --function-name unicorn-get-booking-func --query &quot;[FunctionName, KMSKeyArn, LoggingConfig.LogGroup]&quot; --output json | jq -r &quot;.[]&quot;
+</code></pre>
+<p><strong>기대 결과</strong> (7-1-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">unicorn-get-booking-func
+arn:aws:kms:ap-northeast-2:&lt;선수ID&gt;:key/&lt;random&gt;
+/unicorn/lambda/get-booking
+</code></pre>
+<h3 id="8-1-alb-routing-configuration-10점">8-1. ALB Routing Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (8-1-A 명령어 입력)</p>
+<pre><code class="language-bash">ALB_ARN=$(aws elbv2 describe-load-balancers --names unicorn-alb --query &quot;LoadBalancers[0].LoadBalancerArn&quot; --output text)
+aws elbv2 describe-load-balancers --load-balancer-arns $ALB_ARN --query &quot;LoadBalancers[0].[Scheme, Type, State.Code]&quot; --output text
+aws elbv2 describe-listeners --load-balancer-arn $ALB_ARN --query &quot;Listeners[0].[Protocol, Port]&quot; --output text
+aws elbv2 describe-target-groups --names unicorn-tg --query &quot;TargetGroups[0].TargetGroupName&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (8-1-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">internal        application     active
+HTTP    80
+unicorn-tg
+</code></pre>
+<h3 id="8-2-cloudfront-cdn-configuration-10점">8-2. CloudFront CDN Configuration · 1.0점</h3>
+<p><strong>채점 방법</strong> (8-2-A 명령어 입력)</p>
+<pre><code class="language-bash">aws cloudfront get-distribution-config --id $(aws cloudfront list-distributions --query &quot;DistributionList.Items[?Comment=='unicorn-svc-cf'].Id | [0]&quot; --output text) --query &quot;DistributionConfig.Origins.Items[].[Id, OriginAccessControlId, VpcOriginConfig.VpcOriginId]&quot; --output text
+aws s3api get-bucket-policy --bucket unicorn-web-$(aws sts get-caller-identity --query Account --output text) --query &quot;Policy&quot; --output text | jq -r '.Statement[] | .Principal.Service, .Condition.StringEquals.&quot;AWS:SourceArn&quot;'
+</code></pre>
+<p><strong>기대 결과</strong> (8-2-A 예상 출력 · 강조 부분 일치)</p>
+<pre><code class="language-text">s3-origin  E5QU162JYR0HC   None &lt;- Origin 2개 존재할 경우 정답
+app-origin  vo_CYuIQTnExqrDBT6a97EQ6T
+cloudfront.amazonaws.com
+arn:aws:cloudfront::&lt;선수ID&gt;:distribution/&lt;Random&gt;
+</code></pre>
+<h3 id="8-3-book-app-post-request-test-10점">8-3. Book app POST Request Test · 1.0점</h3>
+<p><strong>채점 방법</strong> (8-3-A 명령어 입력)</p>
+<pre><code class="language-bash">CF=$(aws cloudfront list-distributions --query &quot;DistributionList.Items[?Comment=='unicorn-svc-cf'].DomainName | [0]&quot; --output text)
+RESP=$(curl -s -X POST &quot;https://$CF/v1/book&quot; -H 'Content-Type: application/json' -d '{&quot;client_id&quot;:&quot;C-MARK&quot;,&quot;username&quot;:&quot;Judge&quot;,&quot;email&quot;:&quot;judge@skills.kr&quot;,&quot;concert_name&quot;:&quot;UnicornMark2026&quot;}')
+echo &quot;$RESP&quot;
+BID=$(echo &quot;$RESP&quot; | jq -r '.booking_id')
+aws dynamodb get-item --table-name unicorn-concert-db --key &quot;{\&quot;booking_id\&quot;:{\&quot;S\&quot;:\&quot;$BID\&quot;}}&quot; --query &quot;Item.{booking_id:booking_id.S, client_id:client_id.S, concert_name:concert_name.S, created_at:created_at.S}&quot; --output json
+</code></pre>
+<p><strong>기대 결과</strong> (8-3-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">{&quot;booking_id&quot;:&quot;1DBMHYL0&quot;}
+{
+    &quot;booking_id&quot;: &quot;1DBMHYL0&quot;,
+    &quot;client_id&quot;: &quot;C-MARK&quot;,
+    &quot;concert_name&quot;: &quot;UnicornMark2026&quot;,
+    &quot;created_at&quot;: &quot;2026-05-31T20:00:59Z&quot;
+}
+</code></pre>
+<ul>
+<li>* 빨간색 부분이 서로 일치하고, 밑줄 친 부분이 채점기준표와 일치하면 득점</li>
+</ul>
+<h3 id="8-4-book-app-get-request-test-10점">8-4. Book app GET Request Test · 1.0점</h3>
+<p><strong>채점 방법</strong> (8-4-A 명령어 입력)</p>
+<pre><code class="language-bash">curl -s &quot;https://$CF/v1/book?booking_id=$BID&quot; | jq .
+</code></pre>
+<p><strong>기대 결과</strong> (8-4-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">{
+  &quot;username&quot;: &quot;Judge&quot;,
+  &quot;created_at&quot;: &quot;2026-05-31T20:00:59Z&quot;,
+  &quot;email&quot;: &quot;judge@skills.kr&quot;,
+  &quot;booking_id&quot;: &quot;1DBMHYL0&quot;,
+  &quot;client_id&quot;: &quot;C-MARK&quot;,
+  &quot;concert_name&quot;: &quot;UnicornMark2026&quot;
+}
+</code></pre>
+<ul>
+<li>* 강조한 부분의 8-3-A의 출력값과 같으면 득점. 8-3 틀렸을 경우 오답.</li>
+</ul>
+<h3 id="8-5-alb-direct-request-deny-test-05점">8-5. ALB Direct Request deny Test · 0.5점</h3>
+<p><strong>채점 방법</strong> (8-5-A 명령어 입력)</p>
+<pre><code class="language-bash">curl -s -o /dev/null -w &quot;%{http_code}\n&quot; --max-time 10 -X POST &quot;http://$(aws elbv2 describe-load-balancers --names unicorn-alb --query &quot;LoadBalancers[0].DNSName&quot; --output text)/v1/book&quot; -H 'Content-Type: application/json' -d '{&quot;client_id&quot;:&quot;DIRECT&quot;}' || echo &quot;000&quot;
+</code></pre>
+<p><strong>기대 결과</strong> (8-5-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">000
+000
+</code></pre>
+<ul>
+<li>* 또는 403이 출력되었을 경우 득점</li>
+</ul>
+<h3 id="8-6-waf-managed-rule-test-10점">8-6. WAF Managed Rule Test · 1.0점</h3>
+<p><strong>채점 방법</strong> (8-6-A 명령어 입력)</p>
+<pre><code class="language-bash">curl -s -o /dev/null -w &quot;%{http_code}&quot; &quot;https://$CF/?probe=&lt;script&gt;alert(1)&lt;/script&gt;&quot;
+</code></pre>
+<p><strong>기대 결과</strong> (8-6-A 예상 출력)</p>
+<pre><code class="language-text">403
+</code></pre>
+<h3 id="9-1-audit-role-configuration-05점">9-1. Audit Role Configuration · 0.5점</h3>
+<p><strong>채점 방법</strong> (9-1-A 명령어 입력)</p>
+<pre><code class="language-bash">aws iam get-role --role-name unicorn-audit-role --output json | jq -r '.Role | [.MaxSessionDuration, .AssumeRolePolicyDocument.Statement[0].Principal.AWS, .AssumeRolePolicyDocument.Statement[0].Condition.StringEquals[&quot;sts:ExternalId&quot;]] | map(tostring) | join(&quot; &quot;)'
+for p in $(aws iam list-role-policies --role-name unicorn-audit-role --query &quot;PolicyNames[]&quot; --output text); do
+  aws iam get-role-policy --role-name unicorn-audit-role --policy-name $p --query &quot;PolicyDocument.Statement[].Action[]&quot; --output text; done
+</code></pre>
+<p><strong>기대 결과</strong> (9-1-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">3600 arn:aws:iam::111122223333:root unicorn-audit-2026&lt;선수등번호&gt;
+dynamodb:GetItem dynamodb:Query ec2:DescribeVpcs eks:DescribeCluster
+</code></pre>
+<ul>
+<li>정책에서 *만 없으면 득점 인정.</li>
+</ul>
+<h3 id="9-2-audit-role-assume-and-permission-test-10점">9-2. Audit Role Assume and Permission Test · 1.0점</h3>
+<p><strong>채점 방법</strong> (9-2-A 명령어 입력)</p>
+<pre><code class="language-bash">ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+ROLE_ARN=arn:aws:iam::$(echo $ACCOUNT_ID):role/unicorn-audit-role
+aws sts assume-role --role-arn $ROLE_ARN --role-session-name mk 2&gt;&amp;1 | grep -oE AccessDenied | head -1
+read -r AK SK TK &lt; &lt;(aws sts assume-role --role-arn $ROLE_ARN --role-session-name mk --external-id unicorn-audit-2026$number --query &quot;Credentials.[AccessKeyId,SecretAccessKey,SessionToken]&quot; --output text)
+export AWS_ACCESS_KEY_ID=$AK AWS_SECRET_ACCESS_KEY=$SK AWS_SESSION_TOKEN=$TK
+aws sts get-caller-identity --query Arn --output text
+aws ec2 describe-vpcs --filters Name=tag:Name,Values=unicorn-vpc --query &quot;Vpcs[0].VpcId&quot; --output text
+aws ec2 describe-instances 2&gt;&amp;1 | grep -oE &quot;AccessDenied|UnauthorizedOperation&quot; | head -1
+unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+</code></pre>
+<p><strong>기대 결과</strong> (9-2-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">AccessDenied
+arn:aws:sts::&lt;계정ID&gt;:assumed-role/unicorn-audit-role/mk
+vpc-&lt;random&gt;
+UnauthorizedOperation
+</code></pre>
+<h3 id="10-1-application-health-and-env-etc-15점">10-1. Application Health and env, etc · 1.5점</h3>
+<p><strong>채점 방법</strong> (10-1-A 명령어 입력)</p>
+<pre><code class="language-bash">curl -s -o /dev/null -w &quot;%{http_code}\n&quot; &quot;https://$(aws cloudfront list-distributions --query &quot;DistributionList.Items[?Comment=='unicorn-svc-cf'].DomainName | [0]&quot; --output text)/health&quot;
+kubectl exec -n unicorn $(kubectl get pods -n unicorn -l app -o jsonpath='{.items[0].metadata.name}') -c book -- printenv AWS_REGION TABLE_NAME
+</code></pre>
+<p><strong>기대 결과</strong> (10-1-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">200
+ap-northeast-2
+unicorn-concert-db
+</code></pre>
+<h3 id="11-1-log-type-health-log-exclusion-15점">11-1. Log type &amp; Health log exclusion · 1.5점</h3>
+<p><strong>채점 방법</strong> (11-1-A 명령어 입력)</p>
+<pre><code class="language-bash">aws logs get-log-events --log-group-name /unicorn/eks/book-app --log-stream-name &quot;$(aws logs describe-log-streams --log-group-name /unicorn/eks/book-app --order-by LastEventTime --descending --limit 1 --query &quot;logStreams[0].logStreamName&quot; --output text)&quot; --limit 1 --start-from-head --query &quot;events[-1].message&quot; --output text | jq -r 'keys_unsorted | sort | join(&quot;,&quot;)'
+aws logs filter-log-events --log-group-name /unicorn/eks/book-app --filter-pattern '&quot;/health&quot;' --query &quot;events[].message&quot; --output text | grep -c .
+</code></pre>
+<p><strong>기대 결과</strong> (11-1-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">client_ip,method,path,status_code,timestamp
+0
+</code></pre>
+<h3 id="11-2-prometheus-metrics-05점">11-2. Prometheus Metrics · 0.5점</h3>
+<p><strong>채점 방법</strong> (11-2-A 명령어 입력)</p>
+<pre><code class="language-bash">kubectl get pods -n monitoring -o custom-columns='NAME:.metadata.name,STATUS:.status.phase' --no-headers | grep -iE &quot;prometheus-|grafana&quot;
+kubectl get servicemonitor -A -o jsonpath='{range .items[*]}{.metadata.name}{&quot;\n&quot;}{end}' 2&gt;/dev/null | grep -iE &quot;kube-controller-manager|kube-scheduler|kube-etcd&quot; | wc -l
+</code></pre>
+<p><strong>기대 결과</strong> (11-2-A 예상 출력 · 정확히 일치)</p>
+<ul>
+<li>* 강조된 부분이 일치해야 합니다. (Suffix, 개수는 다를 수 있음)</li>
+</ul>
+<pre><code class="language-text">prometheus-unicorn-monitoring-kube-pr-prometheus-0 Running
+unicorn-monitoring-grafana-7974ccf57f-j585v  Running
+0
+</code></pre>
+<h3 id="12-1-log-pipeline-test-10점">12-1. Log Pipeline Test · 1.0점</h3>
+<p><strong>채점 방법</strong> (12-1-A 명령어 입력 · 대기 포함)</p>
+<ul>
+<li>* 요청을 보낸 후, 로그 수집까지 30초 대기한 후 조회합니다.</li>
+</ul>
+<pre><code class="language-bash">TZ=Asia/Seoul date &quot;+%Y-%m-%dT%H:%M:%S+09:00&quot;
+SINCE=$(date +%s)
+curl -s -X POST &quot;https://$(aws cloudfront list-distributions --query &quot;DistributionList.Items[?Comment=='unicorn-svc-cf'].DomainName | [0]&quot; --output text)/v1/book&quot; -H 'Content-Type: application/json' -d '{&quot;client_id&quot;:&quot;C-FRESH&quot;,&quot;username&quot;:&quot;Fresh&quot;,&quot;email&quot;:&quot;fresh@skills.kr&quot;,&quot;concert_name&quot;:&quot;FreshMark&quot;}' &gt; /dev/null
+echo &quot;waiting 30s for log pipeline&quot; &amp;&amp; sleep 30
+aws logs filter-log-events --log-group-name /unicorn/eks/book-app --start-time ${SINCE}000 --filter-pattern '{ $.method = &quot;POST&quot; &amp;&amp; $.path = &quot;/v1/book&quot; }' --query &quot;events[-1].message&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (12-1-A 예상 출력 · 부분 일치)</p>
+<pre><code class="language-text">2026-05-31T23:54:40Z
+waiting 30s for log pipeline
+{&quot;timestamp&quot;:&quot;2026-05-31T23:54:42Z&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;path&quot;:&quot;/v1/book&quot;,&quot;status_code&quot;:200,&quot;client_ip&quot;:&quot;10.97.12.184&quot;}
+</code></pre>
+<ul>
+<li>* 출력된 로그가 위와 같고, 빨간색 부분의 시간 차가 1분 이내면 득점.</li>
+<li>* None 등의 값이 출력될 경우 무시하도록 합니다.</li>
+</ul>
+<h3 id="12-2-waf-rate-limit-block-test-10점">12-2. WAF Rate limit block Test · 1.0점</h3>
+<p><strong>채점 방법</strong> (12-2-A 명령어 입력 · 대기 포함)</p>
+<ul>
+<li>* 60초 대기한 후 부하를 주입합니다. 이후 30초 대기합니다. 대기가 끝난 후 선수는 30초 간 원하는 만큼 curl 요청을 할 수 있습니다.</li>
+</ul>
+<pre><code class="language-bash">CF=$(aws cloudfront list-distributions --query &quot;DistributionList.Items[?Comment=='unicorn-svc-cf'].DomainName | [0]&quot; --output text)
+sleep 60
+for i in $(seq 1 100); do curl -s -o /dev/null &quot;https://$CF/health&quot;; done
+sleep 30
+curl -s -o /dev/null -w &quot;%{http_code}\n&quot; &quot;https://$CF/health&quot;
+curl -s &quot;https://$CF/health&quot;
+</code></pre>
+<p><strong>기대 결과</strong> (12-2-A 예상 출력 · 정확히 일치)</p>
+<pre><code class="language-text">403
+Request blocked by Unicorn WAF
+</code></pre>
+<h3 id="13-1-grafana-dashboard-panel-configuration-15점">13-1. Grafana Dashboard Panel Configuration · 1.5점</h3>
+<p><strong>채점 방법</strong> (13-1-A 수동 채점)</p>
+<p>unicorn-grafana-alb에 접근하여 skills&lt;선수등번호&gt; / HelloKrSkills!&lt;등번호&gt;@로 로그인합니다. unicorn-grafana-dashboard로 이동한 후, 아래와 같이 대시보드가 잘 구성되었는지 확인합니다. 만약 Panel type 등이 다르거나, No Data가 있는 경우에도 오답입니다.</p>
+<p>대소문자는 채점 시 고려하지 않습니다.
+패널 구성은 아래 이미지를 참조하나, 필요 시 아래 설명을 참고합니다.</p>
+<p>* 올바른 Panel 구성</p>
+<ol>
+<li>EKS Node CPU Usage (%) - Time Series</li>
+<li>EKS Node Memory Usage (%) - Time Series</li>
+<li>unicorn Namespace Pod Status - Stat, graph 포함</li>
+<li>Book App Ready Pods - Stat</li>
+<li>Book App HTTP Request Duration - Time Series</li>
+</ol>
+<p>* 4번은 Book App Ready까지만 출력되어도 정답.</p>
+<figure><a href="images/2026-national-t1-marking/img01.png" target="_blank" rel="noopener"><img src="images/2026-national-t1-marking/img01.png" alt="Grafana 대시보드(unicorn-grafana-dashboard) 패널 구성 예시" loading="lazy"></a><figcaption>Grafana 대시보드(unicorn-grafana-dashboard) 패널 구성 예시</figcaption></figure>
+<p>선수가 색상, 대소문자 등을 다르게 구성한 것은 정답 처리하나, 텍스트를 다르게 작성했거나, 위 사진에 나온 Panel 중 하나라도 없는 등의 차이가 있다면 오답 처리.</p>
+<p>* 표시되는 값의 경우 채점 시 무시함. 선수마다 다르게 출력됨.</p>
+<h3 id="14-1-destination-db-생성-10점">14-1. Destination DB 생성 · 1.0점</h3>
+<p><strong>채점 방법</strong> (14-1 명령어 입력)</p>
+<pre><code class="language-bash">$ aws dynamodb list-tables --query &quot;TableNames&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (14-1 예상결과)</p>
+<pre><code class="language-text">destination-db source-db
+</code></pre>
+<ul>
+<li>destination-db가 있으면 정답이며, source-db는 존재 상관 없음.</li>
+</ul>
+<h3 id="14-2-lambda-container-provisioning-15점">14-2. Lambda Container Provisioning · 1.5점</h3>
+<p><strong>채점 방법</strong> (14-2 명령어 입력)</p>
+<pre><code class="language-bash">$ aws lambda get-function --function-name ticket-processor --query &quot;Code.RepositoryType&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (14-2 예상결과)</p>
+<pre><code class="language-text">ECR
+</code></pre>
+<h3 id="14-3-dynamodb-ttl-10점">14-3. DynamoDB TTL · 1.0점</h3>
+<p><strong>채점 방법</strong> (14-3 명령어입력)</p>
+<pre><code class="language-bash">$ aws dynamodb describe-time-to-live --table-name source-db --query TimeToLiveDescription.TimeToLiveStatus --output text
+</code></pre>
+<p><strong>기대 결과</strong> (14-3 예상결과)</p>
+<pre><code class="language-text">ENABLED
+</code></pre>
+<h3 id="14-4-data-processing-15점">14-4. Data Processing · 1.5점</h3>
+<p><strong>채점 방법</strong> (14-4 명령어입력)</p>
+<pre><code class="language-bash">export ticket_id=&quot;T-00$((RANDOM % 100 + 100))&quot;
+export price=&quot;$((RANDOM % 10 + 1))000&quot;
+export amount=&quot;$((RANDOM % 10 + 1))&quot;
+
+echo &quot;ticket_id: $ticket_id&quot;
+echo &quot;amount * price = $amount * $price = $((amount * price))“
+
+# 필요시 필드 추가 가능
+aws dynamodb put-item --table-name source-db --item '{&quot;ticket_id&quot;: {&quot;S&quot;: &quot;'$ticket_id'&quot;}, &quot;amount&quot;: {&quot;S&quot;: &quot;'$amount'&quot;}, &quot;price&quot;: {&quot;S&quot;: &quot;'$price'&quot;}, &quot;created_at&quot;: {&quot;S&quot;: &quot;1234567890&quot;}}'
+
+echo &quot;sleep for 60 seconds...&quot;
+sleep 60
+aws dynamodb get-item --table-name destination-db --key '{&quot;ticket_id&quot;: {&quot;S&quot;: &quot;'$ticket_id'&quot;}}' --query &quot;Item.total_price&quot;
+</code></pre>
+<p><strong>기대 결과</strong> (14-4 예상결과)</p>
+<pre><code class="language-text">ticket_id : T-&lt;random&gt;
+acmount * price = 6*5000 = 30000
+sleep for 60 seconds...
+</code></pre>
+<ul>
+<li>GET Item 호출 결과에서 amount * price의 값과 total_price 최종 출력 값이 일치하는지 확인합니다.</li>
+</ul>
+<h3 id="14-5-dynamodb-stream-구성-10점">14-5. DynamoDB Stream 구성 · 1.0점</h3>
+<p><strong>채점 방법</strong> (14-5 명령어입력)</p>
+<pre><code class="language-bash">$ aws dynamodb describe-table --table-name source-db --query &quot;Table.StreamSpecification.StreamEnabled&quot; --output text
+</code></pre>
+<p><strong>기대 결과</strong> (14-5 예상결과)</p>
+<pre><code class="language-text">True
+</code></pre>
+</article></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#채점-유의사항">채점 유의사항</a></li><li class="toc-h2"><a href="#배점-요약">배점 요약</a></li><li class="toc-h3"><a href="#주요항목별-배점">주요항목별 배점</a></li><li class="toc-h3"><a href="#세부항목별-배점">세부항목별 배점</a></li><li class="toc-h2"><a href="#채점-항목">채점 항목</a></li><li class="toc-h3"><a href="#0-사전준비">0. 사전준비</a></li><li class="toc-h3"><a href="#1-1-vpc-subnet-cidr-configuration-05점">1-1. VPC &amp; Subnet CIDR Configuration · 0.5점</a></li><li class="toc-h3"><a href="#1-2-routing-configuration-05점">1-2. Routing Configuration · 0.5점</a></li><li class="toc-h3"><a href="#1-3-vpc-endpoint-flow-log-10점">1-3. VPC Endpoint &amp; Flow Log · 1.0점</a></li><li class="toc-h3"><a href="#2-1-keys-rotation-configuration-10점">2-1. Keys &amp; Rotation Configuration · 1.0점</a></li><li class="toc-h3"><a href="#3-1-s3-bucket-configuration-10점">3-1. S3 bucket Configuration · 1.0점</a></li><li class="toc-h3"><a href="#4-1-dynamodb-table-configuration-10점">4-1. DynamoDB Table Configuration · 1.0점</a></li><li class="toc-h3"><a href="#5-1-ecr-repository-configuration-10점">5-1. ECR Repository Configuration · 1.0점</a></li><li class="toc-h3"><a href="#6-1-eks-cluster-configuration-10점">6-1. EKS Cluster Configuration · 1.0점</a></li><li class="toc-h3"><a href="#6-2-eks-nodegroup-configuration-10점">6-2. EKS NodeGroup Configuration · 1.0점</a></li><li class="toc-h3"><a href="#6-3-workload-check-10점">6-3. Workload Check · 1.0점</a></li><li class="toc-h3"><a href="#7-1-lambda-function-configuration-10점">7-1. Lambda Function Configuration · 1.0점</a></li><li class="toc-h3"><a href="#8-1-alb-routing-configuration-10점">8-1. ALB Routing Configuration · 1.0점</a></li><li class="toc-h3"><a href="#8-2-cloudfront-cdn-configuration-10점">8-2. CloudFront CDN Configuration · 1.0점</a></li><li class="toc-h3"><a href="#8-3-book-app-post-request-test-10점">8-3. Book app POST Request Test · 1.0점</a></li><li class="toc-h3"><a href="#8-4-book-app-get-request-test-10점">8-4. Book app GET Request Test · 1.0점</a></li><li class="toc-h3"><a href="#8-5-alb-direct-request-deny-test-05점">8-5. ALB Direct Request deny Test · 0.5점</a></li><li class="toc-h3"><a href="#8-6-waf-managed-rule-test-10점">8-6. WAF Managed Rule Test · 1.0점</a></li><li class="toc-h3"><a href="#9-1-audit-role-configuration-05점">9-1. Audit Role Configuration · 0.5점</a></li><li class="toc-h3"><a href="#9-2-audit-role-assume-and-permission-test-10점">9-2. Audit Role Assume and Permission Test · 1.0점</a></li><li class="toc-h3"><a href="#10-1-application-health-and-env-etc-15점">10-1. Application Health and env, etc · 1.5점</a></li><li class="toc-h3"><a href="#11-1-log-type-health-log-exclusion-15점">11-1. Log type &amp; Health log exclusion · 1.5점</a></li><li class="toc-h3"><a href="#11-2-prometheus-metrics-05점">11-2. Prometheus Metrics · 0.5점</a></li><li class="toc-h3"><a href="#12-1-log-pipeline-test-10점">12-1. Log Pipeline Test · 1.0점</a></li><li class="toc-h3"><a href="#12-2-waf-rate-limit-block-test-10점">12-2. WAF Rate limit block Test · 1.0점</a></li><li class="toc-h3"><a href="#13-1-grafana-dashboard-panel-configuration-15점">13-1. Grafana Dashboard Panel Configuration · 1.5점</a></li><li class="toc-h3"><a href="#14-1-destination-db-생성-10점">14-1. Destination DB 생성 · 1.0점</a></li><li class="toc-h3"><a href="#14-2-lambda-container-provisioning-15점">14-2. Lambda Container Provisioning · 1.5점</a></li><li class="toc-h3"><a href="#14-3-dynamodb-ttl-10점">14-3. DynamoDB TTL · 1.0점</a></li><li class="toc-h3"><a href="#14-4-data-processing-15점">14-4. Data Processing · 1.5점</a></li><li class="toc-h3"><a href="#14-5-dynamodb-stream-구성-10점">14-5. DynamoDB Stream 구성 · 1.0점</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

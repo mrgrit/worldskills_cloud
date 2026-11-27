@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025 지방 제1과제 · Solution Architecture</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details open><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html" class="on">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2025 지방 제1과제</div>
+<div class="badges"><span class="badge lv-regional">지방</span><span class="badge">2025</span><span class="badge">제1과제</span><span class="badge time">⏱ 4시간</span><span class="badge kind-problem">문제</span></div>
+<h1>Solution Architecture</h1>
+<p class="summary">회사의 서비스를 AWS 환경에 배포하기 위해 고가용성, 운영 효율성 등 클라우드 설계원칙을 고려하여 VPC, ECS(Service Connect), ECR, DynamoDB, CloudWatch 기반 시스템을 구축하는 과제입니다.</p>
+<div class="tags"><span class="tag">VPC</span><span class="tag">ECR</span><span class="tag">ECS</span><span class="tag">ELB</span><span class="tag">CloudMap</span><span class="tag">DynamoDB</span><span class="tag">CloudWatch</span></div><div class="actions"><a class="btn" href="2025-regional-t1-marking.html">📝 채점기준 보기</a></div></div>
+<article class="doc"><h2 id="개요">개요</h2>
+<p>클라우드 엔지니어로 회사의 서비스를 AWS 환경에 배포하기로 하였습니다. 주어진 요구사항과 고가용성, 운영 효율성 등 클라우드 설계원칙을 고려하여 시스템을 구축해야 합니다.</p>
+<figure><a href="images/2025-regional-t1/img01.png" target="_blank" rel="noopener"><img src="images/2025-regional-t1/img01.png" alt="아키텍처 다이어그램" loading="lazy"></a><figcaption>아키텍처 다이어그램</figcaption></figure>
+<h2 id="사용-기술">사용 기술</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>분류</th>
+<th>항목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AWS</td>
+<td>VPC, ECR, ECS, ELB, CloudMap, DynamoDB, CloudWatch</td>
+</tr>
+<tr>
+<td>Application</td>
+<td>Golang</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="선수-유의사항">선수 유의사항</h2>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>다음 유의사항을 고려하여 요구사항을 완성하시오.</p>
+</blockquote>
+<ol>
+<li>문제에 제시된 괄호 &lt;&gt;는 변수를 뜻함으로 선수가 적절히 변경하여 사용해야 합니다.</li>
+<li>Security Group의 80/443 outbound는 anyopen하여 사용할 수 있도록 합니다.</li>
+<li>Bastion EÇ2는 채점을 위해 사용합니다. 서버들에 접속 문제가 생겨 채점에 불이익을 받지 않도록 합니다.</li>
+<li>과제 종료 전 실행 중인 테스트 및 부하를 중지하여 서버에 문제가 없도록 해야 합니다.</li>
+<li>Tag 정보가 맞지 않거나 권한 문제가 생겨 채점이 불가하지 않도록 주의합니다.</li>
+<li>Region 설정이 필요한 리소스는 모두 서울 지역(ap-northeast-2)에 구성합니다.</li>
+</ol>
+<h2 id="3-네트워크-구성">3. 네트워크 구성</h2>
+<ul>
+<li>AWS VPC를 사용해 Public, Private 서브넷을 구성합니다.</li>
+<li>서브넷은 A존과 C존을 활용해 고가용성을 구성해야 하며 서브넷의 마스크는 자유롭게 구성합니다.</li>
+<li>Public 서브넷은 인터넷에서 직접 접근 가능하며 Pirvate 서브넷은 인터넷으로 접근시 NAT G/W를 통하여 접근할 수 있도록 구성합니다.</li>
+<li>Public 서브넷에 외부 사용자의 요청을 받을 수 있는 ALB 하나를 생성합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VPC name(tag)</td>
+<td><code>ws-vpc</code></td>
+</tr>
+<tr>
+<td>VPC CIDR</td>
+<td><code>10.101.0.0/16</code></td>
+</tr>
+<tr>
+<td>Subnet(tag)</td>
+<td><code>ws-pub-a</code>, <code>ws-pub-c</code>, <code>ws-priv-a</code>, <code>ws-priv-c</code></td>
+</tr>
+<tr>
+<td>Route table(tag)</td>
+<td><code>ws-pub-rt</code>, <code>ws-priv-rt-a</code>, <code>ws-priv-rt-c</code></td>
+</tr>
+<tr>
+<td>ALB name(tag)</td>
+<td><code>gateway-alb-pub</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="4-bastion">4. Bastion</h2>
+<ul>
+<li>EC2를 활용해 Bastion 서버를 구성합니다.</li>
+<li>인터넷에서 접근 가능해야 하며 EIP를 활용하여 서버 재시작 후에도 IP가 변경되지 않도록 합니다.</li>
+<li>Bastion은 채점용으로 사용됨으로 반드시 SSH를 통한 접속과 권한 문제가 없도록 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EC2 type</td>
+<td><code>t3.micro</code></td>
+</tr>
+<tr>
+<td>Image</td>
+<td>Amazon Linux2</td>
+</tr>
+<tr>
+<td>Packages</td>
+<td><code>awscli</code>, <code>curl</code>, <code>docker</code>, <code>jq</code></td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>ws-bastion</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-application">5. Application</h2>
+<ul>
+<li>Gateway 서버는 Public 서브넷에 위치한 ALB와 연결되며, 외부로부터의 요청을 VPC 내부로 전달하는 엔드포인트를 제공하는 역할을 합니다.</li>
+<li>NGINX 등과 같은 웹서버를 사용하거나 직접 개발하여 Gateway 서버를 구성합니다.</li>
+<li>API 전달뿐 아니라 HTTP /health 요청 시 200 code를 반환할 수 있어야 합니다.</li>
+<li>Product 애플리케이션은 REST API로 요청을 받아 DynamoDB에 데이터를 저장 및 읽기를 수행합니다.</li>
+<li>외부 사용자로부터의 요청은 Gateway 서버를 거쳐 전달됩니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Binding port</td>
+<td><code>8080</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Product app API</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>API</th>
+<th>Parameters</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>POST /v1/item</td>
+<td><code>{&quot;name&quot;: &quot;jean&quot;, &quot;owner&quot;: &quot;kim&quot;}</code></td>
+<td><code>{&quot;result&quot;: &quot;added&quot;, &quot;uuid&quot;: &quot;xxxx&quot;}</code></td>
+</tr>
+<tr>
+<td>GET /v1/item</td>
+<td><code>?uuid=xxxx</code></td>
+<td><code>{&quot;uuid&quot;: &quot;xxxx&quot;, &quot;name&quot;: &quot;jean&quot;}</code></td>
+</tr>
+<tr>
+<td>GET /health</td>
+<td>-</td>
+<td><code>{&quot;status&quot;: &quot;OK&quot;, &quot;app&quot;: &quot;product&quot;}</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="6-ecr">6. ECR</h2>
+<ul>
+<li>애플리케이션이 포함된 컨테이너 이미지를 ECR로 올려서 관리하도록 합니다.</li>
+<li>Private registry를 구성하고 보안 구성들을 진행합니다.</li>
+<li>업로드 시 스캐닝이 되어야 하며 이미지에 취약점이 존재하면 안 됩니다.</li>
+<li>또한 같은 이름의 이미지 태그가 있으면 업로드가 불가해야 하며 암호화되어 저장되도록 합니다.</li>
+<li>테스트를 위하여 ECR에 v1.0.0 태그를 갖는 이미지 하나를 업로드하도록 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECR name</td>
+<td><code>gateway</code>, <code>product</code></td>
+</tr>
+<tr>
+<td>Installed packages</td>
+<td><code>curl</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="7-ecs">7. ECS</h2>
+<ul>
+<li>아래 정보를 활용하여 ECS를 사용해 컨테이너를 프로비저닝 합니다.</li>
+<li>컨테이너는 EC2에서 운영되도록 합니다.</li>
+<li>컨테이너 내부로 SHELL 접근이 가능하도록 구성합니다.</li>
+<li>운영 환경임으로 latest 태그를 갖는 이미지를 활용해 task를 배포하지 않도록 유의하세요.</li>
+<li>또한 Gateway에서 Product 호출 시 ECS Service Connect를 사용하도록 구성합니다.</li>
+<li>Service Connect를 위한 환경 변수는 각각 CONN_GATEWAY, CONN_PRODUCT를 사용합니다.</li>
+<li>SHELL을 통해 Gateway 컨테이너 접근 후 curl을 통해 http://gateway에 호출하면 접근할 수 있어야 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECS cluster name</td>
+<td><code>ws-cluster</code></td>
+</tr>
+<tr>
+<td>ECS Service name</td>
+<td><code>gateway-svc</code>, <code>product-svc</code></td>
+</tr>
+<tr>
+<td>ECS TaskDefinition name</td>
+<td><code>gateway-td</code>, <code>product-td</code></td>
+</tr>
+<tr>
+<td>EC2 type</td>
+<td><code>t3.small</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="8-dynamodb">8. DynamoDB</h2>
+<ul>
+<li>Product 애플리케이션은 DynamoDB를 사용하여 데이터를 처리합니다.</li>
+<li>테이블 구성 시 PAY_PER_REQUEST 모드를 사용하며 uuid, name, owner를 테이블의 키로 사용합니다.</li>
+<li>데이터 유실에 대비해 DynamoDB Encryption과 Arn을 활용한 백업과 PITR을 활성화하며 테이블의 삭제 방지를 구성합니다.</li>
+<li>Encryption at rest을 위하여 CMK를 활용해 SSE 레벨의 테이블 암호화를 구성하도록 합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table name</td>
+<td><code>product</code></td>
+</tr>
+<tr>
+<td>Keys</td>
+<td><code>uuid</code>, <code>name</code>, <code>owner</code></td>
+</tr>
+<tr>
+<td>Mode</td>
+<td><code>PAY_PER_REQUEST</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="9-cloud-watch">9. Cloud Watch</h2>
+<ul>
+<li>ECS에서 사용하는 EC2의 CPU, Network In/Out bytes와 ALB의 4xx, 5xx 에러를 확인할 수 있는 그래프들을 가지는 &quot;ProductService&quot;라는 이름의 Dashboard를 구성합니다.</li>
+<li>만약 5분 안에 4xx 에러가 10개 이상 발생 시 알람이 울리도록 구성을 설정합니다.</li>
+<li>또한, ECS의 Container Insights를 활성화하여 클러스터에 존재하는 Task들의 CPU Utilization, Memory Utilization을 확인할 수 있도록 하고, CloudWatch Logs에서 task의 console output으로 전달되는 로그들을 모두 확인할 수 있도록 구성합니다.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dashboard name</td>
+<td><code>Product Service</code></td>
+</tr>
+<tr>
+<td>Dashboard metrics</td>
+<td>EC2 CPU, EC2 Network, ALB 4xx error, ALB 5xx error</td>
+</tr>
+<tr>
+<td>LogGroup name</td>
+<td><code>/ws/ecs/gateway</code>, <code>/ws/ecs/product</code></td>
+</tr>
+</tbody>
+</table></div>
+</article><nav class="pager"><a href="2024-wsc-day3.html">← WSC2024 · Day 3<span>Test Project Cloud Computing</span></a><a class="next" href="2025-regional-t2.html">2025 지방 제2과제 →<span>Small Challenge</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h2"><a href="#사용-기술">사용 기술</a></li><li class="toc-h2"><a href="#선수-유의사항">선수 유의사항</a></li><li class="toc-h2"><a href="#3-네트워크-구성">3. 네트워크 구성</a></li><li class="toc-h2"><a href="#4-bastion">4. Bastion</a></li><li class="toc-h2"><a href="#5-application">5. Application</a></li><li class="toc-h2"><a href="#6-ecr">6. ECR</a></li><li class="toc-h2"><a href="#7-ecs">7. ECS</a></li><li class="toc-h2"><a href="#8-dynamodb">8. DynamoDB</a></li><li class="toc-h2"><a href="#9-cloud-watch">9. Cloud Watch</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

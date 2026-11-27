@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2024 전국 제2과제 · 채점기준</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script><link rel="stylesheet" href="assets/site.css"></head>
+<body><header class="topbar"><button class="nav-toggle" aria-label="메뉴">☰</button>
+<a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
+<nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details open><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
+<main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2024 전국 제2과제</div>
+<div class="badges"><span class="badge lv-national">전국</span><span class="badge">2024</span><span class="badge">제2과제</span><span class="badge kind-marking">채점기준</span></div>
+<h1>채점기준<small>Small Challenge</small></h1>
+<p class="summary">주요항목 10개(각 3.0점), 총점 30점.</p>
+<div class="tags"></div><div class="actions"><a class="btn" href="2024-national-t2-busan2.html">📄 문제 보기</a></div></div>
+<article class="doc"><h2 id="채점-유의사항">채점 유의사항</h2>
+<p>※ 다음 사항을 유의하여 채점하시오.</p>
+<ol>
+<li>AWS의 지역은 과제별로 명시된 리전을 사용합니다.</li>
+<li>웹페이지 접근은 크롬이나 파이어폭스를 이용합니다.</li>
+<li>웹페이지에서 언어에 따라 문구가 다르게 보일 수 있습니다.</li>
+<li>shell에서의 명령어의 출력은 버전에 따라 조금 다를 수 있습니다.</li>
+<li>문제지와 채점지에 있는 <code>&lt;&gt;</code> 는 변수입니다. 해당 부분을 변경해 입력합니다.</li>
+<li>채점은 문항 순서대로 진행해야 합니다.</li>
+<li>삭제된 채점자료는 되돌릴 수 없음으로 유의하여 진행하며, 이의신청까지 완료 이후 선수가 생성한 클라우드 리소스를 삭제합니다.</li>
+<li>부분 점수가 있는 문항은 채점 항목에 부분 점수가 적혀져 있습니다.</li>
+<li>부분 점수가 따로 없는 문항은 모두 맞아야 점수로 인정됩니다.</li>
+<li>리소스의 정보를 읽어오는 채점항목은 기본적으로 스크립트 결과를 통해 채점을 진행하며, 만약 선수가 이의가 있다면 명령어를 직접 입력하여 확인해볼 수 있습니다.</li>
+<li>[ ] 기호는 채점에 영향을 주지 않습니다.</li>
+<li>명령어 입력 Box 안의 명령줄은 한 줄 명령어입니다. 별도의 지시가 없으면 수정 없이 박스 안의 전체 내용을 복사하고 쉘에 붙여넣어 명령을 실행합니다.</li>
+<li>(예상 출력)은 바로 이전 (명령어 입력)의 예상 출력을 의미합니다.</li>
+</ol>
+<h2 id="배점-요약">배점 요약</h2>
+<h3 id="주요항목별-배점">주요항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>주요항목</th>
+<th>배점</th>
+<th>채점방법</th>
+<th>채점시기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>경북2과제3번<br>Elastic_stack</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>2</td>
+<td>광주2과제3번<br>Collect application logs using Fluent-bit and Fluentd</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>3</td>
+<td>대전2과제3번<br>EKS Observability with FluentBit</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>4</td>
+<td>부산2과제2번<br>Governance</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>5</td>
+<td>서울2과제1번<br>Image resizing on Edge location</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>6</td>
+<td>서울2과제3번<br>IAM security maintenance system</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>7</td>
+<td>제주2과제3번<br>Secure networking</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>8</td>
+<td>충남2과제1번<br>Dynamic IAM Role Authorization Enforcement</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>9</td>
+<td>ClientVPN</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Keycloack</td>
+<td>3.0</td>
+<td>합의</td>
+<td>경기 종료후</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>합계</strong></td>
+<td><strong>30</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="세부항목별-배점">세부항목별 배점</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>번호</th>
+<th>주요항목</th>
+<th>세부항목(채점방법)</th>
+<th>배점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-1</td>
+<td>경북2과제3번 Elastic_stack</td>
+<td>Bastion EC2 – 인스턴스 타입 확인</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>1-2</td>
+<td>경북2과제3번 Elastic_stack</td>
+<td>App EC2 – 인스턴스 타입 확인</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>1-3</td>
+<td>경북2과제3번 Elastic_stack</td>
+<td>웹 어플리케이션 - API 요청 확인</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>1-4</td>
+<td>경북2과제3번 Elastic_stack</td>
+<td>OpenSearch – 도메인 확인</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>1-5</td>
+<td>경북2과제3번 Elastic_stack</td>
+<td>OpenSearch – 세부설정확인</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>1-6</td>
+<td>경북2과제3번 Elastic_stack</td>
+<td>OpenSearch – 로그 확인</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2-1</td>
+<td>광주2과제3번 Collect application logs using Fluent-bit and Fluentd</td>
+<td>기본 배포 구성 확인</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>2-2</td>
+<td>광주2과제3번 Collect application logs using Fluent-bit and Fluentd</td>
+<td>중앙 집중식 로깅 확인</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>2-3</td>
+<td>광주2과제3번 Collect application logs using Fluent-bit and Fluentd</td>
+<td>Application Logging</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>3-1</td>
+<td>대전2과제3번 EKS Observability with FluentBit</td>
+<td>EKS – EKS Cluster 생성 확인</td>
+<td>0.24</td>
+</tr>
+<tr>
+<td>3-2</td>
+<td>대전2과제3번 EKS Observability with FluentBit</td>
+<td>EKS – Namespace 확인</td>
+<td>0.24</td>
+</tr>
+<tr>
+<td>3-3</td>
+<td>대전2과제3번 EKS Observability with FluentBit</td>
+<td>CloudWatch Log Group 생성 확인</td>
+<td>0.24</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>대전2과제3번 EKS Observability with FluentBit</td>
+<td>EKS Setting – Deployment 확인</td>
+<td>0.24</td>
+</tr>
+<tr>
+<td>3-5</td>
+<td>대전2과제3번 EKS Observability with FluentBit</td>
+<td>EKS Setting – Sidecar Pattern 확인</td>
+<td>0.64</td>
+</tr>
+<tr>
+<td>3-6</td>
+<td>대전2과제3번 EKS Observability with FluentBit</td>
+<td>Application – Application 확인</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>3-7</td>
+<td>대전2과제3번 EKS Observability with FluentBit</td>
+<td>Application – CloudWatch Log Stream 생성 확인</td>
+<td>0.44</td>
+</tr>
+<tr>
+<td>3-8</td>
+<td>대전2과제3번 EKS Observability with FluentBit</td>
+<td>Application – 로그 형식 확인</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>4-1</td>
+<td>부산2과제2번 Governance</td>
+<td>EC2 Server Configuration</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>4-2</td>
+<td>부산2과제2번 Governance</td>
+<td>IAM User</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>4-3</td>
+<td>부산2과제2번 Governance</td>
+<td>Trailing</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>4-4</td>
+<td>부산2과제2번 Governance</td>
+<td>CloudWatch - User Login</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>부산2과제2번 Governance</td>
+<td>Cloudwatch - Login Log</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4-6</td>
+<td>부산2과제2번 Governance</td>
+<td>Lambda Configuration</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>5-1</td>
+<td>서울2과제1번 Image resizing on Edge location</td>
+<td>S3 Bucket</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>5-2</td>
+<td>서울2과제1번 Image resizing on Edge location</td>
+<td>CloudFront - Resizing</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>5-3</td>
+<td>서울2과제1번 Image resizing on Edge location</td>
+<td>CloudFront - Redirection</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>5-4</td>
+<td>서울2과제1번 Image resizing on Edge location</td>
+<td>CloudFront - Caching</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>5-5</td>
+<td>서울2과제1번 Image resizing on Edge location</td>
+<td>CloudFront - Ignore caching</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>서울2과제1번 Image resizing on Edge location</td>
+<td>CloudFront - CloudFront function</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>5-7</td>
+<td>서울2과제1번 Image resizing on Edge location</td>
+<td>Lambda - Runtime</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>6-1</td>
+<td>서울2과제3번 IAM security maintenance system</td>
+<td>tester</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>6-2</td>
+<td>서울2과제3번 IAM security maintenance system</td>
+<td>tester admin role</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>6-3</td>
+<td>서울2과제3번 IAM security maintenance system</td>
+<td>mfaBucketDeleteControl</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>6-4</td>
+<td>서울2과제3번 IAM security maintenance system</td>
+<td>user_group_kr</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>6-5</td>
+<td>서울2과제3번 IAM security maintenance system</td>
+<td>Only Seoul region</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>7-1</td>
+<td>제주2과제3번 Secure networking</td>
+<td>S3 - S3 이름</td>
+<td>0.12</td>
+</tr>
+<tr>
+<td>7-2</td>
+<td>제주2과제3번 Secure networking</td>
+<td>S3 - S3 접근 확인</td>
+<td>0.64</td>
+</tr>
+<tr>
+<td>7-3</td>
+<td>제주2과제3번 Secure networking</td>
+<td>S3 - 백업 버킷 파일복사 확인</td>
+<td>0.64</td>
+</tr>
+<tr>
+<td>7-4</td>
+<td>제주2과제3번 Secure networking</td>
+<td>SQS - S3 이벤트 발생 확인</td>
+<td>0.64</td>
+</tr>
+<tr>
+<td>7-5</td>
+<td>제주2과제3번 Secure networking</td>
+<td>SQS - EC2 이벤트 발생 확인</td>
+<td>0.28</td>
+</tr>
+<tr>
+<td>7-6</td>
+<td>제주2과제3번 Secure networking</td>
+<td>NAT G/W &amp; Internet G/W 생성 여부 확인</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>7-7</td>
+<td>제주2과제3번 Secure networking</td>
+<td>endpoint - 인스턴스 접근 서브넷 확인</td>
+<td>0.28</td>
+</tr>
+<tr>
+<td>8-1</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>IAM - User Name</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>8-2</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>IAM - User policy</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>8-3</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>IAM - instance role Name</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>8-4</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>IAM - instance role policy</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>8-5</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>Monitoring Service Name -CloudTrail Name</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>8-6</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>Monitoring Service Name - CloudWatch Alarm Name</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>8-7</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>Monitoring Service Name - CloudWtach Log Group Name</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>8-8</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>Lambda - Lambda name</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>8-9</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>Employee - Alarm</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>8-10</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>Employee - instance role policy test</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>8-11</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>Admin - Alarm</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>8-12</td>
+<td>충남2과제1번 Dynamic IAM Role Authorization Enforcement</td>
+<td>Admin - instance role policy test</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>9-1</td>
+<td>ClientVPN</td>
+<td>도메인 질의</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>9-2</td>
+<td>ClientVPN</td>
+<td>DB 연결</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>10-1</td>
+<td>Keycloak</td>
+<td>admin 로그인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>10-2</td>
+<td>Keycloak</td>
+<td>dev 로그인</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>총점</strong></td>
+<td><strong>30</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="채점-항목">채점 항목</h2>
+<h3 id="1-경북2과제3번-elastic_stack">1. 경북2과제3번 Elastic_stack</h3>
+<h4 id="1-1-bastion-ec2-인스턴스-타입-확인-02점">1-1. Bastion EC2 – 인스턴스 타입 확인 · 0.2점</h4>
+<p><strong>1-1-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws ec2 describe-instances --filter Name=tag:Name,Values=wsi-bastion \
+        --query &quot;Reservations[].Instances[].InstanceType&quot;
+</code></pre>
+<p><strong>1-1-A 기대 결과</strong></p>
+<pre><code class="language-text">[
+    &quot;t3.small&quot;
+]
+</code></pre>
+<h4 id="1-2-app-ec2-인스턴스-타입-확인-02점">1-2. App EC2 – 인스턴스 타입 확인 · 0.2점</h4>
+<p><strong>1-2-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws ec2 describe-instances --filter Name=tag:Name,Values=wsi-app \
+        --query &quot;Reservations[].Instances[].InstanceType&quot;
+</code></pre>
+<p><strong>1-2-A 기대 결과</strong></p>
+<pre><code class="language-text">[
+    &quot;t3.small&quot;
+]
+</code></pre>
+<h4 id="1-3-웹-어플리케이션---api-요청-확인-04점">1-3. 웹 어플리케이션 - API 요청 확인 · 0.4점</h4>
+<p><strong>1-3-A 채점 방법</strong></p>
+<pre><code class="language-bash">APP_PRIVATE_IP=$(aws ec2 describe-instances --filters &quot;Name=tag:Name,Values=wsi-app&quot; --query &quot;Reservations[*].Instances[*].PrivateIpAddress&quot; --output text)
+curl $APP_PRIVATE_IP:5000/log
+echo &quot;&quot;
+curl $APP_PRIVATE_IP:5000/healthcheck
+</code></pre>
+<p><strong>1-3-A 기대 결과</strong></p>
+<pre><code class="language-text">Log entry created
+status: ok
+</code></pre>
+<h4 id="1-4-opensearch-도메인-확인-04점">1-4. OpenSearch – 도메인 확인 · 0.4점</h4>
+<p><strong>1-4-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws opensearch list-domain-names | grep wsi-opensearch
+</code></pre>
+<p><strong>1-4-A 기대 결과</strong></p>
+<pre><code class="language-text">&quot;DomainName&quot;: &quot;wsi-opensearch&quot;
+</code></pre>
+<h4 id="1-5-opensearch-세부설정확인-08점">1-5. OpenSearch – 세부설정확인 · 0.8점</h4>
+<p><strong>1-5-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws opensearch describe-domain --domain-name wsi-opensearch --query &quot;DomainStatus.ClusterConfig.[InstanceCount, DedicatedMasterCount]&quot;
+</code></pre>
+<p><strong>1-5-A 기대 결과</strong></p>
+<pre><code class="language-text">[
+    2,
+    3
+]
+</code></pre>
+<p><strong>1-5-B 채점 방법</strong></p>
+<pre><code class="language-bash">aws opensearch describe-domain --domain-name wsi-opensearch --query &quot;DomainStatus.EngineVersion&quot;
+</code></pre>
+<p><strong>1-5-B 기대 결과</strong> (원문 표기: 명령어 입력)</p>
+<pre><code class="language-text">&quot;OpenSearch_2.13&quot;
+</code></pre>
+<p><strong>1-5-C 채점 방법</strong></p>
+<pre><code class="language-bash">OPENSEARCH_ENDPOINT=$(aws opensearch describe-domain --domain-name wsi-opensearch | jq -r '.DomainStatus.Endpoint')
+   curl -s -u admin:Password01! &quot;https://$OPENSEARCH_ENDPOINT/_cat/indices?index=app-log&quot;
+</code></pre>
+<p><strong>1-5-C 기대 결과</strong></p>
+<pre><code class="language-text">green open app-log dWxHtcnyQcGsMwhGB0FMYw 5 1 2 0 34kb 17kb
+</code></pre>
+<ul>
+<li>위와 같이 app-log가 포함된 출력이 있는지 확인</li>
+</ul>
+<p><strong>1-5-D 채점 방법</strong></p>
+<pre><code class="language-bash">OPENSEARCH_ENDPOINT=$(aws opensearch describe-domain --domain-name wsi-opensearch | jq -r '.DomainStatus.Endpoint')
+curl -s -u admin:Password01! https://$OPENSEARCH_ENDPOINT/app-log | jq '.[&quot;app-log&quot;].mappings.properties | keys[]'
+</code></pre>
+<p><strong>1-5-D 기대 결과</strong> — 정확히 일치하지 않아도 됨</p>
+<pre><code class="language-text">&quot;clientip&quot;
+&quot;method&quot;
+&quot;path&quot;
+&quot;protocol&quot;
+&quot;responsecode&quot;
+&quot;time&quot;
+&quot;useragent“
+</code></pre>
+<ul>
+<li>위와 같이 clientip, method, path, protocol, responsecode, time, useragent가 출력되는지 확인</li>
+</ul>
+<h4 id="1-6-opensearch-로그-확인-1점">1-6. OpenSearch – 로그 확인 · 1점</h4>
+<p><strong>1-6-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws opensearch describe-domain --domain-name wsi-opensearch --output json | jq -r '.DomainStatus.Endpoint + &quot;/_dashboards&quot;'
+</code></pre>
+<p><strong>1-6-A 기대 결과</strong></p>
+<ul>
+<li>대시보드 URL이 출력됩니다.</li>
+</ul>
+<p><strong>1-6-B 채점 방법</strong> (대시보드 접속)</p>
+<ul>
+<li>출력된 URL에 브라우저로 접속합니다.</li>
+<li>아이디는 admin 패스워드는 Password01!로 로그인합니다.</li>
+<li>대시보드의 discover탭에 접속합니다.</li>
+<li>index는 app-log로 지정합니다.</li>
+</ul>
+<p><strong>1-6-B 기대 결과</strong></p>
+<figure><a href="images/2024-national-t2-marking/img01.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img01.png" alt="OpenSearch Dashboards Discover 화면 — app-log 인덱스 로그 2 hits" loading="lazy"></a><figcaption>OpenSearch Dashboards Discover 화면 — app-log 인덱스 로그 2 hits</figcaption></figure>
+<ul>
+<li>로그가 출력되는지 확인합니다.</li>
+</ul>
+<p><strong>1-6-C 채점 방법</strong> (대시보드 확인)</p>
+<ul>
+<li>search에 /healthcheck를 입력합니다.</li>
+</ul>
+<p><strong>1-6-C 기대 결과</strong></p>
+<figure><a href="images/2024-national-t2-marking/img02.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img02.png" alt="OpenSearch Dashboards Discover 화면 — /healthcheck 검색 결과 없음" loading="lazy"></a><figcaption>OpenSearch Dashboards Discover 화면 — /healthcheck 검색 결과 없음</figcaption></figure>
+<ul>
+<li>출력되는 로그가 없는지 확인합니다.</li>
+</ul>
+<h3 id="2-광주2과제3번-collect-application-logs-using-fluent-bit-and-fluentd">2. 광주2과제3번 Collect application logs using Fluent-bit and Fluentd</h3>
+<h4 id="2-1-기본-배포-구성-확인-06점">2-1. 기본 배포 구성 확인 · 0.6점</h4>
+<p><strong>2-1-A 채점 방법</strong></p>
+<pre><code class="language-bash">kubectl get deployment service-a -n app -o=json | jq '.spec.template.spec.containers' | grep '&quot;image&quot;' \
+; kubectl get deployment service-b -n app -o=json | jq '.spec.template.spec.containers' | grep '&quot;image&quot;' \
+; kubectl get deployment service-c -n app -o=json | jq '.spec.template.spec.containers' | grep '&quot;image&quot;'
+</code></pre>
+<p><strong>2-1-A 기대 결과</strong></p>
+<pre><code class="language-text">&quot;image&quot;: &quot;250832144271.dkr.ecr.ap-northeast-2.amazonaws.com/service:a&quot;,
+&quot;image&quot;: &quot;fluent/fluent-bit:latest&quot;,
+&quot;image&quot;: &quot;250832144271.dkr.ecr.ap-northeast-2.amazonaws.com/service:b&quot;,
+&quot;image&quot;: &quot;fluent/fluent-bit:latest&quot;,
+&quot;image&quot;: &quot;250832144271.dkr.ecr.ap-northeast-2.amazonaws.com/service:c&quot;,   &quot;image&quot;: &quot;fluent/fluent-bit:latest&quot;,
+</code></pre>
+<ul>
+<li>* 밑줄 친 부분을 제외하고 전부 동일해야 함</li>
+</ul>
+<p><strong>2-1-B 채점 방법</strong></p>
+<pre><code class="language-bash">NODE_COUNT=$(kubectl get nodes | grep Ready | wc -l) \
+; DAEMONSET_COUNT=$(kubectl get daemonsets -n fluentd | tail -n 1 | awk {'print $4'}) \
+; echo $(expr $NODE_COUNT - $DAEMONSET_COUNT) \
+; kubectl describe -n fluentd daemonset fluentd | grep Image | grep fluent
+</code></pre>
+<p><strong>2-1-B 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">0
+Image: fluent/fluentd-kubernetes-daemonset:v1.10.3-debian-cloudwatch-1.0
+</code></pre>
+<h4 id="2-2-중앙-집중식-로깅-확인-12점">2-2. 중앙 집중식 로깅 확인 · 1.2점</h4>
+<p><strong>2-2-A 채점 방법</strong></p>
+<pre><code class="language-bash">cd /tmp
+kubectl get daemonset fluentd -n fluentd -o yaml &gt; fluentd.yaml
+kubectl delete daemonset fluentd -n fluentd
+date
+kubectl exec -it -n app deployment.apps/service-a -- curl localhost:8080 &gt; /dev/null 2&gt;&amp;1
+kubectl exec -it -n app deployment.apps/service-b -- curl localhost:8080 &gt; /dev/null 2&gt;&amp;1
+kubectl exec -it -n app deployment.apps/service-c -- curl localhost:8080 &gt; /dev/null 2&gt;&amp;1
+sleep 30;
+aws logs get-log-events --log-group-name /gwangju/eks/application/logs --log-stream-name service-a-logs --limit 1 --query 'events[*].message' --output json \
+; aws logs get-log-events --log-group-name /gwangju/eks/application/logs --log-stream-name service-b-logs --limit 1 --query 'events[*].message' --output json \
+; aws logs get-log-events --log-group-name /gwangju/eks/application/logs --log-stream-name service-c-logs --limit 1 --query 'events[*].message' --output json
+kubectl apply -f fluentd.yaml
+</code></pre>
+<p><strong>2-2-A 기대 결과</strong></p>
+<pre><code class="language-text">daemonset.apps &quot;fluentd&quot; deleted
+Fri May 31 02:00:30 UTC 2024
+[
+    &quot;{\&quot;log\&quot;:\&quot;[2024-05-31 01:55:07,660] Service A 127.0.0.1 \\\&quot;GET /\\\&quot; 0.93ms 200\&quot;}&quot;
+]
+[
+    &quot;{\&quot;log\&quot;:\&quot;[2024-05-31 01:55:08,682] Service B 127.0.0.1 \\\&quot;GET /\\\&quot; 0.45ms 200\&quot;}&quot;
+]
+[
+    &quot;{\&quot;log\&quot;:\&quot;[2024-05-31 01:57:06,019] Service C 127.0.0.1 \\\&quot;GET /\\\&quot; 0.78ms 200\&quot;}&quot;
+]
+daemonset.apps/fluentd created
+</code></pre>
+<ul>
+<li>* date 시간 이후의 로그가 나타나면 오답처리</li>
+</ul>
+<h4 id="2-3-application-logging-12점">2-3. Application Logging · 1.2점</h4>
+<p><strong>2-3-A 채점 방법</strong></p>
+<pre><code class="language-bash">date
+kubectl exec -it -n app deployment.apps/service-a -- curl localhost:8080 &gt; /dev/null 2&gt;&amp;1
+kubectl exec -it -n app deployment.apps/service-b -- curl localhost:8080 &gt; /dev/null 2&gt;&amp;1
+kubectl exec -it -n app deployment.apps/service-c -- curl localhost:8080 &gt; /dev/null 2&gt;&amp;1
+sleep 30;
+aws logs get-log-events --log-group-name /gwangju/eks/application/logs --log-stream-name service-a-logs --limit 1 --query 'events[*].message' --output json \
+; aws logs get-log-events --log-group-name /gwangju/eks/application/logs --log-stream-name service-b-logs --limit 1 --query 'events[*].message' --output json \
+; aws logs get-log-events --log-group-name /gwangju/eks/application/logs --log-stream-name service-c-logs --limit 1 --query 'events[*].message' --output json
+</code></pre>
+<p><strong>2-3-A 기대 결과</strong></p>
+<pre><code class="language-text">Fri May 31 01:49:42 UTC 2024
+[
+    &quot;{\&quot;log\&quot;:\&quot;[2024-05-31 01:49:43,591] Service A 127.0.0.1 \\\&quot;GET /\\\&quot; 0.59ms 200\&quot;}&quot;
+]
+[
+    &quot;{\&quot;log\&quot;:\&quot;[2024-05-31 01:49:44,473] Service B 127.0.0.1 \\\&quot;GET /\\\&quot; 0.95ms 200\&quot;}&quot;
+]
+[
+    &quot;{\&quot;log\&quot;:\&quot;[2024-05-31 01:49:45,463] Service C 127.0.0.1 \\\&quot;GET /\\\&quot; 0.82ms 200\&quot;}&quot;
+]
+</code></pre>
+<ul>
+<li>* Service A, B, C가 한번씩 출력되어야 하며, date 명령어에 출력된 시간 이후의 로그가 30초 내로 기록되었는지 확인</li>
+</ul>
+<h3 id="3-대전2과제3번-eks-observability-with-fluentbit">3. 대전2과제3번 EKS Observability with FluentBit</h3>
+<h4 id="3-1-eks-eks-cluster-생성-확인-024점">3-1. EKS – EKS Cluster 생성 확인 · 0.24점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 EC2에 접근합니다.</li>
+<li>아래 명령어 입력 후 “wsi-eks-cluster”가 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">aws eks describe-cluster --name wsi-eks-cluster —query &quot;cluster.name“
+</code></pre>
+<ol start="3">
+<li>아래 명령어 입력 후 “1.29”가 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">aws eks describe-cluster --name wsi-eks-cluster --query &quot;cluster.version&quot;
+</code></pre>
+<h4 id="3-2-eks-namespace-확인-024점">3-2. EKS – Namespace 확인 · 0.24점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 EC2에 접근합니다.</li>
+<li>아래 명령어 입력 후 “wsi-ns”가 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">kubectl get ns -o json | jq '.items[] | select(.metadata.name == &quot;wsi-ns&quot;) | .metadata.name'
+</code></pre>
+<h4 id="3-3-cloudwatch-log-group-생성-확인-024점">3-3. CloudWatch Log Group 생성 확인 · 0.24점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 EC2에 접근합니다.</li>
+<li>아래 명령어 입력 후 “/wsi/eks/log/”가 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">aws logs describe-log-groups --query &quot;logGroups[?contains(logGroupName, '/wsi/eks/log/')].logGroupName“
+</code></pre>
+<h4 id="3-4-eks-setting-deployment-확인-024점">3-4. EKS Setting – Deployment 확인 · 0.24점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 EC2에 접근합니다.</li>
+<li>아래 명령어 입력 후 “wsi-dpm”이 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">kubectl get deploy -n wsi-ns -o json | jq '.items[].metadata.name’
+</code></pre>
+<h4 id="3-5-eks-setting-sidecar-pattern-확인-064점">3-5. EKS Setting – Sidecar Pattern 확인 · 0.64점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 EC2에 접근합니다.</li>
+<li>아래 명령어 입력 후 “wsi-cnt’와 ‘fluent-bit-cnt’가 출력되는지 확인합니다.<br>(wsi-cnt 2대, fluent-bit-cnt 2대 총 4개가 존재해야 합니다.)</li>
+</ol>
+<pre><code class="language-bash">kubectl get po -n wsi-ns -o json | jq '.items[].spec.containers[].name'
+</code></pre>
+<h4 id="3-6-application-application-확인-04점">3-6. Application – Application 확인 · 0.4점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 EC2에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.</li>
+</ol>
+<pre><code class="language-bash">POD_NAME=$(kubectl get po -n wsi-ns -o jsonpath='{.items[0].metadata.name}')
+</code></pre>
+<ol start="3">
+<li>아래 명령어 입력 후 “{'status': '200'}“이 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">kubectl exec -it $POD_NAME -n wsi-ns -- curl localhost:8080/2xx
+</code></pre>
+<ol start="3">
+<li>아래 명령어 입력 후 “{'status': '300'}“이 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">kubectl exec -it $POD_NAME -n wsi-ns -- curl localhost:8080/3xx
+</code></pre>
+<ol start="3">
+<li>아래 명령어 입력 후 “{'status': '400'}“이 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">kubectl exec -it $POD_NAME -n wsi-ns -- curl localhost:8080/4xx
+</code></pre>
+<ol start="3">
+<li>아래 명령어 입력 후 “{'status': '500'}“이 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">kubectl exec -it $POD_NAME -n wsi-ns -- curl localhost:8080/5xx
+</code></pre>
+<ol start="3">
+<li>아래 명령어 입력 후 “{'status': 'ok'}“이 출력되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-bash">kubectl exec -it $POD_NAME -n wsi-ns -- curl localhost:8080/healthz
+</code></pre>
+<h4 id="3-7-application-cloudwatch-log-stream-생성-확인-044점">3-7. Application – CloudWatch Log Stream 생성 확인 · 0.44점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 EC2에 접근합니다.</li>
+<li>아래 명령어 입력합니다.</li>
+</ol>
+<pre><code class="language-bash">CW_LOG_STREAM_NAME=$(aws logs describe-log-streams --log-group-name /wsi/eks/log/ \
+ --query &quot;logStreams[].logStreamName&quot; --output text)
+ POD_ID=$(kubectl get po -n wsi-ns -o jsonpath='{.items[0].metadata.name}')
+ MATCHING_LOG_STREAM_NAME=&quot;log-$POD_ID&quot;
+</code></pre>
+<ol start="3">
+<li>아래 명령어를 입력 후 “log-{Pod ID}”가 출력되는지 확인합니다.<br>{Pod ID}는 해당 Pod의 이름을 의미하며, 선수마다 값이 다를 수 있습니다.</li>
+</ol>
+<pre><code class="language-bash">[ &quot;$CW_LOG_STREAM_NAME&quot; == &quot;$MATCHING_LOG_STREAM_NAME&quot; ] &amp;&amp; aws logs describe-log-streams \
+ --log-group-name /wsi/eks/log/ —query &quot;logStreams[].logStreamName“
+</code></pre>
+<h4 id="3-8-application-로그-형식-확인-056점">3-8. Application – 로그 형식 확인 · 0.56점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>SSH를 통해 EC2에 접근합니다.</li>
+<li>아래 명령어를 입력합니다.</li>
+</ol>
+<pre><code class="language-bash">aws logs tail /wsi/eks/log/ | tail -n 1 | awk '{print substr($0,index($0,&quot;{&quot;))}' | jq .
+</code></pre>
+<ol start="3">
+<li>아래 사진과 같이 day, hour, ip, method, minute, month, path, port, second, statuscode, year가 존재하는지 확인합니다. (하나라도 존재하지 않을 시 틀린 것으로 간주합니다.)<br>(Key의 위치는 달라도 상관없으며 Value 또한 차이가 있을 수 있습니다.)</li>
+</ol>
+<figure><a href="images/2024-national-t2-marking/img03.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img03.png" alt="로그 JSON 출력 예시 — day, hour, ip, method, minute, month, path, port, second, statuscode, year 키" loading="lazy"></a><figcaption>로그 JSON 출력 예시 — day, hour, ip, method, minute, month, path, port, second, statuscode, year 키</figcaption></figure>
+<h3 id="4-부산2과제2번-governance">4. 부산2과제2번 Governance</h3>
+<h4 id="4-1-ec2-server-configuration-04점">4-1. EC2 Server Configuration · 0.4점</h4>
+<p><strong>4-1-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws ec2 describe-instances --filters &quot;Name=tag:Name,Values=wsi-bastion-ec2&quot; --query &quot;Reservations[*].Instances[*].[InstanceId, InstanceType, IamInstanceProfile.Arn]&quot; --output text | awk '{print $1,$2,$3}' | xargs -I {} bash -c 'INSTANCE_PROFILE_NAME=$(echo {} | awk -F&quot;/&quot; &quot;{print \$NF}&quot;); ROLE_NAME=$(aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --query &quot;InstanceProfile.Roles[*].RoleName&quot; --output text); echo &quot;Instance ID: $(echo {} | awk &quot;{print \$1}&quot;)&quot;; echo &quot;Instance Type: $(echo {} | awk &quot;{print \$2}&quot;)&quot;; aws iam list-attached-role-policies --role-name $ROLE_NAME --query &quot;AttachedPolicies[*].[PolicyName, PolicyArn]&quot; --output text'
+</code></pre>
+<p><strong>4-1-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">Instance ID: i-xxxxxxxxxxxxxxxxxxxxxxxx
+Instance Type: t3.small
+AdministratorAccess     arn:aws:iam::aws:policy/AdministratorAccess
+</code></pre>
+<h4 id="4-2-iam-user-04점">4-2. IAM User · 0.4점</h4>
+<p><strong>4-2-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam get-user --user-name wsi-project-user --query &quot;User.UserName&quot; --output text \
+; aws iam list-attached-user-policies --user-name wsi-project-user --query 'AttachedPolicies[*].PolicyName' --output text &amp;&amp; aws iam list-user-policies --user-name wsi-project-user --query 'PolicyNames' --output text
+</code></pre>
+<p><strong>4-2-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">wsi-project-user
+AdministratorAccess
+</code></pre>
+<h4 id="4-3-trailing-04점">4-3. Trailing · 0.4점</h4>
+<p><strong>4-3-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws cloudtrail describe-trails --query 'trailList[?Name==`wsi-project-trail`].Name' --output json
+</code></pre>
+<p><strong>4-3-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">[
+    &quot;wsi-project-trail&quot;
+]
+</code></pre>
+<h4 id="4-4-cloudwatch---user-login-04점">4-4. CloudWatch - User Login · 0.4점</h4>
+<p><strong>4-4-A 채점 방법</strong></p>
+<ul>
+<li>계정에 로그아웃 후 생성했던 IAM 사용자로 로그인합니다.</li>
+</ul>
+<p><strong>4-4-A 기대 결과</strong></p>
+<figure><a href="images/2024-national-t2-marking/img04.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img04.png" alt="IAM 사용자로 로그인 화면 — 사용자 이름 wsi-project-user" loading="lazy"></a><figcaption>IAM 사용자로 로그인 화면 — 사용자 이름 wsi-project-user</figcaption></figure>
+<h4 id="4-5-cloudwatch---login-log-1점">4-5. Cloudwatch - Login Log · 1점</h4>
+<p><strong>4-5-A 채점 방법</strong></p>
+<pre><code class="language-bash">로그인 후
+4분 소요
+date -d &quot;+9 hours&quot; &quot;+%Y-%m-%d.%H.%M.%S“
+    echo &quot;4분 소요&quot;
+    sleep 240
+LOG_GROUP_NAME=&quot;wsi-project-login&quot;
+    aws logs describe-log-groups --log-group-name-prefix $LOG_GROUP_NAME --query 'logGroups[?logGroupName==`wsi-project-login`].logGroupName' --output json
+    LATEST_LOG_STREAM=$(aws logs describe-log-streams --log-group-name $LOG_GROUP_NAME --order-by LastEventTime --descending --limit 1 --query 'logStreams[0].logStreamName' --output text)
+    aws logs get-log-events --log-group-name $LOG_GROUP_NAME --log-stream-name $LATEST_LOG_STREAM --limit 1 --query 'events[-1].{timestamp:timestamp, message:message}' --output json | jq -r '&quot;\(.timestamp)\t\(.message)&quot;' | while IFS=$'\t' read -r timestamp message; do echo -e &quot;$(date -d @$((timestamp / 1000 + 9 * 3600)) '+%Y-%m-%d-%H:%M:%S')\t$message&quot;; done
+</code></pre>
+<p><strong>4-5-A 기대 결과</strong> — timestamp확인하여 4분내에 포함되어있는지 확인</p>
+<pre><code class="language-text">2024-07-21.20.23.52
+[
+    &quot;wsi-project-login&quot;
+]
+2024-07-21.20.24.51   { USER : &quot;wsi-project-user has logged in!&quot; }
+</code></pre>
+<ul>
+<li>( UTC 시간까지 득점으로 허용 )</li>
+</ul>
+<h4 id="4-6-lambda-configuration-04점">4-6. Lambda Configuration · 0.4점</h4>
+<p><strong>4-6-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws lambda get-function --function-name wsi-project-log-function --query 'Configuration.FunctionName' --output json
+</code></pre>
+<p><strong>4-6-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">&quot;wsi-project-log-function&quot;
+</code></pre>
+<h3 id="5-서울2과제1번-image-resizing-on-edge-location">5. 서울2과제1번 Image resizing on Edge location</h3>
+<h4 id="5-1-s3-bucket-02점">5-1. S3 Bucket · 0.2점</h4>
+<p><strong>5-1-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws s3 ls s3://${STATIC_BUCKET}/ --recursive | awk '{print $4}'
+</code></pre>
+<p><strong>5-1-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">dev/
+images/glass.jpg
+images/hamster.jpg
+images/library.jpg
+index.html
+</code></pre>
+<h4 id="5-2-cloudfront---resizing-08점">5-2. CloudFront - Resizing · 0.8점</h4>
+<p><strong>5-2-A 채점 방법</strong></p>
+<pre><code class="language-bash">curl -s &quot;https://${CF_DOMAIN}/images/library.jpg?width=400&amp;height=400&quot; | file -b - | grep -oE '[0-9]+x[0-9]+' | tail -n 1
+</code></pre>
+<p><strong>5-2-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">400x400
+</code></pre>
+<h4 id="5-3-cloudfront---redirection-06점">5-3. CloudFront - Redirection · 0.6점</h4>
+<p><strong>5-3-A 채점 방법</strong></p>
+<pre><code class="language-bash">curl -sIL -o /dev/null -w '%{url_effective}\n' https://${CF_DOMAIN}/dev/
+curl -sIL -o /dev/null -w '%{url_effective}\n' https://${CF_DOMAIN}/
+</code></pre>
+<p><strong>5-3-A 기대 결과</strong> — 정확히 일치, <code>&lt;CF_DOMAIN&gt;</code>은 선수마다 다를 수 있음</p>
+<pre><code class="language-text">https://&lt;CF_DOMAIN&gt;/index.html
+https://&lt;CF_DOMAIN&gt;/index.html
+</code></pre>
+<h4 id="5-4-cloudfront---caching-04점">5-4. CloudFront - Caching · 0.4점</h4>
+<p><strong>5-4-A 채점 방법</strong></p>
+<pre><code class="language-bash">curl -sI &quot;https://${CF_DOMAIN}/images/library.jpg?width=123&amp;height=32&quot; | grep -i &quot;x-cache&quot;
+curl -sI &quot;https://${CF_DOMAIN}/images/library.jpg?width=123&amp;height=32&quot; | grep -i &quot;x-cache&quot;
+curl -sI &quot;https://${CF_DOMAIN}/images/library.jpg?width=123&amp;height=40&quot; | grep -i &quot;x-cache&quot;
+</code></pre>
+<p><strong>5-4-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">x-cache: Miss from cloudfront
+x-cache: Hit from cloudfront
+x-cache: Miss from cloudfront
+</code></pre>
+<h4 id="5-5-cloudfront---ignore-caching-04점">5-5. CloudFront - Ignore caching · 0.4점</h4>
+<p><strong>5-5-A 채점 방법</strong></p>
+<pre><code class="language-bash">curl -sI &quot;https://${CF_DOMAIN}/index.html&quot; | grep -i &quot;x-cache&quot;
+curl -sI &quot;https://${CF_DOMAIN}/index.html&quot; | grep -i &quot;x-cache&quot;
+</code></pre>
+<p><strong>5-5-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">x-cache: Miss from cloudfront
+x-cache: Miss from cloudfront
+</code></pre>
+<h4 id="5-6-cloudfront---cloudfront-function-04점">5-6. CloudFront - CloudFront function · 0.4점</h4>
+<p><strong>5-6-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws cloudfront get-distribution-config --id ${DISTRIBUTION_ID} --query &quot;DistributionConfig.DefaultCacheBehavior.FunctionAssociations.Quantity &gt; \`0\` || DistributionConfig.CacheBehaviors.Items[].FunctionAssociations.Quantity &gt; \`0\`&quot; --output text
+</code></pre>
+<p><strong>5-6-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">True
+</code></pre>
+<h4 id="5-7-lambda---runtime-02점">5-7. Lambda - Runtime · 0.2점</h4>
+<p><strong>5-7-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws lambda get-function-configuration --function-name ${LAMBDA_NAME} --region us-east-1 --query &quot;Runtime&quot; --output text
+</code></pre>
+<p><strong>5-7-A 기대 결과</strong> — 둘 중 하나만 일치</p>
+<pre><code class="language-text">nodejs20.x
+python3.9
+</code></pre>
+<h3 id="6-서울2과제3번-iam-security-maintenance-system">6. 서울2과제3번 IAM security maintenance system</h3>
+<h4 id="6-1-tester-02점">6-1. tester · 0.2점</h4>
+<p><strong>6-1-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam list-users --query &quot;Users[?UserName=='tester']&quot; | grep -i username
+</code></pre>
+<p><strong>6-1-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">&quot;UserName&quot;: &quot;tester&quot;,
+</code></pre>
+<h4 id="6-2-tester-admin-role-02점">6-2. tester admin role · 0.2점</h4>
+<p><strong>6-2-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam list-attached-user-policies --user-name tester | grep AdministratorAccess
+</code></pre>
+<p><strong>6-2-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">&quot;PolicyName&quot;: &quot;AdministratorAccess&quot;,
+            &quot;PolicyArn&quot;: &quot;arn:aws:iam::aws:policy/AdministratorAccess&quot;
+</code></pre>
+<h4 id="6-3-mfabucketdeletecontrol-12점">6-3. mfaBucketDeleteControl · 1.2점</h4>
+<p><strong>6-3-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam get-policy-version --policy-arn arn:aws:iam::$(aws sts get-caller-identity --query &quot;Account&quot; --output text):policy/mfaBucketDeleteControl --version-id v1 --query 'PolicyVersion.Document.Statement[].Condition' | jq
+</code></pre>
+<p><strong>6-3-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-json">[
+  {
+    &quot;Bool&quot;: {
+      &quot;aws:MultiFactorAuthPresent&quot;: &quot;false&quot;
+    }
+  }
+]
+</code></pre>
+<h4 id="6-4-user_group_kr-02점">6-4. user_group_kr · 0.2점</h4>
+<p><strong>6-4-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam list-groups --query &quot;Groups[?GroupName=='user_group_kr']&quot; | grep GroupName
+</code></pre>
+<p><strong>6-4-A 기대 결과</strong> — 정확히 일치, 순서 중요</p>
+<pre><code class="language-text">&quot;GroupName&quot;: &quot;user_group_kr&quot;,
+</code></pre>
+<h4 id="6-5-only-seoul-region-12점">6-5. Only Seoul region · 1.2점</h4>
+<p><strong>6-5-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam simulate-principal-policy \
+    --policy-source-arn arn:aws:iam::$ACCOUNT_ID:user/tester \
+    --action-names ec2:DescribeInstances \
+    --region ap-northeast-2 | jq '.EvaluationResults[0].EvalDecision'
+</code></pre>
+<p><strong>6-5-A 기대 결과</strong> — 강조색 일치</p>
+<pre><code class="language-text">&quot;explicitDeny&quot;
+</code></pre>
+<h3 id="7-제주2과제3번-secure-networking">7. 제주2과제3번 Secure networking</h3>
+<h4 id="7-1-s3---s3-이름-012점">7-1. S3 - S3 이름 · 0.12점</h4>
+<p><strong>7-1-A 채점 방법</strong></p>
+<pre><code class="language-bash">buckets=$(aws s3 ls | awk '{print $3}' | grep -E 'j-s3-bucket-[a-zA-Z0-9]{7}-(original|backup)')
+bucket1=$(echo &quot;$buckets&quot; | grep 'original' | head -n 1)
+bucket2=$(echo &quot;$buckets&quot; | grep 'backup' | head -n 1)
+buckets=$(aws s3 ls | awk '{print $3}' | grep -E '^j-s3-bucket-[a-zA-Z0-9]{7}-(original|backup)$')
+echo &quot;$buckets&quot;
+</code></pre>
+<p><strong>7-1-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">j-s3-bucket-&lt;임의 7글자&gt;-backup
+j-s3-bucket-&lt;임의 7글자&gt;-original
+</code></pre>
+<h4 id="7-2-s3---s3-접근-확인-064점">7-2. S3 - S3 접근 확인 · 0.64점</h4>
+<p><strong>7-2-A 채점 방법</strong></p>
+<pre><code class="language-bash">echo “test” &gt; test.txt
+aws s3 cp test.txt s3://j-s3-bucket-&lt;임의 7글자&gt;-original/
+aws s3 cp test.txt s3://j-s3-bucket-&lt;임의 7글자&gt;-original/2024/
+aws s3 cp test.txt s3://j-s3-bucket-&lt;임의 7글자&gt;-backup/
+sleep 80
+</code></pre>
+<p><strong>7-2-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">upload: ./test.txt to s3://j-s3-bucket-&lt;임의 7글자&gt;-original/test.txt
+upload: ./test.txt to s3://j-s3-bucket-&lt;임의 7글자&gt;-original/2024/test.txt
+upload: ./test.txt to s3://j-s3-bucket-&lt;임의 7글자&gt;-backup/test.txt
+</code></pre>
+<p><strong>7-2-B 채점 방법</strong></p>
+<pre><code class="language-bash">aws s3 cp test.txt s3://j-s3-bucket-&lt;임의 7글자&gt;-backup/2024/
+</code></pre>
+<p><strong>7-2-B 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">upload failed: ./test.txt to s3://j-s3-bucket-&lt;임의 7글자&gt;-backup/2024/test.txt An error occurred (AccessDenied) when calling the PutObject operation: Access Denied
+</code></pre>
+<h4 id="7-3-s3---백업-버킷-파일복사-확인-064점">7-3. S3 - 백업 버킷 파일복사 확인 · 0.64점</h4>
+<p><strong>7-3-A 채점 방법</strong></p>
+<pre><code class="language-bash">echo “copy” &gt; copy.txt
+aws s3 cp copy.txt s3://j-s3-bucket-&lt;임의 7글자&gt;-original/2024/
+sleep 80
+</code></pre>
+<p><strong>7-3-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">upload: ./copy.txt to s3://j-s3-bucket-&lt;임의 7글자&gt;-original/2024/copy.txt
+</code></pre>
+<p><strong>7-3-B 채점 방법</strong> — 백업 버킷에 파일이 올라오는지 확인</p>
+<ul>
+<li>https://ap-northeast-2.console.aws.amazon.com/s3 으로 이동을 합니다. <code>j-s3-bucket-&lt;임의 7글자&gt;-backup</code>으로 이동합니다. 2024/ 폴더로 이동 후에, copy.txt 파일이 있는 지 확인을 합니다. 있을 경우에 <code>j-s3-bucket-&lt;임의 7글자&gt;-original</code> 버킷과 <code>j-s3-bucket-&lt;임의 7글자&gt;-backup</code>의 2024/ 폴더에 들어가서 show versions을 눌러서 copy.txt Version ID가 같은 지 확인 합니다. 4분 이내로 복사가 되어야 합니다.</li>
+</ul>
+<figure><a href="images/2024-national-t2-marking/img05.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img05.png" alt="S3 원본 버킷 2024/ 폴더 — Show versions로 copy.txt Version ID 확인" loading="lazy"></a><figcaption>S3 원본 버킷 2024/ 폴더 — Show versions로 copy.txt Version ID 확인</figcaption></figure>
+<figure><a href="images/2024-national-t2-marking/img06.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img06.png" alt="S3 백업 버킷 2024/ 폴더 — Show versions로 copy.txt Version ID 확인" loading="lazy"></a><figcaption>S3 백업 버킷 2024/ 폴더 — Show versions로 copy.txt Version ID 확인</figcaption></figure>
+<h4 id="7-4-sqs---s3-이벤트-발생-확인-064점">7-4. SQS - S3 이벤트 발생 확인 · 0.64점</h4>
+<p><strong>7-4-A 채점 방법</strong></p>
+<pre><code class="language-bash">echo “check” &gt; check.txt
+aws s3 cp check.txt s3://j-s3-bucket-&lt;임의 7글자&gt;-original/2024/
+sleep 80
+</code></pre>
+<p><strong>7-4-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">upload: ./check.txt to s3://j-s3-bucket-&lt;임의 7글자&gt;-original/2024/check.txt
+</code></pre>
+<p><strong>7-4-B 채점 방법</strong> — 수동</p>
+<ul>
+<li>https://ap-northeast-2.console.aws.amazon.com/s3/ 으로 이동합니다. j-s3-bucket-example-backup에 2024/ 폴더에 check.txt 이름의 파일이 1개 인지 확인을 하고, Last Modified를 확인합니다.</li>
+</ul>
+<figure><a href="images/2024-national-t2-marking/img07.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img07.png" alt="S3 백업 버킷 2024/ 폴더 — check.txt 1개와 Last modified 확인" loading="lazy"></a><figcaption>S3 백업 버킷 2024/ 폴더 — check.txt 1개와 Last modified 확인</figcaption></figure>
+<p><strong>7-4-C 채점 방법</strong> — Event 발생하는 지 확인</p>
+<ul>
+<li>https://ap-northeast-2.console.aws.amazon.com/sqs/v3/home?region=ap-northeast-2#/queues 으로 이동합니다. 만든 Queues으로 이동합니다. 이동 후에 상단 오른 쪽에 Send and receive messages을 클릭 합니다. j-s3-bucket-example-backup에 2024폴더의 파일이 올라오면 Poll for messages를 클릭 합니다. Sent 시간이 j-s3-bucket-example-backup에 2024/ 폴더에 check.txt 의 Last Modified 하고 같아야 합니다.</li>
+</ul>
+<figure><a href="images/2024-national-t2-marking/img08.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img08.png" alt="SQS Receive messages — Poll for messages 후 Sent 시간 확인" loading="lazy"></a><figcaption>SQS Receive messages — Poll for messages 후 Sent 시간 확인</figcaption></figure>
+<ul>
+<li>(1분 정도의 오차범위가 있을 수 있습니다.) ex ) Last modified 07:22 -&gt; SQS Send 07:23 O 07:21 X</li>
+</ul>
+<h4 id="7-5-sqs---ec2-이벤트-발생-확인-028점">7-5. SQS - EC2 이벤트 발생 확인 · 0.28점</h4>
+<p><strong>7-5-A 채점 방법</strong> — 수동</p>
+<pre><code class="language-bash">aws sqs send-message --queue-url \ https://sqs.ap-northeast-2.amazonaws.com/&lt;account-id&gt;/&lt;queue-name&gt; \ --message-body &quot;Hello from EC2!“
+</code></pre>
+<ul>
+<li><code>&lt;account-id&gt;</code>랑 <code>&lt;queue-name&gt;</code> 선수가 지정한 것들로 바꿔야 합니다.</li>
+</ul>
+<p><strong>7-5-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-json">{
+    &quot;MD5OfMessageBody&quot;: &quot;d6d829edde2cd621a6f20ef7e8c15c61&quot;,
+    &quot;MessageId&quot;: &quot;37c567b2-175f-4b23-9532-bc6c3d117e47&quot;
+}
+</code></pre>
+<ul>
+<li>MD5OfMessageBody와 MessageId는 다를 수 있습니다.</li>
+</ul>
+<h4 id="7-6-nat-gw-internet-gw-생성-여부-확인-04점">7-6. NAT G/W &amp; Internet G/W 생성 여부 확인 · 0.4점</h4>
+<p><strong>7-6-A 채점 방법</strong> — 수동</p>
+<p>https://ap-northeast-2.console.aws.amazon.com/vpcconsole/home?region=ap-northeast-2#NatGateways:</p>
+<ol>
+<li>위에 URL로 이동해서 Bastion이 속한 VPC에 Nat G/W가 생성이 안되어 있는 지 확인 합니다.</li>
+</ol>
+<p>https://ap-northeast-2.console.aws.amazon.com/vpcconsole/home?region=ap-northeast-2#igws:</p>
+<ol start="2">
+<li>위에 URL로 이동해서 Bastion이 속한 VPC에 IGW가 생성이 안되어 있는 지 확인 합니다.</li>
+<li>하나라도 생성이 되어 있을 경우에 이 항목은 0점 처리 됩니다.</li>
+</ol>
+<h4 id="7-7-endpoint---인스턴스-접근-서브넷-확인-028점">7-7. endpoint - 인스턴스 접근 서브넷 확인 · 0.28점</h4>
+<p><strong>7-7-A 채점 방법</strong> — 수동</p>
+<ul>
+<li>https://ap-northeast-2.console.aws.amazon.com/vpcconsole/home?region=ap-northeast-2#Endpoints:</li>
+<li>위에 URL로 이동합니다. 이동 후에 VPC endpoint ID가 eice- 로 시작하는 endpoint를 클릭 후에 Subnet을 눌러서 J-company-priv-sub-b 으로 되어 있는 지 확인 합니다.</li>
+</ul>
+<figure><a href="images/2024-national-t2-marking/img09.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img09.png" alt="VPC Endpoints — eice- 엔드포인트의 Subnets 탭에서 J-company-priv-sub-b 확인" loading="lazy"></a><figcaption>VPC Endpoints — eice- 엔드포인트의 Subnets 탭에서 J-company-priv-sub-b 확인</figcaption></figure>
+<h3 id="8-충남2과제1번-dynamic-iam-role-authorization-enforcement">8. 충남2과제1번 Dynamic IAM Role Authorization Enforcement</h3>
+<h4 id="8-1-iam---user-name-016점">8-1. IAM - User Name · 0.16점</h4>
+<p><strong>8-1-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam list-users --query &quot;Users[?UserName=='myadmin'].UserName“
+aws iam list-users --query &quot;Users[?UserName=='Employee'].UserName“
+</code></pre>
+<p><strong>8-1-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">[
+   “myadmin”
+],
+[
+   “ Employee”
+]
+</code></pre>
+<h4 id="8-2-iam---user-policy-02점">8-2. IAM - User policy · 0.2점</h4>
+<p><strong>8-2-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam list-attached-user-policies --user-name mydmin
+aws iam list-attached-user-policies --user-name Employee
+</code></pre>
+<p><strong>8-2-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">{
+    &quot;AttachedPolicies&quot;: [
+        {
+            &quot;PolicyName&quot;: &quot;AdministratorAccess&quot;,
+            &quot;PolicyArn&quot;: &quot;arn:aws:iam::aws:policy/AdministratorAccess&quot;
+        }
+    ]
+},
+{
+    &quot;AttachedPolicies&quot;: [
+        {
+            &quot;PolicyName&quot;: &quot;IAMFullAccess&quot;,
+            &quot;PolicyArn&quot;: &quot;arn:aws:iam::aws:policy/IAMFullAccess&quot;
+        }
+    ]
+}
+</code></pre>
+<h4 id="8-3-iam---instance-role-name-016점">8-3. IAM - instance role Name · 0.16점</h4>
+<p><strong>8-3-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam get-role --role-name wsc2024-instance-role --query 'Role.RoleName’
+</code></pre>
+<p><strong>8-3-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">“wsc2024-instance-role”
+</code></pre>
+<h4 id="8-4-iam---instance-role-policy-02점">8-4. IAM - instance role policy · 0.2점</h4>
+<p><strong>8-4-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam list-attached-role-policies --role-name wsc2024-instance-role --query &quot;AttachedPolicies[].PolicyArn“
+</code></pre>
+<p><strong>8-4-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">[
+    “arn:aws:iam:aws:policy/AmazonSSMManagedInstanceCore”
+]
+</code></pre>
+<h4 id="8-5-monitoring-service-name--cloudtrail-name-016점">8-5. Monitoring Service Name -CloudTrail Name · 0.16점</h4>
+<p><strong>8-5-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws cloudtrail describe-trails --trail-name-list wsc2024-CT --query &quot;trailList[].Name
+</code></pre>
+<p><strong>8-5-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">[
+   “wsc2024-CT”
+]
+</code></pre>
+<h4 id="8-6-monitoring-service-name---cloudwatch-alarm-name-02점">8-6. Monitoring Service Name - CloudWatch Alarm Name · 0.2점</h4>
+<p><strong>8-6-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws cloudwatch describe-alarms --alarm-name-prefix wsc2024-gvn-alarm --query 'MetricAlarms[*].AlarmName
+</code></pre>
+<p><strong>8-6-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">[
+     &quot;wsc2024-gvn-alarm&quot;
+]
+</code></pre>
+<h4 id="8-7-monitoring-service-name---cloudwtach-log-group-name-016점">8-7. Monitoring Service Name - CloudWtach Log Group Name · 0.16점</h4>
+<p><strong>8-7-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws logs describe-log-groups --log-group-name-prefix wsc2024-gvn-LG --query 'logGroups[].logGroupName' --output text
+</code></pre>
+<p><strong>8-7-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">wsc2024-gvn-LG
+</code></pre>
+<h4 id="8-8-lambda---lambda-name-016점">8-8. Lambda - Lambda name · 0.16점</h4>
+<p><strong>8-8-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws lambda list-functions --query &quot;Functions[?FunctionName=='wsc2024-gvn-Lambda'].FunctionName&quot;
+</code></pre>
+<p><strong>8-8-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">[
+     &quot;wsc2024-gvn-Lambda&quot;
+]
+</code></pre>
+<h4 id="8-9-employee---alarm-04점">8-9. Employee - Alarm · 0.4점</h4>
+<p><strong>8-9-A 채점 방법</strong></p>
+<pre><code class="language-bash">USERNAME=&quot;Employee&quot;
+CREATED_KEYS=$(aws iam create-access-key --user-name &quot;$USERNAME&quot;)
+ACCESS_KEY_ID=$(echo &quot;$CREATED_KEYS&quot; | jq -r '.AccessKey.AccessKeyId')
+SECRET_ACCESS_KEY=$(echo &quot;$CREATED_KEYS&quot; | jq -r '.AccessKey.SecretAccessKey')
+aws configure set aws_access_key_id &quot;$ACCESS_KEY_ID&quot;
+aws configure set aws_secret_access_key &quot;$SECRET_ACCESS_KEY&quot;
+sleep 10
+aws iam attach-role-policy --role-name wsc2024-instance-role --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+rm -rf ~/.aws/*
+timeout 180 bash -c 'while [ &quot;$(aws cloudwatch describe-alarms --alarm-names &quot;wsc2024-gvn-alarm&quot; --query &quot;MetricAlarms[0].StateValue&quot; --output text)&quot; != &quot;ALARM&quot; ]; do echo &quot;Waiting for alarm to enter ALARM state...&quot;; sleep 30; done; echo &quot;Alarm is now in ALARM state.&quot;
+</code></pre>
+<p><strong>8-9-A 기대 결과</strong> — 밑줄 부분 일치</p>
+<pre><code class="language-text">Wating for alarm to enter ALARM state...
+Wating for alarm to enter ALARM state...
+Wating for alarm to enter ALARM state...
+Wating for alarm to enter ALARM state...
+Alarm is now in ALARM state.
+</code></pre>
+<h4 id="8-10-employee---instance-role-policy-test-04점">8-10. Employee - instance role policy test · 0.4점</h4>
+<p><strong>8-10-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam list-attached-role-policies --role-name wsc2024-instance-role
+</code></pre>
+<p><strong>8-10-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">{
+    &quot;AttachedPolicies&quot;: [
+        {
+            &quot;PolicyName&quot;: &quot;AmazonSSMManagedInstanceCore&quot;,
+            &quot;PolicyArn&quot;: &quot;arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore&quot;
+        }
+    ]
+}
+</code></pre>
+<h4 id="8-11-admin---alarm-04점">8-11. Admin - Alarm · 0.4점</h4>
+<p><strong>8-11-A 채점 방법</strong></p>
+<pre><code class="language-bash">USERNAME=&quot;Admin&quot;
+CREATED_KEYS=$(aws iam create-access-key --user-name &quot;$USERNAME&quot;)
+ACCESS_KEY_ID=$(echo &quot;$CREATED_KEYS&quot; | jq -r '.AccessKey.AccessKeyId')
+SECRET_ACCESS_KEY=$(echo &quot;$CREATED_KEYS&quot; | jq -r '.AccessKey.SecretAccessKey')
+aws configure set aws_access_key_id &quot;$ACCESS_KEY_ID&quot;
+aws configure set aws_secret_access_key &quot;$SECRET_ACCESS_KEY&quot;
+sleep 10
+aws iam attach-role-policy --role-name wsc2024-instance-role --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+sleep 180 &amp;&amp; aws cloudwatch describe-alarms --alarm-names &quot;wsc2024-gvn-alarm&quot; --query &quot;MetricAlarms[0].StateValue&quot; --output text
+</code></pre>
+<p><strong>8-11-A 기대 결과</strong> — ALARM 상태가 아닌지만 확인</p>
+<pre><code class="language-text">INSUFFICIENT_DATA
+OK
+</code></pre>
+<h4 id="8-12-admin---instance-role-policy-test-04점">8-12. Admin - instance role policy test · 0.4점</h4>
+<p><strong>8-12-A 채점 방법</strong></p>
+<pre><code class="language-bash">aws iam list-attached-role-policies --role-name wsc2024-instance-role
+</code></pre>
+<p><strong>8-12-A 기대 결과</strong> — 정확히 일치</p>
+<pre><code class="language-text">{
+    &quot;AttachedPolicies&quot;: [
+        {
+            &quot;PolicyName&quot;: &quot;AmazonSSMManagedInstanceCore&quot;,
+            &quot;PolicyArn&quot;: &quot;arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore&quot;
+        }
+    ]
+},
+{
+    &quot;AttachedPolicies&quot;: [
+        {
+            &quot;PolicyName&quot;: &quot;AdministratorAccess&quot;,
+            &quot;PolicyArn&quot;: &quot;arn:aws:iam::aws:policy/AdministratorAccess&quot;
+        }
+    ]
+}
+</code></pre>
+<h3 id="9-clientvpn">9. ClientVPN</h3>
+<h4 id="9-1-도메인-질의-15점">9-1. 도메인 질의 · 1.5점</h4>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>아래 요소 중 어떤것이라도 해당하면 비정상 방법을 이용해 풀었음으로 Client VPN 항목 모두 채점하지 않습니다. 기타 사항 또한 확인 하여 부정한 방법을 사용 했다고 판단하면 채점하지 않습니다.</p>
+</blockquote>
+<p><strong>사전 확인</strong></p>
+<ol>
+<li>Client VPN 연결이 해제되어 있는지 확인합니다.</li>
+<li>선수 Windows PC에서 아래 명령어를 입력하여 쿼리가 실패하는지 확인합니다.</li>
+</ol>
+<pre><code class="language-cmd">&gt; nslookup db.day2.local
+</code></pre>
+<ol start="3">
+<li>선수 Windows PC에서 아래 명령어를 입력하여 호스트를 찾을 수 없다는 에러로 연결에 실패하는지 확인 합니다.</li>
+</ol>
+<pre><code class="language-cmd">&gt; ping db.day2.local
+</code></pre>
+<ol start="4">
+<li>선수 Windows PC에서 아래 명령어를 입력하여 listen 되는 포트가 없는지 확인합니다.</li>
+</ol>
+<pre><code class="language-cmd">&gt; netstat -an | findstr 5432
+</code></pre>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>Windows PC에서 Client VPN에 연결합니다. 반드시 ws-day2 프로필을 사용 하는지 확인 합니다.</li>
+</ol>
+<figure><a href="images/2024-national-t2-marking/img10.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img10.png" alt="AWS VPN Client — ws-day2 프로필 선택 후 Connect" loading="lazy"></a><figcaption>AWS VPN Client — ws-day2 프로필 선택 후 Connect</figcaption></figure>
+<ol start="2">
+<li>VPN 연결 후 Windows에서 아래 명령어를 입력하여 올바른 canonical name과 IP가 반환 되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-cmd">&gt;nslookup db.day2.local
+</code></pre>
+<p><strong>기대 결과</strong></p>
+<ul>
+<li>canonical name : <code>rds.amazonaws.com.</code> 포함 출력</li>
+<li>IP address : <code>172.26.10.1</code> ~ <code>172.26.10.254</code> 혹은 <code>172.26.20.1</code> ~ <code>172.26.20.254</code> 사이 주소</li>
+</ul>
+<h4 id="9-2-db-연결-15점">9-2. DB 연결 · 1.5점</h4>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>Windows PC에서 Client VPN이 연결 되어 있는지 확인합니다. (ws-day2 프로필 사용)</li>
+<li>VPN에 연결 후 Windows에서 아래 명령어를 입력하여 DB 접근이 되는지 확인합니다.</li>
+</ol>
+<pre><code class="language-cmd">&gt; psql -U day2_root -d day2 -h db.day2.local -p 5432
+</code></pre>
+<ol start="3">
+<li>아래 명령어를 입력하여 day2 Database가 생성 되어 있는지 확인 합니다. (소문자 L)</li>
+</ol>
+<pre><code class="language-text">PSQL&gt; \l
+</code></pre>
+<h3 id="10-keycloak">10. Keycloak</h3>
+<h4 id="10-1-admin-로그인-15점">10-1. admin 로그인 · 1.5점</h4>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>아래 요소 중 어떤것이라도 해당하면 비정상 방법을 이용해 풀었음으로 Keycloak 항목 모두 채점하지 않습니다. 기타 사항 또한 확인하여 부정한 방법을 사용 했다고 판단하면 채점하지 않습니다.</p>
+<ol>
+<li>선수가 제출한 URL을 확인해 Keycloak 서버가 선수의 계정에 있는지 확인합니다.</li>
+</ol>
+</blockquote>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>브라우저를 새창을 생성하여 과제지에 적힌 Keycloak 주소로 접속 하여 아래 비슷한 페이지가 출력 되는지 확인합니다.</li>
+</ol>
+<figure><a href="images/2024-national-t2-marking/img11.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img11.png" alt="Keycloak 로그인 페이지 — WELCOME TO DEMO APP" loading="lazy"></a><figcaption>Keycloak 로그인 페이지 — WELCOME TO DEMO APP</figcaption></figure>
+<ol start="2">
+<li>계정 이름에 <code>admin&lt;등번호&gt;</code> 를 적어 정상적으로 로그인 되는지 확인합니다.</li>
+<li>AWS 페이지로 전환 되어 아래와 비슷한 페이지가 보이는지 확인합니다. UI는 약간 다를 수 있지만 선수 계정 번호와 admin-access role은 일치 해야 합니다.</li>
+</ol>
+<figure><a href="images/2024-national-t2-marking/img12.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img12.png" alt="AWS 역할 선택 화면 — admin-access" loading="lazy"></a><figcaption>AWS 역할 선택 화면 — admin-access</figcaption></figure>
+<ol start="4">
+<li>admin-access Role 사용하여 AWS 계정에 정상 로그인 되는지 확인 합니다. 로그 인 후 오른쪽 상단에 계정 정보를 확인 하여 계정 번호와 Role 이름을 확인합니다.</li>
+</ol>
+<h4 id="10-2-dev-로그인-15점">10-2. dev 로그인 · 1.5점</h4>
+<blockquote class="callout callout-warning"><div class="callout-title">주의</div><p>아래 요소 중 어떤것이라도 해당하면 비정상 방법을 이용해 풀었음으로 Keycloak 항목 모두 채점하지 않습니다. 기타 사항 또한 확인하여 부정한 방법을 사용 했다고 판단하면 채점하지 않습니다.</p>
+<ol>
+<li>선수가 제출한 URL을 확인해 Keycloak 서버가 선수의 계정에 있는지 확인합니다.</li>
+</ol>
+</blockquote>
+<p><strong>채점 방법</strong></p>
+<ol>
+<li>브라우저를 새창을 생성하여 과제지에 적힌 Keycloak 주소로 접속하여 아래 비슷한 페이지가 출력 되는지 확인합니다.</li>
+</ol>
+<figure><a href="images/2024-national-t2-marking/img13.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img13.png" alt="Keycloak 로그인 페이지 — WELCOME TO DEMO APP" loading="lazy"></a><figcaption>Keycloak 로그인 페이지 — WELCOME TO DEMO APP</figcaption></figure>
+<ol start="2">
+<li>계정 이름에 <code>dev&lt;등번호&gt;</code> 를 적어 정상적으로 로그인 되는지 확인합니다.</li>
+<li>AWS 페이지로 전환 되어 아래와 비슷한 페이지가 보이는지 확인합니다. UI는 약간 다를 수 있지만 선수 계정 번호와 poweruser-access role은 일치해야 합니다.</li>
+</ol>
+<figure><a href="images/2024-national-t2-marking/img14.png" target="_blank" rel="noopener"><img src="images/2024-national-t2-marking/img14.png" alt="AWS 역할 선택 화면 — poweruser-access" loading="lazy"></a><figcaption>AWS 역할 선택 화면 — poweruser-access</figcaption></figure>
+<ol start="4">
+<li>poweruser-access Role 사용하여 AWS 계정에 정상 로그인 되는지 확인 합니다. 로그 인 후 오른쪽 상단에 계정 정보를 확인 하여 계정 번호와 Role 이름을 확인합니다.</li>
+</ol>
+</article></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#채점-유의사항">채점 유의사항</a></li><li class="toc-h2"><a href="#배점-요약">배점 요약</a></li><li class="toc-h3"><a href="#주요항목별-배점">주요항목별 배점</a></li><li class="toc-h3"><a href="#세부항목별-배점">세부항목별 배점</a></li><li class="toc-h2"><a href="#채점-항목">채점 항목</a></li><li class="toc-h3"><a href="#1-경북2과제3번-elastic_stack">1. 경북2과제3번 Elastic_stack</a></li><li class="toc-h3"><a href="#2-광주2과제3번-collect-application-logs-using-fluent-bit-and-fluentd">2. 광주2과제3번 Collect application logs using Fluent-bit and Fluentd</a></li><li class="toc-h3"><a href="#3-대전2과제3번-eks-observability-with-fluentbit">3. 대전2과제3번 EKS Observability with FluentBit</a></li><li class="toc-h3"><a href="#4-부산2과제2번-governance">4. 부산2과제2번 Governance</a></li><li class="toc-h3"><a href="#5-서울2과제1번-image-resizing-on-edge-location">5. 서울2과제1번 Image resizing on Edge location</a></li><li class="toc-h3"><a href="#6-서울2과제3번-iam-security-maintenance-system">6. 서울2과제3번 IAM security maintenance system</a></li><li class="toc-h3"><a href="#7-제주2과제3번-secure-networking">7. 제주2과제3번 Secure networking</a></li><li class="toc-h3"><a href="#8-충남2과제1번-dynamic-iam-role-authorization-enforcement">8. 충남2과제1번 Dynamic IAM Role Authorization Enforcement</a></li><li class="toc-h3"><a href="#9-clientvpn">9. ClientVPN</a></li><li class="toc-h3"><a href="#10-keycloak">10. Keycloak</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>
