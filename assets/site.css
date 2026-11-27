@@ -57,6 +57,12 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 .badge.lv-national{background:var(--national);color:#fff;border-color:transparent}
 .badge.lv-wsc{background:var(--wsc);color:#fff;border-color:transparent}
 .badge.kind-marking{border-color:var(--warn);color:var(--warn)}
+.badge.edited{background:color-mix(in srgb,var(--warn) 12%,var(--panel));border-color:var(--warn);color:var(--warn)}
+.badge.edited:hover{text-decoration:none;filter:brightness(1.1)}
+.doc details.changelog{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:4px 16px;margin:8px 0}
+.doc details.changelog summary{cursor:pointer;font-weight:600;padding:8px 0;color:var(--muted)}
+.doc details.changelog[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+.doc details.changelog td:nth-child(2) code,.doc details.changelog td:nth-child(3) code{white-space:pre-wrap}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
 .tag{font-size:12px;padding:1px 8px;border-radius:6px;background:var(--accent-soft);color:var(--accent)}
 .actions{margin-top:12px}

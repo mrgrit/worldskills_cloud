@@ -6,7 +6,7 @@
 <a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
 <nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details open><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html" class="on">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
 <main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › WSC2024 · Day 1</div>
-<div class="badges"><span class="badge lv-wsc">국제</span><span class="badge">2024</span><span class="badge kind-problem">문제</span></div>
+<div class="badges"><span class="badge lv-wsc">국제</span><span class="badge">2024</span><span class="badge kind-problem">문제</span><a class="badge edited" href="2024-wsc-day1.html#changelog" title="원본 시험지 대비 수정된 부분">✎ 원문 수정 2건</a></div>
 <h1>Test Project Cloud Computing — Day 1<small>Batch data processing for anomalous equipment codes</small></h1>
 <p class="summary">UnicornTech 장비가 보내는 비표준 영숫자 이상 코드를 API Gateway·Lambda·DynamoDB로 수집하고, 두 VPC의 바이너리 앱으로 RDS(PostgreSQL)를 거쳐 Parameter Store에 저장하는 클라우드 배치 처리 시스템을 구축하는 WSC2024 Day 1 과제입니다.</p>
 <div class="tags"><span class="tag">API Gateway</span><span class="tag">Lambda</span><span class="tag">DynamoDB</span><span class="tag">RDS</span><span class="tag">Parameter Store</span><span class="tag">VPC</span><span class="tag">ECS</span><span class="tag">CodeDeploy</span></div><div class="actions"><a class="btn" href="2024-wsc-marking.html">📝 채점기준 보기</a></div></div>
@@ -46,6 +46,8 @@ Independent Test Project Validator: Chit Boon Lee, SCM</p>
 <p>Establish a data preprocessing service within the Data-Processing-VPC. Utilize the provided binary file (detailed specifications in subsequent documentation) to process abnormal information codes extracted from the DynamoDB table. Processed data will be stored in an RDS database.</p>
 <h3 id="stage-three-data-extraction-and-storage">Stage Three: Data Extraction and Storage</h3>
 <p>Configure a data extraction service within the Data-Extraction-VPC. Employ the provided binary file (detailed specifications in subsequent documentation) to process abnormal information codes from the RDS database. Final processed data will be stored in the Parameter Store.</p>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>원문의 &quot;detailed specifications in subsequent documentation&quot;에 해당하는 내용은 이 문서의 <a href="#applications">Service details &gt; Applications</a> 항목(바이너리 이름, config.ini, 게임 에셋 버킷)이 전부이며, 그 밖의 바이너리 상세 사양은 원문에 없음.</p>
+</blockquote>
 <h3 id="tasks">Tasks</h3>
 <ol>
 <li>Access the Cloud Raiser platform and thoroughly review the competition guidelines.</li>
@@ -109,6 +111,8 @@ Independent Test Project Validator: Chit Boon Lee, SCM</p>
 </li>
 <li>
 <p>A relational database, compatible with the PostgreSQL engine, must be deployed to store preprocessed abnormal messages. Given the anticipated data volume, bi-weekly backups are sufficient. Serverless databases are prohibited.</p>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>&quot;bi-weekly&quot;는 &quot;2주마다&quot;와 &quot;주 2회&quot; 두 뜻으로 읽힐 수 있어 모호함. 채점표 F1은 &quot;Is the backup retention period for the RDS database more than 7 days&quot;(RDS 백업 보존 기간 7일 초과)를, D1은 DynamoDB 테이블 백업 여부를 채점한다.</p>
+</blockquote>
 <p>The table name must be 'DataProcessingAPP'. Use the following SQL statement to create the table:</p>
 <pre><code class="language-sql">CREATE TABLE IF NOT EXISTS DataProcessingAPP (
             id SERIAL PRIMARY KEY,
@@ -130,5 +134,29 @@ Independent Test Project Validator: Chit Boon Lee, SCM</p>
 <li>https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html</li>
 <li>https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html</li>
 </ul>
-</article><nav class="pager"><a href="2024-wsc-main.html">← WSC2024 · Main Document<span>Test Project Cloud Computing</span></a><a class="next" href="2024-wsc-day2.html">WSC2024 · Day 2 →<span>Test Project Cloud Computing</span></a></nav></main>
-<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h2"><a href="#task-description">Task Description</a></li><li class="toc-h2"><a href="#background">Background</a></li><li class="toc-h3"><a href="#initial-state">Initial state</a></li><li class="toc-h2"><a href="#three-stages">Three Stages</a></li><li class="toc-h3"><a href="#stage-one-data-ingestion">Stage One: Data Ingestion</a></li><li class="toc-h3"><a href="#stage-two-data-preprocessing">Stage Two: Data Preprocessing</a></li><li class="toc-h3"><a href="#stage-three-data-extraction-and-storage">Stage Three: Data Extraction and Storage</a></li><li class="toc-h3"><a href="#tasks">Tasks</a></li><li class="toc-h2"><a href="#technical-details">Technical details</a></li><li class="toc-h2"><a href="#service-details">Service details</a></li><li class="toc-h3"><a href="#iam-roles">IAM ROLES</a></li><li class="toc-h3"><a href="#database">DataBase</a></li><li class="toc-h3"><a href="#applications">Applications</a></li><li class="toc-h2"><a href="#reference">Reference</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>
+<h2 id="changelog">원문 대비 수정 내역</h2><details class="changelog"><summary>원문 대비 수정 내역 (2건) — 원본 시험지와 달라진 부분과 근거</summary><div class="table-wrap"><table>
+<thead>
+<tr>
+<th>위치</th>
+<th>원문</th>
+<th>수정</th>
+<th>사유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three Stages &gt; Stage Two·Three</td>
+<td>&quot;(detailed specifications in subsequent documentation)&quot;</td>
+<td>NOTE 추가</td>
+<td>원문에 해당 상세 사양이 없음(Applications 항목이 전부)을 명시</td>
+</tr>
+<tr>
+<td>Service details &gt; DataBase 2</td>
+<td>&quot;bi-weekly backups are sufficient&quot;</td>
+<td>NOTE 추가</td>
+<td>&quot;bi-weekly&quot; 의미가 모호함. 채점표 F1은 RDS 백업 보존 기간 7일 초과를 채점</td>
+</tr>
+</tbody>
+</table></div>
+</details></article><nav class="pager"><a href="2024-wsc-main.html">← WSC2024 · Main Document<span>Test Project Cloud Computing</span></a><a class="next" href="2024-wsc-day2.html">WSC2024 · Day 2 →<span>Test Project Cloud Computing</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h2"><a href="#task-description">Task Description</a></li><li class="toc-h2"><a href="#background">Background</a></li><li class="toc-h3"><a href="#initial-state">Initial state</a></li><li class="toc-h2"><a href="#three-stages">Three Stages</a></li><li class="toc-h3"><a href="#stage-one-data-ingestion">Stage One: Data Ingestion</a></li><li class="toc-h3"><a href="#stage-two-data-preprocessing">Stage Two: Data Preprocessing</a></li><li class="toc-h3"><a href="#stage-three-data-extraction-and-storage">Stage Three: Data Extraction and Storage</a></li><li class="toc-h3"><a href="#tasks">Tasks</a></li><li class="toc-h2"><a href="#technical-details">Technical details</a></li><li class="toc-h2"><a href="#service-details">Service details</a></li><li class="toc-h3"><a href="#iam-roles">IAM ROLES</a></li><li class="toc-h3"><a href="#database">DataBase</a></li><li class="toc-h3"><a href="#applications">Applications</a></li><li class="toc-h2"><a href="#reference">Reference</a></li><li class="toc-h2"><a href="#changelog">원문 대비 수정 내역</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

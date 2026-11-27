@@ -6,7 +6,7 @@
 <a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
 <nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details open><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html" class="on">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
 <main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › 2026 지방 제2과제</div>
-<div class="badges"><span class="badge lv-regional">지방</span><span class="badge">2026</span><span class="badge">제2과제</span><span class="badge kind-marking">채점기준</span></div>
+<div class="badges"><span class="badge lv-regional">지방</span><span class="badge">2026</span><span class="badge">제2과제</span><span class="badge kind-marking">채점기준</span><a class="badge edited" href="2026-regional-t2-marking.html#changelog" title="원본 시험지 대비 수정된 부분">✎ 원문 수정 8건</a></div>
 <h1>채점기준<small>Small challenge</small></h1>
 <p class="summary">주요항목 4개(EFS, Athena, IAM, Lambda 각 12.5점), 세부항목 39개, 총점 50점. 문제별 AWS region의 CloudShell에서 AWS CLI 명령어로 채점한다.</p>
 <div class="tags"></div><div class="actions"><a class="btn" href="2026-regional-t2.html">📄 문제 보기</a></div></div>
@@ -423,6 +423,8 @@ $ aws efs describe-lifecycle-configuration --file-system-id $fs_id --query Lifec
 <li>출력되는 결과가 &quot;ap-northeast-1a&quot;, &quot;ap-northeast-1b&quot;인지 확인합니다.</li>
 </ul>
 <h3 id="1-8-instance-재부팅-후-접속-15점">1-8. Instance 재부팅 후 접속 · 1.5점</h3>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>항목 이름은 &quot;재부팅&quot;이지만, 실제 채점 절차는 인스턴스를 재부팅하는 것이 아니라 모두 삭제(terminate)한 뒤 ASG가 새로 띄운 인스턴스에서 EFS 자동 마운트를 확인하는 것입니다.</p>
+</blockquote>
 <p><strong>채점 방법</strong></p>
 <ol>
 <li>EC2 콘솔로 이동합니다.</li>
@@ -564,8 +566,10 @@ $ aws athena get-query-results --query-execution-id $query_id --query ResultSet.
 </code></pre>
 <p><strong>기대 결과</strong></p>
 <ul>
-<li>출력되는 결과가 &quot;result&quot;, &quot;3.8&quot;인지 확인합니다.</li>
+<li>출력되는 결과가 &quot;result&quot;, &quot;4.05&quot;인지 확인합니다.</li>
 </ul>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>원문 기대값은 &quot;3.8&quot;이었으나, 배포파일 <code>survey.csv</code>(20명, response 합계 81)로 계산한 평균은 4.05입니다.</p>
+</blockquote>
 <h3 id="2-10-join-query-15점">2-10. Join query · 1.5점</h3>
 <p><strong>채점 방법</strong></p>
 <ul>
@@ -577,12 +581,14 @@ $ aws athena get-query-results --query-execution-id $query_id --query ResultSet.
 </code></pre>
 <p><strong>기대 결과</strong></p>
 <ul>
-<li>출력되는 결과가 &quot;result&quot;, &quot;4.5&quot;인지 확인합니다.</li>
+<li>출력되는 결과가 &quot;result&quot;, &quot;4.333...&quot;(4.333333333333333)인지 확인합니다.</li>
 </ul>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>원문 기대값은 &quot;4.5&quot;였으나, 배포파일 <code>employee.csv</code>에서 salary &gt;= 70000인 직원은 115~120의 6명이고 <code>survey.csv</code>의 해당 response(5, 3, 4, 5, 4, 5) 평균은 26/6 = 4.333...입니다.</p>
+</blockquote>
 <h3 id="3-0">3-0</h3>
 <p><strong>채점 방법</strong></p>
 <ol>
-<li>ap-rortheast-2의 clouud shell로 접근합니다.</li>
+<li>ap-northeast-2의 cloud shell로 접근합니다.</li>
 <li>아래 명령어를 실행합니다.</li>
 </ol>
 <pre><code class="language-bash">ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
@@ -604,7 +610,7 @@ $ aws athena get-query-results --query-execution-id $query_id --query ResultSet.
 <ul>
 <li>아래 명령어를 실행합니다.</li>
 </ul>
-<pre><code class="language-bash">$ aws dynamodb describe-table --table-name catalog --query Table.DeletionProtectionEnabled —output text
+<pre><code class="language-bash">$ aws dynamodb describe-table --table-name catalog --query Table.DeletionProtectionEnabled --output text
 $ aws dynamodb describe-table --table-name secret --query Table.DeletionProtectionEnabled --output text
 </code></pre>
 <p><strong>기대 결과</strong></p>
@@ -616,7 +622,7 @@ $ aws dynamodb describe-table --table-name secret --query Table.DeletionProtecti
 <ul>
 <li>아래 명령어를 실행합니다.</li>
 </ul>
-<pre><code class="language-bash">$ aws dynamodb describe-table --table-name catalog --query Table.SSEDescription.Status —output text
+<pre><code class="language-bash">$ aws dynamodb describe-table --table-name catalog --query Table.SSEDescription.Status --output text
 $ aws dynamodb describe-table --table-name secret --query Table.SSEDescription.Status --output text
 </code></pre>
 <p><strong>기대 결과</strong></p>
@@ -688,17 +694,22 @@ $ aws dynamodb get-item --table-name catalog --key '{&quot;name&quot;: {&quot;S&
 <ul>
 <li>아래 명령어를 실행합니다.</li>
 </ul>
-<pre><code class="language-bash">$ aws dynamodb put-item --table-name catalog --item '{&quot;name&quot;: {&quot;S&quot;: &quot;apple2&quot;}, &quot;price&quot;: {&quot;N&quot;: &quot;1&quot;}}’
+<pre><code class="language-bash">$ aws dynamodb put-item --table-name catalog --item '{&quot;name&quot;: {&quot;S&quot;: &quot;apple2&quot;}, &quot;price&quot;: {&quot;N&quot;: &quot;1&quot;}}'
 $ aws dynamodb get-item --table-name catalog --key '{&quot;name&quot;: {&quot;S&quot;: &quot;apple2&quot;}}' --query Item.price.N --output text
 </code></pre>
 <p><strong>기대 결과</strong></p>
 <ul>
 <li>권한 오류가 발생하고 출력되는 결과가 &quot;None&quot;인지 확인합니다.(두 개 모두 실패 해야 함)</li>
 </ul>
+<p><strong>채점 후 정리</strong> — 3-7에서 설정한 employee-role 자격 증명을 해제합니다. 해제하지 않으면 같은 shell에서 진행하는 4번 항목 명령어가 권한 오류로 실패합니다.</p>
+<pre><code class="language-bash">$ unset AWS_ACCESS_KEY_ID
+$ unset AWS_SECRET_ACCESS_KEY
+$ unset AWS_SESSION_TOKEN
+</code></pre>
 <h3 id="4-0">4-0</h3>
 <p><strong>채점 방법</strong></p>
 <ol>
-<li>ap-rortheast-2의 clouud shell로 접근합니다.</li>
+<li>ap-northeast-2의 cloud shell로 접근합니다.</li>
 <li>아래 명령어를 실행합니다.</li>
 </ol>
 <pre><code class="language-bash">ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
@@ -818,5 +829,65 @@ $ cat /tmp/output.txt | grep &quot;laptop&quot;
 <ul>
 <li>출력되는 결과가 &quot;laptop&quot;을 포함하는지 확인합니다.</li>
 </ul>
-</article></main>
-<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#채점-유의사항">채점 유의사항</a></li><li class="toc-h2"><a href="#배점-요약">배점 요약</a></li><li class="toc-h3"><a href="#주요항목별-배점">주요항목별 배점</a></li><li class="toc-h3"><a href="#세부항목별-배점">세부항목별 배점</a></li><li class="toc-h2"><a href="#채점-항목">채점 항목</a></li><li class="toc-h3"><a href="#0">0</a></li><li class="toc-h3"><a href="#1-1-vpc-생성-1점">1-1. VPC 생성 · 1점</a></li><li class="toc-h3"><a href="#1-2-subnet-생성-1점">1-2. Subnet 생성 · 1점</a></li><li class="toc-h3"><a href="#1-3-asg-생성-1점">1-3. ASG 생성 · 1점</a></li><li class="toc-h3"><a href="#1-4-efs-생성-1점">1-4. EFS 생성 · 1점</a></li><li class="toc-h3"><a href="#1-5-efs-암호화-15점">1-5. EFS 암호화 · 1.5점</a></li><li class="toc-h3"><a href="#1-6-efs-lifecycle-설정-15점">1-6. EFS Lifecycle 설정 · 1.5점</a></li><li class="toc-h3"><a href="#1-7-mount-point-생성-1점">1-7. Mount point 생성 · 1점</a></li><li class="toc-h3"><a href="#1-8-instance-재부팅-후-접속-15점">1-8. Instance 재부팅 후 접속 · 1.5점</a></li><li class="toc-h3"><a href="#1-9-파일-업로드-15점">1-9. 파일 업로드 · 1.5점</a></li><li class="toc-h3"><a href="#1-10-다른-instance에서-파일-확인-15점">1-10. 다른 instance에서 파일 확인 · 1.5점</a></li><li class="toc-h3"><a href="#2-1-s3-버킷-생성-1점">2-1. S3 버킷 생성 · 1점</a></li><li class="toc-h3"><a href="#2-2-s3-로깅-버킷-생성-1점">2-2. S3 로깅 버킷 생성 · 1점</a></li><li class="toc-h3"><a href="#2-3-athena-workgroup-설정-15점">2-3. Athena workgroup 설정 · 1.5점</a></li><li class="toc-h3"><a href="#2-4-athena-logging-설정-15점">2-4. Athena logging 설정 · 1.5점</a></li><li class="toc-h3"><a href="#2-5-employee-테이블-생성-1점">2-5. employee 테이블 생성 · 1점</a></li><li class="toc-h3"><a href="#2-6-survey-테이블-생성-1점">2-6. survey 테이블 생성 · 1점</a></li><li class="toc-h3"><a href="#2-7-불필요한-데이터-제거-15점">2-7. 불필요한 데이터 제거 · 1.5점</a></li><li class="toc-h3"><a href="#2-8-saved-query-1점">2-8. Saved query · 1점</a></li><li class="toc-h3"><a href="#2-9-query-15점">2-9. Query · 1.5점</a></li><li class="toc-h3"><a href="#2-10-join-query-15점">2-10. Join query · 1.5점</a></li><li class="toc-h3"><a href="#3-0">3-0</a></li><li class="toc-h3"><a href="#3-1-ddb-table-생성-1점">3-1. DDB Table 생성 · 1점</a></li><li class="toc-h3"><a href="#3-2-ddb-deletion-protection-15점">3-2. DDB deletion protection · 1.5점</a></li><li class="toc-h3"><a href="#3-3-ddb-kms-encryption-15점">3-3. DDB KMS encryption · 1.5점</a></li><li class="toc-h3"><a href="#3-4-iam-role-생성-1점">3-4. IAM role 생성 · 1점</a></li><li class="toc-h3"><a href="#3-5-iam-policy-생성-15점">3-5. IAM policy 생성 · 1.5점</a></li><li class="toc-h3"><a href="#3-6-iam-role의-권한-확인-15점">3-6. IAM role의 권한 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-7-item-생성-성공-15점">3-7. Item 생성 성공 · 1.5점</a></li><li class="toc-h3"><a href="#3-8-item-생성-실패-1-15점">3-8. Item 생성 실패 1 · 1.5점</a></li><li class="toc-h3"><a href="#3-9-item-생성-실패-2-15점">3-9. Item 생성 실패 2 · 1.5점</a></li><li class="toc-h3"><a href="#4-0">4-0</a></li><li class="toc-h3"><a href="#4-1-lambda-function-생성-1점">4-1. Lambda function 생성 · 1점</a></li><li class="toc-h3"><a href="#4-2-lambda-설정-15점">4-2. Lambda 설정 · 1.5점</a></li><li class="toc-h3"><a href="#4-3-lambda-layer-생성-1점">4-3. Lambda layer 생성 · 1점</a></li><li class="toc-h3"><a href="#4-4-lambda-layer-사용-1점">4-4. Lambda layer 사용 · 1점</a></li><li class="toc-h3"><a href="#4-5-lambda-in-vpc-15점">4-5. Lambda in VPC · 1.5점</a></li><li class="toc-h3"><a href="#4-6-rds-생성-1점">4-6. RDS 생성 · 1점</a></li><li class="toc-h3"><a href="#4-7-rds-설정-1점">4-7. RDS 설정 · 1점</a></li><li class="toc-h3"><a href="#4-8-rds-public-access-15점">4-8. RDS public access · 1.5점</a></li><li class="toc-h3"><a href="#4-9-item-생성-15점">4-9. Item 생성 · 1.5점</a></li><li class="toc-h3"><a href="#4-10-item-조회-15점">4-10. Item 조회 · 1.5점</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>
+<h2 id="changelog">원문 대비 수정 내역</h2><details class="changelog"><summary>원문 대비 수정 내역 (8건) — 원본 시험지와 달라진 부분과 근거</summary><div class="table-wrap"><table>
+<thead>
+<tr>
+<th>위치</th>
+<th>원문</th>
+<th>수정</th>
+<th>사유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-1, 1-10, 2-1</td>
+<td>단계 번호 중복(<code>3) ... 3)</code>, <code>2) ... 2)</code>)</td>
+<td>&quot;채점 방법&quot;/&quot;기대 결과&quot;로 분리</td>
+<td>번호 중복 해소(재구성 시 반영)</td>
+</tr>
+<tr>
+<td>1-8</td>
+<td>항목명 <code>Instance 재부팅 후 접속</code></td>
+<td>NOTE 추가</td>
+<td>절차는 재부팅이 아니라 전체 terminate 후 새 인스턴스 확인이라 혼동 소지</td>
+</tr>
+<tr>
+<td>2-9 기대 결과</td>
+<td><code>&quot;3.8&quot;</code></td>
+<td><code>&quot;4.05&quot;</code> + NOTE</td>
+<td>배포파일 survey.csv 20명 response 합계 81 → 평균 4.05</td>
+</tr>
+<tr>
+<td>2-10 기대 결과</td>
+<td><code>&quot;4.5&quot;</code></td>
+<td><code>&quot;4.333...&quot;</code> + NOTE</td>
+<td>배포파일 employee.csv에서 salary &gt;= 70000은 115~120(6명), survey.csv response 합 26 → 4.333...</td>
+</tr>
+<tr>
+<td>3-0, 4-0</td>
+<td><code>ap-rortheast-2의 clouud shell</code></td>
+<td><code>ap-northeast-2의 cloud shell</code></td>
+<td>리전·단어 오타 (2곳)</td>
+</tr>
+<tr>
+<td>3-2, 3-3 명령어</td>
+<td><code>—output text</code></td>
+<td><code>--output text</code></td>
+<td>긴 대시는 옵션으로 인식되지 않음 (2곳). mark2-3.sh는 <code>--output</code></td>
+</tr>
+<tr>
+<td>3-9 명령어</td>
+<td><code>...&quot;N&quot;: &quot;1&quot;}}’</code></td>
+<td><code>...&quot;N&quot;: &quot;1&quot;}}'</code></td>
+<td>둥근 따옴표로 닫혀 셸 인용이 깨짐. mark2-3.sh는 <code>'</code></td>
+</tr>
+<tr>
+<td>3-9 뒤</td>
+<td>(없음)</td>
+<td><code>unset AWS_ACCESS_KEY_ID</code> 등 3줄 추가</td>
+<td>mark2-3.sh 3-9 뒤에 있는 자격 증명 해제 단계. 없으면 4번 항목이 employee-role 권한으로 실행되어 실패</td>
+</tr>
+</tbody>
+</table></div>
+</details></article></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#채점-유의사항">채점 유의사항</a></li><li class="toc-h2"><a href="#배점-요약">배점 요약</a></li><li class="toc-h3"><a href="#주요항목별-배점">주요항목별 배점</a></li><li class="toc-h3"><a href="#세부항목별-배점">세부항목별 배점</a></li><li class="toc-h2"><a href="#채점-항목">채점 항목</a></li><li class="toc-h3"><a href="#0">0</a></li><li class="toc-h3"><a href="#1-1-vpc-생성-1점">1-1. VPC 생성 · 1점</a></li><li class="toc-h3"><a href="#1-2-subnet-생성-1점">1-2. Subnet 생성 · 1점</a></li><li class="toc-h3"><a href="#1-3-asg-생성-1점">1-3. ASG 생성 · 1점</a></li><li class="toc-h3"><a href="#1-4-efs-생성-1점">1-4. EFS 생성 · 1점</a></li><li class="toc-h3"><a href="#1-5-efs-암호화-15점">1-5. EFS 암호화 · 1.5점</a></li><li class="toc-h3"><a href="#1-6-efs-lifecycle-설정-15점">1-6. EFS Lifecycle 설정 · 1.5점</a></li><li class="toc-h3"><a href="#1-7-mount-point-생성-1점">1-7. Mount point 생성 · 1점</a></li><li class="toc-h3"><a href="#1-8-instance-재부팅-후-접속-15점">1-8. Instance 재부팅 후 접속 · 1.5점</a></li><li class="toc-h3"><a href="#1-9-파일-업로드-15점">1-9. 파일 업로드 · 1.5점</a></li><li class="toc-h3"><a href="#1-10-다른-instance에서-파일-확인-15점">1-10. 다른 instance에서 파일 확인 · 1.5점</a></li><li class="toc-h3"><a href="#2-1-s3-버킷-생성-1점">2-1. S3 버킷 생성 · 1점</a></li><li class="toc-h3"><a href="#2-2-s3-로깅-버킷-생성-1점">2-2. S3 로깅 버킷 생성 · 1점</a></li><li class="toc-h3"><a href="#2-3-athena-workgroup-설정-15점">2-3. Athena workgroup 설정 · 1.5점</a></li><li class="toc-h3"><a href="#2-4-athena-logging-설정-15점">2-4. Athena logging 설정 · 1.5점</a></li><li class="toc-h3"><a href="#2-5-employee-테이블-생성-1점">2-5. employee 테이블 생성 · 1점</a></li><li class="toc-h3"><a href="#2-6-survey-테이블-생성-1점">2-6. survey 테이블 생성 · 1점</a></li><li class="toc-h3"><a href="#2-7-불필요한-데이터-제거-15점">2-7. 불필요한 데이터 제거 · 1.5점</a></li><li class="toc-h3"><a href="#2-8-saved-query-1점">2-8. Saved query · 1점</a></li><li class="toc-h3"><a href="#2-9-query-15점">2-9. Query · 1.5점</a></li><li class="toc-h3"><a href="#2-10-join-query-15점">2-10. Join query · 1.5점</a></li><li class="toc-h3"><a href="#3-0">3-0</a></li><li class="toc-h3"><a href="#3-1-ddb-table-생성-1점">3-1. DDB Table 생성 · 1점</a></li><li class="toc-h3"><a href="#3-2-ddb-deletion-protection-15점">3-2. DDB deletion protection · 1.5점</a></li><li class="toc-h3"><a href="#3-3-ddb-kms-encryption-15점">3-3. DDB KMS encryption · 1.5점</a></li><li class="toc-h3"><a href="#3-4-iam-role-생성-1점">3-4. IAM role 생성 · 1점</a></li><li class="toc-h3"><a href="#3-5-iam-policy-생성-15점">3-5. IAM policy 생성 · 1.5점</a></li><li class="toc-h3"><a href="#3-6-iam-role의-권한-확인-15점">3-6. IAM role의 권한 확인 · 1.5점</a></li><li class="toc-h3"><a href="#3-7-item-생성-성공-15점">3-7. Item 생성 성공 · 1.5점</a></li><li class="toc-h3"><a href="#3-8-item-생성-실패-1-15점">3-8. Item 생성 실패 1 · 1.5점</a></li><li class="toc-h3"><a href="#3-9-item-생성-실패-2-15점">3-9. Item 생성 실패 2 · 1.5점</a></li><li class="toc-h3"><a href="#4-0">4-0</a></li><li class="toc-h3"><a href="#4-1-lambda-function-생성-1점">4-1. Lambda function 생성 · 1점</a></li><li class="toc-h3"><a href="#4-2-lambda-설정-15점">4-2. Lambda 설정 · 1.5점</a></li><li class="toc-h3"><a href="#4-3-lambda-layer-생성-1점">4-3. Lambda layer 생성 · 1점</a></li><li class="toc-h3"><a href="#4-4-lambda-layer-사용-1점">4-4. Lambda layer 사용 · 1점</a></li><li class="toc-h3"><a href="#4-5-lambda-in-vpc-15점">4-5. Lambda in VPC · 1.5점</a></li><li class="toc-h3"><a href="#4-6-rds-생성-1점">4-6. RDS 생성 · 1점</a></li><li class="toc-h3"><a href="#4-7-rds-설정-1점">4-7. RDS 설정 · 1점</a></li><li class="toc-h3"><a href="#4-8-rds-public-access-15점">4-8. RDS public access · 1.5점</a></li><li class="toc-h3"><a href="#4-9-item-생성-15점">4-9. Item 생성 · 1.5점</a></li><li class="toc-h3"><a href="#4-10-item-조회-15점">4-10. Item 조회 · 1.5점</a></li><li class="toc-h2"><a href="#changelog">원문 대비 수정 내역</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>

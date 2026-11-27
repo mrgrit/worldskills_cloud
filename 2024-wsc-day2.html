@@ -6,7 +6,7 @@
 <a class="brand" href="index.html">☁️ 클라우드컴퓨팅 기능경기대회 문제집</a>
 <nav class="top-links"><a href="index.html">문제 목록</a><a href="all.html"><span class="long">전체 문제 한 번에 보기</span><span class="short">전체 보기</span></a></nav></header><div class="layout"><aside class="sidebar"><div class="sidebar-inner"><details><summary>2026 지방</summary><ul><li><a href="2026-regional-t1.html">제1과제<span>Solution architecture</span></a></li><li><a href="2026-regional-t2.html">제2과제<span>Small challenge</span></a></li></ul></details><details><summary>2026 전국</summary><ul><li><a href="2026-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2026-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2026-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details><summary>2025 지방</summary><ul><li><a href="2025-regional-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-regional-t2.html">제2과제<span>Small Challenge</span></a></li></ul></details><details><summary>2025 전국</summary><ul><li><a href="2025-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2025-national-t2.html">제2과제<span>Small Challenge</span></a></li><li><a href="2025-national-t3.html">제3과제<span>System Operation</span></a></li></ul></details><details><summary>2024 지방</summary><ul><li><a href="2024-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2024-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2024 전국</summary><ul><li><a href="2024-national-t1.html">제1과제<span>Solution Architecture</span></a></li><li><a href="2024-national-t2-busan2.html">제2과제 · 부산 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-chungnam1.html">제2과제 · 충남 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-daejeon3.html">제2과제 · 대전 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra1.html">제2과제 · 추가 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-extra2.html">제2과제 · 추가 2번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gwangju3.html">제2과제 · 광주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-gyeongbuk3.html">제2과제 · 경북 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-jeju3.html">제2과제 · 제주 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul1.html">제2과제 · 서울 1번<span>Small Challenge</span></a></li><li><a href="2024-national-t2-seoul3.html">제2과제 · 서울 3번<span>Small Challenge</span></a></li><li><a href="2024-national-t3.html">제3과제<span>System operation</span></a></li></ul></details><details open><summary>2024 국제 (WSC Lyon)</summary><ul><li><a href="2024-wsc-main.html">Main Document<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day1.html">Day 1<span>Test Project Cloud Computing — Day 1</span></a></li><li><a href="2024-wsc-day2.html" class="on">Day 2<span>Test Project Cloud Computing</span></a></li><li><a href="2024-wsc-day3.html">Day 3<span>Test Project Cloud Computing</span></a></li></ul></details><details><summary>2023 지방</summary><ul><li><a href="2023-regional-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-regional-t2.html">제2과제<span>Automation</span></a></li></ul></details><details><summary>2023 전국</summary><ul><li><a href="2023-national-t1.html">제1과제<span>Web Service Provisioning</span></a></li><li><a href="2023-national-t2.html">제2과제<span>Automation</span></a></li><li><a href="2023-national-t3.html">제3과제<span>Trouble-shooting</span></a></li></ul></details></div></aside>
 <main class="content"><div class="doc-head"><div class="crumb"><a href="index.html">문제 목록</a> › WSC2024 · Day 2</div>
-<div class="badges"><span class="badge lv-wsc">국제</span><span class="badge">2024</span><span class="badge kind-problem">문제</span></div>
+<div class="badges"><span class="badge lv-wsc">국제</span><span class="badge">2024</span><span class="badge kind-problem">문제</span><a class="badge edited" href="2024-wsc-day2.html#changelog" title="원본 시험지 대비 수정된 부분">✎ 원문 수정 9건</a></div>
 <h1>Test Project Cloud Computing<small>Day 2 — Real-time Healthcare &amp; Enterprise Data Analytics Platform</small></h1>
 <p class="summary">POST로 들어오는 혈압 모니터링 데이터와 기업 운영 데이터를 Kinesis·DynamoDB·Redshift·Aurora로 수집·분석하고, 웹 서비스와 API로 결과를 제공하는 클라우드 분석 플랫폼을 구축하는 과제입니다.</p>
 <div class="tags"><span class="tag">Kinesis</span><span class="tag">Kinesis Data Analytics</span><span class="tag">DynamoDB</span><span class="tag">Redshift</span><span class="tag">Aurora</span><span class="tag">ECS</span><span class="tag">API Gateway</span><span class="tag">Lambda</span><span class="tag">CodePipeline</span></div><div class="actions"><a class="btn" href="2024-wsc-marking.html">📝 채점기준 보기</a></div></div>
@@ -55,6 +55,8 @@
 <ul>
 <li>Store enterprise operation data in an Amazon RDS (Aurora) database for reliable and efficient access. Bi-weekly backups are sufficient for the anticipated data volume. Serverless databases are not permitted.</li>
 </ul>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>&quot;Bi-weekly&quot;는 &quot;2주마다&quot;와 &quot;주 2회&quot; 두 뜻으로 읽힐 수 있어 모호함. 채점표 F2는 &quot;Is the backup retention period for the RDS database more than 7 days&quot;(RDS 백업 보존 기간 7일 초과)를 채점한다.</p>
+</blockquote>
 <h3 id="stage-2-data-query-and-service-development">Stage 2: Data Query and Service Development</h3>
 <h4 id="blood-pressure-monitoring-data-1">Blood Pressure Monitoring Data</h4>
 <ul>
@@ -78,7 +80,7 @@
 <ol>
 <li>Carefully review the task description document.</li>
 <li>Use the us-east-1 region for your architecture setup.</li>
-<li>Log in to the CloudRaiser platform and set up your name. Ensure to set the correct name.</li>
+<li>Log in to the Cloud Raiser platform and set up your name. Ensure to set the correct name.</li>
 <li>Collect data through Kinesis and use Kinesis Data Analytics to store real-time analysis results in a DynamoDB database, ensuring it is cost-efficient and suitable for low-throughput applications.</li>
 <li>Use Amazon Redshift to store the analyzed anomaly data, supporting in-depth analysis and historical data queries. Please DO NOT use serverless Redshift.</li>
 <li>Store enterprise operation data in Amazon RDS (Aurora) database to ensure persistent storage and fast access.</li>
@@ -88,7 +90,7 @@
 <li>For detailed information on points, please refer to ScoreEvents.</li>
 <li>Monitor costs to avoid unnecessary infrastructure expansion and minimize cost deductions.</li>
 <li>Optimize and enhance the architecture to meet the six pillars of the AWS Well-Architected Framework and engineering practices, improving system performance efficiency, cost optimization, security, reliability, scalability, and operational excellence.</li>
-<li>It is highly recommended to use ECS to build the web service. Consider enhanced flexibility, scalability, high availability, and fault tolerance for containerized applications, along with simplified infrastructure management and provides deep visibility into the configrations, performance and resource utilization of Amazon ECS containers.</li>
+<li>It is highly recommended to use ECS to build the web service. Consider enhanced flexibility, scalability, high availability, and fault tolerance for containerized applications, along with simplified infrastructure management and provides deep visibility into the configurations, performance and resource utilization of Amazon ECS containers.</li>
 <li>It is highly recommended to create a CodePipeline to automate the deployment process of ECS applications, including a review step to maintain control during frequent upgrades. For efficient and reliable deployments, using CodeDeploy is strongly advised.</li>
 </ol>
 <h2 id="technical-details">Technical Details</h2>
@@ -100,7 +102,7 @@
 <h2 id="service-details">Service Details</h2>
 <h3 id="post-data---blood-pressure-monitoring-data">POST Data - Blood Pressure Monitoring Data</h3>
 <p>The request will use POST method, request path is post_data:</p>
-<p>Blood pressure mornitoring data includes the following key information: no, systolic, diastolic, etc.</p>
+<p>Blood pressure monitoring data includes the following key information: no, systolic, diastolic, etc.</p>
 <h3 id="database---blood-pressure-monitoring-data">DataBase - Blood Pressure Monitoring Data</h3>
 <p>You need to deploy a highly available DynamoDB service to store analysis results. The table should be named &quot;cloudraiser-iot&quot; and have the following structure:</p>
 <div class="table-wrap"><table>
@@ -134,6 +136,8 @@
 </tr>
 </tbody>
 </table></div>
+<blockquote class="callout callout-note"><div class="callout-title">참고</div><p>원문 표기 차이: POST 데이터 필드는 소문자(<code>no</code>, <code>systolic</code>, <code>diastolic</code>)로, DynamoDB 테이블 속성은 대문자로 시작(<code>No</code>, <code>Systolic</code>, <code>Diastolic</code>, <code>Score</code>)하게 적혀 있음. DynamoDB 속성 이름은 대소문자를 구분하지만, 원문은 웹 서비스 바이너리(stub1)가 어느 표기를 읽는지 밝히지 않음.</p>
+</blockquote>
 <h3 id="web-service---blood-pressure-monitoring-data">Web Service - Blood Pressure Monitoring Data</h3>
 <ul>
 <li>The development team has built a program for you to host the web service, which will provide the data stored in DynamoDB to customers. You need to consider how to build a highly available and scalable web service for customers at a lower cost.</li>
@@ -141,15 +145,15 @@
 </ul>
 <h3 id="post-data---enterprise-operation-data">POST Data - Enterprise Operation Data</h3>
 <p>The request will use POST method, request path is post_data:</p>
-<p>Enterprise Operation Data includes the following key information: id，column，value, etc.</p>
+<p>Enterprise Operation Data includes the following key information: id, column, value, etc.</p>
 <p>e.g.</p>
-<pre><code class="language-text">{
-     “id”:”01”
-     “column”:”val1”
-     ”value”:”456”
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;01&quot;,
+  &quot;column&quot;: &quot;val1&quot;,
+  &quot;value&quot;: &quot;456&quot;
 }
 </code></pre>
-<h3 id="database---enterprise-operation-data">DataBase  - Enterprise Operation Data</h3>
+<h3 id="database---enterprise-operation-data">DataBase - Enterprise Operation Data</h3>
 <p>The database table structure is as follows: (The data type is &quot;string&quot;)</p>
 <div class="table-wrap"><table>
 <thead>
@@ -200,7 +204,7 @@
 <li>(c) Web service availability with correct result delivery.</li>
 <li>(d) Web service responsiveness to user queries.</li>
 <li>(e) Creation of resources conforming to architectural requirements.</li>
-<li>(f) Architecture aligned with the six pillars of Well-Architected Frameworks.</li>
+<li>(f) Architecture aligned with the six pillars of the Well-Architected Framework.</li>
 </ul>
 </li>
 <li>Higher point totals are earned by correctly configuring more elements.</li>
@@ -213,5 +217,71 @@
 <li>https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html</li>
 <li>https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html</li>
 </ul>
-</article><nav class="pager"><a href="2024-wsc-day1.html">← WSC2024 · Day 1<span>Test Project Cloud Computing — Day 1</span></a><a class="next" href="2024-wsc-day3.html">WSC2024 · Day 3 →<span>Test Project Cloud Computing</span></a></nav></main>
-<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h3"><a href="#contents">Contents</a></li><li class="toc-h2"><a href="#description-of-project-and-tasks">Description of project and tasks</a></li><li class="toc-h2"><a href="#background">Background</a></li><li class="toc-h2"><a href="#initial-state">Initial state</a></li><li class="toc-h2"><a href="#three-stages">Three Stages</a></li><li class="toc-h3"><a href="#stage-1-data-reception">Stage 1: Data Reception</a></li><li class="toc-h3"><a href="#stage-2-data-query-and-service-development">Stage 2: Data Query and Service Development</a></li><li class="toc-h3"><a href="#stage-3-architecture-optimization-and-continuous-improvement">Stage 3: Architecture Optimization and Continuous Improvement</a></li><li class="toc-h2"><a href="#tasks">Tasks</a></li><li class="toc-h2"><a href="#technical-details">Technical Details</a></li><li class="toc-h2"><a href="#service-details">Service Details</a></li><li class="toc-h3"><a href="#post-data---blood-pressure-monitoring-data">POST Data - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#database---blood-pressure-monitoring-data">DataBase - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#web-service---blood-pressure-monitoring-data">Web Service - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#post-data---enterprise-operation-data">POST Data - Enterprise Operation Data</a></li><li class="toc-h3"><a href="#database---enterprise-operation-data">DataBase  - Enterprise Operation Data</a></li><li class="toc-h3"><a href="#web-service---enterprise-operation-data">Web Service - Enterprise Operation Data</a></li><li class="toc-h2"><a href="#gentle-reminder">Gentle reminder</a></li><li class="toc-h2"><a href="#reference">Reference</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>
+<h2 id="changelog">원문 대비 수정 내역</h2><details class="changelog"><summary>원문 대비 수정 내역 (9건) — 원본 시험지와 달라진 부분과 근거</summary><div class="table-wrap"><table>
+<thead>
+<tr>
+<th>위치</th>
+<th>원문</th>
+<th>수정</th>
+<th>사유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Service Details &gt; POST Data - Enterprise Operation Data 예시</td>
+<td><code>{ “id”:”01” “column”:”val1” ”value”:”456” }</code> (코드펜스 <code>text</code>)</td>
+<td><code>{&quot;id&quot;: &quot;01&quot;, &quot;column&quot;: &quot;val1&quot;, &quot;value&quot;: &quot;456&quot;}</code> (코드펜스 <code>json</code>)</td>
+<td>둥근 따옴표·쉼표 누락으로 JSON 문법 오류</td>
+</tr>
+<tr>
+<td>Service Details &gt; POST Data - Enterprise Operation Data</td>
+<td><code>id，column，value</code></td>
+<td><code>id, column, value</code></td>
+<td>전각 쉼표를 ASCII 쉼표로</td>
+</tr>
+<tr>
+<td>Service Details &gt; POST Data - Blood Pressure Monitoring Data</td>
+<td><code>mornitoring</code></td>
+<td><code>monitoring</code></td>
+<td>오타</td>
+</tr>
+<tr>
+<td>Tasks 13</td>
+<td><code>configrations</code></td>
+<td><code>configurations</code></td>
+<td>오타</td>
+</tr>
+<tr>
+<td>Tasks 3</td>
+<td><code>CloudRaiser</code></td>
+<td><code>Cloud Raiser</code></td>
+<td>메인 문서·다른 날 문서의 플랫폼 이름 표기와 통일</td>
+</tr>
+<tr>
+<td>Service Details 소제목</td>
+<td><code>DataBase  - Enterprise Operation Data</code></td>
+<td><code>DataBase - Enterprise Operation Data</code></td>
+<td>이중 공백 제거</td>
+</tr>
+<tr>
+<td>Gentle reminder 3-(f)</td>
+<td><code>six pillars of Well-Architected Frameworks</code></td>
+<td><code>six pillars of the Well-Architected Framework</code></td>
+<td>고유명사 단수형(Tasks 12 표기와 통일)</td>
+</tr>
+<tr>
+<td>Stage 1 &gt; Enterprise Operation Data</td>
+<td>&quot;Bi-weekly backups are sufficient&quot;</td>
+<td>NOTE 추가</td>
+<td>&quot;Bi-weekly&quot; 의미가 모호함. 채점표 F2는 RDS 백업 보존 기간 7일 초과를 채점</td>
+</tr>
+<tr>
+<td>Service Details &gt; DataBase - Blood Pressure Monitoring Data</td>
+<td>POST 필드 <code>no/systolic/diastolic</code> vs 테이블 <code>No/Systolic/Diastolic</code></td>
+<td>NOTE 추가</td>
+<td>대소문자 표기 불일치 사실만 명시(근거 없음)</td>
+</tr>
+</tbody>
+</table></div>
+</details></article><nav class="pager"><a href="2024-wsc-day1.html">← WSC2024 · Day 1<span>Test Project Cloud Computing — Day 1</span></a><a class="next" href="2024-wsc-day3.html">WSC2024 · Day 3 →<span>Test Project Cloud Computing</span></a></nav></main>
+<aside class="toc"><div class="toc-inner"><div class="toc-title">목차</div><ul><li class="toc-h2"><a href="#개요">개요</a></li><li class="toc-h3"><a href="#contents">Contents</a></li><li class="toc-h2"><a href="#description-of-project-and-tasks">Description of project and tasks</a></li><li class="toc-h2"><a href="#background">Background</a></li><li class="toc-h2"><a href="#initial-state">Initial state</a></li><li class="toc-h2"><a href="#three-stages">Three Stages</a></li><li class="toc-h3"><a href="#stage-1-data-reception">Stage 1: Data Reception</a></li><li class="toc-h3"><a href="#stage-2-data-query-and-service-development">Stage 2: Data Query and Service Development</a></li><li class="toc-h3"><a href="#stage-3-architecture-optimization-and-continuous-improvement">Stage 3: Architecture Optimization and Continuous Improvement</a></li><li class="toc-h2"><a href="#tasks">Tasks</a></li><li class="toc-h2"><a href="#technical-details">Technical Details</a></li><li class="toc-h2"><a href="#service-details">Service Details</a></li><li class="toc-h3"><a href="#post-data---blood-pressure-monitoring-data">POST Data - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#database---blood-pressure-monitoring-data">DataBase - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#web-service---blood-pressure-monitoring-data">Web Service - Blood Pressure Monitoring Data</a></li><li class="toc-h3"><a href="#post-data---enterprise-operation-data">POST Data - Enterprise Operation Data</a></li><li class="toc-h3"><a href="#database---enterprise-operation-data">DataBase - Enterprise Operation Data</a></li><li class="toc-h3"><a href="#web-service---enterprise-operation-data">Web Service - Enterprise Operation Data</a></li><li class="toc-h2"><a href="#gentle-reminder">Gentle reminder</a></li><li class="toc-h2"><a href="#reference">Reference</a></li><li class="toc-h2"><a href="#changelog">원문 대비 수정 내역</a></li></ul></div></aside></div><script src="assets/site.js"></script></body></html>
